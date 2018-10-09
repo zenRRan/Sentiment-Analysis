@@ -30,7 +30,7 @@ def preprocesser_opts(parser):
     parser.add_argument('-gpu_device', type=int, default=0,
                         help='decide which gpu device will be selected, default device 0')
     parser.add_argument('-use_cuda', type=bool, default=False, help='if use cuda, default False')
-    parser.add_argument('-', type=int, default=1, help='')
+    # parser.add_argument('-', type=int, default=1, help='')
 
 
 def trainer_opts(parser):
@@ -57,6 +57,7 @@ def trainer_opts(parser):
 
     #model
     parser.add_argument('-model', type=str, default='', help='rnn, lstm, bilstm, cnn, multi_cnn, gru')
+    parser.add_argument('-embed_dropout', type=int, default=0, help='embedding dropout')
 
     #cnn
     parser.add_argument('-kernel_size', type=list, default=[3,5,7], help="cnn's kernel size, default [3,5,7]")
@@ -65,7 +66,7 @@ def trainer_opts(parser):
     #rnn
     parser.add_argument('-hidden_size', type=int, default=128, help="rnn's hidden size, default 128")
     parser.add_argument('-hidden_num', type=int, default=1, help="rnn's hidden num, default 1")
-
+    parser.add_argument('-hidden_dropout', type=int, default=0, help='rnn hidden dropout')
     # parser.add_argument('-', type=int, default=1, help='')
 
 
@@ -77,7 +78,7 @@ def decoder_opts(parser):
     parser.add_argument('-gpu_device', type=int, default=0,
                         help='decide which gpu device will be selected, default device 0')
     parser.add_argument('-use_cuda', type=bool, default=False, help='if use cuda, default False')
-
+    parser.add_argument('-save_file', type=str, default=0, help='decoder data saved here')
     # parser.add_argument('-', type=int, default=1, help='')
     # parser.add_argument('-', type=int, default=1, help='')
     # parser.add_argument('-', type=int, default=1, help='')

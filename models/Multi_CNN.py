@@ -4,7 +4,7 @@
 """
 @version: python3.6
 @author: 'zenRRan'
-@license: Apache Licence 
+@license: Apache Licence
 @contact: zenrran@qq.com
 @software: PyCharm
 @file: Multi_CNN_.py
