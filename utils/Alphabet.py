@@ -9,16 +9,17 @@
 import collections
 
 class Alphabet:
-    def __init__(self):
-        self.max_cap = 1e8
+    def __init__(self, max_cap, cutoff):
+        self.max_cap = max_cap
+        self.cutoff = cutoff
         self.m_size = 0
         self.m_b_fixed = False
         self.id2string = []
         self.string2id = collections.OrderedDict()
 
-    def initial(self, stat, cutoff=0):
+    def initial(self, stat):
         for key in stat:
-            if stat[key] > cutoff:
+            if stat[key] > self.cutoff:
                 self.from_string(key)
         self.m_b_fixed = True
 

@@ -16,17 +16,20 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import utils.Embedding as Embedding
+import torch.nn.init as init
 
 class Pooling(nn.Module):
-    def __init__(self, args):
+    def __init__(self, opts):
         super(Pooling, self).__init__()
-        self.embedings = nn.Embedding(args.wordNum, args.EmbedSize)
-        if args.using_pred_emb:
-            emb_text = Embedding.load_predtrained_emb_avg(args.pred_embedding_50_path,
-                                                                          args.wordAlpha.string2id)
+        self.embedings = nn.Embedding(opts.wordNum, opts.EmbedSize)
+        if opts.using_pred_emb:
+            emb_text = Embedding.load_predtrained_emb_avg(opts.pred_embedding_50_path,
+                                                          opts.wordAlpha.string2id)
             self.embeddings.weight.data.copy_(emb_text)
-        self.linear = nn.Linear(len(args.kernelSizes)*args.kernelNum, args.labelSize)
-        self.embed_dropout = nn.Dropout(args.embed_dropout)
+        else:
+            nn.init.uniform(self.embedings.weight.data, -opts.embed_uniform_init, opts.embed_uniform_init)
+        self.linear = nn.Linear(len(opts.kernelSizes)*opts.kernelNum, opts.labelSize)
+        self.embed_dropout = nn.Dropout(opts.embed_dropout)
 
     def forward(self, input):
         out = self.embedings(input)
