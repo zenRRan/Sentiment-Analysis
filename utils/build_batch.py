@@ -24,6 +24,7 @@ class Build_Batch:
         self.shuffer = opts.shuffer
         self.sort = opts.sort
         self.batch_features = []
+        self.PAD =
 
         random.seed(opts.seed)
 
@@ -35,9 +36,21 @@ class Build_Batch:
                   [x x x o]
                   [x x x o]]]
         '''
-        pass
 
-    def create_sorted_batch(self):
+        self.features = self.sort_features(self.features)
+        new_list = []
+        same_len = True
+        for feature in self.features:
+            if same_len and len(new_list) < self.batch_size:
+                new_list.append(feature)
+            else:
+                new_list = self.shuffer_data(new_list)
+                self.batch_features.append(new_list)
+                new_list = []
+        self.batch_features = self.shuffer_data(self.batch_features)
+        return self.batch_features
+
+    def create_sorted_normal_batch(self):
         '''
         :return: [[[x x o o]
                    [x x x o]
@@ -45,11 +58,23 @@ class Build_Batch:
                   [[x x x o]
                    [x x x x]]]
         '''
-        pass
 
-    def sort_batch(self, features):
+        self.features = self.sort_features(self.features)
+        new_list = []
+        for feature in self.features:
+            if len(new_list) < self.batch_size:
+                new_list.append(feature)
+            else:
+                new_list = self.shuffer_data(new_list)
+                self.batch_features.append(new_list)
+                new_list = []
+        self.batch_features = self.shuffer_data(self.batch_features)
+        return self.batch_features
+
+
+    def sort_features(self, features):
         if self.sort:
-            features = sorted(features, key= lambda feature: feature.length)
+            features = sorted(features, key=lambda feature: feature.length)
         return features
 
     def shuffer_data(self, data):
