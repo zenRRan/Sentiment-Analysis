@@ -73,7 +73,10 @@ def get_idx(words, alpha):
     '''
     indexs = []
     for word in words:
-        indexs.append(alpha.from_string(word))
+        idx = alpha.from_string(word)
+        if idx == -1:
+            idx = alpha.from_string(unk_key)
+        indexs.append(idx)
     return indexs
 
 def build_features(sents_list, alpha):

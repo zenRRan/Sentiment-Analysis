@@ -11,20 +11,23 @@
 @time: 2018/10/15 10:44
 """
 
-import utils.Common
 import random
 
 
 class Build_Batch:
 
-    def __init__(self, features, opts):
+    def __init__(self, features, opts, pad_idx):
+
         self.batch_size = opts.batch_size
-        self.batch_num = 0
         self.features = features
         self.shuffer = opts.shuffer
         self.sort = opts.sort
+
+        self.batch_num = 0
         self.batch_features = []
-        self.PAD =
+        self.data_batchs = [] # [(data, label)]
+
+        self.PAD = pad_idx
 
         random.seed(opts.seed)
 
@@ -39,6 +42,8 @@ class Build_Batch:
 
         self.features = self.sort_features(self.features)
         new_list = []
+        self.batch_features = []
+        self.data_batchs = []
         same_len = True
         for feature in self.features:
             if same_len and len(new_list) < self.batch_size:
@@ -46,6 +51,9 @@ class Build_Batch:
             else:
                 new_list = self.shuffer_data(new_list)
                 self.batch_features.append(new_list)
+                ids, labels = self.choose_data_from_features(new_list)
+                ids = self.add_pad(ids)
+                self.data_batchs.append((ids, labels))
                 new_list = []
         self.batch_features = self.shuffer_data(self.batch_features)
         return self.batch_features
@@ -61,16 +69,46 @@ class Build_Batch:
 
         self.features = self.sort_features(self.features)
         new_list = []
+        self.batch_features = []
+        self.data_batchs = []
+
         for feature in self.features:
             if len(new_list) < self.batch_size:
                 new_list.append(feature)
-            else:
+            else
+                self.batch_nums += 1
+
                 new_list = self.shuffer_data(new_list)
                 self.batch_features.append(new_list)
+                ids, labels = self.choose_data_from_features(new_list)
+                ids = self.add_pad(ids)
+                self.data_batchs.append((ids, labels))
                 new_list = []
         self.batch_features = self.shuffer_data(self.batch_features)
         return self.batch_features
 
+    def choose_data_from_features(self, features):
+        ids = []
+        labels = []
+        for feature in features:
+            ids.append(feature.ids)
+            labels.append(feature.label)
+
+        return ids, labels
+
+
+    def add_pad(self, data_list):
+        '''
+        :param data_list: [[x x x], [x x x x],...]
+        :return: [[x x x o o], [x x x x o],...]
+        '''
+        max_len = 0
+        for data in data_list:
+            max_len = max(max_len, len(data))
+        for data in data_list:
+            data.extend([self.PAD]*(max_len - len(data)))
+
+        return data_list
 
     def sort_features(self, features):
         if self.sort:

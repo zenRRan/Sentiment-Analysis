@@ -13,9 +13,19 @@
 
 import torch
 
-def test_args_kwargs(one, *args, **kwargs):
-    print(one)
-    print(args)
-    print(kwargs)
 
-print(test_args_kwargs('0', '1', name='xxx'))
+def add_pad(data_list):
+    '''
+    :param data_list: [[x x x], [x x x x],...]
+    :return: [[x x x o o], [x x x x o],...]
+    '''
+    max_len = 0
+    for data in data_list:
+        max_len = max(max_len, len(data))
+    for data in data_list:
+        data.extend([0] * (max_len - len(data)))
+
+
+data_list = [[1,2,3], [2,3,4,5]]
+add_pad(data_list)
+print(data_list)
