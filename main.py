@@ -33,11 +33,12 @@ if __name__ == '__main__':
     dev_features_list = torch.load(opts.data_dir + '/dev.sst')
     test_features_list = torch.load(opts.data_dir + '/test.sst')
     vocab = torch.load(opts.data_dir + '/vocab.sst')
+    label_vocab = torch.load(opts.data_dir + '/label_vocab.sst')
     train_dev_test = (train_features_list, dev_features_list, test_features_list)
     #build batch
     # build_batcher = Build_Batch(features=train_features_list, opts=opts, pad_idx=vocab)
 
-    train = Trainer(train_dev_test, opts, vocab)
+    train = Trainer(train_dev_test, opts, vocab, label_vocab)
     train.train()
 
 

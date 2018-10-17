@@ -19,12 +19,13 @@ import torch.optim as optim
 
 
 class Trainer:
-    def __init__(self, train_dev_test, opts, vocab):
+    def __init__(self, train_dev_test, opts, vocab, label_vocab):
         self.train_features_list = train_dev_test[0]
         self.dev_features_list = train_dev_test[1]
         self.test_features_list = train_dev_test[2]
         self.opts = opts
         self.vocab = vocab
+        self.label_vocab = label_vocab
         self.epoch = opts.epoch
         self.model = None
 
@@ -73,7 +74,7 @@ class Trainer:
         if self.opts.model == 'pooling':
             self.model = Pooling(opts=self.opts)
         elif self.opts.model == 'cnn':
-            self.model = CNN(opts=self.opts)
+            self.model = CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm':
             self.model = LSTM(opts=self.opts)
         # elif self.opts.model == 'bilstm':
@@ -105,7 +106,7 @@ class Trainer:
                 inst_num += len(batch[1])
 
                 data = torch.Tensor(batch[0])
-                label = torch.Tensor(batch[1])
+                label = torch.Tensor([batch[1]])
 
                 if self.opts.use_cuda:
                     data = data.cuda()

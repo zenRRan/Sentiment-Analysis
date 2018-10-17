@@ -17,7 +17,7 @@ def preprocesser_opts(parser):
     parser.add_argument('-raw_train_path', type=str, default='', help="raw train file's path")
     parser.add_argument('-raw_dev_path', type=str, default='', help="raw dev file's path")
     parser.add_argument('-raw_test_path', type=str, default='', help="raw test file's path")
-    parser.add_argument('-freq_vocab', type=int, default=1, help='what less than that value will be deleted')
+    parser.add_argument('-freq_vocab', type=int, default=0, help='what less than that value will be deleted')
     parser.add_argument('-vcb_size', type=int, default=30000, help='what high than that value will be deleted')
     parser.add_argument('-save_dir', type=str, default='processed_data',
                         help='train.sst, dev.sst, test.sst vocab.txt those who are processed will be saved here')
@@ -49,9 +49,8 @@ def trainer_opts(parser):
     parser.add_argument('-use_cuda', type=bool, default=False, help='if use cuda, default False')
 
     #embedding
-    parser.add_argument('-pre_embed', type=bool, default=False,
-                        help='If using prepared embedding, select True, default False')
-    parser.add_argument('-pre_embed_path', type=str, default='', help='pre_embed must be True!')
+    parser.add_argument('-embed_size', type=int, default=100, help='embedding size, default 100, recommand 100, 200, 300')
+    parser.add_argument('-pre_embed_path', type=str, default='', help='pretrained embedding path')
     parser.add_argument('-embed_uniform_init', type=float, default=0,
                         help='nn.init.uniform(-embed_uniform_init, embed_uniform_init), default=0')
 
@@ -95,7 +94,7 @@ def trainer_opts(parser):
     parser.add_argument('-embed_dropout', type=int, default=0, help='embedding dropout')
 
     #cnn
-    parser.add_argument('-kernel_size', type=list, default=[3,5,7], help="cnn's kernel size, default [3,5,7]")
+    parser.add_argument('-kernel_size', type=list, default=[3, 5, 7], help="cnn's kernel size, default [3,5,7]")
     parser.add_argument('-kernel_num', type=int, default=3, help="cnn's kernel num, default 3")
 
     #rnn

@@ -4,7 +4,7 @@
 """
 @version: python3.6
 @author: 'zenRRan'
-@license: Apache Licence 
+@license: Apache Licence
 @contact: zenrran@qq.com
 @software: PyCharm
 @file: CNN.py
@@ -19,22 +19,21 @@ import utils.Embedding as Embedding
 
 class CNN(nn.Module):
 
-    def __init__(self, opts):
+    def __init__(self, opts, vocab, label_vocab):
         super(CNN, self).__init__()
-        self.embedings = nn.Embedding(opts.wordNum, opts.EmbedSize)
-        if opts.using_pred_emb:
-            emb_text = Embedding.load_predtrained_emb_avg(opts.pred_embedding_50_path,
-                                                          opts.wordAlpha.string2id)
-            self.embeddings.weight.data.copy_(emb_text)
+        self.embeddings = nn.Embedding(vocab.m_size, opts.embed_size)
+        if opts.pre_embed_path != '':
+            embedding = Embedding.load_predtrained_emb_avg(opts.pre_embed_path, vocab.string2id)
+            self.embeddings.weight.data.copy_(embedding)
         else:
-            nn.init.uniform(self.embedings.weight.data, -opts.embed_uniform_init, opts.embed_uniform_init)
+            nn.init.uniform(self.embeddings.weight.data, -opts.embed_uniform_init, opts.embed_uniform_init)
         self.convs = nn.ModuleList(
-            [nn.Conv2d(1, opts.kernelNum, (K, opts.EmbedSize), padding=(K // 2, 0)) for K in opts.kernelSizes])
-        self.linear = nn.Linear(len(opts.kernelSizes)*opts.kernelNum, opts.labelSize)
+            [nn.Conv2d(1, opts.kernel_num, (K, opts.embed_size), padding=(K // 2, 0)) for K in opts.kernel_size])
+        self.linear = nn.Linear(len(opts.kernel_size)*opts.kernel_num, label_vocab.m_size)
         self.embed_dropout = nn.Dropout(opts.embed_dropout)
 
     def forward(self, input):
-        out = self.embedings(input)
+        out = self.embeddings(input)
         out = self.embed_dropout(out)
         out = F.tanh(out)
         l = []

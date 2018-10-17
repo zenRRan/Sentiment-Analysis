@@ -41,6 +41,7 @@ def build_dict(sents_list):
     :return: OrderedDict() -> freq:word
     '''
     dict = collections.OrderedDict()
+    label_dict = collections.OrderedDict()
     for t in sents_list:
         words = t[0]
         for word in words:
@@ -48,19 +49,24 @@ def build_dict(sents_list):
                 dict[word] = 1
             else:
                 dict[word] += 1
-    return dict
+        label = t[1]
+        if label not in label_dict:
+            label_dict[label] = 1
+        else:
+            label_dict[label] += 1
+    return dict, label_dict
 
-def build_vab(dict, cutoff, vcb_size):
+def build_vab(dict, cutoff=0, vcb_size=30000):
     '''
     :param dict: OrderedDict() -> freq:word
     :param cutoff: frequence's smaller than cutoff will be deleted.
     :return: alphabet class
     '''
 
+    dict[unk_key] = 100
+    dict[padding_key] = 100
     alpha = Alphabet(cutoff=cutoff, max_cap=vcb_size)
     alpha.initial(dict)
-    alpha.from_string(unk_key)
-    alpha.from_string(padding_key)
     alpha.m_b_fixed = True
 
     return alpha
@@ -79,7 +85,7 @@ def get_idx(words, alpha):
         indexs.append(idx)
     return indexs
 
-def build_features(sents_list, alpha):
+def build_features(sents_list, alphabet, label_alphabet):
     '''
     :param fpath: data's path
     :param alpha: Alphabet()
@@ -88,15 +94,16 @@ def build_features(sents_list, alpha):
     features = []
     for t in sents_list:
         feature = Feature()
-        words = t[1]
-        label = t[0]
+        words = t[0]
+        label = t[1]
         feature.words = words
         feature.length = len(words)
-        feature.label = label
-        feature.ids = get_idx(words, alpha)
+        feature.label = label_alphabet.string2id[label]
+        feature.ids = get_idx(words, alphabet)
         features.append(feature)
 
     return features
+
 
 
 if __name__ == '__main__':
@@ -112,11 +119,12 @@ if __name__ == '__main__':
     test_sents_list = read_file2list(parser.raw_test_path)
 
     #build dict and get the features
-    dict = build_dict(train_sents_list)
-    alpha = build_vab(dict=dict, cutoff=parser.freq_vocab, vcb_size=parser.vcb_size)
-    train_features = build_features(train_sents_list, alpha)
-    dev_features = build_features(dev_sents_list, alpha)
-    test_features = build_features(test_sents_list, alpha)
+    data_dict, label_dict = build_dict(train_sents_list)
+    alphabet = build_vab(dict=data_dict, cutoff=parser.freq_vocab, vcb_size=parser.vcb_size)
+    label_alphabet = build_vab(dict=label_dict)
+    train_features = build_features(train_sents_list, alphabet, label_alphabet=label_alphabet)
+    dev_features = build_features(dev_sents_list, alphabet, label_alphabet=label_alphabet)
+    test_features = build_features(test_sents_list, alphabet, label_alphabet=label_alphabet)
 
     #save features
     if not os.path.isdir(parser.save_dir):
@@ -124,4 +132,5 @@ if __name__ == '__main__':
     torch.save(train_features, parser.save_dir + '/train.sst')
     torch.save(dev_features, parser.save_dir + '/dev.sst')
     torch.save(test_features, parser.save_dir + '/test.sst')
-    torch.save(alpha, parser.save_dir + '/vocab.sst')
+    torch.save(alphabet, parser.save_dir + '/vocab.sst')
+    torch.save(label_alphabet, parser.save_dir + '/label_vocab.sst')
