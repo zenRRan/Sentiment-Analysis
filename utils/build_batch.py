@@ -16,9 +16,9 @@ import random
 
 class Build_Batch:
 
-    def __init__(self, features, opts, pad_idx):
+    def __init__(self, features, opts, batch_size, pad_idx):
 
-        self.batch_size = opts.batch_size
+        self.batch_size = batch_size
         self.features = features
         self.shuffer = opts.shuffer
         self.sort = opts.sort
@@ -56,7 +56,7 @@ class Build_Batch:
                 self.data_batchs.append((ids, labels))
                 new_list = []
         self.batch_features = self.shuffer_data(self.batch_features)
-        return self.batch_features
+        return self.batch_features, self.data_batchs
 
     def create_sorted_normal_batch(self):
         '''
@@ -75,8 +75,8 @@ class Build_Batch:
         for feature in self.features:
             if len(new_list) < self.batch_size:
                 new_list.append(feature)
-            else
-                self.batch_nums += 1
+            else:
+                self.batch_num += 1
 
                 new_list = self.shuffer_data(new_list)
                 self.batch_features.append(new_list)
@@ -85,7 +85,7 @@ class Build_Batch:
                 self.data_batchs.append((ids, labels))
                 new_list = []
         self.batch_features = self.shuffer_data(self.batch_features)
-        return self.batch_features
+        return self.batch_features, self.data_batchs
 
     def choose_data_from_features(self, features):
         ids = []

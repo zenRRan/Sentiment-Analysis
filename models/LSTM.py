@@ -18,28 +18,28 @@ import torch.nn.functional as F
 import utils.Embedding as Embedding
 
 class LSTM(nn.Module):
-    def __init__(self, args):
+    def __init__(self, opts):
         super(LSTM, self).__init__()
-        self.embedingTopic = nn.Embedding(args.topicSize, args.EmbedSize)
-        self.embedingText = nn.Embedding(args.wordNum, args.EmbedSize)
-        if args.using_pred_emb:
-            load_emb_text = Embedding.load_predtrained_emb_avg(args.pred_embedding_50_path,
-                                                                          args.wordAlpha.string2id)
-            load_emb_topic = Embedding.load_predtrained_emb_avg(args.pred_embedding_50_path,
-                                                               args.wordAlpha.string2id)
+        self.embedingTopic = nn.Embedding(opts.topicSize, opts.EmbedSize)
+        self.embedingText = nn.Embedding(opts.wordNum, opts.EmbedSize)
+        if opts.using_pred_emb:
+            load_emb_text = Embedding.load_predtrained_emb_avg(opts.pred_embedding_50_path,
+                                                               opts.wordAlpha.string2id)
+            load_emb_topic = Embedding.load_predtrained_emb_avg(opts.pred_embedding_50_path,
+                                                                opts.wordAlpha.string2id)
             self.embedingTopic.weight.data.copy_(load_emb_topic)
             self.embedingText.weight.data.copy_(load_emb_text)
 
         self.biLSTM = nn.LSTM(
-            args.EmbedSize,
-            args.hiddenSize,
-            dropout=args.dropout,
-            num_layers=args.hiddenNum,
+            opts.EmbedSize,
+            opts.hiddenSize,
+            dropout=opts.dropout,
+            num_layers=opts.hiddenNum,
             batch_first=True,
             bidirectional=True
         )
-        self.linear1 = nn.Linear(args.hiddenSize * 4, args.hiddenSize // 2)
-        self.linear2 = nn.Linear(args.hiddenSize // 2, args.labelSize)
+        self.linear1 = nn.Linear(opts.hiddenSize * 4, opts.hiddenSize // 2)
+        self.linear2 = nn.Linear(opts.hiddenSize // 2, opts.labelSize)
 
     def forward(self, topic, text):
         topic = self.embedingTopic(topic)

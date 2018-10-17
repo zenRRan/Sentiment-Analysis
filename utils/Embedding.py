@@ -7,7 +7,7 @@
 # @Software: PyCharm Community Edition
 
 import torch
-from Common import padding_key
+from utils.Common import padding_key
 import numpy as np
 import torch.nn as nn
 import random

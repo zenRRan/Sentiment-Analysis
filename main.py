@@ -17,6 +17,9 @@ import utils.opts as opts
 import torch
 from utils.Feature import Feature
 from utils.Common import unk_key, padding_key
+from utils.trainer import Trainer
+from utils.build_batch import Build_Batch
+
 
 if __name__ == '__main__':
 
@@ -26,9 +29,17 @@ if __name__ == '__main__':
     opts = parser.parse_args()
 
     # load the data
-    train_features_list = torch.load(opts.data.dir + 'train.sst')
-    dev_features_list = torch.load(opts.data.dir + 'dev.sst')
-    dev_features_list = torch.load(opts.data.dir + 'test.sst')
+    train_features_list = torch.load(opts.data_dir + '/train.sst')
+    dev_features_list = torch.load(opts.data_dir + '/dev.sst')
+    test_features_list = torch.load(opts.data_dir + '/test.sst')
+    vocab = torch.load(opts.data_dir + '/vocab.sst')
+    train_dev_test = (train_features_list, dev_features_list, test_features_list)
+    #build batch
+    # build_batcher = Build_Batch(features=train_features_list, opts=opts, pad_idx=vocab)
+
+    train = Trainer(train_dev_test, opts, vocab)
+    train.train()
+
 
 
 

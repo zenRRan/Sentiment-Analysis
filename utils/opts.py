@@ -13,8 +13,6 @@
 
 
 def preprocesser_opts(parser):
-    parser = parser.ArgumentParser(description='preprocess opts')
-
     #data
     parser.add_argument('-raw_train_path', type=str, default='', help="raw train file's path")
     parser.add_argument('-raw_dev_path', type=str, default='', help="raw dev file's path")
@@ -37,10 +35,9 @@ def preprocesser_opts(parser):
     parser.add_argument('-use_cuda', type=bool, default=False, help='if use cuda, default False')
     # parser.add_argument('-', type=int, default=1, help='')
 
+    return parser
 
 def trainer_opts(parser):
-    parser = parser.ArgumentParser(description='train opts')
-
     #seed
     parser.add_argument('-seed', type=int, default=23,
                         help='cpu seed! default 23. If you want set GPU seed, please use -gpu_seed!')
@@ -59,21 +56,38 @@ def trainer_opts(parser):
                         help='nn.init.uniform(-embed_uniform_init, embed_uniform_init), default=0')
 
     #data
-    parser.add_argument('-train_path', type=str, default='', help="processed train file's path")
-    parser.add_argument('-dev_path', type=str, default='', help="processed dev file's path")
-    parser.add_argument('-test_path', type=str, default='', help="processed test file's path")
-    parser.add_argument('-data_dir', type=str, default='processed_data', help='code will read train [dev test vocab] file here ')
+    parser.add_argument('-data_dir', type=str, default='processed_data', help='code will read train [dev test vocab].sst file here ')
 
     #learning rate
     parser.add_argument('-lr', type=float, default=0.001, help='learning rate, recommand: sgd:0.1, adam:0.001')
 
     #optim
     parser.add_argument('-optim', type=str, default='adam', help='sgd, adam')
+    parser.add_argument('-momentum', type=float, default='0.9', help='used in sgd')
     parser.add_argument('-weight_decay', type=float, default=1e-8, help='weight decay')
 
-    #parameters
-    parser.add_argument('-batch_size', type=int, default=64, help='batch size')
-    parser.add_argument('-epochs', type=int, default=100, help='epochs')
+    '''
+    parameters
+    '''
+    #batch
+    parser.add_argument('-train_batch_size', type=int, default=64, help='batch size')
+    parser.add_argument('-dev_batch_size', type=int, default=64, help='dev size')
+    parser.add_argument('-test_batch_size', type=int, default=64, help='test size')
+
+    #batch_menu_choose
+    parser.add_argument('-train_batch_type', type=str, default='normal', help='You can choose [normal, same]')
+    parser.add_argument('-dev_batch_type', type=str, default='normal', help='You can choose [normal, same]')
+    parser.add_argument('-test_batch_type', type=str, default='normal', help='You can choose [normal, same]')
+
+    #shuffer
+    parser.add_argument('-shuffer', action='store_true',
+                        help='if your batch want to be shuffered, you should add [-shuffer] in your command line')
+
+    #sort
+    parser.add_argument('-sort', action='store_true',
+                        help='if your batch want to be sorted, you should add [-sort] in your command line')
+
+    parser.add_argument('-epoch', type=int, default=100, help='epochs')
     parser.add_argument('-print_every', type=int, default=10, help='every that times, print log')
 
     #model
@@ -90,10 +104,9 @@ def trainer_opts(parser):
     parser.add_argument('-hidden_dropout', type=int, default=0, help='rnn hidden dropout')
     # parser.add_argument('-', type=int, default=1, help='')
 
+    return parser
 
 def decoder_opts(parser):
-    parser = parser.ArgumentParser(description='decoder opts')
-
     #seed
     parser.add_argument('-seed', type=int, default=23,
                         help='cpu seed! default 23. If you want set GPU seed, please use -gpu_seed!')
@@ -115,4 +128,5 @@ def decoder_opts(parser):
     # parser.add_argument('-', type=int, default=1, help='')
     # parser.add_argument('-', type=int, default=1, help='')
     # parser.add_argument('-', type=int, default=1, help='')
-    pass
+
+    return parser

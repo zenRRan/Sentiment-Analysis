@@ -124,3 +124,4 @@ if __name__ == '__main__':
     torch.save(train_features, parser.save_dir + '/train.sst')
     torch.save(dev_features, parser.save_dir + '/dev.sst')
     torch.save(test_features, parser.save_dir + '/test.sst')
+    torch.save(alpha, parser.save_dir + '/vocab.sst')
