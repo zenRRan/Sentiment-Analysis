@@ -17,6 +17,8 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 
+from utils.log import Log
+
 
 class Trainer:
     def __init__(self, train_dev_test, opts, vocab, label_vocab):
@@ -32,6 +34,8 @@ class Trainer:
         self.build_batch()
         self.init_model()
         self.init_optim()
+
+        self.print_log = Log(opts)
 
     def build_batch(self):
         '''
@@ -84,6 +88,9 @@ class Trainer:
         else:
             raise RuntimeError('please choose your model first!')
 
+        if self.opts.use_cuda:
+            self.model = self.model.cuda()
+
     def init_optim(self):
         'sgd, adam'
         if self.opts.optim == 'sgd':
@@ -105,8 +112,8 @@ class Trainer:
 
                 inst_num += len(batch[1])
 
-                data = torch.Tensor(batch[0])
-                label = torch.Tensor([batch[1]])
+                data = torch.LongTensor(batch[0])
+                label = torch.LongTensor(batch[1])
 
                 if self.opts.use_cuda:
                     data = data.cuda()
@@ -116,7 +123,7 @@ class Trainer:
 
                 loss = F.cross_entropy(pred, label)
 
-                loss.back_farword()
+                loss.backward()
                 self.optimizer.step()
 
                 totle_loss += loss.data
@@ -125,10 +132,13 @@ class Trainer:
                 correct_num += (torch.max(pred, 1)[1].view(label.size()).data == label.data).sum()
                 if step % self.opts.print_every == 0:
                     avg_loss = totle_loss / inst_num
-                    acc = correct_num / inst_num
-                    print("Epoch {} step {} acc: {.4f} loss:{.8f}".format(epoch, step, acc, avg_loss))
+                    acc = float(correct_num) / inst_num * 100
+                    log = "Epoch {} step {} acc: {:.2f}% loss: {:.6f}".format(epoch, step, acc, avg_loss.numpy()[0])
+                    self.print_log.print_log(log)
+                    print(log)
                     totle_loss = torch.Tensor([0])
                     inst_num = 0
+                    correct_num = 0
 
             self.dev()
 
@@ -149,12 +159,12 @@ class Trainer:
 
         for batch in self.train_data_batchs:
 
-            self.model.test()
+            self.model.eval()
 
             inst_num += len(batch[1])
 
-            data = torch.Tensor(batch[0])
-            label = torch.Tensor(batch[1])
+            data = torch.LongTensor(batch[0])
+            label = torch.LongTensor(batch[1])
 
             if self.opts.use_cuda:
                 data = data.cuda()
@@ -169,5 +179,8 @@ class Trainer:
             correct_num += (torch.max(pred, 1)[1].view(label.size()).data == label.data).sum()
 
         avg_loss = totle_loss / inst_num
-        acc = correct_num / inst_num
-        print("dev acc:{.4f} loss:{.8f}".format(acc, avg_loss))
+        acc = float(correct_num) / inst_num * 100
+        log = "dev acc: {:.2f}% loss: {:.6f}".format(acc, avg_loss.numpy()[0])
+        self.print_log.print_log(log)
+        print(log)
+

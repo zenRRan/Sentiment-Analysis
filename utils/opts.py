@@ -54,6 +54,7 @@ def trainer_opts(parser):
     parser.add_argument('-embed_uniform_init', type=float, default=0,
                         help='nn.init.uniform(-embed_uniform_init, embed_uniform_init), default=0')
 
+
     #data
     parser.add_argument('-data_dir', type=str, default='processed_data', help='code will read train [dev test vocab].sst file here ')
 
@@ -91,8 +92,10 @@ def trainer_opts(parser):
 
     #model
     parser.add_argument('-model', type=str, default='', help='select one of [pooling, rnn, lstm, bilstm, cnn, multi_cnn, gru]')
-    parser.add_argument('-embed_dropout', type=int, default=0, help='embedding dropout')
 
+    #dropout
+    parser.add_argument('-embed_dropout', type=int, default=0, help='embedding dropout')
+    parser.add_argument('-fc_dropout', type=int, default=0, help='full connection dropout')
     #cnn
     parser.add_argument('-kernel_size', type=list, default=[3, 5, 7], help="cnn's kernel size, default [3,5,7]")
     parser.add_argument('-kernel_num', type=int, default=3, help="cnn's kernel num, default 3")
@@ -102,6 +105,10 @@ def trainer_opts(parser):
     parser.add_argument('-hidden_num', type=int, default=1, help="rnn's hidden num, default 1")
     parser.add_argument('-hidden_dropout', type=int, default=0, help='rnn hidden dropout')
     # parser.add_argument('-', type=int, default=1, help='')
+
+    #log
+    parser.add_argument('-log_dir', type=str, default='log', help='log dir default [log]')
+    parser.add_argument('-log_fname', type=str, default='', help='log file name')
 
     return parser
 
