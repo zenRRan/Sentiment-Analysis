@@ -46,6 +46,6 @@ class CNN(nn.Module):
         for i in out:
             l.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))
         out = torch.cat(l, 1)
-        out = self.fc_dropout(out)
+        # out = self.fc_dropout(out)
         out = self.linear(out)
         return out

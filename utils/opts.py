@@ -92,7 +92,9 @@ def trainer_opts(parser):
 
     #model
     parser.add_argument('-model', type=str, default='', help='select one of [pooling, rnn, lstm, bilstm, cnn, multi_cnn, gru]')
-
+    parser.add_argument('-save_model_dir', type=str, default='save_models', help='save model dir')
+    parser.add_argument('-save_model_every', type=int, default=1, help='save model every this epoch')
+    parser.add_argument('-save_model_start_from', type=int, default=2, help='save model start from this epoch')
     #dropout
     parser.add_argument('-embed_dropout', type=int, default=0, help='embedding dropout')
     parser.add_argument('-fc_dropout', type=int, default=0, help='full connection dropout')
@@ -104,6 +106,8 @@ def trainer_opts(parser):
     parser.add_argument('-hidden_size', type=int, default=128, help="rnn's hidden size, default 128")
     parser.add_argument('-hidden_num', type=int, default=1, help="rnn's hidden num, default 1")
     parser.add_argument('-hidden_dropout', type=int, default=0, help='rnn hidden dropout')
+    parser.add_argument('-bidirectional', type=bool, default=True, help='True you will train birnn')
+
     # parser.add_argument('-', type=int, default=1, help='')
 
     #log
@@ -123,8 +127,11 @@ def decoder_opts(parser):
                         help='decide which gpu device will be selected, default device 0')
     parser.add_argument('-use_cuda', type=bool, default=False, help='if use cuda, default False')
 
-    #data
-    parser.add_argument('-save_file', type=str, default=0, help='decoder data saved here')
+    #decoder file
+    parser.add_argument('-file', type=str, default='', help='decoder this file')
+
+    #model
+    parser.add_argument('-model_path', type=str, default='', help='select your want to use model path')
     # parser.add_argument('-', type=int, default=1, help='')
     # parser.add_argument('-', type=int, default=1, help='')
     # parser.add_argument('-', type=int, default=1, help='')

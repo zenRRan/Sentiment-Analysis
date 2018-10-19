@@ -46,6 +46,9 @@ class Log:
 
             f.write('----model----\n')
             f.write('model=' + str(self.opts.model) + '\n')
+            f.write('save_model_dir=' + str(self.opts.save_model_dir) + '\n')
+            f.write('save_model_every=' + str(self.opts.save_model_every) + '\n')
+            f.write('save_model_start_from=' + str(self.opts.save_model_start_from) + '\n')
             if self.opts.model == 'cnn':
                 f.write('kernel_num=' + str(self.opts.kernel_num) + '\n')
                 f.write('kernel_size=' + str(self.opts.kernel_size) + '\n')

@@ -17,9 +17,13 @@ embed_dropout=0
 pre_embed_path=
 
 ----model----
-model=cnn
-kernel_num=3
-kernel_size=[3, 5, 7]
+model=lstm
+save_model_dir=save_models
+save_model_every=1
+save_model_start_from=2
+hidden_num=1
+hidden_size=128
+hidden_dropout=0
 fc_dropout=0
 
 ----optimizer----
@@ -44,16 +48,41 @@ seed=23
 log_dir=log
 log_fname=cnn.log
 
-Epoch 0 step 10 acc: 17.03% loss: 0.031038
-Epoch 0 step 20 acc: 27.34% loss: 0.030462
-Epoch 0 step 30 acc: 24.38% loss: 0.030171
-Epoch 0 step 40 acc: 24.69% loss: 0.029203
-Epoch 0 step 50 acc: 26.41% loss: 0.027989
-Epoch 0 step 60 acc: 25.62% loss: 0.027222
-Epoch 0 step 70 acc: 26.88% loss: 0.026369
-Epoch 0 step 80 acc: 26.56% loss: 0.026063
-Epoch 0 step 90 acc: 25.78% loss: 0.026167
-Epoch 0 step 100 acc: 26.41% loss: 0.025268
-Epoch 0 step 110 acc: 27.50% loss: 0.025660
-Epoch 0 step 120 acc: 27.03% loss: 0.025450
-Epoch 0 step 130 acc: 27.66% loss: 0.025217
+Epoch 0 step 10 acc: 18.28% loss: 0.030169
+Epoch 0 step 20 acc: 27.50% loss: 0.028555
+Epoch 0 step 30 acc: 27.97% loss: 0.025304
+Epoch 0 step 40 acc: 21.72% loss: 0.024943
+Epoch 0 step 50 acc: 23.75% loss: 0.024645
+Epoch 0 step 60 acc: 27.97% loss: 0.024549
+Epoch 0 step 70 acc: 29.53% loss: 0.024352
+Epoch 0 step 80 acc: 25.00% loss: 0.024545
+Epoch 0 step 90 acc: 20.31% loss: 0.025074
+Epoch 0 step 100 acc: 27.81% loss: 0.024383
+Epoch 0 step 110 acc: 24.53% loss: 0.024847
+Epoch 0 step 120 acc: 24.22% loss: 0.024742
+Epoch 0 step 130 acc: 26.88% loss: 0.024679
+dev acc: 27.93% loss: 0.024563
+test acc: 30.15% loss: 0.024622
+Epoch 1 step 10 acc: 28.28% loss: 0.024544
+Epoch 1 step 20 acc: 30.63% loss: 0.024405
+Epoch 1 step 30 acc: 30.78% loss: 0.024454
+Epoch 1 step 40 acc: 28.28% loss: 0.024436
+Epoch 1 step 50 acc: 31.56% loss: 0.024119
+Epoch 1 step 60 acc: 34.84% loss: 0.023852
+Epoch 1 step 70 acc: 35.16% loss: 0.023377
+Epoch 1 step 80 acc: 33.91% loss: 0.023547
+Epoch 1 step 90 acc: 30.00% loss: 0.023705
+Epoch 1 step 100 acc: 39.53% loss: 0.022600
+Epoch 1 step 110 acc: 36.25% loss: 0.022816
+Epoch 1 step 120 acc: 36.25% loss: 0.022588
+Epoch 1 step 130 acc: 36.25% loss: 0.022618
+dev acc: 36.72% loss: 0.022633
+test acc: 35.29% loss: 0.022670
+Epoch 2 step 10 acc: 36.09% loss: 0.022344
+Epoch 2 step 20 acc: 40.31% loss: 0.021402
+Epoch 2 step 30 acc: 39.06% loss: 0.021020
+Epoch 2 step 40 acc: 42.66% loss: 0.020366
+Epoch 2 step 50 acc: 43.75% loss: 0.020569
+Epoch 2 step 60 acc: 45.16% loss: 0.020319
+Epoch 2 step 70 acc: 45.00% loss: 0.020702
+Epoch 2 step 80 acc: 44.84% loss: 0.019999

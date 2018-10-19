@@ -18,54 +18,43 @@ import torch.nn.functional as F
 import utils.Embedding as Embedding
 
 class LSTM(nn.Module):
-    def __init__(self, opts):
+    def __init__(self, opts, vocab, label_vocab):
         super(LSTM, self).__init__()
-        self.embedingTopic = nn.Embedding(opts.topicSize, opts.EmbedSize)
-        self.embedingText = nn.Embedding(opts.wordNum, opts.EmbedSize)
-        if opts.using_pred_emb:
-            load_emb_text = Embedding.load_predtrained_emb_avg(opts.pred_embedding_50_path,
-                                                               opts.wordAlpha.string2id)
-            load_emb_topic = Embedding.load_predtrained_emb_avg(opts.pred_embedding_50_path,
-                                                                opts.wordAlpha.string2id)
-            self.embedingTopic.weight.data.copy_(load_emb_topic)
-            self.embedingText.weight.data.copy_(load_emb_text)
+        self.embeddings = nn.Embedding(vocab.m_size, opts.embed_size)
+        if opts.pre_embed_path != '':
+            embedding = Embedding.load_predtrained_emb_avg(opts.pre_embed_path, vocab.string2id)
+            self.embeddings.weight.data.copy_(embedding)
+        else:
+            nn.init.uniform_(self.embeddings.weight.data, -opts.embed_uniform_init, opts.embed_uniform_init)
 
         self.biLSTM = nn.LSTM(
-            opts.EmbedSize,
-            opts.hiddenSize,
-            dropout=opts.dropout,
-            num_layers=opts.hiddenNum,
+            opts.embed_size,
+            opts.hidden_size,
+            dropout=opts.hidden_dropout,
+            num_layers=opts.hidden_num,
             batch_first=True,
-            bidirectional=True
+            bidirectional=opts.bidirectional
         )
-        self.linear1 = nn.Linear(opts.hiddenSize * 4, opts.hiddenSize // 2)
-        self.linear2 = nn.Linear(opts.hiddenSize // 2, opts.labelSize)
+        self.embed_dropout = nn.Dropout(opts.embed_dropout)
+        self.linear1 = nn.Linear(opts.hidden_size * 2, opts.hidden_size // 2)
+        self.linear2 = nn.Linear(opts.hidden_size // 2, label_vocab.m_size)
 
-    def forward(self, topic, text):
-        topic = self.embedingTopic(topic)
-        text = self.embedingText(text)
+    def forward(self, input):
+        out = self.embeddings(input)
+        out = self.embed_dropout(out)
+        out, _ = self.biLSTM(out)   #[1, 1, 200]
 
-        topic, _ = self.biLSTM(topic)   #[1, 1, 200]
-        text,  _ = self.biLSTM(text)    #[1, 17, 200]
+        out = torch.transpose(out, 1, 2)
 
+        out = torch.tanh(out)
 
-        topic = torch.transpose(topic, 1, 2)
-        text = torch.transpose(text, 1, 2)
+        out = F.max_pool1d(out, out.size(2))  #[1, 200, 1]
 
-        topic = F.tanh(topic)
-        text = F.tanh(text)
+        out = out.squeeze(2)          #[1, 400]
 
-        topic = F.max_pool1d(topic, topic.size(2))  #[1, 200, 1]
-        text = F.max_pool1d(text, text.size(2))     #[1, 200, 1]
-
-        topic_text = torch.cat([topic, text], 1)    #[1, 400, 1]
-
-        topic_text = topic_text.squeeze(2)          #[1, 400]
-
-        output = self.linear1(topic_text)
-        # output = F.tanh(output)
-        output = F.relu(output)
-        output = self.linear2(output)
+        out = self.linear1(out)
+        out = F.relu(out)
+        output = self.linear2(out)
 
         return output
 

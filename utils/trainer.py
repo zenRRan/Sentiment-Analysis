@@ -19,6 +19,8 @@ import torch.optim as optim
 
 from utils.log import Log
 
+import os
+
 
 class Trainer:
     def __init__(self, train_dev_test, opts, vocab, label_vocab):
@@ -36,6 +38,9 @@ class Trainer:
         self.init_optim()
 
         self.print_log = Log(opts)
+
+        #save model switch
+        self.save_model_switch = False
 
     def build_batch(self):
         '''
@@ -76,11 +81,11 @@ class Trainer:
         :return:
         '''
         if self.opts.model == 'pooling':
-            self.model = Pooling(opts=self.opts)
+            self.model = Pooling(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'cnn':
             self.model = CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm':
-            self.model = LSTM(opts=self.opts)
+            self.model = LSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         # elif self.opts.model == 'bilstm':
         #     self.model = CNN(opts=self.opts)
         # elif self.opts.model == 'cnn':
@@ -140,24 +145,37 @@ class Trainer:
                     inst_num = 0
                     correct_num = 0
 
-            self.dev()
+            self.accurcy(type='dev')
+            self.accurcy(type='test')
 
+            self.save_model(epoch)
 
+    def save_model(self, cur_epoch):
+        if not os.path.isdir(self.opts.save_model_dir):
+            os.mkdir(self.opts.save_model_dir)
+        if self.opts.save_model_start_from <= cur_epoch:
+            self.save_model_switch = True
+        if self.save_model_switch and (cur_epoch - self.opts.save_model_start_from) % self.opts.save_model_every == 0:
+            fname = self.opts.save_model_dir + '/model_epoch_' + str(cur_epoch) + '.pt'
+            torch.save(self.model, fname)
+            self.print_log.print_log('model saved succeed in ' + fname)
+            print('model saved succeed in ' + fname)
 
-
-
-
-
-    def test(self):
-        pass
-
-    def dev(self):
+    def accurcy(self, type):
 
         totle_loss = torch.Tensor([0])
         correct_num = 0
         inst_num = 0
 
-        for batch in self.train_data_batchs:
+        data_batchs = None
+        if type == 'dev':
+            data_batchs = self.dev_data_batchs
+        elif type == 'test':
+            data_batchs = self.test_data_batchs
+        else:
+            raise RuntimeError('type wrong!')
+
+        for batch in data_batchs:
 
             self.model.eval()
 
@@ -180,7 +198,7 @@ class Trainer:
 
         avg_loss = totle_loss / inst_num
         acc = float(correct_num) / inst_num * 100
-        log = "dev acc: {:.2f}% loss: {:.6f}".format(acc, avg_loss.numpy()[0])
+        log = type + " acc: {:.2f}% loss: {:.6f}".format(acc, avg_loss.numpy()[0])
         self.print_log.print_log(log)
         print(log)
 
