@@ -20,15 +20,28 @@ import utils.Embedding as Embedding
 class Pooling(nn.Module):
     def __init__(self, opts, vocab, label_vocab):
         super(Pooling, self).__init__()
-        self.embeddings = nn.Embedding(vocab.m_size, opts.embed_size)
+
+        self.embed_dim = opts.embed_size
+        self.word_num = vocab.m_size
+        self.pre_embed_path = opts.pre_embed_path
+        self.string2id = vocab.string2id
+        self.embed_uniform_init = opts.embed_uniform_init
+        self.label_num = label_vocab.m_size
+        self.embed_dropout = opts.embed_dropout
+        self.fc_dropout = opts.fc_dropout
+
+        self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
         if opts.pre_embed_path != '':
-            embedding = Embedding.load_predtrained_emb_avg(opts.pre_embed_path, vocab.string2id)
+            embedding = Embedding.load_predtrained_emb_avg(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
         else:
-            nn.init.uniform_(self.embeddings.weight.data, -opts.embed_uniform_init, opts.embed_uniform_init)
-        self.linear = nn.Linear(opts.embed_size, label_vocab.m_size)
-        self.embed_dropout = nn.Dropout(opts.embed_dropout)
-        self.fc_dropout = nn.Dropout(opts.fc_dropout)
+            nn.init.uniform_(self.embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
+
+        self.linear1 = nn.Linear(self.embed_dim, self.embed_dim // 2)
+        self.linear2 = nn.Linear(self.embed_dim // 2, self.label_num)
+
+        self.embed_dropout = nn.Dropout(self.embed_dropout)
+        self.fc_dropout = nn.Dropout(self.fc_dropout)
 
     def forward(self, input):
         out = self.embeddings(input)
@@ -39,6 +52,7 @@ class Pooling(nn.Module):
         out = F.max_pool1d(out, out.size(2))
         # print(out.size())
         out = out.squeeze(2)
-        # out = self.dropout(out)
-        out = self.linear(out)
+        out = self.fc_dropout(out)
+        out = self.linear1(F.relu(out))
+        out = self.linear2(F.relu(out))
         return out

@@ -91,7 +91,7 @@ def trainer_opts(parser):
     parser.add_argument('-print_every', type=int, default=10, help='every that times, print log')
 
     #model
-    parser.add_argument('-model', type=str, default='', help='select one of [pooling, rnn, lstm, bilstm, cnn, multi_cnn, gru]')
+    parser.add_argument('-model', type=str, default='', help='select one of [pooling, rnn, lstm, bilstm, cnn, multi_layer_cnn, multi_channel_cnn, gru]')
     parser.add_argument('-save_model_dir', type=str, default='save_models', help='save model dir')
     parser.add_argument('-save_model_every', type=int, default=1, help='save model every this epoch')
     parser.add_argument('-save_model_start_from', type=int, default=2, help='save model start from this epoch')
@@ -100,7 +100,9 @@ def trainer_opts(parser):
     parser.add_argument('-fc_dropout', type=int, default=0, help='full connection dropout')
     #cnn
     parser.add_argument('-kernel_size', type=list, default=[3, 5, 7], help="cnn's kernel size, default [3,5,7]")
-    parser.add_argument('-kernel_num', type=int, default=3, help="cnn's kernel num, default 3")
+    parser.add_argument('-kernel_num', type=int, default=100, help="cnn's kernel num, default 100")
+    parser.add_argument('-stride', type=int, default=1, help="cnn stride, default 1")
+
 
     #rnn
     parser.add_argument('-hidden_size', type=int, default=128, help="rnn's hidden size, default 128")

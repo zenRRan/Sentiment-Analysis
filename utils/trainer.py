@@ -9,7 +9,8 @@
 from utils.build_batch import Build_Batch
 from models.CNN import CNN
 from models.LSTM import LSTM
-from models.Multi_CNN import Multi_CNN
+from models.Multi_layer_CNN import Multi_Layer_CNN
+from models.multi_channel_CNN import Multi_Channel_CNN
 from models.Pooling import Pooling
 from utils.Common import padding_key
 
@@ -84,6 +85,10 @@ class Trainer:
             self.model = Pooling(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'cnn':
             self.model = CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'multi_channel_cnn':
+            self.model = Multi_Channel_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'multi_layer_cnn':
+            self.model = Multi_Layer_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm':
             self.model = LSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         # elif self.opts.model == 'bilstm':

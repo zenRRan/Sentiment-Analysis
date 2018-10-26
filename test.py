@@ -31,9 +31,12 @@ class Decoder:
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser('decoder opts')
-    parser = opts.decoder_opts(parser)
-    parser = parser.parse_args()
+    # parser = argparse.ArgumentParser('decoder opts')
+    # parser = opts.decoder_opts(parser)
+    # parser = parser.parse_args()
+    #
+    #
+    # decoder = Decoder(opts=opts, )
 
-
-    decoder = Decoder(opts=opts, )
+    path = '/Users/zhenranran/Desktop/law_research_cup/corpus/cail2018_small/good/data_valid.json'
+    

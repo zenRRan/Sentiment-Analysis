@@ -19,31 +19,69 @@ import utils.Embedding as Embedding
 class Multi_CNN(nn.Module):
     def __init__(self, opts, vocab, label_vocab):
         super(Multi_CNN, self).__init__()
-        self.embeddings = nn.Embedding(vocab.m_size, opts.embed_size)
+
+        self.embed_dim = opts.embed_size
+        self.word_num = vocab.m_size
+        self.pre_embed_path = opts.pre_embed_path
+        self.string2id = vocab.string2id
+        self.embed_uniform_init = opts.embed_uniform_init
+        self.stride = opts.stride
+        self.kernel_size = opts.kernel_size
+        self.kernel_num = opts.kernel_num
+        self.label_num = label_vocab.m_size
+        self.embed_dropout = opts.embed_dropout
+        self.fc_dropout = opts.fc_dropout
+
+        self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
         if opts.pre_embed_path != '':
-            embedding = Embedding.load_predtrained_emb_avg(opts.pre_embed_path, vocab.string2id)
+            embedding = Embedding.load_predtrained_emb_avg(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
         else:
-            nn.init.uniform_(self.embeddings.weight.data, -opts.embed_uniform_init, opts.embed_uniform_init)
-        self.convs = nn.ModuleList(
-            [nn.Conv2d(1, opts.kernel_num, (K, opts.embed_size), padding=(K // 2, 0)) for K in opts.kernel_size])
-        self.linear = nn.Linear(len(opts.kernel_size)*opts.kernel_num, label_vocab.m_size)
-        self.embed_dropout = nn.Dropout(opts.embed_dropout)
-        self.fc_dropout = nn.Dropout(opts.fc_dropout)
-    
+            nn.init.uniform_(self.embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
+
+        # 2 convs
+        self.convs1 = nn.ModuleList(
+            [nn.Conv2d(1, self.embed_dim, (K, self.embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in self.kernel_size])
+        self.convs2 = nn.ModuleList(
+            [nn.Conv2d(1, self.kernel_num, (K, self.embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in self.kernel_size])
+
+        in_fea = len(self.kernel_size)*self.kernel_num
+        self.linear1 = nn.Linear(in_fea, in_fea // 2)
+        self.linear2 = nn.Linear(in_fea // 2, self.label_num)
+        self.embed_dropout = nn.Dropout(self.embed_dropout)
+        self.fc_dropout = nn.Dropout(self.fc_dropout)
+
     def forward(self, input):
+        # print(self.convs1)
+        # print(self.convs2)
         out = self.embeddings(input)
         out = self.embed_dropout(out)
-        out = torch.tanh(out)
+        out = torch.tanh(out) # torch.Size([64, 39, 100])
+        # print('1:', out.size())
         l = []
-        out = out.unsqueeze(1)
-        for conv in self.convs:
-            l.append(torch.tanh(conv(out)).squeeze(3))
+        out = out.unsqueeze(1) # torch.Size([64, 1, 39, 100])
+        for conv in self.convs1:
+            l.append(torch.transpose(F.relu(conv(out)).squeeze(3), 1, 2))  # torch.Size([64, 39, 100])
+        # print('2:', l[0].size())
+        out = l
+        l = []
+        for conv, last_out in zip(self.convs2, out):
+            l.append(F.relu(conv(last_out.unsqueeze(1))).squeeze(3))  # torch.Size([64, 100, 39])
+        # print('3:', l[0].size())
         out = l
         l = []
         for i in out:
-            l.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))
-        out = torch.cat(l, 1)
+            l.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))  # torch.Size([64, 39])
+        out = l
+        # print('4:', out[0].size())
+        out = torch.cat(l, 1)  # torch.Size([64, 117])
+        # print('5:', out.size())
         # out = self.fc_dropout(out)
-        out = self.linear(out)
+
+        out = self.fc_dropout(out)
+
+        out = self.linear1(out)
+        out = self.linear2(F.relu(out))
+
         return out
+
