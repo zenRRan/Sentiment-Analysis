@@ -50,6 +50,7 @@ def trainer_opts(parser):
 
     #embedding
     parser.add_argument('-embed_size', type=int, default=100, help='embedding size, default 100, recommand 100, 200, 300')
+    parser.add_argument('-char_embed_size', type=int, default=50, help='char embedding size, default 50')
     parser.add_argument('-pre_embed_path', type=str, default='', help='pretrained embedding path')
     parser.add_argument('-embed_uniform_init', type=float, default=0,
                         help='nn.init.uniform(-embed_uniform_init, embed_uniform_init), default=0')

@@ -38,9 +38,10 @@ def read_file2list(fpath):
 def build_dict(sents_list):
     '''
     :param sents_list: [('i like it .', 0), ('no way .', 3), ...]
-    :return: OrderedDict() -> freq:word
+    :return: OrderedDict() -> freq:word   char-vocab.sst
     '''
     dict = collections.OrderedDict()
+    char_dict = collections.OrderedDict()
     label_dict = collections.OrderedDict()
     for t in sents_list:
         words = t[0]
@@ -49,14 +50,19 @@ def build_dict(sents_list):
                 dict[word] = 1
             else:
                 dict[word] += 1
+            for char in word:
+                if char not in char_dict:
+                    char_dict[char] = 1
+                else:
+                    char_dict[char] += 1
         label = t[1]
         if label not in label_dict:
             label_dict[label] = 1
         else:
             label_dict[label] += 1
-    return dict, label_dict
+    return dict, char_dict, label_dict
 
-def build_vab(dict, cutoff=0, vcb_size=30000):
+def build_vab(dict, char_dict=None, cutoff=0, vcb_size=30000):
     '''
     :param dict: OrderedDict() -> freq:word
     :param cutoff: frequence's smaller than cutoff will be deleted.
@@ -69,7 +75,16 @@ def build_vab(dict, cutoff=0, vcb_size=30000):
     alpha.initial(dict)
     alpha.m_b_fixed = True
 
-    return alpha
+    char_alpha = None
+    if char_dict != None:
+        char_dict[unk_key] = 100
+        char_dict[padding_key] = 100
+        char_alpha = Alphabet(cutoff=cutoff, max_cap=vcb_size)
+        char_alpha.initial(char_dict)
+        char_alpha.m_b_fixed = True
+
+
+    return alpha, char_alpha
 
 def get_idx(words, alpha):
     '''
@@ -85,7 +100,7 @@ def get_idx(words, alpha):
         indexs.append(idx)
     return indexs
 
-def build_features(sents_list, alphabet, label_alphabet):
+def build_features(sents_list, alphabet, char_alphabet, label_alphabet):
     '''
     :param fpath: data's path
     :param alpha: Alphabet()
@@ -95,11 +110,18 @@ def build_features(sents_list, alphabet, label_alphabet):
     for t in sents_list:
         feature = Feature()
         words = t[0]
+        chars = list(' '.join(words))
         label = t[1]
+
         feature.words = words
+        feature.chars = chars
+
         feature.length = len(words)
         feature.label = label_alphabet.string2id[label]
+
         feature.ids = get_idx(words, alphabet)
+        feature.char_ids = get_idx(chars, char_alphabet)
+
         features.append(feature)
 
     return features
@@ -119,12 +141,12 @@ if __name__ == '__main__':
     test_sents_list = read_file2list(parser.raw_test_path)
 
     #build dict and get the features
-    data_dict, label_dict = build_dict(train_sents_list)
-    alphabet = build_vab(dict=data_dict, cutoff=parser.freq_vocab, vcb_size=parser.vcb_size)
-    label_alphabet = build_vab(dict=label_dict)
-    train_features = build_features(train_sents_list, alphabet, label_alphabet=label_alphabet)
-    dev_features = build_features(dev_sents_list, alphabet, label_alphabet=label_alphabet)
-    test_features = build_features(test_sents_list, alphabet, label_alphabet=label_alphabet)
+    data_dict, char_dict, label_dict = build_dict(train_sents_list)
+    alphabet, char_alphabet = build_vab(dict=data_dict, char_dict=char_dict, cutoff=parser.freq_vocab, vcb_size=parser.vcb_size)
+    label_alphabet, _ = build_vab(dict=label_dict)
+    train_features = build_features(train_sents_list, alphabet, char_alphabet, label_alphabet=label_alphabet)
+    dev_features = build_features(dev_sents_list, alphabet, char_alphabet, label_alphabet=label_alphabet)
+    test_features = build_features(test_sents_list, alphabet, char_alphabet, label_alphabet=label_alphabet)
 
     #save features
     if not os.path.isdir(parser.save_dir):
@@ -133,4 +155,5 @@ if __name__ == '__main__':
     torch.save(dev_features, parser.save_dir + '/dev.sst')
     torch.save(test_features, parser.save_dir + '/test.sst')
     torch.save(alphabet, parser.save_dir + '/vocab.sst')
+    torch.save(char_alphabet, parser.save_dir + '/char_vocab.sst')
     torch.save(label_alphabet, parser.save_dir + '/label_vocab.sst')

@@ -11,6 +11,8 @@ from models.CNN import CNN
 from models.LSTM import LSTM
 from models.Multi_layer_CNN import Multi_Layer_CNN
 from models.multi_channel_CNN import Multi_Channel_CNN
+from models.Char_CNN import Char_CNN
+from models.LSTM_CNN import LSTM_CNN
 from models.Pooling import Pooling
 from utils.Common import padding_key
 
@@ -29,10 +31,13 @@ class Trainer:
         self.dev_features_list = train_dev_test[1]
         self.test_features_list = train_dev_test[2]
         self.opts = opts
-        self.vocab = vocab
+        self.vocab = vocab[0]
+        self.char_vocab = vocab[1]
         self.label_vocab = label_vocab
         self.epoch = opts.epoch
         self.model = None
+
+        self.char = False
 
         self.build_batch()
         self.init_model()
@@ -48,12 +53,13 @@ class Trainer:
         build train dev test batches
         '''
         padding_id = self.vocab.from_string(padding_key)
+        char_padding_id = self.char_vocab.from_string(padding_key)
         self.train_build_batch = Build_Batch(features=self.train_features_list, batch_size=self.opts.train_batch_size,
-                                             opts=self.opts, pad_idx=padding_id)
+                                             opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id)
         self.dev_build_batch = Build_Batch(features=self.dev_features_list, batch_size=self.opts.dev_batch_size,
-                                           opts=self.opts, pad_idx=padding_id)
+                                           opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id)
         self.test_build_batch = Build_Batch(features=self.test_features_list, batch_size=self.opts.test_batch_size,
-                                            opts=self.opts, pad_idx=padding_id)
+                                            opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id)
 
         if self.opts.train_batch_type == 'normal':
             self.train_batch_features, self.train_data_batchs = self.train_build_batch.create_sorted_normal_batch()
@@ -89,8 +95,13 @@ class Trainer:
             self.model = Multi_Channel_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'multi_layer_cnn':
             self.model = Multi_Layer_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'char_cnn':
+            self.char = True
+            self.model = Char_CNN(opts=self.opts, vocab=self.vocab, char_vocab=self.char_vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm':
-            self.model = LSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+            self.model = LSTM_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'lstm_cnn':
+            self.model = Multi_Layer_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         # elif self.opts.model == 'bilstm':
         #     self.model = CNN(opts=self.opts)
         # elif self.opts.model == 'cnn':
@@ -125,11 +136,21 @@ class Trainer:
                 data = torch.LongTensor(batch[0])
                 label = torch.LongTensor(batch[1])
 
+                char_data = None
+                if self.char:
+                    char_data = torch.LongTensor(batch[2])
+
                 if self.opts.use_cuda:
                     data = data.cuda()
                     label = label.cuda()
+                    if self.char:
+                        char_data = char_data.cuda()
 
-                pred = self.model(data)
+                if self.char:
+                    pred = self.model(data, char_data)
+                else:
+                    pred = self.model(data)
+
 
                 loss = F.cross_entropy(pred, label)
 
@@ -189,11 +210,20 @@ class Trainer:
             data = torch.LongTensor(batch[0])
             label = torch.LongTensor(batch[1])
 
+            char_data = None
+            if self.char:
+                char_data = torch.LongTensor(batch[2])
+
             if self.opts.use_cuda:
                 data = data.cuda()
                 label = label.cuda()
+                if self.char:
+                    char_data = char_data.cuda()
 
-            pred = self.model(data)
+            if self.char:
+                pred = self.model(data, char_data)
+            else:
+                pred = self.model(data)
 
             loss = F.cross_entropy(pred, label)
 

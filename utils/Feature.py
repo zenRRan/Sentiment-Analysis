@@ -14,9 +14,16 @@ import torch.nn as nn
 class Feature:
 
     def __init__(self):
+
         self.words = None
+        self.chars = None
+
         self.ids = None
+        self.char_ids = None
+
         self.length = 0
+
         self.label = None
+
 
 
