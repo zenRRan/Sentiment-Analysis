@@ -14,6 +14,7 @@
 import torch
 import utils.opts as opts
 import argparse
+import time
 
 class Decoder:
     def __init__(self, opts):
@@ -39,4 +40,6 @@ if __name__ == '__main__':
     # decoder = Decoder(opts=opts, )
 
     path = '/Users/zhenranran/Desktop/law_research_cup/corpus/cail2018_small/good/data_valid.json'
-    
+
+    cur_time = time.localtime(time.time())
+    print(cur_time)

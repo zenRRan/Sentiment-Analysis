@@ -57,3 +57,11 @@ Epoch 0 step 90 acc: 23.75% loss: 0.024966
 Epoch 0 step 100 acc: 31.41% loss: 0.024257
 Epoch 0 step 110 acc: 29.69% loss: 0.024726
 Epoch 0 step 120 acc: 30.00% loss: 0.024342
+Epoch 0 step 130 acc: 28.44% loss: 0.023989
+dev acc: 32.71% loss: 0.023799
+test acc: 32.44% loss: 0.023846
+Epoch 1 step 10 acc: 33.59% loss: 0.023428
+Epoch 1 step 20 acc: 37.19% loss: 0.022911
+Epoch 1 step 30 acc: 34.69% loss: 0.022485
+Epoch 1 step 40 acc: 37.19% loss: 0.021813
+Epoch 1 step 50 acc: 39.53% loss: 0.021585

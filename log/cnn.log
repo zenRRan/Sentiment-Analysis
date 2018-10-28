@@ -12,6 +12,7 @@ sort=False
 
 ----embedding----
 embed_size=100
+char_embed_size=50
 embed_uniform_init=0
 embed_dropout=0
 pre_embed_path=
@@ -20,9 +21,10 @@ pre_embed_path=
 model=cnn
 save_model_dir=save_models
 save_model_every=1
-save_model_start_from=2
+save_model_start_from=0
 kernel_num=100
 kernel_size=[3, 5, 7]
+stride=1
 fc_dropout=0
 
 ----optimizer----
@@ -47,226 +49,18 @@ seed=23
 log_dir=log
 log_fname=cnn.log
 
-Epoch 0 step 10 acc: 25.31% loss: 0.029741
-Epoch 0 step 20 acc: 27.34% loss: 0.028061
-Epoch 0 step 30 acc: 25.78% loss: 0.025536
-Epoch 0 step 40 acc: 22.81% loss: 0.024962
-Epoch 0 step 50 acc: 24.38% loss: 0.024618
-Epoch 0 step 60 acc: 28.59% loss: 0.024547
-Epoch 0 step 70 acc: 29.53% loss: 0.024269
-Epoch 0 step 80 acc: 26.88% loss: 0.024486
-Epoch 0 step 90 acc: 23.59% loss: 0.025027
-Epoch 0 step 100 acc: 30.00% loss: 0.024347
-Epoch 0 step 110 acc: 27.03% loss: 0.024874
-Epoch 0 step 120 acc: 28.91% loss: 0.024581
-Epoch 0 step 130 acc: 27.81% loss: 0.024334
+[2018-10-28 11:12:33] Epoch 0 step 10 acc: 25.31% loss: 0.029741
+[2018-10-28 11:12:36] Epoch 0 step 20 acc: 27.34% loss: 0.028061
+[2018-10-28 11:12:39] Epoch 0 step 30 acc: 25.78% loss: 0.025536
+[2018-10-28 11:12:42] Epoch 0 step 40 acc: 22.81% loss: 0.024962
+[2018-10-28 11:12:44] Epoch 0 step 50 acc: 24.38% loss: 0.024618
+[2018-10-28 11:12:47] Epoch 0 step 60 acc: 28.59% loss: 0.024547
+[2018-10-28 11:12:50] Epoch 0 step 70 acc: 29.53% loss: 0.024269
+[2018-10-28 11:12:53] Epoch 0 step 80 acc: 26.88% loss: 0.024486
+[2018-10-28 11:12:56] Epoch 0 step 90 acc: 23.59% loss: 0.025027
+[2018-10-28 11:12:59] Epoch 0 step 100 acc: 30.00% loss: 0.024347
+[2018-10-28 11:13:1] Epoch 0 step 110 acc: 27.03% loss: 0.024874
+[2018-10-28 11:13:4] Epoch 0 step 120 acc: 28.91% loss: 0.024581
+[2018-10-28 11:13:7] Epoch 0 step 130 acc: 27.81% loss: 0.024334
 dev acc: 28.52% loss: 0.024255
 test acc: 29.14% loss: 0.024350
-Epoch 1 step 10 acc: 32.34% loss: 0.024001
-Epoch 1 step 20 acc: 34.69% loss: 0.023621
-Epoch 1 step 30 acc: 29.22% loss: 0.023661
-Epoch 1 step 40 acc: 32.34% loss: 0.023143
-Epoch 1 step 50 acc: 33.91% loss: 0.022856
-Epoch 1 step 60 acc: 39.69% loss: 0.022051
-Epoch 1 step 70 acc: 45.47% loss: 0.021063
-Epoch 1 step 80 acc: 43.44% loss: 0.020479
-Epoch 1 step 90 acc: 45.62% loss: 0.019803
-Epoch 1 step 100 acc: 47.50% loss: 0.019631
-Epoch 1 step 110 acc: 51.56% loss: 0.018561
-Epoch 1 step 120 acc: 51.25% loss: 0.017758
-Epoch 1 step 130 acc: 48.75% loss: 0.018265
-dev acc: 36.72% loss: 0.021710
-test acc: 38.51% loss: 0.021018
-Epoch 2 step 10 acc: 56.72% loss: 0.016700
-Epoch 2 step 20 acc: 57.34% loss: 0.016285
-Epoch 2 step 30 acc: 61.56% loss: 0.015433
-Epoch 2 step 40 acc: 58.44% loss: 0.014924
-Epoch 2 step 50 acc: 61.25% loss: 0.014868
-Epoch 2 step 60 acc: 66.09% loss: 0.013973
-Epoch 2 step 70 acc: 64.06% loss: 0.014106
-Epoch 2 step 80 acc: 67.66% loss: 0.012954
-Epoch 2 step 90 acc: 70.16% loss: 0.011783
-Epoch 2 step 100 acc: 69.06% loss: 0.011786
-Epoch 2 step 110 acc: 72.81% loss: 0.011407
-Epoch 2 step 120 acc: 75.62% loss: 0.010228
-Epoch 2 step 130 acc: 75.16% loss: 0.010625
-dev acc: 35.25% loss: 0.026614
-test acc: 38.33% loss: 0.025316
-model saved succeed in save_models/model_epoch_2.pt
-Epoch 3 step 10 acc: 76.88% loss: 0.009496
-Epoch 3 step 20 acc: 79.38% loss: 0.008870
-Epoch 3 step 30 acc: 82.19% loss: 0.007900
-Epoch 3 step 40 acc: 81.09% loss: 0.008193
-Epoch 3 step 50 acc: 83.12% loss: 0.007734
-Epoch 3 step 60 acc: 83.44% loss: 0.007319
-Epoch 3 step 70 acc: 83.91% loss: 0.007108
-Epoch 3 step 80 acc: 83.44% loss: 0.006981
-Epoch 3 step 90 acc: 86.41% loss: 0.006025
-Epoch 3 step 100 acc: 83.59% loss: 0.006334
-Epoch 3 step 110 acc: 87.81% loss: 0.006206
-Epoch 3 step 120 acc: 87.81% loss: 0.005531
-Epoch 3 step 130 acc: 88.44% loss: 0.005652
-dev acc: 35.25% loss: 0.035021
-test acc: 35.85% loss: 0.033368
-model saved succeed in save_models/model_epoch_3.pt
-Epoch 4 step 10 acc: 90.78% loss: 0.004377
-Epoch 4 step 20 acc: 93.28% loss: 0.003561
-Epoch 4 step 30 acc: 95.00% loss: 0.003162
-Epoch 4 step 40 acc: 91.72% loss: 0.004413
-Epoch 4 step 50 acc: 94.22% loss: 0.003093
-Epoch 4 step 60 acc: 93.91% loss: 0.003370
-Epoch 4 step 70 acc: 95.16% loss: 0.002734
-Epoch 4 step 80 acc: 94.06% loss: 0.002935
-Epoch 4 step 90 acc: 94.22% loss: 0.002765
-Epoch 4 step 100 acc: 92.50% loss: 0.003108
-Epoch 4 step 110 acc: 94.69% loss: 0.003380
-Epoch 4 step 120 acc: 94.38% loss: 0.002980
-Epoch 4 step 130 acc: 92.66% loss: 0.003570
-dev acc: 31.84% loss: 0.046563
-test acc: 33.27% loss: 0.044989
-model saved succeed in save_models/model_epoch_4.pt
-Epoch 5 step 10 acc: 92.81% loss: 0.003268
-Epoch 5 step 20 acc: 96.41% loss: 0.001913
-Epoch 5 step 30 acc: 97.66% loss: 0.001543
-Epoch 5 step 40 acc: 95.94% loss: 0.002405
-Epoch 5 step 50 acc: 98.28% loss: 0.001182
-Epoch 5 step 60 acc: 96.88% loss: 0.001621
-Epoch 5 step 70 acc: 98.91% loss: 0.000927
-Epoch 5 step 80 acc: 98.59% loss: 0.001062
-Epoch 5 step 90 acc: 97.97% loss: 0.001025
-Epoch 5 step 100 acc: 98.44% loss: 0.001182
-Epoch 5 step 110 acc: 97.50% loss: 0.001571
-Epoch 5 step 120 acc: 97.50% loss: 0.001245
-Epoch 5 step 130 acc: 97.19% loss: 0.001195
-dev acc: 34.67% loss: 0.050488
-test acc: 37.96% loss: 0.047008
-model saved succeed in save_models/model_epoch_5.pt
-Epoch 6 step 10 acc: 97.34% loss: 0.001240
-Epoch 6 step 20 acc: 97.34% loss: 0.001289
-Epoch 6 step 30 acc: 98.75% loss: 0.000773
-Epoch 6 step 40 acc: 97.66% loss: 0.001127
-Epoch 6 step 50 acc: 98.44% loss: 0.000858
-Epoch 6 step 60 acc: 98.91% loss: 0.000819
-Epoch 6 step 70 acc: 99.06% loss: 0.000633
-Epoch 6 step 80 acc: 99.53% loss: 0.000503
-Epoch 6 step 90 acc: 99.69% loss: 0.000339
-Epoch 6 step 100 acc: 99.06% loss: 0.000465
-Epoch 6 step 110 acc: 99.53% loss: 0.000661
-Epoch 6 step 120 acc: 99.38% loss: 0.000435
-Epoch 6 step 130 acc: 99.22% loss: 0.000483
-dev acc: 34.77% loss: 0.053933
-test acc: 36.03% loss: 0.051411
-model saved succeed in save_models/model_epoch_6.pt
-Epoch 7 step 10 acc: 99.53% loss: 0.000405
-Epoch 7 step 20 acc: 99.38% loss: 0.000318
-Epoch 7 step 30 acc: 99.53% loss: 0.000281
-Epoch 7 step 40 acc: 99.06% loss: 0.000376
-Epoch 7 step 50 acc: 100.00% loss: 0.000139
-Epoch 7 step 60 acc: 99.38% loss: 0.000482
-Epoch 7 step 70 acc: 99.53% loss: 0.000334
-Epoch 7 step 80 acc: 99.69% loss: 0.000284
-Epoch 7 step 90 acc: 99.84% loss: 0.000160
-Epoch 7 step 100 acc: 99.69% loss: 0.000170
-Epoch 7 step 110 acc: 99.84% loss: 0.000292
-Epoch 7 step 120 acc: 99.69% loss: 0.000202
-Epoch 7 step 130 acc: 99.84% loss: 0.000179
-dev acc: 34.47% loss: 0.058163
-test acc: 35.89% loss: 0.054723
-model saved succeed in save_models/model_epoch_7.pt
-Epoch 8 step 10 acc: 99.84% loss: 0.000128
-Epoch 8 step 20 acc: 99.84% loss: 0.000111
-Epoch 8 step 30 acc: 99.84% loss: 0.000115
-Epoch 8 step 40 acc: 100.00% loss: 0.000102
-Epoch 8 step 50 acc: 100.00% loss: 0.000059
-Epoch 8 step 60 acc: 99.84% loss: 0.000119
-Epoch 8 step 70 acc: 99.84% loss: 0.000151
-Epoch 8 step 80 acc: 100.00% loss: 0.000073
-Epoch 8 step 90 acc: 100.00% loss: 0.000056
-Epoch 8 step 100 acc: 99.84% loss: 0.000119
-Epoch 8 step 110 acc: 100.00% loss: 0.000055
-Epoch 8 step 120 acc: 99.84% loss: 0.000112
-Epoch 8 step 130 acc: 99.84% loss: 0.000102
-dev acc: 34.47% loss: 0.061413
-test acc: 35.25% loss: 0.057900
-model saved succeed in save_models/model_epoch_8.pt
-Epoch 9 step 10 acc: 100.00% loss: 0.000064
-Epoch 9 step 20 acc: 100.00% loss: 0.000056
-Epoch 9 step 30 acc: 100.00% loss: 0.000056
-Epoch 9 step 40 acc: 100.00% loss: 0.000068
-Epoch 9 step 50 acc: 100.00% loss: 0.000039
-Epoch 9 step 60 acc: 100.00% loss: 0.000055
-Epoch 9 step 70 acc: 99.84% loss: 0.000083
-Epoch 9 step 80 acc: 100.00% loss: 0.000034
-Epoch 9 step 90 acc: 100.00% loss: 0.000036
-Epoch 9 step 100 acc: 99.84% loss: 0.000082
-Epoch 9 step 110 acc: 100.00% loss: 0.000035
-Epoch 9 step 120 acc: 99.84% loss: 0.000053
-Epoch 9 step 130 acc: 99.84% loss: 0.000068
-dev acc: 35.16% loss: 0.063493
-test acc: 35.75% loss: 0.059864
-model saved succeed in save_models/model_epoch_9.pt
-Epoch 10 step 10 acc: 100.00% loss: 0.000038
-Epoch 10 step 20 acc: 100.00% loss: 0.000036
-Epoch 10 step 30 acc: 100.00% loss: 0.000037
-Epoch 10 step 40 acc: 100.00% loss: 0.000043
-Epoch 10 step 50 acc: 100.00% loss: 0.000028
-Epoch 10 step 60 acc: 100.00% loss: 0.000035
-Epoch 10 step 70 acc: 99.84% loss: 0.000048
-Epoch 10 step 80 acc: 100.00% loss: 0.000023
-Epoch 10 step 90 acc: 100.00% loss: 0.000026
-Epoch 10 step 100 acc: 99.84% loss: 0.000052
-Epoch 10 step 110 acc: 100.00% loss: 0.000026
-Epoch 10 step 120 acc: 100.00% loss: 0.000041
-Epoch 10 step 130 acc: 99.84% loss: 0.000042
-dev acc: 35.25% loss: 0.065437
-test acc: 35.75% loss: 0.061736
-model saved succeed in save_models/model_epoch_10.pt
-Epoch 11 step 10 acc: 100.00% loss: 0.000027
-Epoch 11 step 20 acc: 100.00% loss: 0.000025
-Epoch 11 step 30 acc: 100.00% loss: 0.000027
-Epoch 11 step 40 acc: 100.00% loss: 0.000033
-Epoch 11 step 50 acc: 100.00% loss: 0.000020
-Epoch 11 step 60 acc: 100.00% loss: 0.000027
-Epoch 11 step 70 acc: 100.00% loss: 0.000030
-Epoch 11 step 80 acc: 100.00% loss: 0.000017
-Epoch 11 step 90 acc: 100.00% loss: 0.000020
-Epoch 11 step 100 acc: 100.00% loss: 0.000039
-Epoch 11 step 110 acc: 100.00% loss: 0.000020
-Epoch 11 step 120 acc: 100.00% loss: 0.000032
-Epoch 11 step 130 acc: 100.00% loss: 0.000023
-dev acc: 35.35% loss: 0.067256
-test acc: 35.85% loss: 0.063414
-model saved succeed in save_models/model_epoch_11.pt
-Epoch 12 step 10 acc: 100.00% loss: 0.000021
-Epoch 12 step 20 acc: 100.00% loss: 0.000019
-Epoch 12 step 30 acc: 100.00% loss: 0.000020
-Epoch 12 step 40 acc: 100.00% loss: 0.000025
-Epoch 12 step 50 acc: 100.00% loss: 0.000015
-Epoch 12 step 60 acc: 100.00% loss: 0.000021
-Epoch 12 step 70 acc: 100.00% loss: 0.000018
-Epoch 12 step 80 acc: 100.00% loss: 0.000014
-Epoch 12 step 90 acc: 100.00% loss: 0.000016
-Epoch 12 step 100 acc: 100.00% loss: 0.000033
-Epoch 12 step 110 acc: 100.00% loss: 0.000016
-Epoch 12 step 120 acc: 100.00% loss: 0.000023
-Epoch 12 step 130 acc: 100.00% loss: 0.000017
-dev acc: 35.06% loss: 0.068890
-test acc: 36.08% loss: 0.064955
-model saved succeed in save_models/model_epoch_12.pt
-Epoch 13 step 10 acc: 100.00% loss: 0.000016
-Epoch 13 step 20 acc: 100.00% loss: 0.000015
-Epoch 13 step 30 acc: 100.00% loss: 0.000016
-Epoch 13 step 40 acc: 100.00% loss: 0.000020
-Epoch 13 step 50 acc: 100.00% loss: 0.000012
-Epoch 13 step 60 acc: 100.00% loss: 0.000016
-Epoch 13 step 70 acc: 100.00% loss: 0.000014
-Epoch 13 step 80 acc: 100.00% loss: 0.000011
-Epoch 13 step 90 acc: 100.00% loss: 0.000013
-Epoch 13 step 100 acc: 100.00% loss: 0.000021
-Epoch 13 step 110 acc: 100.00% loss: 0.000012
-Epoch 13 step 120 acc: 100.00% loss: 0.000014
-Epoch 13 step 130 acc: 100.00% loss: 0.000014
-dev acc: 35.06% loss: 0.070411
-test acc: 36.35% loss: 0.066461
-model saved succeed in save_models/model_epoch_13.pt
-Epoch 14 step 10 acc: 100.00% loss: 0.000013

@@ -22,12 +22,22 @@ class LSTM_CNN(nn.Module):
         self.pre_embed_path = opts.pre_embed_path
         self.string2id = vocab.string2id
         self.embed_uniform_init = opts.embed_uniform_init
-        self.stride = opts.stride
-        self.kernel_size = opts.kernel_size
-        self.kernel_num = opts.kernel_num
         self.label_num = label_vocab.m_size
         self.embed_dropout = opts.embed_dropout
         self.fc_dropout = opts.fc_dropout
+
+        # CNN
+        self.stride = opts.stride
+        self.kernel_size = opts.kernel_size
+        self.kernel_num = opts.kernel_num
+
+        # RNN
+        self.hidden_num = opts.hidden_num
+        self.hidden_size = opts.hidden_size
+        self.hidden_dropout = opts.hidden_dropout
+        self.bidirectional = opts.bidirectional
+
+        self.flag = 2 if self.bidirectional else 1
 
         self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
         if opts.pre_embed_path != '':
@@ -37,8 +47,19 @@ class LSTM_CNN(nn.Module):
             nn.init.uniform_(self.embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
 
         self.convs = nn.ModuleList(
-            [nn.Conv2d(1, self.embed_dim, (K, self.embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in
-             self.kernel_size])
+            [nn.Conv2d(1,
+                       self.kernel_num,
+                       (K, self.hidden_size * self.flag),
+                       stride=self.stride,
+                       padding=(K // 2, 0)) for K in self.kernel_size])
+
+        self.lstm = nn.LSTM(
+            self.embed_dim,
+            self.hidden_size,
+            dropout=self.hidden_dropout,
+            num_layers=self.hidden_num,
+            batch_first=True,
+            bidirectional=self.bidirectional)
 
         in_fea = len(self.kernel_size) * self.kernel_num
 
@@ -51,7 +72,11 @@ class LSTM_CNN(nn.Module):
     def forward(self, input):
         out = self.embeddings(input)
         out = self.embed_dropout(out)
-        out = torch.tanh(out)
+
+        #lstm
+        out, _ = self.lstm(out)  # torch.Size([64, 39, 256])
+        # print(out.size())
+
         l = []
         out = out.unsqueeze(1)
         for conv in self.convs:

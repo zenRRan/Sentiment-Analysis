@@ -23,7 +23,7 @@ import torch.optim as optim
 from utils.log import Log
 
 import os
-
+import time
 
 class Trainer:
     def __init__(self, train_dev_test, opts, vocab, label_vocab):
@@ -36,6 +36,10 @@ class Trainer:
         self.label_vocab = label_vocab
         self.epoch = opts.epoch
         self.model = None
+
+        self.best_dev = 0
+        self.best_dev_test = 0
+        self.best_dev_epoch = 0
 
         self.char = False
 
@@ -99,9 +103,9 @@ class Trainer:
             self.char = True
             self.model = Char_CNN(opts=self.opts, vocab=self.vocab, char_vocab=self.char_vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm':
-            self.model = LSTM_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+            self.model = LSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm_cnn':
-            self.model = Multi_Layer_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+            self.model = LSTM_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         # elif self.opts.model == 'bilstm':
         #     self.model = CNN(opts=self.opts)
         # elif self.opts.model == 'cnn':
@@ -164,25 +168,42 @@ class Trainer:
                 if step % self.opts.print_every == 0:
                     avg_loss = totle_loss / inst_num
                     acc = float(correct_num) / inst_num * 100
-                    log = "Epoch {} step {} acc: {:.2f}% loss: {:.6f}".format(epoch, step, acc, avg_loss.numpy()[0])
+                    time_dic = self.get_time()
+                    time_str = "[{}-{}-{} {}:{}:{}]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
+                                                          time_dic['hour'], time_dic['min'], time_dic['sec'])
+                    log = time_str + " Epoch {} step {} acc: {:.2f}% loss: {:.6f}".format(epoch, step, acc, avg_loss.numpy()[0])
                     self.print_log.print_log(log)
                     print(log)
                     totle_loss = torch.Tensor([0])
                     inst_num = 0
                     correct_num = 0
 
-            self.accurcy(type='dev')
-            self.accurcy(type='test')
+            dev_score = self.accurcy(type='dev')
+            test_score = self.accurcy(type='test')
+            if dev_score > self.best_dev:
+                self.best_dev = dev_score
+                self.best_dev_epoch = epoch
+                self.best_dev_test = test_score
+                log = "Update! best test acc: {:.2f}%".format(self.best_dev_test)
+                print(log)
+                self.save_model(epoch)
+            else:
+                log = "not improved, best test acc: {:.2f}%, in epoch {}".format(self.best_dev_test, self.best_dev_epoch)
+                print(log)
 
-            self.save_model(epoch)
+            self.print_log.print_log(log)
 
     def save_model(self, cur_epoch):
         if not os.path.isdir(self.opts.save_model_dir):
             os.mkdir(self.opts.save_model_dir)
         if self.opts.save_model_start_from <= cur_epoch:
             self.save_model_switch = True
-        if self.save_model_switch and (cur_epoch - self.opts.save_model_start_from) % self.opts.save_model_every == 0:
-            fname = self.opts.save_model_dir + '/model_epoch_' + str(cur_epoch) + '.pt'
+        # if self.save_model_switch and (cur_epoch - self.opts.save_model_start_from) % self.opts.save_model_every == 0:
+        if self.save_model_switch:
+            time_dic = self.get_time()
+            time_str = "[{}-{}-{}-{}-{}-{}-]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
+                                                    time_dic['hour', time_dic['min'], time_dic['sec']])
+            fname = self.opts.save_model_dir + '/' + time_str + self.opts.model +'-model_epoch_' + str(cur_epoch) + '.pt'
             torch.save(self.model, fname)
             self.print_log.print_log('model saved succeed in ' + fname)
             print('model saved succeed in ' + fname)
@@ -233,7 +254,23 @@ class Trainer:
 
         avg_loss = totle_loss / inst_num
         acc = float(correct_num) / inst_num * 100
+
         log = type + " acc: {:.2f}% loss: {:.6f}".format(acc, avg_loss.numpy()[0])
         self.print_log.print_log(log)
         print(log)
 
+        return acc
+
+    def get_time(self):
+        # tm_year=2018, tm_mon=10, tm_mday=28, tm_hour=10, tm_min=32, tm_sec=14, tm_wday=6, tm_yday=301, tm_isdst=0
+        cur_time = time.localtime(time.time())
+
+        dic = dict()
+        dic['year'] = cur_time.tm_year
+        dic['month'] = cur_time.tm_mon
+        dic['day'] = cur_time.tm_mday
+        dic['hour'] = cur_time.tm_hour
+        dic['min'] = cur_time.tm_min
+        dic['sec'] = cur_time.tm_sec
+
+        return dic

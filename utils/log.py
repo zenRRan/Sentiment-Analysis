@@ -39,6 +39,7 @@ class Log:
 
             f.write('----embedding----\n')
             f.write('embed_size=' + str(self.opts.embed_size) + '\n')
+            f.write('char_embed_size=' + str(self.opts.char_embed_size) + '\n')
             f.write('embed_uniform_init=' + str(self.opts.embed_uniform_init) + '\n')
             f.write('embed_dropout=' + str(self.opts.embed_dropout) + '\n')
             f.write('pre_embed_path=' + str(self.opts.pre_embed_path) + '\n')
@@ -49,13 +50,18 @@ class Log:
             f.write('save_model_dir=' + str(self.opts.save_model_dir) + '\n')
             f.write('save_model_every=' + str(self.opts.save_model_every) + '\n')
             f.write('save_model_start_from=' + str(self.opts.save_model_start_from) + '\n')
-            if self.opts.model == 'cnn':
+
+            if 'cnn' in self.opts.model:
                 f.write('kernel_num=' + str(self.opts.kernel_num) + '\n')
                 f.write('kernel_size=' + str(self.opts.kernel_size) + '\n')
-            elif self.opts.model == 'lstm':
+                f.write('stride=' + str(self.opts.stride) + '\n')
+
+
+            elif 'lstm' in self.opts.model or 'gru' in self.opts.model:
                 f.write('hidden_num=' + str(self.opts.hidden_num) + '\n')
                 f.write('hidden_size=' + str(self.opts.hidden_size) + '\n')
                 f.write('hidden_dropout=' + str(self.opts.hidden_dropout) + '\n')
+                f.write('bidirectional=' + str(self.opts.bidirectional) + '\n')
             f.write('fc_dropout=' + str(self.opts.fc_dropout) + '\n')
             f.write('\n')
 
@@ -87,10 +93,6 @@ class Log:
             f.write('log_dir=' + str(self.opts.log_dir) + '\n')
             f.write('log_fname=' + str(self.opts.log_fname) + '\n')
             f.write('\n')
-
-
-
-
 
 
     def print_log(self, text):

@@ -22,7 +22,7 @@ class Eval:
         else:
             self.R = 0
         if self.P + self.R != 0:
-            self.F1 = 2*self.P*self.R/(self.P+self.R)
+            self.F1 = 2*self.P*self.R / (self.P+self.R)
         else:
             self.F1 = 0
         self.P = "%.4f" % self.P

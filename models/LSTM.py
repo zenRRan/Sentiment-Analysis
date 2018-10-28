@@ -29,7 +29,7 @@ class LSTM(nn.Module):
         self.label_num = label_vocab.m_size
         self.embed_dropout = opts.embed_dropout
         self.fc_dropout = opts.fc_dropout
-        self.embed_size = opts.embed_size
+        self.hidden_num = opts.hidden_num
         self.hidden_size = opts.hidden_size
         self.hidden_dropout = opts.hidden_dropout
         self.bidirectional = opts.bidirectional
@@ -42,7 +42,7 @@ class LSTM(nn.Module):
             nn.init.uniform_(self.embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
 
         self.lstm = nn.LSTM(
-            self.embed_size,
+            self.embed_dim,
             self.hidden_size,
             dropout=self.hidden_dropout,
             num_layers=self.hidden_num,
