@@ -169,7 +169,7 @@ class Trainer:
                     avg_loss = totle_loss / inst_num
                     acc = float(correct_num) / inst_num * 100
                     time_dic = self.get_time()
-                    time_str = "[{}-{}-{} {}:{}:{}]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
+                    time_str = "[{}-{:0>2d}-{:0>2d} {:0>2d}:{:0>2d}:{:0>2d}]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
                                                           time_dic['hour'], time_dic['min'], time_dic['sec'])
                     log = time_str + " Epoch {} step {} acc: {:.2f}% loss: {:.6f}".format(epoch, step, acc, avg_loss.numpy()[0])
                     self.print_log.print_log(log)
@@ -201,8 +201,8 @@ class Trainer:
         # if self.save_model_switch and (cur_epoch - self.opts.save_model_start_from) % self.opts.save_model_every == 0:
         if self.save_model_switch:
             time_dic = self.get_time()
-            time_str = "[{}-{}-{}-{}-{}-{}-]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
-                                                    time_dic['hour', time_dic['min'], time_dic['sec']])
+            time_str = "[{}-{:0>2d}-{:0>2d}-{:0>2d}-{:0>2d}-{:0>2d}-]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
+                                                    time_dic['hour'], time_dic['min'], time_dic['sec'])
             fname = self.opts.save_model_dir + '/' + time_str + self.opts.model +'-model_epoch_' + str(cur_epoch) + '.pt'
             torch.save(self.model, fname)
             self.print_log.print_log('model saved succeed in ' + fname)

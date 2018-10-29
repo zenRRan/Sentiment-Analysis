@@ -49,4 +49,18 @@ seed=23
 log_dir=log
 log_fname=lstm_cnn.log
 
-[2018-10-28 15:50:22] Epoch 0 step 10 acc: 25.94% loss: 0.028069
+[2018-10-28 15:56:21] Epoch 0 step 10 acc: 25.94% loss: 0.028069
+[2018-10-28 15:56:34] Epoch 0 step 20 acc: 25.16% loss: 0.024903
+[2018-10-28 15:56:45] Epoch 0 step 30 acc: 27.97% loss: 0.024651
+[2018-10-28 15:56:55] Epoch 0 step 40 acc: 24.22% loss: 0.024830
+[2018-10-28 15:57:06] Epoch 0 step 50 acc: 25.00% loss: 0.024699
+[2018-10-28 15:57:16] Epoch 0 step 60 acc: 28.59% loss: 0.024592
+[2018-10-28 15:57:25] Epoch 0 step 70 acc: 28.28% loss: 0.024364
+[2018-10-28 15:57:38] Epoch 0 step 80 acc: 25.78% loss: 0.024549
+[2018-10-28 15:57:48] Epoch 0 step 90 acc: 22.97% loss: 0.024967
+[2018-10-28 15:57:58] Epoch 0 step 100 acc: 27.19% loss: 0.024621
+[2018-10-28 15:58:08] Epoch 0 step 110 acc: 27.03% loss: 0.024903
+[2018-10-28 15:58:18] Epoch 0 step 120 acc: 23.91% loss: 0.024799
+[2018-10-28 15:58:28] Epoch 0 step 130 acc: 26.41% loss: 0.024688
+dev acc: 26.27% loss: 0.024606
+test acc: 28.49% loss: 0.024713

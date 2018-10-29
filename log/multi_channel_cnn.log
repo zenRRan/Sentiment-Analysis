@@ -45,3 +45,5 @@ seed=23
 log_dir=log
 log_fname=multi_channel_cnn.log
 
+Epoch 0 step 10 acc: 22.50% loss: 0.029939
+Epoch 0 step 20 acc: 27.50% loss: 0.027814
