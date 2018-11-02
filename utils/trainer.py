@@ -19,6 +19,7 @@ from utils.Common import padding_key
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
+import torch.nn.utils as utils
 
 from utils.log import Log
 
@@ -43,6 +44,8 @@ class Trainer:
 
         self.char = False
 
+        self.lr = self.opts.lr
+
         self.build_batch()
         self.init_model()
         self.init_optim()
@@ -51,6 +54,10 @@ class Trainer:
 
         #save model switch
         self.save_model_switch = False
+
+        if self.opts.use_cuda:
+            torch.cuda.set_device(self.opts.gpu_device)
+            torch.cuda.manual_seed(self.opts.gpu_seed)
 
     def build_batch(self):
         '''
@@ -125,6 +132,9 @@ class Trainer:
 
     def train(self):
 
+        early_stop_count = 1
+        lr_decay_count = 1
+
         for epoch in range(self.epoch):
             totle_loss = torch.Tensor([0])
             correct_num = 0
@@ -159,8 +169,13 @@ class Trainer:
                 loss = F.cross_entropy(pred, label)
 
                 loss.backward()
+
+                if self.opts.init_clip_max_norm is not None:
+                    utils.clip_grad_norm(self.model.parameters(), max_norm=self.opts.init_clip_max_norm)
+
                 self.optimizer.step()
 
+                loss = loss.cpu()
                 totle_loss += loss.data
 
                 step += 1
@@ -171,7 +186,7 @@ class Trainer:
                     time_dic = self.get_time()
                     time_str = "[{}-{:0>2d}-{:0>2d} {:0>2d}:{:0>2d}:{:0>2d}]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
                                                           time_dic['hour'], time_dic['min'], time_dic['sec'])
-                    log = time_str + " Epoch {} step {} acc: {:.2f}% loss: {:.6f}".format(epoch, step, acc, avg_loss.numpy()[0])
+                    log = time_str + " Epoch {} step {} lr={} acc: {:.2f}% loss: {:.6f}".format(epoch, step, self.lr, acc, avg_loss.numpy()[0])
                     self.print_log.print_log(log)
                     print(log)
                     totle_loss = torch.Tensor([0])
@@ -181,6 +196,8 @@ class Trainer:
             dev_score = self.accurcy(type='dev')
             test_score = self.accurcy(type='test')
             if dev_score > self.best_dev:
+                early_stop_count = 0
+                lr_decay_count = 0
                 self.best_dev = dev_score
                 self.best_dev_epoch = epoch
                 self.best_dev_test = test_score
@@ -188,10 +205,25 @@ class Trainer:
                 print(log)
                 self.save_model(epoch)
             else:
+                early_stop_count += 1
+                lr_decay_count += 1
                 log = "not improved, best test acc: {:.2f}%, in epoch {}".format(self.best_dev_test, self.best_dev_epoch)
                 print(log)
 
             self.print_log.print_log(log)
+
+            if early_stop_count == self.opts.early_stop:
+                log = "{} epoch have not improved, so early stop the train!".format(early_stop_count)
+                self.print_log.print_log(log)
+                print(log)
+                return
+
+            if lr_decay_count == self.opts.lr_decay_every:
+                lr_decay_count = 0
+                self.adjust_learning_rate(self.optimizer, self.opts.lr_decay_rate)
+                log = "{} epoch have not improved, so adjust lr to {}".format(early_stop_count, self.lr)
+                self.print_log.print_log(log)
+                print(log)
 
     def save_model(self, cur_epoch):
         if not os.path.isdir(self.opts.save_model_dir):
@@ -201,7 +233,7 @@ class Trainer:
         # if self.save_model_switch and (cur_epoch - self.opts.save_model_start_from) % self.opts.save_model_every == 0:
         if self.save_model_switch:
             time_dic = self.get_time()
-            time_str = "[{}-{:0>2d}-{:0>2d}-{:0>2d}-{:0>2d}-{:0>2d}-]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
+            time_str = "{}-{:0>2d}-{:0>2d}-{:0>2d}-{:0>2d}-{:0>2d}-".format(time_dic['year'], time_dic['month'], time_dic['day'], \
                                                     time_dic['hour'], time_dic['min'], time_dic['sec'])
             fname = self.opts.save_model_dir + '/' + time_str + self.opts.model +'-model_epoch_' + str(cur_epoch) + '.pt'
             torch.save(self.model, fname)
@@ -248,6 +280,7 @@ class Trainer:
 
             loss = F.cross_entropy(pred, label)
 
+            loss = loss.cpu()
             totle_loss += loss.data
 
             correct_num += (torch.max(pred, 1)[1].view(label.size()).data == label.data).sum()
@@ -274,3 +307,8 @@ class Trainer:
         dic['sec'] = cur_time.tm_sec
 
         return dic
+
+    def adjust_learning_rate(self, optim, lr_decay_rate):
+        for param_group in optim.param_groups:
+            param_group['lr'] = param_group['lr'] * (1 - lr_decay_rate)
+            self.lr = param_group['lr']

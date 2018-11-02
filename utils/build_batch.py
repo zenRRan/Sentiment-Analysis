@@ -122,5 +122,5 @@ class Build_Batch:
 
     def shuffer_data(self, data):
         if self.shuffer:
-            data = random.shuffle(data)
+            random.shuffle(data)
         return data

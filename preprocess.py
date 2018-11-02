@@ -23,6 +23,9 @@ from utils.Common import unk_key, padding_key
 
 def read_file2list(fpath):
     '''
+
+    test: 1 ||| xxx xx x xx
+
     :param fpath: data's path
     :return: sents_list -> ['0 i like it .', '3 no way .', ...]
     '''
@@ -30,7 +33,7 @@ def read_file2list(fpath):
     with open(fpath, 'r', encoding='utf8') as f:
         for line in f.readlines():
             line = line.strip().split()
-            sent = line[1:]
+            sent = line[2:]
             label = line[0]
             sents.append((sent, label))
     return sents

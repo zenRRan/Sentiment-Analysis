@@ -36,7 +36,7 @@ class LSTM(nn.Module):
 
         self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
         if opts.pre_embed_path != '':
-            embedding = Embedding.load_predtrained_emb_avg(self.pre_embed_path, self.string2id)
+            embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
         else:
             nn.init.uniform_(self.embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
@@ -50,6 +50,7 @@ class LSTM(nn.Module):
             bidirectional=self.bidirectional
         )
         self.embed_dropout = nn.Dropout(self.embed_dropout)
+        self.fc_dropout = nn.Dropout(self.fc_dropout)
         self.linear1 = nn.Linear(self.hidden_size * 2, self.hidden_size // 2)
         self.linear2 = nn.Linear(self.hidden_size // 2, self.label_num)
 

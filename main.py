@@ -20,7 +20,6 @@ from utils.Common import unk_key, padding_key
 from utils.trainer import Trainer
 from utils.build_batch import Build_Batch
 
-
 if __name__ == '__main__':
 
     # get the train opts

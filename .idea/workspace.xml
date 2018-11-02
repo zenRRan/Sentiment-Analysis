@@ -2,13 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22a59076-29e4-482b-a1e1-a51b0ecc6d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/decoder.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preprocess.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/run.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CR/cr.dev.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CR/cr.test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/CR/cr.train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/MPQA/mpqa.dev.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/MPQA/mpqa.test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/MPQA/mpqa.train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/MR/mr.dev.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/MR/mr.test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/MR/mr.train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/SUBJ/subj.dev.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/SUBJ/subj.test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/SUBJ/subj.train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/TREC/trec.dev.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/TREC/trec.test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/TREC/trec.train.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/processed_data/char_vocab.sst" afterPath="$PROJECT_DIR$/processed_data/char_vocab.sst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/processed_data/dev.sst" afterPath="$PROJECT_DIR$/processed_data/dev.sst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/processed_data/label_vocab.sst" afterPath="$PROJECT_DIR$/processed_data/label_vocab.sst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/processed_data/test.sst" afterPath="$PROJECT_DIR$/processed_data/test.sst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/processed_data/train.sst" afterPath="$PROJECT_DIR$/processed_data/train.sst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/processed_data/vocab.sst" afterPath="$PROJECT_DIR$/processed_data/vocab.sst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/lstm_cnn.log" afterPath="$PROJECT_DIR$/log/lstm_cnn.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/multi_channel_cnn.log" afterPath="$PROJECT_DIR$/log/multi_channel_cnn.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/cnn.log" afterPath="$PROJECT_DIR$/log/cnn.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/pooling.log" afterPath="$PROJECT_DIR$/log/pooling.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/CNN.py" afterPath="$PROJECT_DIR$/models/CNN.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Char_CNN.py" afterPath="$PROJECT_DIR$/models/Char_CNN.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/LSTM.py" afterPath="$PROJECT_DIR$/models/LSTM.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/LSTM_CNN.py" afterPath="$PROJECT_DIR$/models/LSTM_CNN.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Multi_layer_CNN.py" afterPath="$PROJECT_DIR$/models/Multi_layer_CNN.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Pooling.py" afterPath="$PROJECT_DIR$/models/Pooling.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/multi_channel_CNN.py" afterPath="$PROJECT_DIR$/models/multi_channel_CNN.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocess.py" afterPath="$PROJECT_DIR$/preprocess.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocess.sh" afterPath="$PROJECT_DIR$/preprocess.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/build_batch.py" afterPath="$PROJECT_DIR$/utils/build_batch.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/log.py" afterPath="$PROJECT_DIR$/utils/log.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/opts.py" afterPath="$PROJECT_DIR$/utils/opts.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/trainer.py" afterPath="$PROJECT_DIR$/utils/trainer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,45 +59,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Feature.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/Feature.py">
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Multi_layer_CNN.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Multi_layer_CNN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="829">
+              <caret line="205" column="38" lean-forward="true" selection-start-line="205" selection-start-column="38" selection-end-line="205" selection-end-column="38" />
               <folding>
-                <element signature="e#201#213#0" expanded="true" />
+                <element signature="e#190#231#0" expanded="true" />
+                <element signature="e#3736#5219#0" expanded="false" />
+                <element signature="e#5255#5609#0" expanded="false" />
+                <element signature="e#9347#10260#0" expanded="false" />
+                <element signature="e#10300#11711#0" expanded="false" />
+                <element signature="e#11745#12170#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evaluate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/Evaluate.py">
+      <file leaf-file-name="CNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/CNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+            <state relative-caret-position="365">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <element signature="e#284#582#0" expanded="false" />
+                <element signature="e#195#207#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,11 +91,29 @@
       <file leaf-file-name="LSTM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/LSTM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-              <folding>
-                <element signature="e#198#210#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="211">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Char_CNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Char_CNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LSTM_CNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/LSTM_CNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,21 +121,43 @@
       <file leaf-file-name="multi_channel_CNN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/multi_channel_CNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1198">
-              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="424">
+              <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Multi_CNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Multi_CNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="83" column="39" lean-forward="true" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
               <folding>
-                <element signature="e#200#212#0" expanded="true" />
+                <element signature="e#201#213#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.sh">
+      <file leaf-file-name="Multi_layer_CNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Multi_layer_CNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="-128">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pooling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Pooling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+              <folding>
+                <element signature="e#201#213#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,21 +165,11 @@
       <file leaf-file-name="opts.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/opts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="35" column="60" lean-forward="true" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+            <state relative-caret-position="234">
+              <caret line="67" column="26" lean-forward="false" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
               <folding>
-                <element signature="e#6159#7453#0" expanded="false" />
+                <element signature="e#6814#8108#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preprocess.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/preprocess.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="72" lean-forward="true" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -145,6 +192,12 @@
       <find>train</find>
       <find>test</find>
       <find>PAD</find>
+      <find>use_cuda</find>
+      <find>true</find>
+      <find>new_list</find>
+      <find>fc_dropout</find>
+      <find>lr</find>
+      <find>early_stop_count</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,25 +218,25 @@
         <option value="$PROJECT_DIR$/oldstyle.py" />
         <option value="$PROJECT_DIR$/log/cnn.log" />
         <option value="$PROJECT_DIR$/models/Multi_CNN.py" />
-        <option value="$PROJECT_DIR$/models/CNN.py" />
-        <option value="$PROJECT_DIR$/models/Pooling.py" />
-        <option value="$PROJECT_DIR$/models/multi_channel_CNN.py" />
-        <option value="$PROJECT_DIR$/models/Multi_layer_CNN.py" />
         <option value="$PROJECT_DIR$/utils/Feature.py" />
-        <option value="$PROJECT_DIR$/preprocess.py" />
+        <option value="$PROJECT_DIR$/utils/Evaluate.py" />
+        <option value="$PROJECT_DIR$/decoder.sh" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/utils/build_batch.py" />
-        <option value="$PROJECT_DIR$/models/Char_CNN.py" />
-        <option value="$PROJECT_DIR$/utils/Evaluate.py" />
-        <option value="$PROJECT_DIR$/utils/log.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/utils/opts.py" />
+        <option value="$PROJECT_DIR$/utils/log.py" />
+        <option value="$PROJECT_DIR$/preprocess.py" />
+        <option value="$PROJECT_DIR$/preprocess.sh" />
+        <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/models/Char_CNN.py" />
+        <option value="$PROJECT_DIR$/models/CNN.py" />
         <option value="$PROJECT_DIR$/models/LSTM.py" />
         <option value="$PROJECT_DIR$/models/LSTM_CNN.py" />
+        <option value="$PROJECT_DIR$/models/multi_channel_CNN.py" />
+        <option value="$PROJECT_DIR$/models/Multi_layer_CNN.py" />
+        <option value="$PROJECT_DIR$/models/Pooling.py" />
+        <option value="$PROJECT_DIR$/utils/opts.py" />
         <option value="$PROJECT_DIR$/utils/trainer.py" />
-        <option value="$PROJECT_DIR$/decoder.sh" />
-        <option value="$PROJECT_DIR$/run.sh" />
-        <option value="$PROJECT_DIR$/preprocess.sh" />
       </list>
     </option>
   </component>
@@ -275,6 +328,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sentiment-Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sentiment-Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sentiment-Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sentiment-Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sentiment-Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sentiment-Analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -286,14 +389,15 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="D:\my_github\Sentiment-Analysis\data" />
+      <recent name="D:\my_github\Sentiment-Analysis\utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\my_github\Sentiment-Analysis\utils" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="D:\my_github\Sentiment-Analysis\models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\my_github\Sentiment-Analysis\data" />
-      <recent name="D:\my_github\Sentiment-Analysis\utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -339,7 +443,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sentiment-Analysis" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess.py" />
-      <option name="PARAMETERS" value="-raw_train_path ./data/stsa.fine.train -raw_dev_path ./data/stsa.fine.dev -raw_test_path ./data/stsa.fine.test" />
+      <option name="PARAMETERS" value="-raw_train_path ./data/MR/mr.train.txt  -raw_dev_path ./data/MR/mr.dev.txt  -raw_test_path ./data/MR/mr.test.txt" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -356,7 +460,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sentiment-Analysis" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="-model pooling -log_fname pooling.log" />
+      <option name="PARAMETERS" value="-model char_cnn -data_dir processed_data -train_batch_size 32 -train_batch_type normal -seed 23 -gpu_seed 23 -gpu_device 0 -save_model_dir save_models -embed_size 100 -char_embed_size 50 -embed_uniform_init 0 -embed_dropout 0 -kernel_num 100 -stride 1 -hidden_size 100 -hidden_num 1 -hidden_dropout 0 -bidirectional -optim adam -lr 0.001 -momentum 0.9 -fc_dropout 0.1 -weight_decay 1e-8 -epoch 100 -print_every 10 -shuffer -sort -log_dir log -log_fname lstm.log" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -531,8 +635,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.preprocess" />
+        <item index="1" class="java.lang.String" itemvalue="Python.preprocess" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -565,23 +669,23 @@
     <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10515951" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07443876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15328467" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4452555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32262772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35474452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -599,26 +703,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/Pooling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py" />
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/parameters.py" />
     <entry file="file://$PROJECT_DIR$/models/Pooling.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -652,13 +741,6 @@
     <entry file="file://D:/Anconda3.7/Lib/argparse.py" />
     <entry file="file://$PROJECT_DIR$/models/Multi_CNN_.py" />
     <entry file="file://$PROJECT_DIR$/utils/parameters.py" />
-    <entry file="file://$PROJECT_DIR$/data/stsa.fine.dev">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6600">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -679,6 +761,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="1333" column="0" lean-forward="false" selection-start-line="1333" selection-start-column="0" selection-end-line="1333" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -703,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/Alphabet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/torch/nn/modules/module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
@@ -729,6 +805,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="270" column="21" lean-forward="false" selection-start-line="270" selection-start-column="21" selection-end-line="270" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -736,6 +813,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="384" column="30" lean-forward="false" selection-start-line="384" selection-start-column="30" selection-end-line="384" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -746,13 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Pooling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/pooling.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -760,31 +831,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Multi_CNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="83" column="39" lean-forward="true" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/CNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="1585" column="0" lean-forward="true" selection-start-line="1585" selection-start-column="0" selection-end-line="1585" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="112" column="37" lean-forward="false" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -795,73 +846,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/build_batch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#754#1388#0" expanded="false" />
-            <element signature="e#1425#3494#0" expanded="false" />
-            <element signature="e#3530#5013#0" expanded="false" />
-            <element signature="e#5049#5403#0" expanded="false" />
-            <element signature="e#5435#8062#0" expanded="false" />
-            <element signature="e#8109#9024#0" expanded="false" />
-            <element signature="e#9064#10445#0" expanded="false" />
-            <element signature="e#10479#10904#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oldstyle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4566">
           <caret line="270" column="12" lean-forward="false" selection-start-line="270" selection-start-column="12" selection-end-line="270" selection-end-column="12" />
           <folding>
             <element signature="e#7051#7591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Char_CNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1648">
-          <caret line="73" column="66" lean-forward="false" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
-          <folding>
-            <element signature="e#191#203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="e#552#4022#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/LSTM_CNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="e#191#203#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -882,46 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Multi_layer_CNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#201#213#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/LSTM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <element signature="e#198#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-          <folding>
-            <element signature="e#284#582#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/multi_channel_CNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1198">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <element signature="e#200#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/decoder.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -930,29 +880,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.sh">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/opts.py">
+    <entry file="file://$PROJECT_DIR$/utils/build_batch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="35" column="60" lean-forward="true" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+        <state relative-caret-position="2592">
+          <caret line="108" column="11" lean-forward="true" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/Alphabet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
           <folding>
-            <element signature="e#6159#7453#0" expanded="false" />
+            <element signature="e#197#209#0" expanded="true" />
+            <marker date="1541045883093" expanded="false" signature="293:596" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TREC/trec.dev.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9456">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/SUBJ/subj.dev.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="422" column="6" lean-forward="true" selection-start-line="422" selection-start-column="6" selection-end-line="422" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/stsa.fine.dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/MR/mr.dev.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocess.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="4" column="72" lean-forward="true" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+          <caret line="4" column="57" lean-forward="true" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding>
+            <element signature="e#2351#2647#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Char_CNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/CNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#195#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/LSTM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/LSTM_CNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/multi_channel_CNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Multi_CNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="83" column="39" lean-forward="true" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+          <folding>
+            <element signature="e#201#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Multi_layer_CNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Pooling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding>
+            <element signature="e#201#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/opts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="67" column="26" lean-forward="false" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding>
+            <element signature="e#6814#8108#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="205" column="38" lean-forward="true" selection-start-line="205" selection-start-column="38" selection-end-line="205" selection-end-column="38" />
+          <folding>
+            <element signature="e#190#231#0" expanded="true" />
+            <element signature="e#3736#5219#0" expanded="false" />
+            <element signature="e#5255#5609#0" expanded="false" />
+            <element signature="e#9347#10260#0" expanded="false" />
+            <element signature="e#10300#11711#0" expanded="false" />
+            <element signature="e#11745#12170#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

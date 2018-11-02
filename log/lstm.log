@@ -1,0 +1,56 @@
+data_dir=processed_data
+
+----batch----
+train_batch_size=32
+train_batch_type=normal
+dev_batch_size=64
+dev_batch_type=normal
+test_batch_size=64
+test_batch_type=normal
+shuffer=True
+sort=True
+
+----embedding----
+embed_size=100
+char_embed_size=50
+embed_uniform_init=0.0
+embed_dropout=0.0
+pre_embed_path=
+
+----model----
+model=char_cnn
+save_model_dir=save_models
+save_model_every=1
+save_model_start_from=0
+kernel_num=100
+kernel_size=[3, 5, 7]
+stride=1
+fc_dropout=0.1
+
+----optimizer----
+lr=0.001
+optim=adam
+weight_decay=1e-08
+momentum=0.9
+early_stop=9999999
+
+----train----
+epoch=100
+print_every=10
+
+----GPU----
+gpu_device=0
+use_cuda=False
+
+----seed----
+gpu_seed=23
+seed=23
+
+----log----
+log_dir=log
+log_fname=lstm.log
+
+[2018-11-01 17:37:52] Epoch 0 step 10 acc: 46.88% loss: 0.041110
+[2018-11-01 17:37:53] Epoch 0 step 20 acc: 48.75% loss: 0.032824
+[2018-11-01 17:37:55] Epoch 0 step 30 acc: 55.00% loss: 0.022737
+[2018-11-01 17:37:57] Epoch 0 step 40 acc: 53.44% loss: 0.021968

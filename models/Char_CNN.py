@@ -36,11 +36,11 @@ class Char_CNN(nn.Module):
         self.char_embeddings = nn.Embedding(self.char_num, self.char_embed_dim)
 
         if opts.pre_embed_path != '':
-            embedding = Embedding.load_predtrained_emb_avg(self.pre_embed_path, self.string2id)
-            self.embeddings.weight.data.copy_(embedding)
+            embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
+            self.word_embeddings.weight.data.copy_(embedding)
         else:
             nn.init.uniform_(self.word_embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
-            nn.init.uniform_(self.char_embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
+        nn.init.uniform_(self.char_embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
 
         self.word_convs = nn.ModuleList(
             [nn.Conv2d(1, self.embed_dim, (K, self.embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in

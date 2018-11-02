@@ -15,6 +15,7 @@ import torch
 import utils.opts as opts
 import argparse
 import time
+import random
 
 class Decoder:
     def __init__(self, opts):
@@ -28,18 +29,53 @@ class Decoder:
         pass
 
 
-
-
+# class Node:
+#     def __init__(self, id):
+#         self.id = id
+#         self.next_node = None
 
 if __name__ == '__main__':
-    # parser = argparse.ArgumentParser('decoder opts')
+    n = int(input('input a number:'))
+    node_list = []
+    for i in range(n):
+        new_node = i+1
+        node_list.append(new_node)
+
+    cnt = 1
+
+    delete_node_list = []
+    node = None
+
+    while len(node_list) != 0:
+        for i in range(len(node_list)):
+            node = node_list[i]
+            if cnt == 3:
+                delete_node_list.append(node_list[i])
+                cnt = 1
+            else:
+                cnt += 1
+        if len(delete_node_list) != 0:
+            for node in delete_node_list:
+                node_list.remove(node)
+            delete_node_list = []
+        if len(node_list) == 1:
+            print(node_list[0])
+            break
+
+
+
+# parser = argparse.ArgumentParser('decoder opts')
     # parser = opts.decoder_opts(parser)
     # parser = parser.parse_args()
     #
     #
     # decoder = Decoder(opts=opts, )
 
-    path = '/Users/zhenranran/Desktop/law_research_cup/corpus/cail2018_small/good/data_valid.json'
+    # path = '/Users/zhenranran/Desktop/law_research_cup/corpus/cail2018_small/good/data_valid.json'
 
-    cur_time = time.localtime(time.time())
-    print(cur_time)
+
+
+
+
+
+

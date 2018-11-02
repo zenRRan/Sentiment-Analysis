@@ -46,26 +46,36 @@ def trainer_opts(parser):
     parser.add_argument('-gpu_seed', type=int, default=23, help='GPU seed! default 23.')
     parser.add_argument('-gpu_device', type=int, default=0,
                         help='decide which gpu device will be selected, default device 0')
-    parser.add_argument('-use_cuda', type=bool, default=False, help='if use cuda, default False')
+    parser.add_argument('-use_cuda', action='store_true', help='if use cuda')
 
     #embedding
-    parser.add_argument('-embed_size', type=int, default=100, help='embedding size, default 100, recommand 100, 200, 300')
+    parser.add_argument('-embed_size', type=int, default=100, help='embedding size, default 100, \
+                        recommand 100, 200, 300')
     parser.add_argument('-char_embed_size', type=int, default=50, help='char embedding size, default 50')
     parser.add_argument('-pre_embed_path', type=str, default='', help='pretrained embedding path')
     parser.add_argument('-embed_uniform_init', type=float, default=0,
                         help='nn.init.uniform(-embed_uniform_init, embed_uniform_init), default=0')
 
+    # -pre_embed_path
 
     #data
-    parser.add_argument('-data_dir', type=str, default='processed_data', help='code will read train [dev test vocab].sst file here ')
+    parser.add_argument('-data_dir', type=str, default='processed_data', help='code will read train [dev test vocab].sst\
+                        file here ')
 
     #learning rate
     parser.add_argument('-lr', type=float, default=0.001, help='learning rate, recommand: sgd:0.1, adam:0.001')
+    parser.add_argument('-lr_decay_rate', type=float, default=0.3, help='lr = lr * (1 - lr_decay_rate)')
+    parser.add_argument('-lr_decay_every', type=int, default=8, help='if lr have not improved in lr_decay_every epoch, \
+                        will be do lr_decay')
 
     #optim
     parser.add_argument('-optim', type=str, default='adam', help='sgd, adam')
     parser.add_argument('-momentum', type=float, default=0.9, help='used in sgd')
     parser.add_argument('-weight_decay', type=float, default=1e-8, help='weight decay')
+    parser.add_argument('-early_stop', type=int, default=9999999, help='if best value not change in [early_stop], \
+                        the code will be stoped')
+    parser.add_argument('-init_clip_max_norm', type=int, default=10, help='if the sum of the grad if high than this, \
+                        would be cut')
 
     '''
     parameters
@@ -98,8 +108,8 @@ def trainer_opts(parser):
     parser.add_argument('-save_model_every', type=int, default=1, help='save model every this epoch')
     parser.add_argument('-save_model_start_from', type=int, default=0, help='save model start from this epoch')
     #dropout
-    parser.add_argument('-embed_dropout', type=int, default=0, help='embedding dropout')
-    parser.add_argument('-fc_dropout', type=int, default=0, help='full connection dropout')
+    parser.add_argument('-embed_dropout', type=float, default=0, help='embedding dropout')
+    parser.add_argument('-fc_dropout', type=float, default=0, help='full connection dropout')
     #cnn
     parser.add_argument('-kernel_size', type=list, default=[3, 5, 7], help="cnn's kernel size, default [3,5,7]")
     parser.add_argument('-kernel_num', type=int, default=100, help="cnn's kernel num, default 100")
@@ -108,8 +118,8 @@ def trainer_opts(parser):
     #rnn
     parser.add_argument('-hidden_size', type=int, default=128, help="rnn's hidden size, default 128")
     parser.add_argument('-hidden_num', type=int, default=1, help="rnn's hidden num, default 1")
-    parser.add_argument('-hidden_dropout', type=int, default=0, help='rnn hidden dropout')
-    parser.add_argument('-bidirectional', type=bool, default=True, help='True you will train birnn')
+    parser.add_argument('-hidden_dropout', type=float, default=0, help='rnn hidden dropout')
+    parser.add_argument('-bidirectional', action='store_true', help='selected you will train birnn')
 
     # parser.add_argument('-', type=int, default=1, help='')
 

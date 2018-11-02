@@ -69,7 +69,8 @@ class Log:
             f.write('lr=' + str(self.opts.lr) + '\n')
             f.write('optim=' + str(self.opts.optim) + '\n')
             f.write('weight_decay=' + str(self.opts.weight_decay) + '\n')
-            f.write('momentum=' + str(self.opts.data_dir) + '\n')
+            f.write('momentum=' + str(self.opts.momentum) + '\n')
+            f.write('early_stop=' + str(self.opts.early_stop) + '\n')
             f.write('\n')
 
             f.write('----train----\n')

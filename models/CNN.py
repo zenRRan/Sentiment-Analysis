@@ -36,13 +36,13 @@ class CNN(nn.Module):
 
         self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
         if opts.pre_embed_path != '':
-            embedding = Embedding.load_predtrained_emb_avg(self.pre_embed_path, self.string2id)
+            embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
         else:
             nn.init.uniform_(self.embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
 
         self.convs = nn.ModuleList(
-            [nn.Conv2d(1, self.embed_dim, (K, self.embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in
+            [nn.Conv2d(1, self.kernel_num, (K, self.embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in
              self.kernel_size])
 
         in_fea = len(self.kernel_size) * self.kernel_num
