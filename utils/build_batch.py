@@ -54,7 +54,7 @@ class Build_Batch:
                 self.batch_features.append(new_list)
                 ids, char_ids, labels = self.choose_data_from_features(new_list)
                 ids = self.add_pad(ids, self.PAD)
-                char_ids = self.add_pad(char_ids, self.CPAD)
+                char_ids = self.add_char_pad(char_ids, self.CPAD)
                 self.data_batchs.append((ids, labels, char_ids))
                 new_list = []
         self.batch_features = self.shuffer_data(self.batch_features)
@@ -84,7 +84,7 @@ class Build_Batch:
                 self.batch_features.append(new_list)
                 ids, char_ids, labels = self.choose_data_from_features(new_list)
                 ids = self.add_pad(ids, self.PAD)
-                char_ids = self.add_pad(char_ids, self.CPAD)
+                char_ids = self.add_char_pad(char_ids, ids, self.CPAD)
                 self.data_batchs.append((ids, labels, char_ids))
                 new_list = []
         self.batch_features = self.shuffer_data(self.batch_features)
@@ -102,18 +102,37 @@ class Build_Batch:
         return ids, char_ids, labels
 
 
+    def add_char_pad(self, data_list, sents_ids_list, PAD):
+        '''
+        :param data_list:[[[x x], [x x x],...],[[x], [x x],...]]
+        :param PAD: PAD id
+        :return: [[[x x o], [x x x],...],[[x o], [x x],...]]
+        '''
+        new_data_list = []
+        for sent_list, sent in zip(data_list, sents_ids_list):
+            word_len = len(sent)
+            max_len = 0
+            new_sent_list = []
+            for word_list in sent_list:
+                max_len = max(max_len, len(word_list))
+            for word_list in sent_list:
+                new_sent_list.append(word_list + [PAD] * (max_len - len(word_list)))
+            new_data_list.append(new_sent_list + [[PAD] * max_len] * (word_len - len(new_sent_list)))
+        return new_data_list
+
     def add_pad(self, data_list, PAD):
         '''
         :param data_list: [[x x x], [x x x x],...]
         :return: [[x x x o o], [x x x x o],...]
         '''
         max_len = 0
+        new_data_list = []
         for data in data_list:
             max_len = max(max_len, len(data))
         for data in data_list:
-            data.extend([PAD]*(max_len - len(data)))
+            new_data_list.append(data + [PAD]*(max_len - len(data)))
 
-        return data_list
+        return new_data_list
 
     def sort_features(self, features):
         if self.sort:

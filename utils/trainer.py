@@ -20,6 +20,7 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 import torch.nn.utils as utils
+from torch.autograd import Variable
 
 from utils.log import Log
 
@@ -147,23 +148,29 @@ class Trainer:
 
                 inst_num += len(batch[1])
 
-                data = torch.LongTensor(batch[0])
-                label = torch.LongTensor(batch[1])
+                sents = Variable(torch.LongTensor(batch[0]))
+                label = Variable(torch.LongTensor(batch[1]))
 
-                char_data = None
+                # print(data)
+
+                char_data = []
                 if self.char:
-                    char_data = torch.LongTensor(batch[2])
-
+                    for char_list in batch[2]:
+                        char_data.append(Variable(torch.LongTensor(char_list)))
+                        # print(type(char_data[0]), char_data[0].size())
+                # print(char_data)
                 if self.opts.use_cuda:
-                    data = data.cuda()
+                    sents = sents.cuda()
                     label = label.cuda()
-                    if self.char:
-                        char_data = char_data.cuda()
-
+                    new_char_data = []
+                    for data in char_data:
+                        new_char_data.append(data.cuda())
+                    char_data = new_char_data
+                    # print(type(char_data[0]))
                 if self.char:
-                    pred = self.model(data, char_data)
+                    pred = self.model(sents, char_data)
                 else:
-                    pred = self.model(data)
+                    pred = self.model(sents)
 
 
                 loss = F.cross_entropy(pred, label)
@@ -171,7 +178,7 @@ class Trainer:
                 loss.backward()
 
                 if self.opts.init_clip_max_norm is not None:
-                    utils.clip_grad_norm(self.model.parameters(), max_norm=self.opts.init_clip_max_norm)
+                    utils.clip_grad_norm_(self.model.parameters(), max_norm=self.opts.init_clip_max_norm)
 
                 self.optimizer.step()
 
@@ -186,7 +193,7 @@ class Trainer:
                     time_dic = self.get_time()
                     time_str = "[{}-{:0>2d}-{:0>2d} {:0>2d}:{:0>2d}:{:0>2d}]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
                                                           time_dic['hour'], time_dic['min'], time_dic['sec'])
-                    log = time_str + " Epoch {} step {} lr={} acc: {:.2f}% loss: {:.6f}".format(epoch, step, self.lr, acc, avg_loss.numpy()[0])
+                    log = time_str + " Epoch {} step {} lr={:.8f} acc: {:.2f}% loss: {:.6f}".format(epoch, step, self.lr, acc, avg_loss.numpy()[0])
                     self.print_log.print_log(log)
                     print(log)
                     totle_loss = torch.Tensor([0])
@@ -260,23 +267,26 @@ class Trainer:
 
             inst_num += len(batch[1])
 
-            data = torch.LongTensor(batch[0])
-            label = torch.LongTensor(batch[1])
+            sents = Variable(torch.LongTensor(batch[0]))
+            label = Variable(torch.LongTensor(batch[1]))
 
-            char_data = None
+            char_data = []
             if self.char:
-                char_data = torch.LongTensor(batch[2])
+                for char_list in batch[2]:
+                    char_data.append(Variable(torch.LongTensor(char_list)))
 
             if self.opts.use_cuda:
-                data = data.cuda()
+                sents = sents.cuda()
                 label = label.cuda()
                 if self.char:
-                    char_data = char_data.cuda()
-
+                    new_char_data = []
+                    for data in char_data:
+                        new_char_data.append(data.cuda())
+                    char_data = new_char_data
             if self.char:
-                pred = self.model(data, char_data)
+                pred = self.model(sents, char_data)
             else:
-                pred = self.model(data)
+                pred = self.model(sents)
 
             loss = F.cross_entropy(pred, label)
 

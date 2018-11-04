@@ -66,7 +66,7 @@ def trainer_opts(parser):
     parser.add_argument('-lr', type=float, default=0.001, help='learning rate, recommand: sgd:0.1, adam:0.001')
     parser.add_argument('-lr_decay_rate', type=float, default=0.3, help='lr = lr * (1 - lr_decay_rate)')
     parser.add_argument('-lr_decay_every', type=int, default=8, help='if lr have not improved in lr_decay_every epoch, \
-                        will be do lr_decay')
+                        will do lr_decay')
 
     #optim
     parser.add_argument('-optim', type=str, default='adam', help='sgd, adam')
@@ -100,6 +100,7 @@ def trainer_opts(parser):
 
     parser.add_argument('-epoch', type=int, default=100, help='epochs')
     parser.add_argument('-print_every', type=int, default=10, help='every that times, print log')
+    # parser.add_argument('-dev_every_step')
 
     #model
     parser.add_argument('-model', type=str, default='', help='select one of [pooling, rnn, lstm, gru, cnn, multi_layer_cnn,\
@@ -107,11 +108,13 @@ def trainer_opts(parser):
     parser.add_argument('-save_model_dir', type=str, default='save_models', help='save model dir')
     parser.add_argument('-save_model_every', type=int, default=1, help='save model every this epoch')
     parser.add_argument('-save_model_start_from', type=int, default=0, help='save model start from this epoch')
+
     #dropout
     parser.add_argument('-embed_dropout', type=float, default=0, help='embedding dropout')
     parser.add_argument('-fc_dropout', type=float, default=0, help='full connection dropout')
+
     #cnn
-    parser.add_argument('-kernel_size', type=list, default=[3, 5, 7], help="cnn's kernel size, default [3,5,7]")
+    parser.add_argument('-kernel_size', type=list, default=[1, 2, 3, 4], help="cnn's kernel size, default [3,5,7]")
     parser.add_argument('-kernel_num', type=int, default=100, help="cnn's kernel num, default 100")
     parser.add_argument('-stride', type=int, default=1, help="cnn stride, default 1")
 

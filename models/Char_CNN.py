@@ -32,6 +32,8 @@ class Char_CNN(nn.Module):
         self.embed_dropout = opts.embed_dropout
         self.fc_dropout = opts.fc_dropout
 
+        self.use_cuda = opts.use_cuda
+
         self.word_embeddings = nn.Embedding(self.word_num, self.embed_dim)
         self.char_embeddings = nn.Embedding(self.char_num, self.char_embed_dim)
 
@@ -42,50 +44,80 @@ class Char_CNN(nn.Module):
             nn.init.uniform_(self.word_embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
         nn.init.uniform_(self.char_embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
 
-        self.word_convs = nn.ModuleList(
-            [nn.Conv2d(1, self.embed_dim, (K, self.embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in
+        word_char_embed_dim = self.embed_dim + len(self.kernel_size) * self.kernel_num
+
+        self.word_char_convs = nn.ModuleList(
+            [nn.Conv2d(1, self.kernel_num, (K, word_char_embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in
              self.kernel_size])
+
         self.char_convs = nn.ModuleList(
-            [nn.Conv2d(1, self.char_embed_dim, (K, self.char_embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in
+            [nn.Conv2d(1, self.kernel_num, (K, self.char_embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in
              self.kernel_size])
 
-        in_fea = len(self.kernel_size) * (self.embed_dim + self.char_embed_dim)
 
-        self.linear1 = nn.Linear(in_fea, in_fea // 2)
-        self.linear2 = nn.Linear(in_fea // 2, self.label_num)
+        infea = len(self.kernel_size) * self.kernel_num
+        self.linear1 = nn.Linear(infea, infea // 2)
+        self.linear2 = nn.Linear(infea // 2, self.label_num)
 
         self.embed_dropout = nn.Dropout(self.embed_dropout)
         self.fc_dropout = nn.Dropout(self.fc_dropout)
 
-    def forward(self, word, char):
-        word = self.word_embeddings(word)
-        char = self.char_embeddings(char)
-        word = self.embed_dropout(word)
-        char = self.embed_dropout(char)
+    def forward(self, sent, chars_list):
+        if self.use_cuda:
+            sent = sent.cuda()
+        sent = self.word_embeddings(sent)
+        sent = self.embed_dropout(sent)
 
-        word_l = []
-        word = word.unsqueeze(1)
-        for conv in self.word_convs:
-            word_l.append(torch.tanh(conv(word)).squeeze(3))
+        # for words in sent:
+        #     print(words.size())
 
-        word_out = []
-        for i in word_l:
-            word_out.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))
-        word_out = torch.cat(word_out, 1)  # torch.Size([64, 300])
+        # char through cnn
+        char_pooling_list = []
+        for sent_chars in chars_list:
+            if self.use_cuda:
+                sent_chars = sent_chars.cuda()
+            sent_chars = self.char_embeddings(sent_chars)
+            sent_chars = self.embed_dropout(sent_chars)
+            char_l = []
+            # print('1', sent_chars.size())  # torch.Size([2, 15, 50])
+            sent_chars = sent_chars.unsqueeze(1)
+            # print('2', sent_chars.size())  # torch.Size([2, 1, 15, 50])
+            for conv in self.char_convs:
+                char_l.append(torch.tanh(conv(sent_chars)).squeeze(3))
+            # print('3', char_l[0].size())  # torch.Size([2, 100, 15])
+            sent_out = []
+            for i in char_l:
+                sent_out.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))
+            # print('4', sent_out[0].size())  # torch.Size([2, 100])
+            sent_out = torch.cat(sent_out, 1)
+            # print('5', sent_out.size())  # torch.Size([2, 400])
+            char_pooling_list.append(sent_out)
+        word_char_list = []
+        word_char = None
+        for word, char_pooling in zip(sent, char_pooling_list):
+            # print('6', word.size(), ' ', char_pooling.size())  # torch.Size([2, 100])
+            if word_char is not None:
+                word_char = torch.cat((word_char, torch.cat((word, char_pooling), 1).unsqueeze(0)), 0)
+            else:
+                word_char = torch.cat((word, char_pooling), 1).unsqueeze(0)
+            # print('7', word_char.size())  # torch.Size([1, 2, 500])
+            word_char_list.append(word_char)
 
-        char_l = []
-        char = char.unsqueeze(1)
-        for conv in self.char_convs:
-            char_l.append(torch.tanh(conv(char)).squeeze(3))
-
-        char_out = []
-        for i in char_l:
-            char_out.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))
-        char_out = torch.cat(char_out, 1)  # torch.Size([64, 150])
-
-        out = torch.cat((word_out, char_out), 1)  # torch.Size([64, 450])
+        l = []
+        word_char = word_char.unsqueeze(1)
+        # print('#', word_char.size())  # torch.Size([32, 1, 2, 500])
+        for conv in self.word_char_convs:
+            l.append(torch.tanh(conv(word_char)).squeeze(3))
+        # print('##', l[0].size())  # torch.Size([32, 100, 2])
+        out = []
+        for i in l:
+            out.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))
+        # print('###', out[0].size())  # torch.Size([32, 100])
+        out = torch.cat(out, 1)
+        # print('####', out[0].size())  # torch.Size([400])
 
         out = self.fc_dropout(out)
-        out = self.linear1(F.relu(out))
-        out = self.linear2(F.relu(out))
+        out = self.linear1(torch.tanh(out))
+        out = self.linear2(torch.tanh(out))
+
         return out

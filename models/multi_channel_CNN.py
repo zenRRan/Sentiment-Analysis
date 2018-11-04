@@ -50,29 +50,23 @@ class Multi_Channel_CNN(nn.Module):
         self.fc_dropout = nn.Dropout(self.fc_dropout)
 
     def forward(self, input):
-        # print(self.convs)
         static_embed = self.embeddings_static(input)  # torch.Size([64, 39, 100])
         embed = self.embeddings(input)  # torch.Size([64, 39, 100])
-        # print(static_embed.size())
-        # print(embed.size())
 
         x = torch.stack([static_embed, embed], 1)  # torch.Size([64, 2, 39, 100])
-        # print(x.size())
 
         out = self.embed_dropout(x)
-        # print('1:', out.size())
+
         l = []
         for conv in self.convs:
             l.append(F.relu(conv(out)).squeeze(3))  # torch.Size([64, 100, 39])
-        # print('2:', l[0].size())
+
         out = l
         l = []
         for i in out:
             l.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))  # torch.Size([64, 100])
-        out = l
-        # print('3:', out[0].size())
+
         out = torch.cat(l, 1)  # torch.Size([64, 300])
-        # print('4:', out.size())
 
         out = self.fc_dropout(out)
 

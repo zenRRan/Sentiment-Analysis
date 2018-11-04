@@ -12,6 +12,7 @@
 """
 
 import os
+import re
 import argparse
 import utils.opts as opts
 from utils.Feature import Feature
@@ -20,6 +21,26 @@ import collections
 import torch
 from utils.Common import unk_key, padding_key
 
+def clean_str(string):
+    """
+    Tokenization/string cleaning for all datasets except for SST.
+    Original taken from https://github.com/yoonkim/CNN_sentence/blob/master/process_data.py
+    """
+    string = re.sub(r"[^A-Za-z0-9(),!?\'\`]", " ", string)
+    string = re.sub(r"\'s", " \'s", string)
+    string = re.sub(r"\'ve", " \'ve", string)
+    string = re.sub(r"n\'t", " n\'t", string)
+    string = re.sub(r"\'re", " \'re", string)
+    string = re.sub(r"\'d", " \'d", string)
+    string = re.sub(r"\'ll", " \'ll", string)
+    string = re.sub(r",", " , ", string)
+    string = re.sub(r"!", " ! ", string)
+    string = re.sub(r"\(", " \( ", string)
+    string = re.sub(r"\)", " \) ", string)
+    string = re.sub(r"\?", " \? ", string)
+    string = re.sub(r"\s{2,}", " ", string)
+
+    return string.strip()
 
 def read_file2list(fpath):
     '''
@@ -33,7 +54,8 @@ def read_file2list(fpath):
     with open(fpath, 'r', encoding='utf8') as f:
         for line in f.readlines():
             line = line.strip().split()
-            sent = line[2:]
+            sent = clean_str(' '.join(line[2:]))
+            sent = sent.split()
             label = line[0]
             sents.append((sent, label))
     return sents
@@ -113,17 +135,23 @@ def build_features(sents_list, alphabet, char_alphabet, label_alphabet):
     for t in sents_list:
         feature = Feature()
         words = t[0]
-        chars = list(' '.join(words))
+        # chars = list(' '.join(words))
+        chars_list = []
+        for word in words:
+            chars_list.append(list(word))
         label = t[1]
 
         feature.words = words
-        feature.chars = chars
+        feature.chars = chars_list
 
         feature.length = len(words)
         feature.label = label_alphabet.string2id[label]
 
         feature.ids = get_idx(words, alphabet)
-        feature.char_ids = get_idx(chars, char_alphabet)
+        chars_ids = []
+        for chars in chars_list:
+            chars_ids.append(get_idx(chars, char_alphabet))
+        feature.char_ids = chars_ids
 
         features.append(feature)
 

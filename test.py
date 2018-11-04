@@ -12,6 +12,7 @@
 """
 
 import torch
+import torch.nn as nn
 import utils.opts as opts
 import argparse
 import time
@@ -35,33 +36,36 @@ class Decoder:
 #         self.next_node = None
 
 if __name__ == '__main__':
-    n = int(input('input a number:'))
-    node_list = []
-    for i in range(n):
-        new_node = i+1
-        node_list.append(new_node)
+    l1 = torch.Tensor([[1, 2]])
+    l2 = torch.Tensor([[3, 4]])
 
-    cnt = 1
+    # input = torch.randn(20, 1, 50, 100)
+    # # With square kernels and equal stride
+    # n = nn.Conv2d(in_channels=1, out_channels=100, kernel_size=(3, 100), stride=1, padding=(2, 0))
+    # m = nn.Conv2d(in_channels=1, out_channels=100, kernel_size=(3, 100), stride=1, padding=(2, 0))
+    # output = m(input)
+    # print(output.size())
+    # output = n(input)
+    # print(output.size())
 
-    delete_node_list = []
-    node = None
 
-    while len(node_list) != 0:
-        for i in range(len(node_list)):
-            node = node_list[i]
-            if cnt == 3:
-                delete_node_list.append(node_list[i])
-                cnt = 1
-            else:
-                cnt += 1
-        if len(delete_node_list) != 0:
-            for node in delete_node_list:
-                node_list.remove(node)
-            delete_node_list = []
-        if len(node_list) == 1:
-            print(node_list[0])
-            break
+    # a = torch.randn(1, 2, 10)
+    # b = torch.randn((1, 10))
+    # print(a.size())
+    # print(b.size())
+    # print(torch.stack((a, b)))
 
+    a = [1, 2, 3]
+
+    # # non-square kernels and unequal stride and with padding
+    # m = nn.Conv2d(16, 33, (3, 5), stride=(2, 1), padding=(4, 2))
+    # output = m(input)
+    # print(output.size())
+    #
+    # # non-square kernels and unequal stride and with padding and dilation
+    # m = nn.Conv2d(16, 33, (3, 5), stride=(2, 1), padding=(4, 2), dilation=(3, 1))
+    # output = m(input)
+    # print(output.size())
 
 
 # parser = argparse.ArgumentParser('decoder opts')

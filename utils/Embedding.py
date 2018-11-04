@@ -114,6 +114,7 @@ def load_predtrained_emb_zero(path, words_dic, padding=False):
 
     embedding = np.zeros((word_size, embeding_dim))
     in_word_list = []
+    OOV = 0
     with open(path, encoding='utf-8') as f:
         for line in f.readlines():
             line = line.strip().split(' ')
@@ -122,8 +123,11 @@ def load_predtrained_emb_zero(path, words_dic, padding=False):
                 vector = np.array(line[1:], dtype='float32')
                 embedding[index] = vector
                 in_word_list.append(index)
+            else:
+                OOV += 1
     print("done")
-    print(embedding)
+    print("{} words, {} in_words    {} OOV!".format(len(words_dic), len(words_dic)-OOV, OOV))
+    # print(embedding)
     return torch.from_numpy(embedding).float()
 
 
@@ -148,6 +152,7 @@ def load_predtrained_emb_avg(path, words_dic, padding=False, save=''):
     lines = []
     embedding = np.zeros((word_size, embeding_dim))
     in_word_list = []
+    in_words = 0
     with open(path, encoding='utf-8') as f:
         for line in f.readlines():
             rawline = line
@@ -158,6 +163,7 @@ def load_predtrained_emb_avg(path, words_dic, padding=False, save=''):
                 vector = np.array(line[1:], dtype='float32')
                 embedding[index] = vector
                 in_word_list.append(index)
+                in_words += 1
 
     embedding = np.zeros((word_size, embeding_dim))
     avg_col = np.sum(embedding, axis=0) / len(in_word_list)
@@ -168,7 +174,7 @@ def load_predtrained_emb_avg(path, words_dic, padding=False, save=''):
         elif i in in_word_list and i != padID:
             embedding[i] = avg_col
     print("done")
-
+    print("{} words, {} in_words    {} OOV!".format(len(words_dic), in_words, len(words_dic) - in_words))
     '''
         save
     '''

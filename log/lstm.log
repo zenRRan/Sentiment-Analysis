@@ -18,7 +18,7 @@ embed_dropout=0.0
 pre_embed_path=
 
 ----model----
-model=char_cnn
+model=cnn
 save_model_dir=save_models
 save_model_every=1
 save_model_start_from=0
@@ -50,7 +50,18 @@ seed=23
 log_dir=log
 log_fname=lstm.log
 
-[2018-11-01 17:37:52] Epoch 0 step 10 acc: 46.88% loss: 0.041110
-[2018-11-01 17:37:53] Epoch 0 step 20 acc: 48.75% loss: 0.032824
-[2018-11-01 17:37:55] Epoch 0 step 30 acc: 55.00% loss: 0.022737
-[2018-11-01 17:37:57] Epoch 0 step 40 acc: 53.44% loss: 0.021968
+[2018-11-02 19:12:51] Epoch 0 step 10 lr=0.001 acc: 28.75% loss: 0.042789
+[2018-11-02 19:12:52] Epoch 0 step 20 lr=0.001 acc: 48.75% loss: 0.036424
+[2018-11-02 19:12:52] Epoch 0 step 30 lr=0.001 acc: 55.31% loss: 0.025110
+[2018-11-02 19:12:53] Epoch 0 step 40 lr=0.001 acc: 48.75% loss: 0.022109
+[2018-11-02 19:12:54] Epoch 0 step 50 lr=0.001 acc: 50.62% loss: 0.021905
+[2018-11-02 19:12:54] Epoch 0 step 60 lr=0.001 acc: 49.69% loss: 0.022791
+[2018-11-02 19:12:55] Epoch 0 step 70 lr=0.001 acc: 47.50% loss: 0.022089
+[2018-11-02 19:12:56] Epoch 0 step 80 lr=0.001 acc: 46.25% loss: 0.022199
+[2018-11-02 19:12:57] Epoch 0 step 90 lr=0.001 acc: 48.75% loss: 0.021987
+[2018-11-02 19:12:58] Epoch 0 step 100 lr=0.001 acc: 50.31% loss: 0.021842
+[2018-11-02 19:12:59] Epoch 0 step 110 lr=0.001 acc: 54.06% loss: 0.021595
+[2018-11-02 19:13:00] Epoch 0 step 120 lr=0.001 acc: 53.75% loss: 0.021351
+[2018-11-02 19:13:01] Epoch 0 step 130 lr=0.001 acc: 57.19% loss: 0.021160
+[2018-11-02 19:13:02] Epoch 0 step 140 lr=0.001 acc: 59.38% loss: 0.020639
+[2018-11-02 19:13:03] Epoch 0 step 150 lr=0.001 acc: 61.25% loss: 0.020668
