@@ -17,9 +17,15 @@ import torch.nn as nn
 import torch.nn.functional as F
 import utils.Embedding as Embedding
 
+import random
+
 class LSTM(nn.Module):
     def __init__(self, opts, vocab, label_vocab):
         super(LSTM, self).__init__()
+
+        random.seed(opts.seed)
+        torch.manual_seed(opts.seed)
+        torch.cuda.manual_seed(opts.seed)
 
         self.embed_dim = opts.embed_size
         self.word_num = vocab.m_size

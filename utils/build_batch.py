@@ -20,7 +20,7 @@ class Build_Batch:
 
         self.batch_size = batch_size
         self.features = features
-        self.shuffer = opts.shuffer
+        self.shuffle = opts.shuffle
         self.sort = opts.sort
 
         self.batch_num = 0
@@ -50,14 +50,15 @@ class Build_Batch:
             if same_len and len(new_list) < self.batch_size:
                 new_list.append(feature)
             else:
-                new_list = self.shuffer_data(new_list)
+                new_list = self.shuffle_data(new_list)
                 self.batch_features.append(new_list)
                 ids, char_ids, labels = self.choose_data_from_features(new_list)
                 ids = self.add_pad(ids, self.PAD)
                 char_ids = self.add_char_pad(char_ids, self.CPAD)
                 self.data_batchs.append((ids, labels, char_ids))
                 new_list = []
-        self.batch_features = self.shuffer_data(self.batch_features)
+        self.batch_features = self.shuffle_data(self.batch_features)
+        self.data_batchs = self.shuffle_data(self.data_batchs)
         return self.batch_features, self.data_batchs
 
     def create_sorted_normal_batch(self):
@@ -80,14 +81,15 @@ class Build_Batch:
             else:
                 self.batch_num += 1
 
-                new_list = self.shuffer_data(new_list)
+                new_list = self.shuffle_data(new_list)
                 self.batch_features.append(new_list)
                 ids, char_ids, labels = self.choose_data_from_features(new_list)
                 ids = self.add_pad(ids, self.PAD)
                 char_ids = self.add_char_pad(char_ids, ids, self.CPAD)
                 self.data_batchs.append((ids, labels, char_ids))
                 new_list = []
-        self.batch_features = self.shuffer_data(self.batch_features)
+        self.batch_features = self.shuffle_data(self.batch_features)
+        self.data_batchs = self.shuffle_data(self.data_batchs)
         return self.batch_features, self.data_batchs
 
     def choose_data_from_features(self, features):
@@ -139,7 +141,7 @@ class Build_Batch:
             features = sorted(features, key=lambda feature: feature.length)
         return features
 
-    def shuffer_data(self, data):
-        if self.shuffer:
+    def shuffle_data(self, data):
+        if self.shuffle:
             random.shuffle(data)
         return data

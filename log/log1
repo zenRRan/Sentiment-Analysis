@@ -1,0 +1,158 @@
+data_dir=processed_data
+
+----batch----
+train_batch_size=16
+train_batch_type=normal
+dev_batch_size=64
+dev_batch_type=normal
+test_batch_size=64
+test_batch_type=normal
+shuffer=True
+sort=True
+
+----embedding----
+embed_size=100
+char_embed_size=50
+embed_uniform_init=0.0
+embed_dropout=0.0
+pre_embed_path=
+
+----model----
+model=gru
+save_model_dir=save_models
+save_model_every=1
+save_model_start_from=0
+hidden_num=1
+hidden_size=100
+hidden_dropout=0.0
+bidirectional=True
+fc_dropout=0.1
+
+----optimizer----
+lr=0.001
+optim=adam
+weight_decay=1e-08
+momentum=0.9
+early_stop=9999999
+
+----train----
+epoch=100
+print_every=10
+
+----GPU----
+gpu_device=0
+use_cuda=False
+
+----seed----
+gpu_seed=23
+seed=23
+
+----log----
+log_dir=log
+log_fname=log1
+
+[2018-11-06 19:03:36] Epoch 0 step 10 lr=0.00100000 acc: 30.63% loss: 0.127577
+[2018-11-06 19:03:36] Epoch 0 step 20 lr=0.00100000 acc: 51.25% loss: 0.121949
+[2018-11-06 19:03:36] Epoch 0 step 30 lr=0.00100000 acc: 38.75% loss: 0.117211
+[2018-11-06 19:03:37] Epoch 0 step 40 lr=0.00100000 acc: 37.50% loss: 0.109136
+[2018-11-06 19:03:37] Epoch 0 step 50 lr=0.00100000 acc: 26.25% loss: 0.110709
+[2018-11-06 19:03:37] Epoch 0 step 60 lr=0.00100000 acc: 21.88% loss: 0.105097
+[2018-11-06 19:03:38] Epoch 0 step 70 lr=0.00100000 acc: 25.00% loss: 0.104868
+[2018-11-06 19:03:38] Epoch 0 step 80 lr=0.00100000 acc: 28.75% loss: 0.101073
+[2018-11-06 19:03:38] Epoch 0 step 90 lr=0.00100000 acc: 23.12% loss: 0.103253
+[2018-11-06 19:03:39] Epoch 0 step 100 lr=0.00100000 acc: 25.62% loss: 0.102412
+[2018-11-06 19:03:39] Epoch 0 step 110 lr=0.00100000 acc: 21.88% loss: 0.100468
+[2018-11-06 19:03:39] Epoch 0 step 120 lr=0.00100000 acc: 37.50% loss: 0.097395
+[2018-11-06 19:03:40] Epoch 0 step 130 lr=0.00100000 acc: 36.88% loss: 0.095233
+[2018-11-06 19:03:40] Epoch 0 step 140 lr=0.00100000 acc: 39.38% loss: 0.087178
+[2018-11-06 19:03:40] Epoch 0 step 150 lr=0.00100000 acc: 37.50% loss: 0.086996
+[2018-11-06 19:03:41] Epoch 0 step 160 lr=0.00100000 acc: 45.62% loss: 0.080100
+[2018-11-06 19:03:41] Epoch 0 step 170 lr=0.00100000 acc: 48.75% loss: 0.076437
+[2018-11-06 19:03:41] Epoch 0 step 180 lr=0.00100000 acc: 45.62% loss: 0.078404
+[2018-11-06 19:03:42] Epoch 0 step 190 lr=0.00100000 acc: 56.88% loss: 0.072516
+[2018-11-06 19:03:42] Epoch 0 step 200 lr=0.00100000 acc: 51.88% loss: 0.074480
+[2018-11-06 19:03:43] Epoch 0 step 210 lr=0.00100000 acc: 48.12% loss: 0.069882
+[2018-11-06 19:03:43] Epoch 0 step 220 lr=0.00100000 acc: 50.00% loss: 0.077422
+[2018-11-06 19:03:44] Epoch 0 step 230 lr=0.00100000 acc: 57.50% loss: 0.065171
+[2018-11-06 19:03:44] Epoch 0 step 240 lr=0.00100000 acc: 60.00% loss: 0.060534
+[2018-11-06 19:03:44] Epoch 0 step 250 lr=0.00100000 acc: 65.00% loss: 0.061107
+[2018-11-06 19:03:45] Epoch 0 step 260 lr=0.00100000 acc: 59.38% loss: 0.071284
+[2018-11-06 19:03:45] Epoch 0 step 270 lr=0.00100000 acc: 56.25% loss: 0.069642
+[2018-11-06 19:03:46] Epoch 0 step 280 lr=0.00100000 acc: 58.75% loss: 0.066003
+[2018-11-06 19:03:46] Epoch 0 step 290 lr=0.00100000 acc: 67.50% loss: 0.052499
+dev acc: 54.91% loss: 0.015272
+test acc: 54.02% loss: 0.018698
+model saved succeed in save_models/2018-11-06-19-03-47-gru-model_epoch_0.pt
+Update! best test acc: 54.02%
+[2018-11-06 19:03:47] Epoch 1 step 10 lr=0.00100000 acc: 77.50% loss: 0.064336
+[2018-11-06 19:03:47] Epoch 1 step 20 lr=0.00100000 acc: 90.00% loss: 0.035427
+[2018-11-06 19:03:47] Epoch 1 step 30 lr=0.00100000 acc: 64.38% loss: 0.061993
+[2018-11-06 19:03:48] Epoch 1 step 40 lr=0.00100000 acc: 71.88% loss: 0.050373
+[2018-11-06 19:03:48] Epoch 1 step 50 lr=0.00100000 acc: 60.00% loss: 0.058544
+[2018-11-06 19:03:48] Epoch 1 step 60 lr=0.00100000 acc: 66.25% loss: 0.046005
+[2018-11-06 19:03:49] Epoch 1 step 70 lr=0.00100000 acc: 60.00% loss: 0.054777
+[2018-11-06 19:03:49] Epoch 1 step 80 lr=0.00100000 acc: 74.38% loss: 0.045147
+[2018-11-06 19:03:49] Epoch 1 step 90 lr=0.00100000 acc: 66.25% loss: 0.046604
+[2018-11-06 19:03:50] Epoch 1 step 100 lr=0.00100000 acc: 72.50% loss: 0.040508
+[2018-11-06 19:03:50] Epoch 1 step 110 lr=0.00100000 acc: 70.00% loss: 0.037362
+[2018-11-06 19:03:50] Epoch 1 step 120 lr=0.00100000 acc: 75.62% loss: 0.042141
+[2018-11-06 19:03:51] Epoch 1 step 130 lr=0.00100000 acc: 71.88% loss: 0.039041
+[2018-11-06 19:03:51] Epoch 1 step 140 lr=0.00100000 acc: 81.25% loss: 0.031630
+[2018-11-06 19:03:52] Epoch 1 step 150 lr=0.00100000 acc: 79.38% loss: 0.033893
+[2018-11-06 19:03:52] Epoch 1 step 160 lr=0.00100000 acc: 81.88% loss: 0.030277
+[2018-11-06 19:03:53] Epoch 1 step 170 lr=0.00100000 acc: 80.62% loss: 0.032849
+[2018-11-06 19:03:53] Epoch 1 step 180 lr=0.00100000 acc: 77.50% loss: 0.032757
+[2018-11-06 19:03:54] Epoch 1 step 190 lr=0.00100000 acc: 78.12% loss: 0.039436
+[2018-11-06 19:03:54] Epoch 1 step 200 lr=0.00100000 acc: 81.25% loss: 0.035194
+[2018-11-06 19:03:55] Epoch 1 step 210 lr=0.00100000 acc: 82.50% loss: 0.029820
+[2018-11-06 19:03:55] Epoch 1 step 220 lr=0.00100000 acc: 78.12% loss: 0.037546
+[2018-11-06 19:03:55] Epoch 1 step 230 lr=0.00100000 acc: 81.88% loss: 0.033797
+[2018-11-06 19:03:56] Epoch 1 step 240 lr=0.00100000 acc: 84.38% loss: 0.026975
+[2018-11-06 19:03:57] Epoch 1 step 250 lr=0.00100000 acc: 83.75% loss: 0.028200
+[2018-11-06 19:03:57] Epoch 1 step 260 lr=0.00100000 acc: 86.25% loss: 0.032362
+[2018-11-06 19:03:58] Epoch 1 step 270 lr=0.00100000 acc: 77.50% loss: 0.041081
+[2018-11-06 19:03:59] Epoch 1 step 280 lr=0.00100000 acc: 81.88% loss: 0.032963
+[2018-11-06 19:03:59] Epoch 1 step 290 lr=0.00100000 acc: 81.88% loss: 0.030943
+dev acc: 80.80% loss: 0.010130
+test acc: 80.80% loss: 0.012550
+model saved succeed in save_models/2018-11-06-19-04-00-gru-model_epoch_1.pt
+Update! best test acc: 80.80%
+[2018-11-06 19:04:00] Epoch 2 step 10 lr=0.00100000 acc: 91.88% loss: 0.031391
+[2018-11-06 19:04:01] Epoch 2 step 20 lr=0.00100000 acc: 91.88% loss: 0.019119
+[2018-11-06 19:04:01] Epoch 2 step 30 lr=0.00100000 acc: 75.00% loss: 0.040057
+[2018-11-06 19:04:01] Epoch 2 step 40 lr=0.00100000 acc: 76.88% loss: 0.027443
+[2018-11-06 19:04:02] Epoch 2 step 50 lr=0.00100000 acc: 86.88% loss: 0.027924
+[2018-11-06 19:04:03] Epoch 2 step 60 lr=0.00100000 acc: 88.75% loss: 0.020190
+[2018-11-06 19:04:03] Epoch 2 step 70 lr=0.00100000 acc: 91.25% loss: 0.019048
+[2018-11-06 19:04:03] Epoch 2 step 80 lr=0.00100000 acc: 90.62% loss: 0.019929
+[2018-11-06 19:04:04] Epoch 2 step 90 lr=0.00100000 acc: 93.12% loss: 0.016136
+[2018-11-06 19:04:05] Epoch 2 step 100 lr=0.00100000 acc: 90.00% loss: 0.021532
+[2018-11-06 19:04:05] Epoch 2 step 110 lr=0.00100000 acc: 91.88% loss: 0.015666
+[2018-11-06 19:04:06] Epoch 2 step 120 lr=0.00100000 acc: 93.12% loss: 0.015193
+[2018-11-06 19:04:06] Epoch 2 step 130 lr=0.00100000 acc: 88.75% loss: 0.016655
+[2018-11-06 19:04:06] Epoch 2 step 140 lr=0.00100000 acc: 96.88% loss: 0.008857
+[2018-11-06 19:04:07] Epoch 2 step 150 lr=0.00100000 acc: 91.88% loss: 0.015132
+[2018-11-06 19:04:07] Epoch 2 step 160 lr=0.00100000 acc: 95.62% loss: 0.011827
+[2018-11-06 19:04:08] Epoch 2 step 170 lr=0.00100000 acc: 91.88% loss: 0.013029
+[2018-11-06 19:04:08] Epoch 2 step 180 lr=0.00100000 acc: 95.00% loss: 0.009622
+[2018-11-06 19:04:09] Epoch 2 step 190 lr=0.00100000 acc: 94.38% loss: 0.015680
+[2018-11-06 19:04:09] Epoch 2 step 200 lr=0.00100000 acc: 95.00% loss: 0.011799
+[2018-11-06 19:04:10] Epoch 2 step 210 lr=0.00100000 acc: 94.38% loss: 0.010585
+[2018-11-06 19:04:10] Epoch 2 step 220 lr=0.00100000 acc: 88.75% loss: 0.020190
+[2018-11-06 19:04:11] Epoch 2 step 230 lr=0.00100000 acc: 94.38% loss: 0.013305
+[2018-11-06 19:04:12] Epoch 2 step 240 lr=0.00100000 acc: 93.12% loss: 0.012573
+[2018-11-06 19:04:12] Epoch 2 step 250 lr=0.00100000 acc: 93.75% loss: 0.010359
+[2018-11-06 19:04:13] Epoch 2 step 260 lr=0.00100000 acc: 91.88% loss: 0.015638
+[2018-11-06 19:04:14] Epoch 2 step 270 lr=0.00100000 acc: 90.62% loss: 0.016678
+[2018-11-06 19:04:14] Epoch 2 step 280 lr=0.00100000 acc: 91.88% loss: 0.014819
+[2018-11-06 19:04:15] Epoch 2 step 290 lr=0.00100000 acc: 95.00% loss: 0.011460
+dev acc: 78.57% loss: 0.010116
+test acc: 78.12% loss: 0.013063
+not improved, best test acc: 80.80%, in epoch 1
+[2018-11-06 19:04:15] Epoch 3 step 10 lr=0.00100000 acc: 93.75% loss: 0.013631
+[2018-11-06 19:04:16] Epoch 3 step 20 lr=0.00100000 acc: 94.38% loss: 0.011928
+[2018-11-06 19:04:16] Epoch 3 step 30 lr=0.00100000 acc: 83.75% loss: 0.022712
+[2018-11-06 19:04:16] Epoch 3 step 40 lr=0.00100000 acc: 93.75% loss: 0.012073
+[2018-11-06 19:04:17] Epoch 3 step 50 lr=0.00100000 acc: 93.12% loss: 0.015719
+[2018-11-06 19:04:17] Epoch 3 step 60 lr=0.00100000 acc: 95.62% loss: 0.010554
+[2018-11-06 19:04:17] Epoch 3 step 70 lr=0.00100000 acc: 95.62% loss: 0.007751

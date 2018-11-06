@@ -51,13 +51,18 @@ def read_file2list(fpath):
     :return: sents_list -> ['0 i like it .', '3 no way .', ...]
     '''
     sents = []
+    idx = 1
     with open(fpath, 'r', encoding='utf8') as f:
         for line in f.readlines():
+            # print(line)
             line = line.strip().split()
             sent = clean_str(' '.join(line[2:]))
+            if len(sent) == 0:
+                print(idx)
             sent = sent.split()
             label = line[0]
             sents.append((sent, label))
+            idx += 1
     return sents
 
 def build_dict(sents_list):

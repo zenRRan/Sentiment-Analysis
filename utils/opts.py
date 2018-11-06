@@ -29,7 +29,6 @@ def preprocesser_opts(parser):
                         help='cpu seed! default 23. If you want set GPU seed, please use -gpu_seed!')
 
     #gpu
-    parser.add_argument('-gpu_seed', type=int, default=23, help='GPU seed! default 23.')
     parser.add_argument('-gpu_device', type=int, default=0,
                         help='decide which gpu device will be selected, default device 0')
     parser.add_argument('-use_cuda', type=bool, default=False, help='if use cuda, default False')
@@ -41,7 +40,7 @@ def trainer_opts(parser):
     #seed
     parser.add_argument('-seed', type=int, default=23,
                         help='cpu seed! default 23. If you want set GPU seed, please use -gpu_seed!')
-
+    parser.add_argument('-shuffle', action='store_true', help='shuffle the data')
     #gpu
     parser.add_argument('-gpu_seed', type=int, default=23, help='GPU seed! default 23.')
     parser.add_argument('-gpu_device', type=int, default=0,

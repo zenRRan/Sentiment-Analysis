@@ -18,6 +18,8 @@ import argparse
 import time
 import random
 
+random.seed(23)
+
 class Decoder:
     def __init__(self, opts):
         self.opts = opts
@@ -30,42 +32,15 @@ class Decoder:
         pass
 
 
-# class Node:
-#     def __init__(self, id):
-#         self.id = id
-#         self.next_node = None
-
 if __name__ == '__main__':
     l1 = torch.Tensor([[1, 2]])
     l2 = torch.Tensor([[3, 4]])
 
-    # input = torch.randn(20, 1, 50, 100)
-    # # With square kernels and equal stride
-    # n = nn.Conv2d(in_channels=1, out_channels=100, kernel_size=(3, 100), stride=1, padding=(2, 0))
-    # m = nn.Conv2d(in_channels=1, out_channels=100, kernel_size=(3, 100), stride=1, padding=(2, 0))
-    # output = m(input)
-    # print(output.size())
-    # output = n(input)
-    # print(output.size())
+    a = ['5', '2', '3', '4', '5']
+    b = [1, 2, 3, 4, 5]
+    c = 0
 
-
-    # a = torch.randn(1, 2, 10)
-    # b = torch.randn((1, 10))
-    # print(a.size())
-    # print(b.size())
-    # print(torch.stack((a, b)))
-
-    a = [1, 2, 3]
-
-    # # non-square kernels and unequal stride and with padding
-    # m = nn.Conv2d(16, 33, (3, 5), stride=(2, 1), padding=(4, 2))
-    # output = m(input)
-    # print(output.size())
-    #
-    # # non-square kernels and unequal stride and with padding and dilation
-    # m = nn.Conv2d(16, 33, (3, 5), stride=(2, 1), padding=(4, 2), dilation=(3, 1))
-    # output = m(input)
-    # print(output.size())
+    print(list(map(int, a)))
 
 
 # parser = argparse.ArgumentParser('decoder opts')

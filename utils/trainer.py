@@ -8,6 +8,7 @@
 
 from utils.build_batch import Build_Batch
 from models.CNN import CNN
+from models.GRU import GRU
 from models.LSTM import LSTM
 from models.Multi_layer_CNN import Multi_Layer_CNN
 from models.multi_channel_CNN import Multi_Channel_CNN
@@ -26,6 +27,8 @@ from utils.log import Log
 
 import os
 import time
+import random
+
 
 class Trainer:
     def __init__(self, train_dev_test, opts, vocab, label_vocab):
@@ -37,6 +40,7 @@ class Trainer:
         self.char_vocab = vocab[1]
         self.label_vocab = label_vocab
         self.epoch = opts.epoch
+        self.shuffle = opts.shuffle
         self.model = None
 
         self.best_dev = 0
@@ -56,9 +60,17 @@ class Trainer:
         #save model switch
         self.save_model_switch = False
 
+        random.seed(opts.seed)
+        torch.manual_seed(opts.seed)
+
         if self.opts.use_cuda:
+            # torch.backends.cudnn.enabled = True
+            torch.backends.cudnn.deterministic = True
             torch.cuda.set_device(self.opts.gpu_device)
-            torch.cuda.manual_seed(self.opts.gpu_seed)
+            torch.cuda.manual_seed(self.opts.seed)
+            log = 'use CUDA!'
+            self.print_log.print_log(log)
+            print(log)
 
     def build_batch(self):
         '''
@@ -112,12 +124,10 @@ class Trainer:
             self.model = Char_CNN(opts=self.opts, vocab=self.vocab, char_vocab=self.char_vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm':
             self.model = LSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'gru':
+            self.model = GRU(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm_cnn':
             self.model = LSTM_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
-        # elif self.opts.model == 'bilstm':
-        #     self.model = CNN(opts=self.opts)
-        # elif self.opts.model == 'cnn':
-        #     self.model = CNN(opts=self.opts)
         else:
             raise RuntimeError('please choose your model first!')
 
@@ -141,6 +151,12 @@ class Trainer:
             correct_num = 0
             step = 0
             inst_num = 0
+
+            if self.shuffle:
+                random.shuffle(self.train_data_batchs)
+                log = 'data has shuffled!'
+                print(log)
+                self.print_log.print_log(log)
             for batch in self.train_data_batchs:
 
                 self.model.train()
@@ -322,3 +338,7 @@ class Trainer:
         for param_group in optim.param_groups:
             param_group['lr'] = param_group['lr'] * (1 - lr_decay_rate)
             self.lr = param_group['lr']
+
+
+
+
