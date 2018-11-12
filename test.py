@@ -33,15 +33,25 @@ class Decoder:
 
 
 if __name__ == '__main__':
-    l1 = torch.Tensor([[1, 2]])
-    l2 = torch.Tensor([[3, 4]])
+    # l = [1, 2, 3, 4, 5]
+    # print(l[2:])
 
-    a = ['5', '2', '3', '4', '5']
-    b = [1, 2, 3, 4, 5]
-    c = 0
-
-    print(list(map(int, a)))
-
+    conll_path = 'data/MR/mr.train.txt.conll.out'
+    save_path = 'train.conll.out.txt'
+    out = []
+    words = []
+    with open(conll_path, 'r', encoding='utf8') as f:
+        words = []
+        for line in f.readlines():
+            line = line.strip().split()
+            if len(line) == 0:
+                out.append(' '.join(words))
+                words = []
+            else:
+                words.append(line[1])
+    with open(save_path, 'w', encoding='utf8') as f:
+        for line in out:
+            f.write(line + '\n')
 
 # parser = argparse.ArgumentParser('decoder opts')
     # parser = opts.decoder_opts(parser)

@@ -22,7 +22,10 @@ def preprocesser_opts(parser):
     parser.add_argument('-save_dir', type=str, default='processed_data',
                         help='train.sst, dev.sst, test.sst vocab.txt those who are processed will be saved here')
     parser.add_argument('-shuffle', type=bool, default=False, help='shuffle data')
-    # parser.add_argument('-', type=int, default=1, help='')
+    parser.add_argument('-train_conll_path', type=str, default='', help='train path conll')
+    parser.add_argument('-test_conll_path', type=str, default='', help='test path conll')
+    parser.add_argument('-dev_conll_path', type=str, default='', help='dev path conll')
+
 
     #seed
     parser.add_argument('-seed', type=int, default=23,

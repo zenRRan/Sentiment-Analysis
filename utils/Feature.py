@@ -25,5 +25,10 @@ class Feature:
 
         self.label = None
 
+        #conll
+        self.heads = None
+        self.root = None
+        self.forest = None
+
 
 

@@ -19,6 +19,7 @@ from utils.Feature import Feature
 from utils.Alphabet import Alphabet
 import collections
 import torch
+from utils.tree import *
 from utils.Common import unk_key, padding_key
 
 def clean_str(string):
@@ -26,7 +27,7 @@ def clean_str(string):
     Tokenization/string cleaning for all datasets except for SST.
     Original taken from https://github.com/yoonkim/CNN_sentence/blob/master/process_data.py
     """
-    string = re.sub(r"[^A-Za-z0-9(),!?\'\`]", " ", string)
+    string = re.sub(r"[^A-Za-z0-9(),!?\'\`|]", " ", string)
     string = re.sub(r"\'s", " \'s", string)
     string = re.sub(r"\'ve", " \'ve", string)
     string = re.sub(r"n\'t", " n\'t", string)
@@ -130,14 +131,19 @@ def get_idx(words, alpha):
         indexs.append(idx)
     return indexs
 
-def build_features(sents_list, alphabet, char_alphabet, label_alphabet):
+def build_features(sents_list, alphabet, char_alphabet, label_alphabet, conll_list=None):
     '''
     :param fpath: data's path
     :param alpha: Alphabet()
     :return: Features -> [class Feature, class Feature, ...]
     '''
+
     features = []
-    for t in sents_list:
+
+    if conll_list is not None:
+        assert len(conll_list) == len(sents_list)
+
+    for idx, t in enumerate(sents_list):
         feature = Feature()
         words = t[0]
         # chars = list(' '.join(words))
@@ -158,33 +164,116 @@ def build_features(sents_list, alphabet, char_alphabet, label_alphabet):
             chars_ids.append(get_idx(chars, char_alphabet))
         feature.char_ids = chars_ids
 
+        if conll_list is not None:
+            feature.heads = conll_list[idx][0]
+            feature.root = conll_list[idx][1]
+            feature.forest = conll_list[idx][2]
+
         features.append(feature)
 
     return features
 
+def read_conll(conll_path):
 
+    heads_root_forest_list = []
+    with open(conll_path, 'r', encoding='utf8') as f:
+        sent = []
+        for line in f.readlines():
+            line = line.strip().split()
+            if len(line) == 0:
+                heads, root, forest = conll2word_heads_root_forest(sent)
+                heads_root_forest_list.append((heads, root, forest))
+                sent = []
+            else:
+                sent.append(line)
+    return heads_root_forest_list
+
+def conll2word_heads_root_forest(conll_sent):
+    '''
+        1	a	_	NN	_	_	3	det	_	_
+        2	technical	_	NN	_	_	3	amod	_	_
+        3	triumph	_	NN	_	_	0	root	_	_
+        4	and	_	NN	_	_	3	cc	_	_
+        5	an	_	NN	_	_	7	det	_	_
+        6	extraordinary	_	NN	_	_	7	amod	_	_
+        7	bore	_	NN	_	_	3	conj	_	_
+        8	.	_	NN	_	_	3	punct	_	_
+    :param conll_sent:
+    :return:
+    '''
+
+    heads, root, forest = [], None, []
+
+    for elem in conll_sent:
+        assert type(elem) is list
+        assert len(elem) == 10
+        heads.append(int(elem[6]) - 1)
+
+    root, forest = createTree(heads)
+
+    return heads, root, forest
+
+def tree_add_word_idx_label(feature_list):
+    for feature in feature_list:
+        words_idx = feature.ids
+        for tree, idx in zip(feature.forest, words_idx):
+            tree.word_idx = idx
+        label = feature.label
+        feature.root.label = label
 
 if __name__ == '__main__':
 
-    #init args
+    # init args
     parser = argparse.ArgumentParser('data opts')
     parser = opts.preprocesser_opts(parser)
     parser = parser.parse_args()
 
-    #get sents list
+    # get sents list
     train_sents_list = read_file2list(parser.raw_train_path)
     dev_sents_list = read_file2list(parser.raw_dev_path)
     test_sents_list = read_file2list(parser.raw_test_path)
 
-    #build dict and get the features
-    data_dict, char_dict, label_dict = build_dict(train_sents_list)
-    alphabet, char_alphabet = build_vab(dict=data_dict, char_dict=char_dict, cutoff=parser.freq_vocab, vcb_size=parser.vcb_size)
-    label_alphabet, _ = build_vab(dict=label_dict)
-    train_features = build_features(train_sents_list, alphabet, char_alphabet, label_alphabet=label_alphabet)
-    dev_features = build_features(dev_sents_list, alphabet, char_alphabet, label_alphabet=label_alphabet)
-    test_features = build_features(test_sents_list, alphabet, char_alphabet, label_alphabet=label_alphabet)
+    # get conll list(heads, root, forest)
+    use_tree = False
+    train_conll_list = None
+    dev_conll_list = None
+    test_conll_list = None
+    if parser.train_conll_path != '' and parser.dev_conll_path != '' and parser.test_conll_path != '':
+        use_tree = True
+        train_conll_list = read_conll(parser.train_conll_path)
+        dev_conll_list = read_conll(parser.dev_conll_path)
+        test_conll_list = read_conll(parser.test_conll_path)
 
-    #save features
+    # build dict and get the features
+    data_dict, char_dict, label_dict = build_dict(train_sents_list)
+    alphabet, char_alphabet = build_vab(dict=data_dict,
+                                        char_dict=char_dict,
+                                        cutoff=parser.freq_vocab,
+                                        vcb_size=parser.vcb_size)
+    label_alphabet, _ = build_vab(dict=label_dict)
+
+    train_features = build_features(train_sents_list,
+                                    alphabet,
+                                    char_alphabet,
+                                    label_alphabet=label_alphabet,
+                                    conll_list=train_conll_list)
+    dev_features = build_features(dev_sents_list,
+                                  alphabet,
+                                  char_alphabet,
+                                  label_alphabet=label_alphabet,
+                                  conll_list=dev_conll_list)
+    test_features = build_features(test_sents_list,
+                                   alphabet,
+                                   char_alphabet,
+                                   label_alphabet=label_alphabet,
+                                   conll_list=test_conll_list)
+
+    if use_tree:
+        tree_add_word_idx_label(train_features)
+        tree_add_word_idx_label(dev_features)
+        tree_add_word_idx_label(test_features)
+
+    # save features
     if not os.path.isdir(parser.save_dir):
         os.mkdir(parser.save_dir)
     torch.save(train_features, parser.save_dir + '/train.sst')

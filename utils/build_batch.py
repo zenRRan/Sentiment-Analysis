@@ -103,7 +103,6 @@ class Build_Batch:
 
         return ids, char_ids, labels
 
-
     def add_char_pad(self, data_list, sents_ids_list, PAD):
         '''
         :param data_list:[[[x x], [x x x],...],[[x], [x x],...]]
