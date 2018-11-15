@@ -29,6 +29,8 @@ if __name__ == '__main__':
     dev_features_list = torch.load(opts.data_dir + '/dev.sst')
     test_features_list = torch.load(opts.data_dir + '/test.sst')
 
+
+
     # load word-level vocab
     vocab = torch.load(opts.data_dir + '/vocab.sst')
 

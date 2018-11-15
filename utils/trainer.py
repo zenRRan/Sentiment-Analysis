@@ -15,6 +15,7 @@ from models.multi_channel_CNN import Multi_Channel_CNN
 from models.Char_CNN import Char_CNN
 from models.LSTM_CNN import LSTM_CNN
 from models.Pooling import Pooling
+from models.Tree_LSTM import ChildSumTreeLSTM, BatchChildSumTreeLSTM
 from utils.Common import padding_key
 
 import torch
@@ -48,6 +49,7 @@ class Trainer:
         self.best_dev_epoch = 0
 
         self.char = False
+        self.tree = False
 
         self.lr = self.opts.lr
 
@@ -128,6 +130,9 @@ class Trainer:
             self.model = GRU(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm_cnn':
             self.model = LSTM_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'cstreelstm':
+            self.tree = True
+            self.model = BatchChildSumTreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         else:
             raise RuntimeError('please choose your model first!')
 
@@ -164,29 +169,42 @@ class Trainer:
 
                 inst_num += len(batch[1])
 
-                sents = Variable(torch.LongTensor(batch[0]))
-                label = Variable(torch.LongTensor(batch[1]))
-
-                # print(data)
-
-                char_data = []
-                if self.char:
-                    for char_list in batch[2]:
-                        char_data.append(Variable(torch.LongTensor(char_list)))
-                        # print(type(char_data[0]), char_data[0].size())
-                # print(char_data)
-                if self.opts.use_cuda:
-                    sents = sents.cuda()
-                    label = label.cuda()
-                    new_char_data = []
-                    for data in char_data:
-                        new_char_data.append(data.cuda())
-                    char_data = new_char_data
-                    # print(type(char_data[0]))
-                if self.char:
-                    pred = self.model(sents, char_data)
+                if self.tree:
+                    sents = Variable(torch.LongTensor(batch[0]))
+                    # tree = batch[3][0]
+                    label = Variable(torch.LongTensor(batch[1]))
+                    bfs_tensor = Variable(torch.LongTensor(batch[4]))
+                    children_batch_list = Variable(torch.LongTensor(batch[5]))
+                    if self.opts.use_cuda:
+                        sents = sents.cuda()
+                        label = label.cuda()
+                        bfs_tensor = bfs_tensor.cuda()
+                    # print(sents.data)
+                    pred = self.model(sents, bfs_tensor, children_batch_list)
                 else:
-                    pred = self.model(sents)
+                    sents = Variable(torch.LongTensor(batch[0]))
+                    label = Variable(torch.LongTensor(batch[1]))
+
+                    # print(data)
+
+                    char_data = []
+                    if self.char:
+                        for char_list in batch[2]:
+                            char_data.append(Variable(torch.LongTensor(char_list)))
+                            # print(type(char_data[0]), char_data[0].size())
+                    # print(char_data)
+                    if self.opts.use_cuda:
+                        sents = sents.cuda()
+                        label = label.cuda()
+                        new_char_data = []
+                        for data in char_data:
+                            new_char_data.append(data.cuda())
+                        char_data = new_char_data
+                        # print(type(char_data[0]))
+                    if self.char:
+                        pred = self.model(sents, char_data)
+                    else:
+                        pred = self.model(sents)
 
 
                 loss = F.cross_entropy(pred, label)
@@ -283,26 +301,42 @@ class Trainer:
 
             inst_num += len(batch[1])
 
-            sents = Variable(torch.LongTensor(batch[0]))
-            label = Variable(torch.LongTensor(batch[1]))
+            if self.tree:
+                sents = Variable(torch.LongTensor(batch[0]))
+                # tree = batch[3][0]
+                label = Variable(torch.LongTensor(batch[1]))
+                bfs_tensor = Variable(torch.LongTensor(batch[4]))
+                children_batch_list = Variable(torch.LongTensor(batch[5]))
+                if self.opts.use_cuda:
+                    sents = sents.cuda()
+                    label = label.cuda()
+                    bfs_tensor = bfs_tensor.cuda()
+                # print(sents.data)
+                pred = self.model(sents, bfs_tensor, children_batch_list)
+            else:
+                sents = Variable(torch.LongTensor(batch[0]))
+                label = Variable(torch.LongTensor(batch[1]))
 
-            char_data = []
-            if self.char:
-                for char_list in batch[2]:
-                    char_data.append(Variable(torch.LongTensor(char_list)))
+                # print(data)
 
-            if self.opts.use_cuda:
-                sents = sents.cuda()
-                label = label.cuda()
+                char_data = []
                 if self.char:
+                    for char_list in batch[2]:
+                        char_data.append(Variable(torch.LongTensor(char_list)))
+                        # print(type(char_data[0]), char_data[0].size())
+                # print(char_data)
+                if self.opts.use_cuda:
+                    sents = sents.cuda()
+                    label = label.cuda()
                     new_char_data = []
                     for data in char_data:
                         new_char_data.append(data.cuda())
                     char_data = new_char_data
-            if self.char:
-                pred = self.model(sents, char_data)
-            else:
-                pred = self.model(sents)
+                    # print(type(char_data[0]))
+                if self.char:
+                    pred = self.model(sents, char_data)
+                else:
+                    pred = self.model(sents)
 
             loss = F.cross_entropy(pred, label)
 

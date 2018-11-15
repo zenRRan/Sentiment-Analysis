@@ -213,13 +213,21 @@ def conll2word_heads_root_forest(conll_sent):
 
     return heads, root, forest
 
-def tree_add_word_idx_label(feature_list):
+def tree_add_label(feature_list):
     for feature in feature_list:
-        words_idx = feature.ids
-        for tree, idx in zip(feature.forest, words_idx):
-            tree.word_idx = idx
         label = feature.label
         feature.root.label = label
+
+def tree_add_bfs(feature_list):
+    for feature in feature_list:
+        bfs = []
+        depth = 0
+        while len(bfs) != len(feature.forest):
+            for child in feature.forest:
+                if child.depth() == depth:
+                    bfs.append(child.index)
+            depth += 1
+        feature.bfs_list = bfs
 
 if __name__ == '__main__':
 
@@ -269,9 +277,15 @@ if __name__ == '__main__':
                                    conll_list=test_conll_list)
 
     if use_tree:
-        tree_add_word_idx_label(train_features)
-        tree_add_word_idx_label(dev_features)
-        tree_add_word_idx_label(test_features)
+        # add label
+        tree_add_label(train_features)
+        tree_add_label(dev_features)
+        tree_add_label(test_features)
+
+        # add bfs
+        tree_add_bfs(train_features)
+        tree_add_bfs(dev_features)
+        tree_add_bfs(test_features)
 
     # save features
     if not os.path.isdir(parser.save_dir):

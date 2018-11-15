@@ -16,6 +16,7 @@ import torch.nn as nn
 import utils.opts as opts
 import argparse
 import time
+from torch.autograd import Variable
 import random
 
 random.seed(23)
@@ -33,25 +34,38 @@ class Decoder:
 
 
 if __name__ == '__main__':
+
+    rels = torch.Tensor([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+    # rels = torch.unsqueeze(rels, 1)
+    # print(rels.size())
+    # print(rels.size(0))
+    # print(rels.size(2))
+
+    rels_broadcast = rels.unsqueeze(1).expand(rels.size(0), 100, rels.size(1))
+
+    print(rels_broadcast)
     # l = [1, 2, 3, 4, 5]
     # print(l[2:])
 
-    conll_path = 'data/MR/mr.train.txt.conll.out'
-    save_path = 'train.conll.out.txt'
-    out = []
-    words = []
-    with open(conll_path, 'r', encoding='utf8') as f:
-        words = []
-        for line in f.readlines():
-            line = line.strip().split()
-            if len(line) == 0:
-                out.append(' '.join(words))
-                words = []
-            else:
-                words.append(line[1])
-    with open(save_path, 'w', encoding='utf8') as f:
-        for line in out:
-            f.write(line + '\n')
+    # conll_path = 'data/MR/mr.train.txt.conll.out'
+    # save_path = 'train.conll.out.txt'
+    # out = []
+    # words = []
+    # with open(conll_path, 'r', encoding='utf8') as f:
+    #     words = []
+    #     for line in f.readlines():
+    #         line = line.strip().split()
+    #         if len(line) == 0:
+    #             out.append(' '.join(words))
+    #             words = []
+    #         else:
+    #             words.append(line[1])
+    # with open(save_path, 'w', encoding='utf8') as f:
+    #     for line in out:
+    #         f.write(line + '\n')
 
 # parser = argparse.ArgumentParser('decoder opts')
     # parser = opts.decoder_opts(parser)

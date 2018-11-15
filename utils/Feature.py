@@ -29,6 +29,7 @@ class Feature:
         self.heads = None
         self.root = None
         self.forest = None
+        self.bfs_list = []
 
 
 

@@ -47,16 +47,20 @@ class Build_Batch:
         self.data_batchs = []
         same_len = True
         for feature in self.features:
+            if len(new_list) != 0 and len(feature.words) != len(new_list[-1].words):
+                same_len = False
             if same_len and len(new_list) < self.batch_size:
                 new_list.append(feature)
             else:
                 new_list = self.shuffle_data(new_list)
                 self.batch_features.append(new_list)
-                ids, char_ids, labels = self.choose_data_from_features(new_list)
+                ids, char_ids, labels, forest, bfs_batch_list, children_batch_list = self.choose_data_from_features(new_list)
                 ids = self.add_pad(ids, self.PAD)
-                char_ids = self.add_char_pad(char_ids, self.CPAD)
-                self.data_batchs.append((ids, labels, char_ids))
+                char_ids = self.add_char_pad(char_ids, ids, self.CPAD)
+                self.data_batchs.append((ids, labels, char_ids, forest, bfs_batch_list, children_batch_list))
                 new_list = []
+                same_len = True
+                new_list.append(feature)
         self.batch_features = self.shuffle_data(self.batch_features)
         self.data_batchs = self.shuffle_data(self.data_batchs)
         return self.batch_features, self.data_batchs
@@ -83,11 +87,12 @@ class Build_Batch:
 
                 new_list = self.shuffle_data(new_list)
                 self.batch_features.append(new_list)
-                ids, char_ids, labels = self.choose_data_from_features(new_list)
+                ids, char_ids, labels, forest, bfs_batch_list, children_batch_list = self.choose_data_from_features(new_list)
                 ids = self.add_pad(ids, self.PAD)
                 char_ids = self.add_char_pad(char_ids, ids, self.CPAD)
-                self.data_batchs.append((ids, labels, char_ids))
+                self.data_batchs.append((ids, labels, char_ids, forest, bfs_batch_list, children_batch_list))
                 new_list = []
+                new_list.append(feature)
         self.batch_features = self.shuffle_data(self.batch_features)
         self.data_batchs = self.shuffle_data(self.data_batchs)
         return self.batch_features, self.data_batchs
@@ -96,12 +101,24 @@ class Build_Batch:
         ids = []
         char_ids = []
         labels = []
+        forest = []
+        bfs_batch_list = []
+        children_batch_list = []
+
         for feature in features:
             ids.append(feature.ids)
             char_ids.append(feature.char_ids)
             labels.append(feature.label)
-
-        return ids, char_ids, labels
+            forest.append(feature.root)
+            bfs_batch_list.append(feature.bfs_list)
+            rel = [tree.children_index_list for tree in feature.forest]
+            max_len = feature.length
+            new_rel = [[0 for _ in range(max_len)] for _ in range(max_len)]
+            for i, each in enumerate(rel):
+                for j, index in enumerate(each):
+                    new_rel[i][index] = 1
+            children_batch_list.append(new_rel)
+        return ids, char_ids, labels, forest, bfs_batch_list, children_batch_list
 
     def add_char_pad(self, data_list, sents_ids_list, PAD):
         '''
