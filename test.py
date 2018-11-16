@@ -35,18 +35,15 @@ class Decoder:
 
 if __name__ == '__main__':
 
-    rels = torch.Tensor([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
-    # rels = torch.unsqueeze(rels, 1)
-    # print(rels.size())
-    # print(rels.size(0))
-    # print(rels.size(2))
+    a = torch.ones((4, 1, 100))
+    b = torch.ones((4, 1, 100))
+    print(torch.squeeze(torch.mul(a, b), 1).size())
 
-    rels_broadcast = rels.unsqueeze(1).expand(rels.size(0), 100, rels.size(1))
-
-    print(rels_broadcast)
+    a = torch.ones((4, 2, 100))
+    b = torch.ones((4, 2, 100))
+    print(torch.squeeze(torch.mul(a, b), 1).size())
+    # rels_sum = torch.sum(rels, 1)
+    # print(rels_sum.size())
     # l = [1, 2, 3, 4, 5]
     # print(l[2:])
 

@@ -22,7 +22,7 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 import torch.nn.utils as utils
-from torch.autograd import Variable
+from torch.autograd import Variable, gradcheck
 
 from utils.log import Log
 
@@ -130,7 +130,7 @@ class Trainer:
             self.model = GRU(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'lstm_cnn':
             self.model = LSTM_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
-        elif self.opts.model == 'cstreelstm':
+        elif self.opts.model == 'treelstm':
             self.tree = True
             self.model = BatchChildSumTreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         else:
@@ -154,9 +154,9 @@ class Trainer:
         for epoch in range(self.epoch):
             totle_loss = torch.Tensor([0])
             correct_num = 0
-            step = 0
+            step = 1
             inst_num = 0
-
+            totle_step = len(self.train_data_batchs)
             if self.shuffle:
                 random.shuffle(self.train_data_batchs)
                 log = 'data has shuffled!'
@@ -211,6 +211,8 @@ class Trainer:
 
                 loss.backward()
 
+                # print("gradCheck :", gradcheck(self.model, (self.model.embeddings,)))
+
                 if self.opts.init_clip_max_norm is not None:
                     utils.clip_grad_norm_(self.model.parameters(), max_norm=self.opts.init_clip_max_norm)
 
@@ -219,7 +221,6 @@ class Trainer:
                 loss = loss.cpu()
                 totle_loss += loss.data
 
-                step += 1
                 correct_num += (torch.max(pred, 1)[1].view(label.size()).data == label.data).sum()
                 if step % self.opts.print_every == 0:
                     avg_loss = totle_loss / inst_num
@@ -227,12 +228,14 @@ class Trainer:
                     time_dic = self.get_time()
                     time_str = "[{}-{:0>2d}-{:0>2d} {:0>2d}:{:0>2d}:{:0>2d}]".format(time_dic['year'], time_dic['month'], time_dic['day'], \
                                                           time_dic['hour'], time_dic['min'], time_dic['sec'])
-                    log = time_str + " Epoch {} step {} lr={:.8f} acc: {:.2f}% loss: {:.6f}".format(epoch, step, self.lr, acc, avg_loss.numpy()[0])
+                    log = time_str + " Epoch {} step [{}|{}] lr={:.8f} acc: {:.2f}% loss: {:.6f}".format(epoch, step, totle_step, self.lr, acc, avg_loss.numpy()[0])
                     self.print_log.print_log(log)
                     print(log)
                     totle_loss = torch.Tensor([0])
                     inst_num = 0
                     correct_num = 0
+
+                step += 1
 
             dev_score = self.accurcy(type='dev')
             test_score = self.accurcy(type='test')

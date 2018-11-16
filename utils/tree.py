@@ -99,28 +99,3 @@ def createTree(heads):
 # heads = [1, -1, 1, 2]
 # root, _ = createTree(heads)
 # print(root.depth())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
