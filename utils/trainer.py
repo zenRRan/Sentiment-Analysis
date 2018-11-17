@@ -179,6 +179,7 @@ class Trainer:
                         sents = sents.cuda()
                         label = label.cuda()
                         bfs_tensor = bfs_tensor.cuda()
+                        children_batch_list = children_batch_list.cuda()
                     # print(sents.data)
                     pred = self.model(sents, bfs_tensor, children_batch_list)
                 else:
@@ -314,6 +315,7 @@ class Trainer:
                     sents = sents.cuda()
                     label = label.cuda()
                     bfs_tensor = bfs_tensor.cuda()
+                    children_batch_list = children_batch_list.cuda()
                 # print(sents.data)
                 pred = self.model(sents, bfs_tensor, children_batch_list)
             else:

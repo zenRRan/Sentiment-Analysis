@@ -190,6 +190,10 @@ class BatchChildSumTreeLSTM(nn.Module):
 
 
     def node_forward(self, x, child_c, child_h):
+        if self.use_cuda:
+            x = x.cuda()
+            child_c = child_c.cuda()
+            child_h = child_h.cuda()
         if self.debug:
             print('#################################')
             print('x.size():', x.size())  # torch.Size([4, 100])
@@ -269,8 +273,10 @@ class BatchChildSumTreeLSTM(nn.Module):
             for i in torch.transpose(bfs_tensor, 0, 1).data.tolist()[index]:
                 mask[batch][i] = one
                 batch += 1
-
-            cur_embeds = torch.masked_select(x, torch.ByteTensor(mask.data.tolist()))
+            mask = Variable(torch.ByteTensor(mask.data.tolist()))
+            if self.use_cuda:
+                mask = mask.cuda()
+            cur_embeds = torch.masked_select(x, mask)
             cur_embeds = cur_embeds.view(cur_embeds.size(-1) // self.embed_dim, self.embed_dim)
             if self.debug:
                 print('cur_embeds:', cur_embeds)
@@ -279,7 +285,10 @@ class BatchChildSumTreeLSTM(nn.Module):
             mask = []
             mask.extend([0 for _ in range(sent_len)])
             mask[index] = 1
-            cur_nodes_list = torch.masked_select(bfs_tensor, torch.ByteTensor(mask)).data.tolist()
+            mask = Variable(torch.ByteTensor(mask))
+            if self.use_cuda:
+                mask = mask.cuda()
+            cur_nodes_list = torch.masked_select(bfs_tensor, mask).data.tolist()
             if self.debug:
                 print('cur_nodes_list:', cur_nodes_list)
 
@@ -287,7 +296,9 @@ class BatchChildSumTreeLSTM(nn.Module):
             mask = torch.zeros(batch_size, sent_len, sent_len)
             for i, rel in enumerate(cur_nodes_list):
                 mask[i][rel] = torch.ones(1, sent_len)
-            mask = torch.ByteTensor(mask.data.tolist())
+            mask = Variable(torch.ByteTensor(mask.data.tolist()))
+            if self.use_cuda:
+                mask = mask.cuda()
             rels = torch.masked_select(children_batch_list, mask).view(batch_size, sent_len)
 
             if self.debug:
@@ -312,8 +323,13 @@ class BatchChildSumTreeLSTM(nn.Module):
                 pad_c = Variable(torch.zeros(batch_size, rel_batch_max, self.hidden_size))
                 pad_h = Variable(torch.zeros(batch_size, rel_batch_max, self.hidden_size))
                 rels_broadcast = rels.unsqueeze(1).expand(rels.size(0), self.hidden_size, rels.size(1))
-                selected_c = torch.masked_select(torch.transpose(all_C, 1, 2), torch.ByteTensor(rels_broadcast.data.tolist()))
-                selected_h = torch.masked_select(torch.transpose(all_H, 1, 2), torch.ByteTensor(rels_broadcast.data.tolist()))
+                rels_broadcast = Variable(torch.ByteTensor(rels_broadcast.data.tolist()))
+                if self.use_cuda:
+                    rels_broadcast = rels_broadcast.cuda()
+                    pad_c = pad_c.cuda()
+                    pad_h = pad_h.cuda()
+                selected_c = torch.masked_select(torch.transpose(all_C, 1, 2), rels_broadcast)
+                selected_h = torch.masked_select(torch.transpose(all_H, 1, 2), rels_broadcast)
                 selected_c = selected_c.view(selected_c.size(0) // self.hidden_size, self.hidden_size)
                 selected_h = selected_h.view(selected_h.size(0) // self.hidden_size, self.hidden_size)
                 idx = 0

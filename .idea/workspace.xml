@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22a59076-29e4-482b-a1e1-a51b0ecc6d4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log1" afterPath="$PROJECT_DIR$/log/log1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Tree_LSTM.py" afterPath="$PROJECT_DIR$/models/Tree_LSTM.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/trainer.py" afterPath="$PROJECT_DIR$/utils/trainer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/tree.py" afterPath="$PROJECT_DIR$/utils/tree.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,29 +21,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1430">
-              <caret line="212" column="0" lean-forward="true" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+            <state relative-caret-position="710">
+              <caret line="318" column="20" lean-forward="false" selection-start-line="318" selection-start-column="20" selection-end-line="318" selection-end-column="20" />
               <folding>
                 <element signature="e#190#231#0" expanded="true" />
                 <element signature="e#2115#4184#0" expanded="false" />
                 <element signature="e#4220#5840#0" expanded="false" />
                 <element signature="e#5876#6230#0" expanded="false" />
-                <element signature="e#11470#12383#0" expanded="false" />
-                <element signature="e#14925#15350#0" expanded="false" />
-                <element signature="e#15418#15568#0" expanded="false" />
+                <element signature="e#11543#12456#0" expanded="false" />
+                <element signature="e#15067#15492#0" expanded="false" />
+                <element signature="e#15560#15710#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree_LSTM.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tree_LSTM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Tree_LSTM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="196" column="22" lean-forward="true" selection-start-line="196" selection-start-column="22" selection-end-line="196" selection-end-column="22" />
               <folding>
                 <element signature="e#191#203#0" expanded="true" />
                 <element signature="e#385#4934#0" expanded="false" />
@@ -219,10 +215,10 @@
         <option value="$PROJECT_DIR$/preprocess.py" />
         <option value="$PROJECT_DIR$/utils/build_batch.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/utils/trainer.py" />
         <option value="$PROJECT_DIR$/utils/tree.py" />
         <option value="$PROJECT_DIR$/utils/opts.py" />
         <option value="$PROJECT_DIR$/models/Tree_LSTM.py" />
+        <option value="$PROJECT_DIR$/utils/trainer.py" />
       </list>
     </option>
   </component>
@@ -645,9 +641,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10476565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10476565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1039,22 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="212" column="0" lean-forward="true" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
-          <folding>
-            <element signature="e#190#231#0" expanded="true" />
-            <element signature="e#2115#4184#0" expanded="false" />
-            <element signature="e#4220#5840#0" expanded="false" />
-            <element signature="e#5876#6230#0" expanded="false" />
-            <element signature="e#11470#12383#0" expanded="false" />
-            <element signature="e#14925#15350#0" expanded="false" />
-            <element signature="e#15418#15568#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/MR/mr.train.txt.conll.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1120,14 +1100,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Tree_LSTM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="196" column="22" lean-forward="true" selection-start-line="196" selection-start-column="22" selection-end-line="196" selection-end-column="22" />
           <folding>
             <element signature="e#191#203#0" expanded="true" />
             <element signature="e#385#4934#0" expanded="false" />
             <element signature="e#2133#3009#0" expanded="false" />
             <element signature="e#3051#4205#0" expanded="false" />
             <element signature="e#4253#4934#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="318" column="20" lean-forward="false" selection-start-line="318" selection-start-column="20" selection-end-line="318" selection-end-column="20" />
+          <folding>
+            <element signature="e#190#231#0" expanded="true" />
+            <element signature="e#2115#4184#0" expanded="false" />
+            <element signature="e#4220#5840#0" expanded="false" />
+            <element signature="e#5876#6230#0" expanded="false" />
+            <element signature="e#11543#12456#0" expanded="false" />
+            <element signature="e#15067#15492#0" expanded="false" />
+            <element signature="e#15560#15710#0" expanded="false" />
           </folding>
         </state>
       </provider>
