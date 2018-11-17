@@ -1,0 +1,4548 @@
+1	warned	_	NN	_	_	0	root	_	_
+
+1	fears	_	NN	_	_	0	root	_	_
+
+1	lost	_	NN	_	_	0	root	_	_
+2	immediately	_	NN	_	_	1	advmod	_	_
+
+1	war	_	NN	_	_	0	root	_	_
+2	against	_	NN	_	_	1	prep	_	_
+3	islam	_	NN	_	_	2	pobj	_	_
+
+1	moderate	_	NN	_	_	2	amod	_	_
+2	behavior	_	NN	_	_	0	root	_	_
+
+1	promotion	_	NN	_	_	0	root	_	_
+
+1	tear	_	NN	_	_	0	root	_	_
+2	its	_	NN	_	_	3	poss	_	_
+3	members	_	NN	_	_	1	dobj	_	_
+4	apart	_	NN	_	_	1	advmod	_	_
+
+1	like	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	dangerous	_	NN	_	_	4	amod	_	_
+4	virus	_	NN	_	_	1	pobj	_	_
+
+1	has	_	NN	_	_	2	aux	_	_
+2	made	_	NN	_	_	0	root	_	_
+3	some	_	NN	_	_	2	dobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	the	_	NN	_	_	7	det	_	_
+6	loudest	_	NN	_	_	7	amod	_	_
+7	noise	_	NN	_	_	4	pobj	_	_
+
+1	delivering	_	NN	_	_	0	root	_	_
+2	further	_	NN	_	_	3	amod	_	_
+3	criticism	_	NN	_	_	1	dobj	_	_
+
+1	rendered	_	NN	_	_	0	root	_	_
+2	worthless	_	NN	_	_	1	acomp	_	_
+
+1	most	_	NN	_	_	2	advmod	_	_
+2	heavily	_	NN	_	_	3	advmod	_	_
+3	armed	_	NN	_	_	4	amod	_	_
+4	place	_	NN	_	_	0	root	_	_
+5	in	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	world	_	NN	_	_	5	pobj	_	_
+
+1	will	_	NN	_	_	0	root	_	_
+
+1	will	_	NN	_	_	2	aux	_	_
+2	continue	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	show	_	NN	_	_	2	xcomp	_	_
+5	american	_	NN	_	_	6	amod	_	_
+6	power	_	NN	_	_	4	dobj	_	_
+7	and	_	NN	_	_	6	cc	_	_
+8	purpose	_	NN	_	_	6	conj	_	_
+9	in	_	NN	_	_	4	prep	_	_
+10	support	_	NN	_	_	9	pobj	_	_
+11	of	_	NN	_	_	10	prep	_	_
+
+1	poor	_	NN	_	_	0	root	_	_
+
+1	if	_	NN	_	_	4	mark	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	world	_	NN	_	_	4	nsubj	_	_
+4	has	_	NN	_	_	0	root	_	_
+5	to	_	NN	_	_	6	aux	_	_
+6	rid	_	NN	_	_	4	xcomp	_	_
+7	itself	_	NN	_	_	6	dobj	_	_
+
+1	resolute	_	NN	_	_	0	root	_	_
+
+1	quit	_	NN	_	_	0	root	_	_
+2	its	_	NN	_	_	3	poss	_	_
+3	moves	_	NN	_	_	1	dobj	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	obstruct	_	NN	_	_	3	infmod	_	_
+6	a	_	NN	_	_	10	det	_	_
+7	fair	_	NN	_	_	10	amod	_	_
+8	middle	_	NN	_	_	10	nn	_	_
+9	east	_	NN	_	_	10	nn	_	_
+10	settlement	_	NN	_	_	5	dobj	_	_
+
+1	urged	_	NN	_	_	0	root	_	_
+
+1	honest	_	NN	_	_	0	root	_	_
+
+1	expressed	_	NN	_	_	2	amod	_	_
+2	concern	_	NN	_	_	0	root	_	_
+
+1	most	_	NN	_	_	2	advmod	_	_
+2	frantic	_	NN	_	_	3	amod	_	_
+3	lobbying	_	NN	_	_	0	root	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	devoid	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	slips	_	NN	_	_	3	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	tongue	_	NN	_	_	5	pobj	_	_
+
+1	glossing	_	NN	_	_	0	root	_	_
+2	over	_	NN	_	_	1	prep	_	_
+
+1	without	_	NN	_	_	0	root	_	_
+2	comprehensively	_	NN	_	_	3	advmod	_	_
+3	consulting	_	NN	_	_	1	pcomp	_	_
+4	with	_	NN	_	_	3	prep	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	countries	_	NN	_	_	4	pobj	_	_
+7	concerned	_	NN	_	_	6	partmod	_	_
+
+1	how	_	NN	_	_	2	advmod	_	_
+2	could	_	NN	_	_	0	root	_	_
+3	anybody	_	NN	_	_	2	nsubj	_	_
+
+1	criticizes	_	NN	_	_	0	root	_	_
+
+1	their	_	NN	_	_	3	poss	_	_
+2	glorious	_	NN	_	_	3	amod	_	_
+3	struggle	_	NN	_	_	0	root	_	_
+4	for	_	NN	_	_	3	prep	_	_
+5	these	_	NN	_	_	6	det	_	_
+6	rights	_	NN	_	_	4	pobj	_	_
+
+1	is	_	NN	_	_	2	auxpass	_	_
+2	considered	_	NN	_	_	0	root	_	_
+
+1	only	_	NN	_	_	2	advmod	_	_
+2	served	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	deny	_	NN	_	_	2	xcomp	_	_
+
+1	running	_	NN	_	_	0	root	_	_
+2	rampant	_	NN	_	_	1	acomp	_	_
+
+1	expression	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	mankind	_	NN	_	_	5	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	progress	_	NN	_	_	2	pobj	_	_
+
+1	standing	_	NN	_	_	0	root	_	_
+2	in	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	way	_	NN	_	_	2	pobj	_	_
+
+1	helped	_	NN	_	_	0	root	_	_
+2	argentina	_	NN	_	_	3	nsubj	_	_
+3	dig	_	NN	_	_	1	ccomp	_	_
+4	itself	_	NN	_	_	3	dobj	_	_
+5	into	_	NN	_	_	3	prep	_	_
+6	a	_	NN	_	_	8	det	_	_
+7	deeper	_	NN	_	_	8	amod	_	_
+8	hole	_	NN	_	_	5	pobj	_	_
+
+1	it	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	obsolete	_	NN	_	_	0	root	_	_
+4	,	_	NN	_	_	3	punct	_	_
+5	it	_	NN	_	_	8	nsubj	_	_
+6	does	_	NN	_	_	8	aux	_	_
+7	not	_	NN	_	_	8	neg	_	_
+8	work	_	NN	_	_	3	ccomp	_	_
+
+1	criticism	_	NN	_	_	0	root	_	_
+
+1	reverted	_	NN	_	_	0	root	_	_
+
+1	is	_	NN	_	_	3	cop	_	_
+2	wide	_	NN	_	_	3	amod	_	_
+3	awake	_	NN	_	_	0	root	_	_
+
+1	attacks	_	NN	_	_	0	root	_	_
+2	on	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	freedoms	_	NN	_	_	2	pobj	_	_
+5	and	_	NN	_	_	4	cc	_	_
+6	values	_	NN	_	_	4	conj	_	_
+
+1	readiness	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	establish	_	NN	_	_	1	infmod	_	_
+4	a	_	NN	_	_	6	det	_	_
+5	just	_	NN	_	_	6	advmod	_	_
+6	peace	_	NN	_	_	3	dobj	_	_
+
+1	they	_	NN	_	_	3	nsubjpass	_	_
+2	get	_	NN	_	_	3	auxpass	_	_
+3	fed	_	NN	_	_	0	root	_	_
+4	better	_	NN	_	_	3	advmod	_	_
+5	than	_	NN	_	_	4	prep	_	_
+6	us	_	NN	_	_	5	pobj	_	_
+
+1	dreaming	_	NN	_	_	0	root	_	_
+
+1	in	_	NN	_	_	0	root	_	_
+2	favor	_	NN	_	_	1	pobj	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	definition	_	NN	_	_	8	nsubjpass	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	a	_	NN	_	_	6	det	_	_
+5	democratic	_	NN	_	_	6	amod	_	_
+6	regime	_	NN	_	_	3	pobj	_	_
+7	is	_	NN	_	_	8	auxpass	_	_
+8	subjected	_	NN	_	_	0	root	_	_
+9	to	_	NN	_	_	8	prep	_	_
+10	double	_	NN	_	_	11	amod	_	_
+11	standards	_	NN	_	_	9	pobj	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	put	_	NN	_	_	0	root	_	_
+3	it	_	NN	_	_	2	dobj	_	_
+4	mildly	_	NN	_	_	2	advmod	_	_
+
+1	its	_	NN	_	_	4	poss	_	_
+2	burning	_	NN	_	_	4	amod	_	_
+3	territorial	_	NN	_	_	4	amod	_	_
+4	ambition	_	NN	_	_	0	root	_	_
+
+1	sincerity	_	NN	_	_	0	root	_	_
+
+1	those	_	NN	_	_	8	nsubjpass	_	_
+2	digging	_	NN	_	_	8	nsubjpass	_	_
+3	graves	_	NN	_	_	8	punct	_	_
+4	for	_	NN	_	_	8	prep	_	_
+5	others	_	NN	_	_	4	pobj	_	_
+6	,	_	NN	_	_	8	punct	_	_
+7	get	_	NN	_	_	8	auxpass	_	_
+8	engraved	_	NN	_	_	0	root	_	_
+9	themselves	_	NN	_	_	8	dobj	_	_
+
+1	regarded	_	NN	_	_	0	root	_	_
+2	as	_	NN	_	_	1	prep	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	moderate	_	NN	_	_	5	amod	_	_
+5	person	_	NN	_	_	2	pobj	_	_
+6	,	_	NN	_	_	1	punct	_	_
+7	compared	_	NN	_	_	1	prep	_	_
+8	to	_	NN	_	_	7	pcomp	_	_
+
+1	one	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	worst	_	NN	_	_	5	amod	_	_
+5	days	_	NN	_	_	2	pobj	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	american	_	NN	_	_	8	amod	_	_
+8	history	_	NN	_	_	6	pobj	_	_
+
+1	only	_	NN	_	_	2	advmod	_	_
+2	interested	_	NN	_	_	0	root	_	_
+3	in	_	NN	_	_	2	prep	_	_
+4	buying	_	NN	_	_	3	pcomp	_	_
+5	time	_	NN	_	_	4	dobj	_	_
+
+1	calling	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+
+1	if	_	NN	_	_	3	mark	_	_
+2	we	_	NN	_	_	3	nsubj	_	_
+3	want	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	apply	_	NN	_	_	3	xcomp	_	_
+
+1	provoked	_	NN	_	_	0	root	_	_
+2	by	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	fact	_	NN	_	_	2	pobj	_	_
+
+1	all	_	NN	_	_	4	nsubjpass	_	_
+2	was	_	NN	_	_	4	auxpass	_	_
+3	not	_	NN	_	_	4	neg	_	_
+4	lost	_	NN	_	_	0	root	_	_
+
+1	double	_	NN	_	_	2	amod	_	_
+2	standard	_	NN	_	_	0	root	_	_
+
+1	despite	_	NN	_	_	0	root	_	_
+2	all	_	NN	_	_	1	pobj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	this	_	NN	_	_	3	pobj	_	_
+5	,	_	NN	_	_	2	punct	_	_
+6	however	_	NN	_	_	2	advmod	_	_
+
+1	ignore	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	consequences	_	NN	_	_	1	dobj	_	_
+
+1	allegations	_	NN	_	_	0	root	_	_
+
+1	recognition	_	NN	_	_	0	root	_	_
+
+1	efforts	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	achieve	_	NN	_	_	1	infmod	_	_
+4	a	_	NN	_	_	6	det	_	_
+5	just	_	NN	_	_	6	advmod	_	_
+6	peace	_	NN	_	_	3	dobj	_	_
+
+1	inconsistent	_	NN	_	_	0	root	_	_
+
+1	disregarding	_	NN	_	_	0	root	_	_
+
+1	could	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	help	_	NN	_	_	0	root	_	_
+4	but	_	NN	_	_	3	cc	_	_
+5	feel	_	NN	_	_	3	conj	_	_
+
+1	sees	_	NN	_	_	0	root	_	_
+
+1	complicity	_	NN	_	_	0	root	_	_
+
+1	charges	_	NN	_	_	0	root	_	_
+
+1	this	_	NN	_	_	2	det	_	_
+2	warning	_	NN	_	_	0	root	_	_
+
+1	successfully	_	NN	_	_	2	advmod	_	_
+2	rallied	_	NN	_	_	0	root	_	_
+
+1	no	_	NN	_	_	2	dep	_	_
+2	longer	_	NN	_	_	4	advmod	_	_
+3	quite	_	NN	_	_	4	advmod	_	_
+4	ready	_	NN	_	_	0	root	_	_
+5	to	_	NN	_	_	6	aux	_	_
+6	follow	_	NN	_	_	4	xcomp	_	_
+
+1	vulnerable	_	NN	_	_	0	root	_	_
+
+1	legitimate	_	NN	_	_	0	root	_	_
+
+1	signaling	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	toughening	_	NN	_	_	4	amod	_	_
+4	policy	_	NN	_	_	1	dobj	_	_
+
+1	some	_	NN	_	_	3	det	_	_
+2	questionable	_	NN	_	_	3	amod	_	_
+3	aspects	_	NN	_	_	0	root	_	_
+
+1	would	_	NN	_	_	4	aux	_	_
+2	be	_	NN	_	_	4	auxpass	_	_
+3	completely	_	NN	_	_	4	advmod	_	_
+4	blocked	_	NN	_	_	0	root	_	_
+
+1	moments	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	sheer	_	NN	_	_	4	amod	_	_
+4	upliftment	_	NN	_	_	2	pobj	_	_
+5	and	_	NN	_	_	4	cc	_	_
+6	exhilaration	_	NN	_	_	4	conj	_	_
+
+1	there	_	NN	_	_	5	expl	_	_
+2	will	_	NN	_	_	5	aux	_	_
+3	be	_	NN	_	_	5	cop	_	_
+4	no	_	NN	_	_	5	det	_	_
+5	investments	_	NN	_	_	0	root	_	_
+
+1	demeaned	_	NN	_	_	0	root	_	_
+
+1	kept	_	NN	_	_	0	root	_	_
+2	peeking	_	NN	_	_	1	xcomp	_	_
+
+1	wants	_	NN	_	_	0	root	_	_
+
+1	test	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	patience	_	NN	_	_	2	pobj	_	_
+
+1	testimony	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	persuade	_	NN	_	_	0	root	_	_
+
+1	at	_	NN	_	_	3	prep	_	_
+2	turns	_	NN	_	_	1	pobj	_	_
+3	passive	_	NN	_	_	0	root	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	inflexible	_	NN	_	_	3	conj	_	_
+
+1	climate	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	insecurity	_	NN	_	_	2	pobj	_	_
+
+1	sheer	_	NN	_	_	2	nsubj	_	_
+2	lies	_	NN	_	_	0	root	_	_
+
+1	expansionist	_	NN	_	_	0	root	_	_
+
+1	crushing	_	NN	_	_	0	root	_	_
+
+1	violence	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	intimidation	_	NN	_	_	1	conj	_	_
+
+1	refuse	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	fulfill	_	NN	_	_	1	xcomp	_	_
+4	its	_	NN	_	_	5	poss	_	_
+5	obligations	_	NN	_	_	3	dobj	_	_
+
+1	unstable	_	NN	_	_	2	amod	_	_
+2	situation	_	NN	_	_	0	root	_	_
+
+1	torture	_	NN	_	_	0	root	_	_
+
+1	looks	_	NN	_	_	0	root	_	_
+
+1	enormous	_	NN	_	_	2	amod	_	_
+2	implications	_	NN	_	_	0	root	_	_
+
+1	pretext	_	NN	_	_	0	root	_	_
+
+1	often	_	NN	_	_	3	advmod	_	_
+2	must	_	NN	_	_	3	aux	_	_
+3	cope	_	NN	_	_	0	root	_	_
+4	without	_	NN	_	_	3	prep	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	assassinate	_	NN	_	_	0	root	_	_
+3	innocent	_	NN	_	_	4	amod	_	_
+4	activists	_	NN	_	_	2	dobj	_	_
+5	and	_	NN	_	_	4	cc	_	_
+6	citizens	_	NN	_	_	4	conj	_	_
+
+1	not	_	NN	_	_	3	neg	_	_
+2	completely	_	NN	_	_	3	advmod	_	_
+3	reliable	_	NN	_	_	0	root	_	_
+
+1	hailed	_	NN	_	_	0	root	_	_
+
+1	one	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	most	_	NN	_	_	5	advmod	_	_
+5	unstable	_	NN	_	_	2	pobj	_	_
+
+1	filed	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	complaint	_	NN	_	_	1	dobj	_	_
+
+1	know	_	NN	_	_	0	root	_	_
+
+1	are	_	NN	_	_	3	aux	_	_
+2	getting	_	NN	_	_	3	auxpass	_	_
+3	coddled	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	3	det	_	_
+2	united	_	NN	_	_	3	nn	_	_
+3	states	_	NN	_	_	6	nsubj	_	_
+4	does	_	NN	_	_	6	aux	_	_
+5	not	_	NN	_	_	6	neg	_	_
+6	want	_	NN	_	_	0	root	_	_
+7	to	_	NN	_	_	8	aux	_	_
+8	learn	_	NN	_	_	6	xcomp	_	_
+9	the	_	NN	_	_	10	det	_	_
+10	lesson	_	NN	_	_	8	dobj	_	_
+
+1	considered	_	NN	_	_	0	root	_	_
+
+1	is	_	NN	_	_	2	aux	_	_
+2	ignoring	_	NN	_	_	0	root	_	_
+3	its	_	NN	_	_	4	poss	_	_
+4	commitments	_	NN	_	_	2	dobj	_	_
+
+1	so	_	NN	_	_	2	advmod	_	_
+2	far	_	NN	_	_	3	advmod	_	_
+3	spurned	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	3	det	_	_
+2	rare	_	NN	_	_	3	amod	_	_
+3	opportunity	_	NN	_	_	0	root	_	_
+
+1	allegations	_	NN	_	_	0	root	_	_
+
+1	could	_	NN	_	_	8	aux	_	_
+2	,	_	NN	_	_	8	punct	_	_
+3	however	_	NN	_	_	8	advmod	_	_
+4	,	_	NN	_	_	8	punct	_	_
+5	not	_	NN	_	_	8	neg	_	_
+6	be	_	NN	_	_	8	auxpass	_	_
+7	openly	_	NN	_	_	8	advmod	_	_
+8	described	_	NN	_	_	0	root	_	_
+9	as	_	NN	_	_	8	prep	_	_
+10	free	_	NN	_	_	9	pobj	_	_
+11	and	_	NN	_	_	10	cc	_	_
+12	fair	_	NN	_	_	10	conj	_	_
+
+1	did	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	endorse	_	NN	_	_	0	root	_	_
+
+1	were	_	NN	_	_	2	auxpass	_	_
+2	intimidated	_	NN	_	_	0	root	_	_
+
+1	urge	_	NN	_	_	0	root	_	_
+
+1	can	_	NN	_	_	3	aux	_	_
+2	be	_	NN	_	_	3	auxpass	_	_
+3	bought	_	NN	_	_	0	root	_	_
+4	cheaper	_	NN	_	_	3	acomp	_	_
+
+1	preach	_	NN	_	_	0	root	_	_
+
+1	numerous	_	NN	_	_	3	amod	_	_
+2	serious	_	NN	_	_	3	amod	_	_
+3	abuses	_	NN	_	_	0	root	_	_
+
+1	aperitif	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	probable	_	NN	_	_	6	amod	_	_
+5	democratic	_	NN	_	_	6	amod	_	_
+6	coup	_	NN	_	_	2	pobj	_	_
+
+1	was	_	NN	_	_	2	auxpass	_	_
+2	turned	_	NN	_	_	0	root	_	_
+3	down	_	NN	_	_	2	prt	_	_
+
+1	not	_	NN	_	_	0	root	_	_
+2	at	_	NN	_	_	1	prep	_	_
+3	all	_	NN	_	_	2	pobj	_	_
+
+1	manichaean	_	NN	_	_	0	root	_	_
+
+1	fearing	_	NN	_	_	0	root	_	_
+
+1	resolve	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	6	det	_	_
+3	smaller	_	NN	_	_	6	amod	_	_
+4	israel	_	NN	_	_	6	nn	_	_
+5	palestine	_	NN	_	_	6	nn	_	_
+6	problem	_	NN	_	_	1	dobj	_	_
+7	with	_	NN	_	_	1	prep	_	_
+8	a	_	NN	_	_	10	det	_	_
+9	bigger	_	NN	_	_	10	amod	_	_
+10	one	_	NN	_	_	7	pobj	_	_
+
+1	immediately	_	NN	_	_	2	advmod	_	_
+2	attacked	_	NN	_	_	0	root	_	_
+
+1	many	_	NN	_	_	2	amod	_	_
+2	problems	_	NN	_	_	0	root	_	_
+
+1	seek	_	NN	_	_	0	root	_	_
+2	liberation	_	NN	_	_	1	dobj	_	_
+
+1	dismisses	_	NN	_	_	0	root	_	_
+
+1	has	_	NN	_	_	3	aux	_	_
+2	long	_	NN	_	_	3	advmod	_	_
+3	accused	_	NN	_	_	0	root	_	_
+
+1	chavez	_	NN	_	_	2	nsubj	_	_
+2	had	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	go	_	NN	_	_	2	xcomp	_	_
+
+1	excuses	_	NN	_	_	0	root	_	_
+
+1	whose	_	NN	_	_	2	poss	_	_
+2	hair	_	NN	_	_	5	nsubj	_	_
+3	is	_	NN	_	_	5	cop	_	_
+4	not	_	NN	_	_	5	neg	_	_
+5	blondest	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	blonde	_	NN	_	_	6	pobj	_	_
+
+1	we	_	NN	_	_	3	nsubj	_	_
+2	will	_	NN	_	_	3	aux	_	_
+3	bury	_	NN	_	_	0	root	_	_
+
+1	raving	_	NN	_	_	0	root	_	_
+
+1	able	_	NN	_	_	0	root	_	_
+
+1	playing	_	NN	_	_	0	root	_	_
+2	soccer	_	NN	_	_	1	dobj	_	_
+3	with	_	NN	_	_	1	prep	_	_
+4	their	_	NN	_	_	5	poss	_	_
+5	heads	_	NN	_	_	3	pobj	_	_
+
+1	disregard	_	NN	_	_	0	root	_	_
+
+1	massive	_	NN	_	_	3	amod	_	_
+2	intimidatory	_	NN	_	_	3	amod	_	_
+3	show	_	NN	_	_	0	root	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	force	_	NN	_	_	4	pobj	_	_
+6	that	_	NN	_	_	8	nsubj	_	_
+7	was	_	NN	_	_	8	cop	_	_
+8	evident	_	NN	_	_	3	rcmod	_	_
+9	in	_	NN	_	_	8	prep	_	_
+10	the	_	NN	_	_	11	det	_	_
+11	deployment	_	NN	_	_	9	pobj	_	_
+12	of	_	NN	_	_	11	prep	_	_
+13	security	_	NN	_	_	14	nn	_	_
+14	forces	_	NN	_	_	12	pobj	_	_
+
+1	because	_	NN	_	_	3	mark	_	_
+2	they	_	NN	_	_	3	nsubj	_	_
+3	seek	_	NN	_	_	0	root	_	_
+4	weapons	_	NN	_	_	3	dobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	mass	_	NN	_	_	7	nn	_	_
+7	destruction	_	NN	_	_	5	pobj	_	_
+8	and	_	NN	_	_	3	cc	_	_
+9	have	_	NN	_	_	3	conj	_	_
+10	links	_	NN	_	_	9	dobj	_	_
+11	with	_	NN	_	_	10	prep	_	_
+12	terrorist	_	NN	_	_	13	amod	_	_
+13	groups	_	NN	_	_	11	pobj	_	_
+
+1	ever	_	NN	_	_	2	advmod	_	_
+2	addicted	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	2	prep	_	_
+4	conspiracy	_	NN	_	_	5	nn	_	_
+5	theories	_	NN	_	_	3	pobj	_	_
+
+1	as	_	NN	_	_	0	root	_	_
+2	an	_	NN	_	_	4	det	_	_
+3	unshakeable	_	NN	_	_	4	amod	_	_
+4	defender	_	NN	_	_	1	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	this	_	NN	_	_	8	det	_	_
+7	same	_	NN	_	_	8	amod	_	_
+8	justice	_	NN	_	_	5	pobj	_	_
+
+1	being	_	NN	_	_	2	auxpass	_	_
+2	torn	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	2	prep	_	_
+4	bits	_	NN	_	_	3	pobj	_	_
+
+1	evil	_	NN	_	_	0	root	_	_
+
+1	treading	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	path	_	NN	_	_	1	dobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	coercion	_	NN	_	_	4	pobj	_	_
+6	,	_	NN	_	_	5	punct	_	_
+7	intimidation	_	NN	_	_	5	conj	_	_
+8	and	_	NN	_	_	5	cc	_	_
+9	blackmailing	_	NN	_	_	5	conj	_	_
+
+1	endorsement	_	NN	_	_	0	root	_	_
+
+1	dedicate	_	NN	_	_	0	root	_	_
+2	themselves	_	NN	_	_	1	dobj	_	_
+3	to	_	NN	_	_	1	prep	_	_
+4	lamenting	_	NN	_	_	3	pcomp	_	_
+
+1	rhetoric	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	that	_	NN	_	_	4	det	_	_
+4	kind	_	NN	_	_	2	pobj	_	_
+
+1	gaffe	_	NN	_	_	0	root	_	_
+
+1	shameful	_	NN	_	_	0	root	_	_
+
+1	wrong	_	NN	_	_	0	root	_	_
+
+1	were	_	NN	_	_	2	auxpass	_	_
+2	disenfranchised	_	NN	_	_	0	root	_	_
+
+1	concerns	_	NN	_	_	0	root	_	_
+
+1	inhumane	_	NN	_	_	0	root	_	_
+
+1	supports	_	NN	_	_	0	root	_	_
+
+1	gives	_	NN	_	_	0	root	_	_
+2	constant	_	NN	_	_	3	amod	_	_
+3	demonstrations	_	NN	_	_	1	dobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	discontent	_	NN	_	_	4	pobj	_	_
+6	and	_	NN	_	_	5	cc	_	_
+7	irritation	_	NN	_	_	5	conj	_	_
+
+1	saw	_	NN	_	_	0	root	_	_
+
+1	wily	_	NN	_	_	3	amod	_	_
+2	israeli	_	NN	_	_	3	amod	_	_
+3	aggressors	_	NN	_	_	0	root	_	_
+
+1	if	_	NN	_	_	6	mark	_	_
+2	tel	_	NN	_	_	3	nn	_	_
+3	aviv	_	NN	_	_	6	nsubj	_	_
+4	has	_	NN	_	_	6	aux	_	_
+5	not	_	NN	_	_	6	neg	_	_
+6	noticed	_	NN	_	_	0	root	_	_
+
+1	not	_	NN	_	_	2	dep	_	_
+2	enough	_	NN	_	_	0	root	_	_
+
+1	condemnation	_	NN	_	_	0	root	_	_
+
+1	oppose	_	NN	_	_	0	root	_	_
+
+1	opposition	_	NN	_	_	0	root	_	_
+
+1	incommunicado	_	NN	_	_	0	root	_	_
+
+1	who	_	NN	_	_	4	nsubj	_	_
+2	does	_	NN	_	_	4	aux	_	_
+3	not	_	NN	_	_	4	neg	_	_
+4	miss	_	NN	_	_	0	root	_	_
+5	an	_	NN	_	_	6	det	_	_
+6	opportunity	_	NN	_	_	4	dobj	_	_
+
+1	treated	_	NN	_	_	0	root	_	_
+2	with	_	NN	_	_	1	prep	_	_
+3	respect	_	NN	_	_	2	pobj	_	_
+
+1	american	_	NN	_	_	2	amod	_	_
+2	imperialists	_	NN	_	_	0	root	_	_
+
+1	widespread	_	NN	_	_	2	amod	_	_
+2	debates	_	NN	_	_	0	root	_	_
+3	against	_	NN	_	_	2	prep	_	_
+
+1	unlawful	_	NN	_	_	2	amod	_	_
+2	combatants	_	NN	_	_	0	root	_	_
+3	not	_	NN	_	_	4	neg	_	_
+4	entitled	_	NN	_	_	2	partmod	_	_
+5	to	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	protection	_	NN	_	_	5	pobj	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	understand	_	NN	_	_	0	root	_	_
+
+1	brings	_	NN	_	_	0	root	_	_
+2	no	_	NN	_	_	3	det	_	_
+3	good	_	NN	_	_	1	dobj	_	_
+4	to	_	NN	_	_	3	prep	_	_
+5	world	_	NN	_	_	6	nn	_	_
+6	peace	_	NN	_	_	4	pobj	_	_
+7	and	_	NN	_	_	6	cc	_	_
+8	economic	_	NN	_	_	9	amod	_	_
+9	development	_	NN	_	_	6	conj	_	_
+
+1	vote	_	NN	_	_	2	nn	_	_
+2	rigging	_	NN	_	_	6	nsubj	_	_
+3	has	_	NN	_	_	6	aux	_	_
+4	been	_	NN	_	_	6	cop	_	_
+5	so	_	NN	_	_	6	advmod	_	_
+6	thorough	_	NN	_	_	0	root	_	_
+7	that	_	NN	_	_	14	mark	_	_
+8	hopes	_	NN	_	_	14	nsubj	_	_
+9	for	_	NN	_	_	8	prep	_	_
+10	a	_	NN	_	_	12	det	_	_
+11	free	_	NN	_	_	12	amod	_	_
+12	election	_	NN	_	_	9	pobj	_	_
+13	are	_	NN	_	_	14	cop	_	_
+14	dead	_	NN	_	_	6	ccomp	_	_
+
+1	angered	_	NN	_	_	0	root	_	_
+
+1	prefer	_	NN	_	_	0	root	_	_
+
+1	axis	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	evil	_	NN	_	_	2	pobj	_	_
+
+1	corruption	_	NN	_	_	0	root	_	_
+
+1	there	_	NN	_	_	2	expl	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	no	_	NN	_	_	4	det	_	_
+4	reason	_	NN	_	_	2	nsubj	_	_
+5	for	_	NN	_	_	9	mark	_	_
+6	it	_	NN	_	_	9	nsubj	_	_
+7	to	_	NN	_	_	9	aux	_	_
+8	be	_	NN	_	_	9	cop	_	_
+9	impossible	_	NN	_	_	4	infmod	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	knowing	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	meaning	_	NN	_	_	2	dobj	_	_
+
+1	readiness	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	enter	_	NN	_	_	1	infmod	_	_
+4	dialogue	_	NN	_	_	3	dobj	_	_
+
+1	had	_	NN	_	_	0	root	_	_
+2	no	_	NN	_	_	3	det	_	_
+3	respect	_	NN	_	_	1	dobj	_	_
+4	for	_	NN	_	_	3	prep	_	_
+5	any	_	NN	_	_	6	det	_	_
+6	religion	_	NN	_	_	4	pobj	_	_
+7	,	_	NN	_	_	6	punct	_	_
+8	faith	_	NN	_	_	6	conj	_	_
+9	,	_	NN	_	_	6	punct	_	_
+10	norms	_	NN	_	_	6	conj	_	_
+11	,	_	NN	_	_	6	punct	_	_
+12	decency	_	NN	_	_	6	conj	_	_
+13	,	_	NN	_	_	6	punct	_	_
+14	human	_	NN	_	_	15	amod	_	_
+15	rights	_	NN	_	_	6	conj	_	_
+16	and	_	NN	_	_	6	cc	_	_
+17	rules	_	NN	_	_	6	conj	_	_
+
+1	put	_	NN	_	_	0	root	_	_
+2	an	_	NN	_	_	3	det	_	_
+3	end	_	NN	_	_	1	dobj	_	_
+
+1	what	_	NN	_	_	2	det	_	_
+2	fate	_	NN	_	_	3	nsubj	_	_
+3	awaits	_	NN	_	_	0	root	_	_
+4	argentina	_	NN	_	_	8	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	crisis	_	NN	_	_	3	dobj	_	_
+7	stricken	_	NN	_	_	8	amod	_	_
+8	economy	_	NN	_	_	3	dobj	_	_
+
+1	humanly	_	NN	_	_	2	advmod	_	_
+2	acceptable	_	NN	_	_	0	root	_	_
+
+1	personally	_	NN	_	_	2	advmod	_	_
+2	offended	_	NN	_	_	0	root	_	_
+
+1	voter	_	NN	_	_	2	nn	_	_
+2	intimidation	_	NN	_	_	0	root	_	_
+3	,	_	NN	_	_	2	punct	_	_
+4	last	_	NN	_	_	8	amod	_	_
+5	minute	_	NN	_	_	8	amod	_	_
+6	election	_	NN	_	_	8	nn	_	_
+7	law	_	NN	_	_	8	nn	_	_
+8	changes	_	NN	_	_	2	conj	_	_
+9	,	_	NN	_	_	2	punct	_	_
+10	and	_	NN	_	_	2	cc	_	_
+11	outright	_	NN	_	_	12	amod	_	_
+12	fraud	_	NN	_	_	2	conj	_	_
+
+1	nor	_	NN	_	_	2	cc	_	_
+2	especially	_	NN	_	_	3	advmod	_	_
+3	democratic	_	NN	_	_	0	root	_	_
+
+1	had	_	NN	_	_	2	aux	_	_
+2	accepted	_	NN	_	_	0	root	_	_
+
+1	hand	_	NN	_	_	0	root	_	_
+2	that	_	NN	_	_	4	nsubjpass	_	_
+3	is	_	NN	_	_	4	auxpass	_	_
+4	stretched	_	NN	_	_	1	rcmod	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	peace	_	NN	_	_	5	pobj	_	_
+
+1	an	_	NN	_	_	2	det	_	_
+2	obsession	_	NN	_	_	0	root	_	_
+3	fidel	_	NN	_	_	4	nn	_	_
+4	castro	_	NN	_	_	6	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	downfall	_	NN	_	_	2	dep	_	_
+
+1	positive	_	NN	_	_	0	root	_	_
+
+1	ambition	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	earth	_	NN	_	_	3	nsubj	_	_
+3	shaking	_	NN	_	_	0	root	_	_
+4	changes	_	NN	_	_	3	dobj	_	_
+
+1	utter	_	NN	_	_	2	amod	_	_
+2	defiance	_	NN	_	_	0	root	_	_
+
+1	legitimate	_	NN	_	_	0	root	_	_
+
+1	that	_	NN	_	_	2	det	_	_
+2	privilege	_	NN	_	_	0	root	_	_
+
+1	a	_	NN	_	_	5	det	_	_
+2	certain	_	NN	_	_	5	amod	_	_
+3	cold	_	NN	_	_	5	amod	_	_
+4	blooded	_	NN	_	_	5	amod	_	_
+5	dictator	_	NN	_	_	0	root	_	_
+
+1	a	_	NN	_	_	2	det	_	_
+2	slap	_	NN	_	_	0	root	_	_
+3	on	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	wrist	_	NN	_	_	3	pobj	_	_
+
+1	fair	_	NN	_	_	0	root	_	_
+
+1	asking	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+
+1	declared	_	NN	_	_	0	root	_	_
+
+1	grief	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	sorrow	_	NN	_	_	1	conj	_	_
+
+1	had	_	NN	_	_	2	aux	_	_
+2	irritated	_	NN	_	_	0	root	_	_
+
+1	could	_	NN	_	_	2	aux	_	_
+2	undermine	_	NN	_	_	0	root	_	_
+
+1	undivided	_	NN	_	_	2	amod	_	_
+2	support	_	NN	_	_	0	root	_	_
+
+1	shouting	_	NN	_	_	0	root	_	_
+2	insults	_	NN	_	_	1	dobj	_	_
+
+1	not	_	NN	_	_	2	dep	_	_
+2	yet	_	NN	_	_	0	root	_	_
+
+1	riddled	_	NN	_	_	0	root	_	_
+2	with	_	NN	_	_	1	prep	_	_
+3	irregularities	_	NN	_	_	2	pobj	_	_
+
+1	breathless	_	NN	_	_	3	amod	_	_
+2	armchair	_	NN	_	_	3	amod	_	_
+3	hyperbole	_	NN	_	_	0	root	_	_
+
+1	worst	_	NN	_	_	0	root	_	_
+
+1	smiling	_	NN	_	_	0	root	_	_
+
+1	being	_	NN	_	_	2	auxpass	_	_
+2	harmed	_	NN	_	_	0	root	_	_
+
+1	legitimate	_	NN	_	_	0	root	_	_
+
+1	spirit	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	cooperation	_	NN	_	_	2	pobj	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	understanding	_	NN	_	_	3	conj	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	sense	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	frustration	_	NN	_	_	3	pobj	_	_
+
+1	critics	_	NN	_	_	0	root	_	_
+
+1	inexcusable	_	NN	_	_	2	amod	_	_
+2	mistake	_	NN	_	_	0	root	_	_
+
+1	grew	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	grew	_	NN	_	_	1	conj	_	_
+
+1	active	_	NN	_	_	0	root	_	_
+
+1	pursued	_	NN	_	_	0	root	_	_
+
+1	play	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	meaningful	_	NN	_	_	4	amod	_	_
+4	role	_	NN	_	_	1	dobj	_	_
+
+1	moments	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	sheer	_	NN	_	_	4	amod	_	_
+4	exhilaration	_	NN	_	_	2	pobj	_	_
+
+1	force	_	NN	_	_	0	root	_	_
+2	us	_	NN	_	_	1	dobj	_	_
+
+1	refusal	_	NN	_	_	0	root	_	_
+
+1	better	_	NN	_	_	6	advmod	_	_
+2	than	_	NN	_	_	6	mark	_	_
+3	anybody	_	NN	_	_	6	nsubj	_	_
+4	could	_	NN	_	_	6	aux	_	_
+5	have	_	NN	_	_	6	aux	_	_
+6	hoped	_	NN	_	_	0	root	_	_
+7	for	_	NN	_	_	6	prep	_	_
+
+1	this	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	no	_	NN	_	_	4	det	_	_
+4	reason	_	NN	_	_	0	root	_	_
+5	to	_	NN	_	_	7	aux	_	_
+6	be	_	NN	_	_	7	cop	_	_
+7	optimistic	_	NN	_	_	4	infmod	_	_
+
+1	wary	_	NN	_	_	0	root	_	_
+
+1	one	_	NN	_	_	5	nsubjpass	_	_
+2	would	_	NN	_	_	5	aux	_	_
+3	inevitably	_	NN	_	_	5	advmod	_	_
+4	be	_	NN	_	_	5	auxpass	_	_
+5	reminded	_	NN	_	_	0	root	_	_
+
+1	in	_	NN	_	_	0	root	_	_
+2	addition	_	NN	_	_	1	pobj	_	_
+3	to	_	NN	_	_	2	prep	_	_
+4	being	_	NN	_	_	5	cop	_	_
+5	effective	_	NN	_	_	3	pcomp	_	_
+
+1	blaming	_	NN	_	_	0	root	_	_
+
+1	strictly	_	NN	_	_	2	advmod	_	_
+2	abide	_	NN	_	_	0	root	_	_
+
+1	difficulty	_	NN	_	_	0	root	_	_
+2	,	_	NN	_	_	1	punct	_	_
+3	of	_	NN	_	_	1	prep	_	_
+4	course	_	NN	_	_	3	pobj	_	_
+
+1	will	_	NN	_	_	5	aux	_	_
+2	be	_	NN	_	_	5	cop	_	_
+3	just	_	NN	_	_	5	advmod	_	_
+4	as	_	NN	_	_	5	advmod	_	_
+5	good	_	NN	_	_	0	root	_	_
+
+1	refusal	_	NN	_	_	0	root	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	expedite	_	NN	_	_	0	root	_	_
+
+1	provocation	_	NN	_	_	0	root	_	_
+
+1	do	_	NN	_	_	3	aux	_	_
+2	n't	_	NN	_	_	3	neg	_	_
+3	deserve	_	NN	_	_	0	root	_	_
+
+1	may	_	NN	_	_	2	aux	_	_
+2	squander	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	american	_	NN	_	_	5	amod	_	_
+5	taxpayer	_	NN	_	_	7	poss	_	_
+6	's	_	NN	_	_	5	possessive	_	_
+7	money	_	NN	_	_	2	dobj	_	_
+
+1	justice	_	NN	_	_	3	nsubj	_	_
+2	always	_	NN	_	_	3	advmod	_	_
+3	finds	_	NN	_	_	0	root	_	_
+4	support	_	NN	_	_	3	dobj	_	_
+
+1	showdown	_	NN	_	_	0	root	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+
+1	blame	_	NN	_	_	0	root	_	_
+
+1	still	_	NN	_	_	2	advmod	_	_
+2	assist	_	NN	_	_	0	root	_	_
+3	terrorists	_	NN	_	_	2	dobj	_	_
+
+1	it	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	dangerous	_	NN	_	_	0	root	_	_
+
+1	another	_	NN	_	_	2	det	_	_
+2	example	_	NN	_	_	0	root	_	_
+
+1	particularly	_	NN	_	_	2	advmod	_	_
+2	malaysia	_	NN	_	_	5	nsubj	_	_
+3	,	_	NN	_	_	5	punct	_	_
+4	is	_	NN	_	_	5	aux	_	_
+5	succeeding	_	NN	_	_	0	root	_	_
+
+1	from	_	NN	_	_	0	root	_	_
+2	upholding	_	NN	_	_	1	pcomp	_	_
+3	religious	_	NN	_	_	6	amod	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	cultural	_	NN	_	_	3	conj	_	_
+6	values	_	NN	_	_	2	dobj	_	_
+
+1	hopes	_	NN	_	_	0	root	_	_
+
+1	humanely	_	NN	_	_	0	root	_	_
+
+1	considerable	_	NN	_	_	2	amod	_	_
+2	support	_	NN	_	_	0	root	_	_
+3	from	_	NN	_	_	2	prep	_	_
+
+1	hand	_	NN	_	_	2	nn	_	_
+2	wringing	_	NN	_	_	0	root	_	_
+
+1	ulterior	_	NN	_	_	2	amod	_	_
+2	motives	_	NN	_	_	0	root	_	_
+
+1	humane	_	NN	_	_	0	root	_	_
+
+1	remains	_	NN	_	_	2	cop	_	_
+2	optimistic	_	NN	_	_	0	root	_	_
+
+1	was	_	NN	_	_	2	auxpass	_	_
+2	condemned	_	NN	_	_	0	root	_	_
+
+1	wants	_	NN	_	_	0	root	_	_
+
+1	it	_	NN	_	_	4	nsubj	_	_
+2	had	_	NN	_	_	4	aux	_	_
+3	all	_	NN	_	_	4	dep	_	_
+4	been	_	NN	_	_	0	root	_	_
+5	in	_	NN	_	_	4	prep	_	_
+6	vain	_	NN	_	_	5	pobj	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	intent	_	NN	_	_	0	root	_	_
+3	on	_	NN	_	_	2	prep	_	_
+4	revitalizing	_	NN	_	_	3	pcomp	_	_
+5	its	_	NN	_	_	6	poss	_	_
+6	economies	_	NN	_	_	4	dobj	_	_
+
+1	put	_	NN	_	_	0	root	_	_
+2	his	_	NN	_	_	3	poss	_	_
+3	nation	_	NN	_	_	1	dobj	_	_
+4	first	_	NN	_	_	1	advmod	_	_
+
+1	worst	_	NN	_	_	0	root	_	_
+
+1	was	_	NN	_	_	2	auxpass	_	_
+2	deemed	_	NN	_	_	0	root	_	_
+
+1	only	_	NN	_	_	3	advmod	_	_
+2	responsible	_	NN	_	_	3	amod	_	_
+3	course	_	NN	_	_	0	root	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	action	_	NN	_	_	4	pobj	_	_
+
+1	we	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	3	aux	_	_
+3	living	_	NN	_	_	0	root	_	_
+4	in	_	NN	_	_	3	prep	_	_
+5	a	_	NN	_	_	9	det	_	_
+6	politically	_	NN	_	_	8	advmod	_	_
+7	highly	_	NN	_	_	8	advmod	_	_
+8	sophisticated	_	NN	_	_	9	amod	_	_
+9	society	_	NN	_	_	4	pobj	_	_
+
+1	better	_	NN	_	_	0	root	_	_
+2	than	_	NN	_	_	1	prep	_	_
+3	expected	_	NN	_	_	4	amod	_	_
+4	response	_	NN	_	_	2	pobj	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	teach	_	NN	_	_	0	root	_	_
+3	everyone	_	NN	_	_	2	dobj	_	_
+4	,	_	NN	_	_	3	punct	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	british	_	NN	_	_	7	amod	_	_
+7	first	_	NN	_	_	2	advmod	_	_
+
+1	batted	_	NN	_	_	0	root	_	_
+2	an	_	NN	_	_	3	det	_	_
+3	eyelid	_	NN	_	_	1	dobj	_	_
+
+1	reminiscent	_	NN	_	_	0	root	_	_
+2	more	_	NN	_	_	1	dobj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	nazi	_	NN	_	_	6	amod	_	_
+5	concentration	_	NN	_	_	6	nn	_	_
+6	camps	_	NN	_	_	3	pobj	_	_
+7	than	_	NN	_	_	2	prep	_	_
+8	a	_	NN	_	_	11	det	_	_
+9	civilised	_	NN	_	_	11	amod	_	_
+10	detention	_	NN	_	_	11	nn	_	_
+11	facility	_	NN	_	_	7	pobj	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	importance	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	china	_	NN	_	_	3	pobj	_	_
+
+1	a	_	NN	_	_	2	det	_	_
+2	tool	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	advance	_	NN	_	_	2	infmod	_	_
+5	america	_	NN	_	_	8	poss	_	_
+6	's	_	NN	_	_	5	possessive	_	_
+7	foreign	_	NN	_	_	8	amod	_	_
+8	policy	_	NN	_	_	4	dobj	_	_
+
+1	sounded	_	NN	_	_	0	root	_	_
+2	alarm	_	NN	_	_	3	nn	_	_
+3	bells	_	NN	_	_	1	nsubj	_	_
+
+1	somewhat	_	NN	_	_	2	advmod	_	_
+2	insane	_	NN	_	_	0	root	_	_
+
+1	mistreated	_	NN	_	_	0	root	_	_
+
+1	is	_	NN	_	_	2	cop	_	_
+2	proud	_	NN	_	_	0	root	_	_
+
+1	allow	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	semblance	_	NN	_	_	2	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	a	_	NN	_	_	10	det	_	_
+7	free	_	NN	_	_	10	amod	_	_
+8	and	_	NN	_	_	7	cc	_	_
+9	fair	_	NN	_	_	7	conj	_	_
+10	ballot	_	NN	_	_	5	pobj	_	_
+
+1	triumphantly	_	NN	_	_	2	advmod	_	_
+2	returned	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	2	prep	_	_
+4	power	_	NN	_	_	3	pobj	_	_
+5	at	_	NN	_	_	2	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	request	_	NN	_	_	5	pobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	his	_	NN	_	_	11	poss	_	_
+10	own	_	NN	_	_	11	amod	_	_
+11	people	_	NN	_	_	8	pobj	_	_
+
+1	pleased	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	way	_	NN	_	_	0	root	_	_
+3	washington	_	NN	_	_	5	nsubj	_	_
+4	is	_	NN	_	_	5	aux	_	_
+5	treating	_	NN	_	_	2	rcmod	_	_
+6	these	_	NN	_	_	7	det	_	_
+7	prisoners	_	NN	_	_	5	dobj	_	_
+
+1	being	_	NN	_	_	2	cop	_	_
+2	dishonorable	_	NN	_	_	0	root	_	_
+
+1	repeatedly	_	NN	_	_	2	advmod	_	_
+2	suggested	_	NN	_	_	0	root	_	_
+
+1	there	_	NN	_	_	2	expl	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	no	_	NN	_	_	4	det	_	_
+4	scope	_	NN	_	_	2	nsubj	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	such	_	NN	_	_	7	amod	_	_
+7	madness	_	NN	_	_	5	pobj	_	_
+
+1	guaranteeing	_	NN	_	_	0	root	_	_
+2	peace	_	NN	_	_	1	dobj	_	_
+3	,	_	NN	_	_	2	punct	_	_
+4	security	_	NN	_	_	2	conj	_	_
+5	,	_	NN	_	_	2	punct	_	_
+6	and	_	NN	_	_	2	cc	_	_
+7	stability	_	NN	_	_	2	conj	_	_
+8	for	_	NN	_	_	2	prep	_	_
+9	all	_	NN	_	_	10	det	_	_
+10	nations	_	NN	_	_	8	pobj	_	_
+
+1	demands	_	NN	_	_	0	root	_	_
+
+1	have	_	NN	_	_	0	root	_	_
+2	preference	_	NN	_	_	1	dobj	_	_
+3	for	_	NN	_	_	2	prep	_	_
+
+1	mandatory	_	NN	_	_	0	root	_	_
+
+1	turned	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	world	_	NN	_	_	1	dobj	_	_
+4	into	_	NN	_	_	1	prep	_	_
+5	a	_	NN	_	_	7	det	_	_
+6	single	_	NN	_	_	7	amod	_	_
+7	front	_	NN	_	_	4	pobj	_	_
+
+1	fortunately	_	NN	_	_	0	root	_	_
+
+1	pretended	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	support	_	NN	_	_	1	xcomp	_	_
+
+1	bent	_	NN	_	_	0	root	_	_
+2	on	_	NN	_	_	1	prep	_	_
+
+1	running	_	NN	_	_	0	root	_	_
+2	so	_	NN	_	_	3	advmod	_	_
+3	scared	_	NN	_	_	1	acomp	_	_
+
+1	attempts	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	suppress	_	NN	_	_	1	infmod	_	_
+
+1	criticizing	_	NN	_	_	0	root	_	_
+
+1	proclaimed	_	NN	_	_	0	root	_	_
+
+1	far	_	NN	_	_	2	advmod	_	_
+2	preferable	_	NN	_	_	0	root	_	_
+
+1	affront	_	NN	_	_	0	root	_	_
+2	against	_	NN	_	_	1	prep	_	_
+3	law	_	NN	_	_	2	pobj	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	democracy	_	NN	_	_	3	conj	_	_
+
+1	pave	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	way	_	NN	_	_	1	dobj	_	_
+4	for	_	NN	_	_	3	prep	_	_
+5	social	_	NN	_	_	6	amod	_	_
+6	rebellion	_	NN	_	_	4	pobj	_	_
+
+1	had	_	NN	_	_	2	aux	_	_
+2	asked	_	NN	_	_	0	root	_	_
+
+1	with	_	NN	_	_	0	root	_	_
+2	guns	_	NN	_	_	1	pobj	_	_
+3	,	_	NN	_	_	2	punct	_	_
+4	bombs	_	NN	_	_	2	conj	_	_
+5	and	_	NN	_	_	2	cc	_	_
+6	soldiers	_	NN	_	_	2	conj	_	_
+
+1	giving	_	NN	_	_	0	root	_	_
+2	him	_	NN	_	_	1	iobj	_	_
+3	free	_	NN	_	_	4	amod	_	_
+4	rein	_	NN	_	_	1	dobj	_	_
+5	to	_	NN	_	_	6	aux	_	_
+6	arrest	_	NN	_	_	4	infmod	_	_
+7	at	_	NN	_	_	6	prep	_	_
+8	will	_	NN	_	_	7	pobj	_	_
+
+1	found	_	NN	_	_	0	root	_	_
+2	solidarity	_	NN	_	_	1	dobj	_	_
+3	in	_	NN	_	_	1	prep	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	view	_	NN	_	_	3	pobj	_	_
+
+1	rightly	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	3	det	_	_
+2	impossible	_	NN	_	_	3	amod	_	_
+3	feat	_	NN	_	_	0	root	_	_
+
+1	club	_	NN	_	_	2	nn	_	_
+2	gitmo	_	NN	_	_	0	root	_	_
+
+1	no	_	NN	_	_	2	det	_	_
+2	support	_	NN	_	_	0	root	_	_
+3	for	_	NN	_	_	2	prep	_	_
+
+1	is	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	allow	_	NN	_	_	1	csubj	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	growth	_	NN	_	_	3	dobj	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	a	_	NN	_	_	9	det	_	_
+8	dangerous	_	NN	_	_	9	amod	_	_
+9	focus	_	NN	_	_	6	pobj	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	understand	_	NN	_	_	0	root	_	_
+
+1	loudly	_	NN	_	_	2	advmod	_	_
+2	trumpeted	_	NN	_	_	0	root	_	_
+
+1	steal	_	NN	_	_	0	root	_	_
+
+1	lose	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	right	_	NN	_	_	1	dobj	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	count	_	NN	_	_	3	infmod	_	_
+6	itself	_	NN	_	_	5	dobj	_	_
+7	among	_	NN	_	_	5	prep	_	_
+8	the	_	NN	_	_	9	det	_	_
+9	world	_	NN	_	_	11	poss	_	_
+10	's	_	NN	_	_	9	possessive	_	_
+11	democracies	_	NN	_	_	7	pobj	_	_
+
+1	loyal	_	NN	_	_	0	root	_	_
+
+1	honored	_	NN	_	_	0	root	_	_
+2	his	_	NN	_	_	3	poss	_	_
+3	commitment	_	NN	_	_	1	dobj	_	_
+
+1	alone	_	NN	_	_	0	root	_	_
+
+1	abandons	_	NN	_	_	0	root	_	_
+
+1	violation	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	palestinian	_	NN	_	_	5	amod	_	_
+5	people	_	NN	_	_	8	poss	_	_
+6	's	_	NN	_	_	5	possessive	_	_
+7	human	_	NN	_	_	8	amod	_	_
+8	rights	_	NN	_	_	2	pobj	_	_
+
+1	american	_	NN	_	_	2	amod	_	_
+2	background	_	NN	_	_	0	root	_	_
+
+1	particularly	_	NN	_	_	2	advmod	_	_
+2	affected	_	NN	_	_	4	dep	_	_
+3	would	_	NN	_	_	4	aux	_	_
+4	be	_	NN	_	_	0	root	_	_
+
+1	warned	_	NN	_	_	0	root	_	_
+
+1	spirit	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+
+1	collective	_	NN	_	_	2	amod	_	_
+2	disapproval	_	NN	_	_	0	root	_	_
+
+1	that	_	NN	_	_	2	nsubj	_	_
+2	makes	_	NN	_	_	0	root	_	_
+3	them	_	NN	_	_	6	nsubj	_	_
+4	about	_	NN	_	_	6	advmod	_	_
+5	as	_	NN	_	_	6	advmod	_	_
+6	dangerous	_	NN	_	_	2	xcomp	_	_
+7	as	_	NN	_	_	11	mark	_	_
+8	a	_	NN	_	_	9	det	_	_
+9	person	_	NN	_	_	11	nsubj	_	_
+10	can	_	NN	_	_	11	aux	_	_
+11	be	_	NN	_	_	6	ccomp	_	_
+12	in	_	NN	_	_	11	prep	_	_
+13	modern	_	NN	_	_	14	amod	_	_
+14	times	_	NN	_	_	12	pobj	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	exchange	_	NN	_	_	0	root	_	_
+3	harsh	_	NN	_	_	4	amod	_	_
+4	words	_	NN	_	_	2	dobj	_	_
+
+1	have	_	NN	_	_	2	aux	_	_
+2	cast	_	NN	_	_	0	root	_	_
+3	doubt	_	NN	_	_	2	dobj	_	_
+
+1	complicates	_	NN	_	_	0	root	_	_
+2	any	_	NN	_	_	3	det	_	_
+3	situation	_	NN	_	_	1	dobj	_	_
+
+1	threatened	_	NN	_	_	0	root	_	_
+
+1	heavy	_	NN	_	_	3	amod	_	_
+2	human	_	NN	_	_	3	amod	_	_
+3	losses	_	NN	_	_	0	root	_	_
+
+1	positive	_	NN	_	_	2	amod	_	_
+2	control	_	NN	_	_	0	root	_	_
+
+1	maintains	_	NN	_	_	0	root	_	_
+2	its	_	NN	_	_	3	poss	_	_
+3	support	_	NN	_	_	1	dobj	_	_
+
+1	am	_	NN	_	_	2	cop	_	_
+2	hopeful	_	NN	_	_	0	root	_	_
+
+1	arbitrarily	_	NN	_	_	0	root	_	_
+
+1	perception	_	NN	_	_	0	root	_	_
+
+1	have	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	illusion	_	NN	_	_	1	dobj	_	_
+
+1	congratulated	_	NN	_	_	0	root	_	_
+
+1	resistance	_	NN	_	_	0	root	_	_
+2	against	_	NN	_	_	1	prep	_	_
+
+1	burden	_	NN	_	_	0	root	_	_
+
+1	topple	_	NN	_	_	0	root	_	_
+
+1	should	_	NN	_	_	3	aux	_	_
+2	be	_	NN	_	_	3	auxpass	_	_
+3	penalised	_	NN	_	_	0	root	_	_
+
+1	much	_	NN	_	_	2	advmod	_	_
+2	more	_	NN	_	_	0	root	_	_
+3	than	_	NN	_	_	2	prep	_	_
+4	what	_	NN	_	_	8	dobj	_	_
+5	one	_	NN	_	_	8	nsubj	_	_
+6	could	_	NN	_	_	8	aux	_	_
+7	have	_	NN	_	_	8	aux	_	_
+8	expected	_	NN	_	_	3	pcomp	_	_
+
+1	was	_	NN	_	_	2	auxpass	_	_
+2	meant	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	punish	_	NN	_	_	2	xcomp	_	_
+
+1	massacre	_	NN	_	_	0	root	_	_
+
+1	considers	_	NN	_	_	0	root	_	_
+
+1	as	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	consequence	_	NN	_	_	1	pobj	_	_
+
+1	dream	_	NN	_	_	0	root	_	_
+
+1	rigged	_	NN	_	_	0	root	_	_
+
+1	could	_	NN	_	_	3	aux	_	_
+2	n't	_	NN	_	_	3	neg	_	_
+3	care	_	NN	_	_	0	root	_	_
+4	less	_	NN	_	_	3	dobj	_	_
+
+1	violate	_	NN	_	_	0	root	_	_
+
+1	unmanageable	_	NN	_	_	0	root	_	_
+
+1	in	_	NN	_	_	0	root	_	_
+2	spite	_	NN	_	_	1	pobj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	good	_	NN	_	_	6	amod	_	_
+6	offices	_	NN	_	_	3	pobj	_	_
+
+1	more	_	NN	_	_	2	advmod	_	_
+2	heterogeneous	_	NN	_	_	0	root	_	_
+
+1	values	_	NN	_	_	0	root	_	_
+
+1	it	_	NN	_	_	6	nsubj	_	_
+2	's	_	NN	_	_	6	cop	_	_
+3	a	_	NN	_	_	6	det	_	_
+4	proud	_	NN	_	_	6	amod	_	_
+5	freedom	_	NN	_	_	6	nn	_	_
+6	day	_	NN	_	_	0	root	_	_
+
+1	no	_	NN	_	_	2	advmod	_	_
+2	longer	_	NN	_	_	3	advmod	_	_
+3	live	_	NN	_	_	0	root	_	_
+4	by	_	NN	_	_	3	prep	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	sword	_	NN	_	_	4	pobj	_	_
+
+1	crack	_	NN	_	_	0	root	_	_
+2	down	_	NN	_	_	1	prt	_	_
+
+1	no	_	NN	_	_	2	det	_	_
+2	provocation	_	NN	_	_	0	root	_	_
+
+1	hope	_	NN	_	_	0	root	_	_
+
+1	sympathy	_	NN	_	_	0	root	_	_
+
+1	ambiguity	_	NN	_	_	0	root	_	_
+
+1	combative	_	NN	_	_	2	amod	_	_
+2	talk	_	NN	_	_	0	root	_	_
+
+1	angry	_	NN	_	_	0	root	_	_
+
+1	resistance	_	NN	_	_	0	root	_	_
+
+1	rejected	_	NN	_	_	0	root	_	_
+
+1	axis	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	evil	_	NN	_	_	2	pobj	_	_
+
+1	would	_	NN	_	_	3	aux	_	_
+2	be	_	NN	_	_	3	auxpass	_	_
+3	solved	_	NN	_	_	0	root	_	_
+4	through	_	NN	_	_	3	prep	_	_
+5	peaceful	_	NN	_	_	6	amod	_	_
+6	means	_	NN	_	_	4	pobj	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	do	_	NN	_	_	0	root	_	_
+3	anything	_	NN	_	_	2	dobj	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	avoid	_	NN	_	_	3	infmod	_	_
+
+1	one	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	most	_	NN	_	_	5	advmod	_	_
+5	serious	_	NN	_	_	6	amod	_	_
+6	crises	_	NN	_	_	2	pobj	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	our	_	NN	_	_	9	poss	_	_
+9	time	_	NN	_	_	7	pobj	_	_
+
+1	fairest	_	NN	_	_	0	root	_	_
+
+1	business	_	NN	_	_	0	root	_	_
+2	as	_	NN	_	_	1	prep	_	_
+3	usual	_	NN	_	_	2	pobj	_	_
+
+1	massacring	_	NN	_	_	0	root	_	_
+2	thousands	_	NN	_	_	1	dobj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	innocent	_	NN	_	_	5	amod	_	_
+5	people	_	NN	_	_	3	pobj	_	_
+
+1	assurances	_	NN	_	_	0	root	_	_
+
+1	launched	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	broad	_	NN	_	_	4	amod	_	_
+4	assault	_	NN	_	_	1	dobj	_	_
+
+1	probably	_	NN	_	_	2	advmod	_	_
+2	female	_	NN	_	_	0	root	_	_
+
+1	think	_	NN	_	_	0	root	_	_
+
+1	viciously	_	NN	_	_	2	advmod	_	_
+2	spoke	_	NN	_	_	0	root	_	_
+3	ill	_	NN	_	_	2	acomp	_	_
+
+1	morgan	_	NN	_	_	2	nn	_	_
+2	tsvangirai	_	NN	_	_	0	root	_	_
+3	with	_	NN	_	_	2	prep	_	_
+4	trying	_	NN	_	_	3	pcomp	_	_
+5	to	_	NN	_	_	6	aux	_	_
+6	kill	_	NN	_	_	4	xcomp	_	_
+7	him	_	NN	_	_	6	dobj	_	_
+
+1	appreciated	_	NN	_	_	0	root	_	_
+
+1	legitimate	_	NN	_	_	0	root	_	_
+
+1	looks	_	NN	_	_	0	root	_	_
+2	presumptuous	_	NN	_	_	1	acomp	_	_
+
+1	expressed	_	NN	_	_	2	amod	_	_
+2	concern	_	NN	_	_	0	root	_	_
+
+1	war	_	NN	_	_	2	nn	_	_
+2	mongering	_	NN	_	_	0	root	_	_
+
+1	deny	_	NN	_	_	0	root	_	_
+
+1	made	_	NN	_	_	0	root	_	_
+2	too	_	NN	_	_	3	advmod	_	_
+3	many	_	NN	_	_	4	amod	_	_
+4	enemies	_	NN	_	_	1	dobj	_	_
+
+1	very	_	NN	_	_	2	advmod	_	_
+2	abrupt	_	NN	_	_	0	root	_	_
+
+1	very	_	NN	_	_	2	advmod	_	_
+2	hard	_	NN	_	_	3	amod	_	_
+3	time	_	NN	_	_	0	root	_	_
+
+1	aim	_	NN	_	_	0	root	_	_
+
+1	staples	_	NN	_	_	4	nsubj	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	police	_	NN	_	_	4	nn	_	_
+4	states	_	NN	_	_	0	root	_	_
+
+1	furiously	_	NN	_	_	2	advmod	_	_
+2	lobbied	_	NN	_	_	0	root	_	_
+
+1	one	_	NN	_	_	2	num	_	_
+2	image	_	NN	_	_	0	root	_	_
+3	too	_	NN	_	_	4	advmod	_	_
+4	many	_	NN	_	_	2	amod	_	_
+
+1	is	_	NN	_	_	2	cop	_	_
+2	afraid	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	desire	_	NN	_	_	0	root	_	_
+
+1	was	_	NN	_	_	2	auxpass	_	_
+2	rebuffed	_	NN	_	_	0	root	_	_
+
+1	requesting	_	NN	_	_	0	root	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	you	_	NN	_	_	0	root	_	_
+3	,	_	NN	_	_	2	punct	_	_
+4	sirs	_	NN	_	_	2	conj	_	_
+5	and	_	NN	_	_	2	cc	_	_
+6	not	_	NN	_	_	2	conj	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	one	_	NN	_	_	9	num	_	_
+9	person	_	NN	_	_	2	dep	_	_
+10	in	_	NN	_	_	9	prep	_	_
+11	10	_	NN	_	_	13	num	_	_
+12	downing	_	NN	_	_	13	nn	_	_
+13	st	_	NN	_	_	10	pobj	_	_
+14	,	_	NN	_	_	13	punct	_	_
+15	tony	_	NN	_	_	16	nn	_	_
+16	blair	_	NN	_	_	13	appos	_	_
+
+1	praised	_	NN	_	_	0	root	_	_
+
+1	cheered	_	NN	_	_	0	root	_	_
+
+1	real	_	NN	_	_	2	amod	_	_
+2	increase	_	NN	_	_	0	root	_	_
+
+1	pick	_	NN	_	_	0	root	_	_
+2	up	_	NN	_	_	1	prt	_	_
+3	some	_	NN	_	_	5	det	_	_
+4	tube	_	NN	_	_	5	nn	_	_
+5	time	_	NN	_	_	1	dobj	_	_
+
+1	interfere	_	NN	_	_	0	root	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	amount	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	2	prep	_	_
+4	a	_	NN	_	_	6	det	_	_
+5	flagrant	_	NN	_	_	6	amod	_	_
+6	violation	_	NN	_	_	3	pobj	_	_
+
+1	in	_	NN	_	_	3	prep	_	_
+2	fact	_	NN	_	_	1	pobj	_	_
+3	unprecedented	_	NN	_	_	0	root	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	stained	_	NN	_	_	0	root	_	_
+3	with	_	NN	_	_	2	prep	_	_
+4	blood	_	NN	_	_	3	pobj	_	_
+
+1	led	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	move	_	NN	_	_	1	dobj	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	suspend	_	NN	_	_	3	infmod	_	_
+
+1	have	_	NN	_	_	0	root	_	_
+2	complete	_	NN	_	_	3	amod	_	_
+3	confidence	_	NN	_	_	1	dobj	_	_
+
+1	finally	_	NN	_	_	2	advmod	_	_
+2	entered	_	NN	_	_	0	root	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	dangerous	_	NN	_	_	5	amod	_	_
+5	stage	_	NN	_	_	2	dobj	_	_
+
+1	is	_	NN	_	_	2	cop	_	_
+2	desperate	_	NN	_	_	0	root	_	_
+
+1	bitter	_	NN	_	_	2	amod	_	_
+2	destruction	_	NN	_	_	0	root	_	_
+
+1	alienate	_	NN	_	_	0	root	_	_
+
+1	worries	_	NN	_	_	0	root	_	_
+
+1	punishment	_	NN	_	_	0	root	_	_
+
+1	defects	_	NN	_	_	0	root	_	_
+
+1	finally	_	NN	_	_	2	advmod	_	_
+2	started	_	NN	_	_	0	root	_	_
+3	tumbling	_	NN	_	_	2	xcomp	_	_
+4	down	_	NN	_	_	3	advmod	_	_
+
+1	will	_	NN	_	_	2	aux	_	_
+2	call	_	NN	_	_	0	root	_	_
+3	on	_	NN	_	_	2	prep	_	_
+
+1	more	_	NN	_	_	2	amod	_	_
+2	criticism	_	NN	_	_	0	root	_	_
+
+1	feel	_	NN	_	_	0	root	_	_
+
+1	strong	_	NN	_	_	2	amod	_	_
+2	sense	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	justice	_	NN	_	_	3	pobj	_	_
+
+1	said	_	NN	_	_	0	root	_	_
+2	smiling	_	NN	_	_	1	dep	_	_
+
+1	were	_	NN	_	_	2	cop	_	_
+2	ready	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	accept	_	NN	_	_	2	xcomp	_	_
+
+1	trying	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	inflict	_	NN	_	_	1	xcomp	_	_
+
+1	being	_	NN	_	_	2	auxpass	_	_
+2	supported	_	NN	_	_	0	root	_	_
+
+1	unexpectedly	_	NN	_	_	2	advmod	_	_
+2	tough	_	NN	_	_	0	root	_	_
+
+1	bound	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	happen	_	NN	_	_	1	xcomp	_	_
+
+1	defective	_	NN	_	_	2	amod	_	_
+2	nature	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	our	_	NN	_	_	6	poss	_	_
+5	constitutional	_	NN	_	_	6	amod	_	_
+6	framework	_	NN	_	_	3	pobj	_	_
+
+1	welcome	_	NN	_	_	0	root	_	_
+
+1	not	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+3	skyjackers	_	NN	_	_	2	pobj	_	_
+
+1	appealed	_	NN	_	_	0	root	_	_
+
+1	has	_	NN	_	_	2	aux	_	_
+2	had	_	NN	_	_	0	root	_	_
+3	good	_	NN	_	_	4	amod	_	_
+4	reasons	_	NN	_	_	2	dobj	_	_
+
+1	concluded	_	NN	_	_	0	root	_	_
+2	in	_	NN	_	_	1	prep	_	_
+3	its	_	NN	_	_	9	poss	_	_
+4	scathing	_	NN	_	_	9	amod	_	_
+5	70	_	NN	_	_	4	num	_	_
+6	,	_	NN	_	_	9	punct	_	_
+7	000	_	NN	_	_	4	num	_	_
+8	word	_	NN	_	_	9	nn	_	_
+9	report	_	NN	_	_	2	pobj	_	_
+
+1	so	_	NN	_	_	2	advmod	_	_
+2	vast	_	NN	_	_	0	root	_	_
+
+1	admonishes	_	NN	_	_	0	root	_	_
+
+1	bury	_	NN	_	_	0	root	_	_
+2	past	_	NN	_	_	1	prep	_	_
+3	differences	_	NN	_	_	1	dobj	_	_
+
+1	advise	_	NN	_	_	0	root	_	_
+
+1	appears	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	4	aux	_	_
+3	be	_	NN	_	_	4	aux	_	_
+4	sidestepping	_	NN	_	_	1	xcomp	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	conventions	_	NN	_	_	4	dobj	_	_
+
+1	chanting	_	NN	_	_	0	root	_	_
+
+1	could	_	NN	_	_	3	aux	_	_
+2	have	_	NN	_	_	3	aux	_	_
+3	expected	_	NN	_	_	0	root	_	_
+
+1	even	_	NN	_	_	2	advmod	_	_
+2	risking	_	NN	_	_	0	root	_	_
+3	his	_	NN	_	_	5	poss	_	_
+4	own	_	NN	_	_	5	amod	_	_
+5	future	_	NN	_	_	2	dobj	_	_
+
+1	criticism	_	NN	_	_	0	root	_	_
+
+1	ugly	_	NN	_	_	0	root	_	_
+
+1	immediately	_	NN	_	_	0	root	_	_
+
+1	got	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	nod	_	NN	_	_	1	dobj	_	_
+4	from	_	NN	_	_	1	prep	_	_
+
+1	had	_	NN	_	_	2	aux	_	_
+2	accused	_	NN	_	_	0	root	_	_
+
+1	question	_	NN	_	_	0	root	_	_
+
+1	take	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	streets	_	NN	_	_	2	pobj	_	_
+
+1	free	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	fair	_	NN	_	_	1	conj	_	_
+
+1	threat	_	NN	_	_	0	root	_	_
+2	only	_	NN	_	_	3	advmod	_	_
+3	to	_	NN	_	_	1	prep	_	_
+
+1	claimed	_	NN	_	_	0	root	_	_
+
+1	brian	_	NN	_	_	2	nsubj	_	_
+2	gives	_	NN	_	_	0	root	_	_
+3	up	_	NN	_	_	2	prt	_	_
+4	in	_	NN	_	_	2	prep	_	_
+5	confusion	_	NN	_	_	4	pobj	_	_
+
+1	would	_	NN	_	_	3	aux	_	_
+2	be	_	NN	_	_	3	auxpass	_	_
+3	accepted	_	NN	_	_	0	root	_	_
+
+1	such	_	NN	_	_	3	predet	_	_
+2	an	_	NN	_	_	3	det	_	_
+3	attitude	_	NN	_	_	0	root	_	_
+
+1	have	_	NN	_	_	3	aux	_	_
+2	further	_	NN	_	_	3	advmod	_	_
+3	denied	_	NN	_	_	0	root	_	_
+4	our	_	NN	_	_	6	poss	_	_
+5	democratic	_	NN	_	_	6	amod	_	_
+6	space	_	NN	_	_	3	dobj	_	_
+
+1	strategic	_	NN	_	_	2	amod	_	_
+2	importance	_	NN	_	_	0	root	_	_
+
+1	voted	_	NN	_	_	0	root	_	_
+
+1	tarnishing	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	4	det	_	_
+3	us	_	NN	_	_	4	nn	_	_
+4	role	_	NN	_	_	1	dobj	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	useful	_	NN	_	_	0	root	_	_
+
+1	extremely	_	NN	_	_	2	advmod	_	_
+2	easy	_	NN	_	_	0	root	_	_
+
+1	promote	_	NN	_	_	0	root	_	_
+2	instability	_	NN	_	_	1	dobj	_	_
+
+1	cares	_	NN	_	_	0	root	_	_
+
+1	shook	_	NN	_	_	0	root	_	_
+
+1	has	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	satisfied	_	NN	_	_	0	root	_	_
+
+1	advantage	_	NN	_	_	0	root	_	_
+
+1	antics	_	NN	_	_	0	root	_	_
+
+1	accept	_	NN	_	_	0	root	_	_
+
+1	children	_	NN	_	_	0	root	_	_
+2	skipping	_	NN	_	_	1	partmod	_	_
+3	school	_	NN	_	_	2	dobj	_	_
+
+1	do	_	NN	_	_	3	aux	_	_
+2	n't	_	NN	_	_	3	neg	_	_
+3	bother	_	NN	_	_	0	root	_	_
+
+1	he	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	an	_	NN	_	_	5	det	_	_
+4	australian	_	NN	_	_	5	amod	_	_
+5	citizen	_	NN	_	_	0	root	_	_
+6	,	_	NN	_	_	5	punct	_	_
+7	and	_	NN	_	_	5	cc	_	_
+8	australia	_	NN	_	_	13	nsubj	_	_
+9	is	_	NN	_	_	13	cop	_	_
+10	not	_	NN	_	_	13	neg	_	_
+11	the	_	NN	_	_	13	det	_	_
+12	51st	_	NN	_	_	13	amod	_	_
+13	state	_	NN	_	_	5	conj	_	_
+14	of	_	NN	_	_	13	prep	_	_
+15	america	_	NN	_	_	14	pobj	_	_
+
+1	had	_	NN	_	_	2	aux	_	_
+2	agreed	_	NN	_	_	0	root	_	_
+
+1	will	_	NN	_	_	5	aux	_	_
+2	have	_	NN	_	_	5	aux	_	_
+3	no	_	NN	_	_	4	advmod	_	_
+4	universally	_	NN	_	_	5	advmod	_	_
+5	acknowledged	_	NN	_	_	0	root	_	_
+
+1	legitimate	_	NN	_	_	0	root	_	_
+
+1	he	_	NN	_	_	3	nsubj	_	_
+2	must	_	NN	_	_	3	aux	_	_
+3	think	_	NN	_	_	0	root	_	_
+4	he	_	NN	_	_	6	nsubj	_	_
+5	can	_	NN	_	_	6	aux	_	_
+6	defy	_	NN	_	_	3	ccomp	_	_
+7	gravity	_	NN	_	_	6	dobj	_	_
+
+1	skillfully	_	NN	_	_	2	advmod	_	_
+2	adapted	_	NN	_	_	0	root	_	_
+3	themselves	_	NN	_	_	2	dobj	_	_
+4	to	_	NN	_	_	2	prep	_	_
+5	the	_	NN	_	_	8	det	_	_
+6	most	_	NN	_	_	7	advmod	_	_
+7	difficult	_	NN	_	_	8	amod	_	_
+8	circumstances	_	NN	_	_	4	pobj	_	_
+
+1	absurd	_	NN	_	_	0	root	_	_
+
+1	not	_	NN	_	_	3	neg	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	exploit	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	calm	_	NN	_	_	3	dobj	_	_
+
+1	damaging	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	state	_	NN	_	_	6	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	interests	_	NN	_	_	2	pobj	_	_
+
+1	suffered	_	NN	_	_	0	root	_	_
+
+1	lest	_	NN	_	_	3	nsubj	_	_
+2	one	_	NN	_	_	3	nsubj	_	_
+3	lose	_	NN	_	_	0	root	_	_
+4	one	_	NN	_	_	7	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	moral	_	NN	_	_	7	amod	_	_
+7	advantage	_	NN	_	_	3	dobj	_	_
+
+1	terrible	_	NN	_	_	2	amod	_	_
+2	tragedy	_	NN	_	_	0	root	_	_
+
+1	we	_	NN	_	_	3	nsubj	_	_
+2	will	_	NN	_	_	3	aux	_	_
+3	go	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	3	prep	_	_
+5	war	_	NN	_	_	4	pobj	_	_
+
+1	is	_	NN	_	_	0	root	_	_
+2	merely	_	NN	_	_	1	advmod	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	entertain	_	NN	_	_	1	xcomp	_	_
+
+1	foundered	_	NN	_	_	0	root	_	_
+
+1	disenfranchise	_	NN	_	_	0	root	_	_
+
+1	congratulated	_	NN	_	_	0	root	_	_
+
+1	forthright	_	NN	_	_	2	amod	_	_
+2	disregard	_	NN	_	_	0	root	_	_
+3	for	_	NN	_	_	2	prep	_	_
+
+1	kamikaze	_	NN	_	_	2	amod	_	_
+2	killers	_	NN	_	_	0	root	_	_
+
+1	campaign	_	NN	_	_	0	root	_	_
+
+1	maintain	_	NN	_	_	0	root	_	_
+
+1	pride	_	NN	_	_	0	root	_	_
+
+1	voiced	_	NN	_	_	0	root	_	_
+2	opposition	_	NN	_	_	1	dobj	_	_
+
+1	unprecedented	_	NN	_	_	0	root	_	_
+2	in	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	history	_	NN	_	_	2	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	comity	_	NN	_	_	5	pobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	nations	_	NN	_	_	8	pobj	_	_
+
+1	denied	_	NN	_	_	0	root	_	_
+
+1	waited	_	NN	_	_	0	root	_	_
+2	angrily	_	NN	_	_	1	advmod	_	_
+
+1	favoring	_	NN	_	_	0	root	_	_
+
+1	backed	_	NN	_	_	0	root	_	_
+2	out	_	NN	_	_	1	prt	_	_
+
+1	his	_	NN	_	_	2	poss	_	_
+2	brother	_	NN	_	_	6	nsubj	_	_
+3	,	_	NN	_	_	2	punct	_	_
+4	jeb	_	NN	_	_	2	appos	_	_
+5	,	_	NN	_	_	2	punct	_	_
+6	needs	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	10	mark	_	_
+8	order	_	NN	_	_	10	dep	_	_
+9	to	_	NN	_	_	10	aux	_	_
+10	secure	_	NN	_	_	6	advcl	_	_
+11	his	_	NN	_	_	12	poss	_	_
+12	reelection	_	NN	_	_	10	dobj	_	_
+
+1	condemnation	_	NN	_	_	0	root	_	_
+
+1	a	_	NN	_	_	2	det	_	_
+2	gift	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	2	prep	_	_
+4	those	_	NN	_	_	3	pobj	_	_
+5	who	_	NN	_	_	6	nsubj	_	_
+6	stole	_	NN	_	_	4	rcmod	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	cyprus	_	NN	_	_	9	nn	_	_
+9	government	_	NN	_	_	6	dobj	_	_
+
+1	conflict	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	interests	_	NN	_	_	2	pobj	_	_
+
+1	poor	_	NN	_	_	4	amod	_	_
+2	human	_	NN	_	_	4	amod	_	_
+3	rights	_	NN	_	_	4	nn	_	_
+4	conditions	_	NN	_	_	0	root	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	continue	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	honor	_	NN	_	_	2	xcomp	_	_
+5	its	_	NN	_	_	6	poss	_	_
+6	commitment	_	NN	_	_	4	dobj	_	_
+
+1	will	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	lead	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	3	prep	_	_
+5	a	_	NN	_	_	6	det	_	_
+6	solution	_	NN	_	_	4	pobj	_	_
+
+1	disagree	_	NN	_	_	0	root	_	_
+
+1	isolation	_	NN	_	_	0	root	_	_
+
+1	opened	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	new	_	NN	_	_	4	amod	_	_
+4	path	_	NN	_	_	1	dobj	_	_
+
+1	sowing	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	seeds	_	NN	_	_	1	dobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	hatred	_	NN	_	_	4	pobj	_	_
+6	and	_	NN	_	_	5	cc	_	_
+7	malice	_	NN	_	_	5	conj	_	_
+
+1	wants	_	NN	_	_	0	root	_	_
+
+1	wish	_	NN	_	_	0	root	_	_
+
+1	he	_	NN	_	_	3	nsubj	_	_
+2	was	_	NN	_	_	3	aux	_	_
+3	going	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	demand	_	NN	_	_	3	xcomp	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	ruin	_	NN	_	_	0	root	_	_
+3	its	_	NN	_	_	4	poss	_	_
+4	relations	_	NN	_	_	2	dobj	_	_
+5	with	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	arabs	_	NN	_	_	5	pobj	_	_
+
+1	just	_	NN	_	_	2	advmod	_	_
+2	in	_	NN	_	_	0	root	_	_
+3	time	_	NN	_	_	2	pobj	_	_
+
+1	overtures	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	express	_	NN	_	_	1	infmod	_	_
+4	official	_	NN	_	_	5	amod	_	_
+5	objections	_	NN	_	_	3	dobj	_	_
+
+1	formulate	_	NN	_	_	0	root	_	_
+2	,	_	NN	_	_	1	punct	_	_
+3	implement	_	NN	_	_	1	conj	_	_
+4	,	_	NN	_	_	1	punct	_	_
+5	or	_	NN	_	_	1	cc	_	_
+6	benefit	_	NN	_	_	1	conj	_	_
+7	from	_	NN	_	_	6	prep	_	_
+8	policies	_	NN	_	_	7	pobj	_	_
+9	that	_	NN	_	_	10	nsubj	_	_
+10	undermine	_	NN	_	_	8	rcmod	_	_
+11	or	_	NN	_	_	10	cc	_	_
+12	injure	_	NN	_	_	10	conj	_	_
+13	zimbabwe	_	NN	_	_	16	poss	_	_
+14	's	_	NN	_	_	13	possessive	_	_
+15	democratic	_	NN	_	_	16	amod	_	_
+16	institutions	_	NN	_	_	10	dobj	_	_
+
+1	loyal	_	NN	_	_	0	root	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	have	_	NN	_	_	0	root	_	_
+3	enormous	_	NN	_	_	4	amod	_	_
+4	implications	_	NN	_	_	2	dobj	_	_
+
+1	irresponsible	_	NN	_	_	0	root	_	_
+
+1	care	_	NN	_	_	0	root	_	_
+
+1	is	_	NN	_	_	3	aux	_	_
+2	also	_	NN	_	_	3	advmod	_	_
+3	paying	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	price	_	NN	_	_	3	dobj	_	_
+
+1	pains	_	NN	_	_	0	root	_	_
+
+1	where	_	NN	_	_	5	advmod	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	hell	_	NN	_	_	5	nsubj	_	_
+4	it	_	NN	_	_	5	nsubj	_	_
+5	is	_	NN	_	_	0	root	_	_
+
+1	orders	_	NN	_	_	2	nsubj	_	_
+2	stretching	_	NN	_	_	0	root	_	_
+3	all	_	NN	_	_	5	predet	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	way	_	NN	_	_	6	npadvmod	_	_
+6	back	_	NN	_	_	2	advmod	_	_
+7	to	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	10	det	_	_
+9	oval	_	NN	_	_	10	nn	_	_
+10	office	_	NN	_	_	7	pobj	_	_
+
+1	were	_	NN	_	_	2	cop	_	_
+2	insulting	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	palestinians	_	NN	_	_	3	pobj	_	_
+
+1	completely	_	NN	_	_	2	advmod	_	_
+2	supports	_	NN	_	_	0	root	_	_
+
+1	it	_	NN	_	_	4	nsubj	_	_
+2	has	_	NN	_	_	4	aux	_	_
+3	not	_	NN	_	_	4	neg	_	_
+4	kept	_	NN	_	_	0	root	_	_
+5	its	_	NN	_	_	6	poss	_	_
+6	promises	_	NN	_	_	4	dobj	_	_
+
+1	can	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	afford	_	NN	_	_	0	root	_	_
+
+1	begin	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	feel	_	NN	_	_	1	xcomp	_	_
+
+1	want	_	NN	_	_	0	root	_	_
+
+1	good	_	NN	_	_	2	amod	_	_
+2	will	_	NN	_	_	0	root	_	_
+
+1	will	_	NN	_	_	3	aux	_	_
+2	be	_	NN	_	_	3	cop	_	_
+3	able	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	achieve	_	NN	_	_	3	xcomp	_	_
+6	balanced	_	NN	_	_	8	amod	_	_
+7	economic	_	NN	_	_	8	amod	_	_
+8	growth	_	NN	_	_	5	dobj	_	_
+
+1	have	_	NN	_	_	6	aux	_	_
+2	their	_	NN	_	_	4	poss	_	_
+3	human	_	NN	_	_	4	amod	_	_
+4	rights	_	NN	_	_	6	nsubj	_	_
+5	ruthlessly	_	NN	_	_	6	advmod	_	_
+6	trampled	_	NN	_	_	0	root	_	_
+7	upon	_	NN	_	_	6	prep	_	_
+
+1	this	_	NN	_	_	2	det	_	_
+2	distortion	_	NN	_	_	0	root	_	_
+3	in	_	NN	_	_	2	prep	_	_
+4	its	_	NN	_	_	5	poss	_	_
+5	policies	_	NN	_	_	3	pobj	_	_
+
+1	had	_	NN	_	_	2	aux	_	_
+2	rebelled	_	NN	_	_	0	root	_	_
+
+1	disagrees	_	NN	_	_	0	root	_	_
+
+1	settlement	_	NN	_	_	3	nsubj	_	_
+2	has	_	NN	_	_	3	aux	_	_
+3	increased	_	NN	_	_	0	root	_	_
+4	considerably	_	NN	_	_	3	advmod	_	_
+
+1	nod	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	press	_	NN	_	_	0	root	_	_
+3	ahead	_	NN	_	_	2	advmod	_	_
+
+1	a	_	NN	_	_	3	det	_	_
+2	blatant	_	NN	_	_	3	amod	_	_
+3	case	_	NN	_	_	0	root	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	discrimination	_	NN	_	_	4	pobj	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	rights	_	NN	_	_	6	pobj	_	_
+
+1	our	_	NN	_	_	3	poss	_	_
+2	renegade	_	NN	_	_	3	amod	_	_
+3	province	_	NN	_	_	0	root	_	_
+
+1	concerning	_	NN	_	_	0	root	_	_
+2	their	_	NN	_	_	3	poss	_	_
+3	life	_	NN	_	_	1	dobj	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	death	_	NN	_	_	3	conj	_	_
+
+1	recognizing	_	NN	_	_	0	root	_	_
+
+1	pretty	_	NN	_	_	2	advmod	_	_
+2	well	_	NN	_	_	3	advmod	_	_
+3	planned	_	NN	_	_	0	root	_	_
+4	out	_	NN	_	_	3	prt	_	_
+
+1	success	_	NN	_	_	0	root	_	_
+
+1	complaint	_	NN	_	_	0	root	_	_
+
+1	to	_	NN	_	_	0	root	_	_
+2	such	_	NN	_	_	3	amod	_	_
+3	policy	_	NN	_	_	1	pobj	_	_
+
+1	took	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	streets	_	NN	_	_	2	pobj	_	_
+5	around	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	country	_	NN	_	_	5	pobj	_	_
+8	in	_	NN	_	_	1	prep	_	_
+9	a	_	NN	_	_	12	det	_	_
+10	pot	_	NN	_	_	12	nn	_	_
+11	banging	_	NN	_	_	12	nn	_	_
+12	demonstration	_	NN	_	_	8	pobj	_	_
+
+1	may	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	receive	_	NN	_	_	0	root	_	_
+4	a	_	NN	_	_	6	det	_	_
+5	fair	_	NN	_	_	6	amod	_	_
+6	trial	_	NN	_	_	3	dobj	_	_
+
+1	being	_	NN	_	_	2	auxpass	_	_
+2	biased	_	NN	_	_	0	root	_	_
+3	in	_	NN	_	_	2	prep	_	_
+4	favour	_	NN	_	_	3	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+
+1	rogue	_	NN	_	_	2	amod	_	_
+2	states	_	NN	_	_	0	root	_	_
+
+1	dashed	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+3	pieces	_	NN	_	_	2	pobj	_	_
+
+1	plight	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	palestinians	_	NN	_	_	2	pobj	_	_
+5	under	_	NN	_	_	1	prep	_	_
+6	occupation	_	NN	_	_	5	pobj	_	_
+
+1	but	_	NN	_	_	0	root	_	_
+
+1	praised	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	arrows	_	NN	_	_	0	root	_	_
+
+1	shallowness	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	his	_	NN	_	_	4	poss	_	_
+4	commitment	_	NN	_	_	2	pobj	_	_
+
+1	in	_	NN	_	_	0	root	_	_
+2	mourning	_	NN	_	_	1	pobj	_	_
+
+1	if	_	NN	_	_	3	mark	_	_
+2	rummy	_	NN	_	_	3	nsubj	_	_
+3	booked	_	NN	_	_	14	advcl	_	_
+4	these	_	NN	_	_	6	det	_	_
+5	tough	_	NN	_	_	6	amod	_	_
+6	guys	_	NN	_	_	3	dobj	_	_
+7	into	_	NN	_	_	3	prep	_	_
+8	a	_	NN	_	_	9	det	_	_
+9	motel	_	NN	_	_	7	pobj	_	_
+10	6	_	NN	_	_	9	num	_	_
+11	,	_	NN	_	_	14	punct	_	_
+12	they	_	NN	_	_	14	nsubj	_	_
+13	'd	_	NN	_	_	14	aux	_	_
+14	complain	_	NN	_	_	0	root	_	_
+15	that	_	NN	_	_	17	mark	_	_
+16	there	_	NN	_	_	17	expl	_	_
+17	's	_	NN	_	_	14	ccomp	_	_
+18	no	_	NN	_	_	20	det	_	_
+19	room	_	NN	_	_	20	nn	_	_
+20	service	_	NN	_	_	17	nsubj	_	_
+
+1	brutal	_	NN	_	_	0	root	_	_
+
+1	bin	_	NN	_	_	2	nn	_	_
+2	ladin	_	NN	_	_	6	nsubj	_	_
+3	and	_	NN	_	_	2	cc	_	_
+4	mullah	_	NN	_	_	5	nn	_	_
+5	omar	_	NN	_	_	2	conj	_	_
+6	put	_	NN	_	_	0	root	_	_
+7	together	_	NN	_	_	6	prt	_	_
+
+1	widespread	_	NN	_	_	2	amod	_	_
+2	concerns	_	NN	_	_	0	root	_	_
+
+1	illegitimate	_	NN	_	_	0	root	_	_
+
+1	lacked	_	NN	_	_	0	root	_	_
+2	conclusiveness	_	NN	_	_	1	dobj	_	_
+3	and	_	NN	_	_	1	cc	_	_
+4	were	_	NN	_	_	6	cop	_	_
+5	not	_	NN	_	_	6	neg	_	_
+6	operational	_	NN	_	_	1	conj	_	_
+
+1	call	_	NN	_	_	0	root	_	_
+2	on	_	NN	_	_	1	prep	_	_
+
+1	campaign	_	NN	_	_	0	root	_	_
+2	against	_	NN	_	_	1	prep	_	_
+
+1	completely	_	NN	_	_	0	root	_	_
+2	from	_	NN	_	_	1	prep	_	_
+3	palestinian	_	NN	_	_	4	amod	_	_
+4	areas	_	NN	_	_	2	pobj	_	_
+
+1	congratulated	_	NN	_	_	0	root	_	_
+
+1	did	_	NN	_	_	0	root	_	_
+2	away	_	NN	_	_	1	advmod	_	_
+3	with	_	NN	_	_	1	prep	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	discrimination	_	NN	_	_	3	pobj	_	_
+6	that	_	NN	_	_	8	nsubj	_	_
+7	had	_	NN	_	_	8	aux	_	_
+8	existed	_	NN	_	_	5	rcmod	_	_
+9	for	_	NN	_	_	8	prep	_	_
+10	years	_	NN	_	_	9	pobj	_	_
+
+1	anticipated	_	NN	_	_	0	root	_	_
+
+1	some	_	NN	_	_	3	nsubj	_	_
+2	seem	_	NN	_	_	3	cop	_	_
+3	doubtful	_	NN	_	_	0	root	_	_
+
+1	communal	_	NN	_	_	2	amod	_	_
+2	flames	_	NN	_	_	0	root	_	_
+
+1	restore	_	NN	_	_	0	root	_	_
+2	credibility	_	NN	_	_	1	dobj	_	_
+
+1	holds	_	NN	_	_	0	root	_	_
+2	so	_	NN	_	_	3	advmod	_	_
+3	dear	_	NN	_	_	1	dobj	_	_
+4	to	_	NN	_	_	3	prep	_	_
+5	his	_	NN	_	_	6	poss	_	_
+6	heart	_	NN	_	_	4	pobj	_	_
+
+1	is	_	NN	_	_	2	cop	_	_
+2	pessimistic	_	NN	_	_	0	root	_	_
+
+1	permission	_	NN	_	_	3	nsubjpass	_	_
+2	being	_	NN	_	_	3	auxpass	_	_
+3	denied	_	NN	_	_	0	root	_	_
+
+1	unfortunately	_	NN	_	_	0	root	_	_
+
+1	threatening	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	world	_	NN	_	_	5	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	peace	_	NN	_	_	1	dobj	_	_
+
+1	without	_	NN	_	_	0	root	_	_
+2	winners	_	NN	_	_	1	pobj	_	_
+
+1	should	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	have	_	NN	_	_	0	root	_	_
+
+1	insisted	_	NN	_	_	0	root	_	_
+
+1	railing	_	NN	_	_	0	root	_	_
+
+1	tens	_	NN	_	_	3	dep	_	_
+2	of	_	NN	_	_	3	quantmod	_	_
+3	thousands	_	NN	_	_	0	root	_	_
+
+1	no	_	NN	_	_	2	det	_	_
+2	murderer	_	NN	_	_	4	nsubj	_	_
+3	will	_	NN	_	_	4	aux	_	_
+4	go	_	NN	_	_	0	root	_	_
+5	unpunished	_	NN	_	_	4	acomp	_	_
+
+1	current	_	NN	_	_	2	amod	_	_
+2	understanding	_	NN	_	_	0	root	_	_
+
+1	unequivocally	_	NN	_	_	2	advmod	_	_
+2	denied	_	NN	_	_	0	root	_	_
+
+1	defenceless	_	NN	_	_	0	root	_	_
+
+1	abstractly	_	NN	_	_	2	advmod	_	_
+2	recommend	_	NN	_	_	0	root	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	make	_	NN	_	_	0	root	_	_
+3	it	_	NN	_	_	4	nsubj	_	_
+4	possible	_	NN	_	_	2	xcomp	_	_
+
+1	creating	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	4	det	_	_
+3	fertile	_	NN	_	_	4	amod	_	_
+4	soil	_	NN	_	_	1	dobj	_	_
+
+1	transparent	_	NN	_	_	0	root	_	_
+2	,	_	NN	_	_	1	punct	_	_
+3	credible	_	NN	_	_	1	conj	_	_
+4	,	_	NN	_	_	1	punct	_	_
+5	free	_	NN	_	_	1	conj	_	_
+6	and	_	NN	_	_	1	cc	_	_
+7	fair	_	NN	_	_	1	conj	_	_
+
+1	do	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	realize	_	NN	_	_	0	root	_	_
+
+1	we	_	NN	_	_	2	nsubj	_	_
+2	have	_	NN	_	_	0	root	_	_
+3	nothing	_	NN	_	_	2	dobj	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	hide	_	NN	_	_	3	infmod	_	_
+
+1	will	_	NN	_	_	3	aux	_	_
+2	be	_	NN	_	_	3	auxpass	_	_
+3	asked	_	NN	_	_	0	root	_	_
+
+1	they	_	NN	_	_	2	nsubj	_	_
+2	want	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	hold	_	NN	_	_	2	xcomp	_	_
+5	us	_	NN	_	_	4	iobj	_	_
+6	hostage	_	NN	_	_	4	dobj	_	_
+
+1	have	_	NN	_	_	2	aux	_	_
+2	made	_	NN	_	_	0	root	_	_
+3	clear	_	NN	_	_	2	acomp	_	_
+4	their	_	NN	_	_	5	poss	_	_
+5	stand	_	NN	_	_	2	dobj	_	_
+6	against	_	NN	_	_	5	prep	_	_
+
+1	concern	_	NN	_	_	0	root	_	_
+
+1	remain	_	NN	_	_	2	cop	_	_
+2	vigilant	_	NN	_	_	0	root	_	_
+3	and	_	NN	_	_	2	cc	_	_
+4	are	_	NN	_	_	6	auxpass	_	_
+5	totally	_	NN	_	_	6	advmod	_	_
+6	committed	_	NN	_	_	2	conj	_	_
+
+1	cycle	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	violence	_	NN	_	_	2	pobj	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	satisfied	_	NN	_	_	0	root	_	_
+
+1	global	_	NN	_	_	2	amod	_	_
+2	crisis	_	NN	_	_	0	root	_	_
+
+1	always	_	NN	_	_	2	advmod	_	_
+2	underscores	_	NN	_	_	0	root	_	_
+
+1	do	_	NN	_	_	3	aux	_	_
+2	n't	_	NN	_	_	3	neg	_	_
+3	mean	_	NN	_	_	0	root	_	_
+4	that	_	NN	_	_	5	nsubj	_	_
+5	's	_	NN	_	_	3	ccomp	_	_
+6	so	_	NN	_	_	5	advmod	_	_
+
+1	will	_	NN	_	_	2	aux	_	_
+2	seek	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	support	_	NN	_	_	2	xcomp	_	_
+
+1	affinity	_	NN	_	_	0	root	_	_
+2	toward	_	NN	_	_	1	prep	_	_
+
+1	oozed	_	NN	_	_	2	amod	_	_
+2	confidence	_	NN	_	_	0	root	_	_
+
+1	promises	_	NN	_	_	0	root	_	_
+
+1	conciliatory	_	NN	_	_	2	amod	_	_
+2	speech	_	NN	_	_	0	root	_	_
+
+1	flawed	_	NN	_	_	0	root	_	_
+
+1	committed	_	NN	_	_	0	root	_	_
+2	one	_	NN	_	_	4	num	_	_
+3	more	_	NN	_	_	4	amod	_	_
+4	mistake	_	NN	_	_	1	dobj	_	_
+
+1	shoot	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	man	_	NN	_	_	1	dobj	_	_
+4	out	_	NN	_	_	1	prep	_	_
+5	of	_	NN	_	_	4	pcomp	_	_
+6	office	_	NN	_	_	5	pobj	_	_
+
+1	do	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	have	_	NN	_	_	0	root	_	_
+4	rights	_	NN	_	_	3	dobj	_	_
+
+1	liberators	_	NN	_	_	0	root	_	_
+
+1	openly	_	NN	_	_	2	advmod	_	_
+2	embarked	_	NN	_	_	0	root	_	_
+3	on	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	path	_	NN	_	_	3	pobj	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	maneuvering	_	NN	_	_	6	pobj	_	_
+8	for	_	NN	_	_	7	prep	_	_
+9	overseas	_	NN	_	_	10	amod	_	_
+10	aggression	_	NN	_	_	8	pobj	_	_
+
+1	warn	_	NN	_	_	0	root	_	_
+
+1	20	_	NN	_	_	2	number	_	_
+2	times	_	NN	_	_	3	num	_	_
+3	more	_	NN	_	_	0	root	_	_
+
+1	if	_	NN	_	_	2	mark	_	_
+2	not	_	NN	_	_	0	root	_	_
+3	better	_	NN	_	_	2	dep	_	_
+
+1	have	_	NN	_	_	3	aux	_	_
+2	partially	_	NN	_	_	3	advmod	_	_
+3	endorsed	_	NN	_	_	0	root	_	_
+
+1	empty	_	NN	_	_	2	advmod	_	_
+2	handed	_	NN	_	_	0	root	_	_
+
+1	find	_	NN	_	_	0	root	_	_
+2	itself	_	NN	_	_	4	nsubj	_	_
+3	an	_	NN	_	_	4	det	_	_
+4	outcast	_	NN	_	_	1	xcomp	_	_
+5	of	_	NN	_	_	4	prep	_	_
+
+1	does	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	poor	_	NN	_	_	4	amod	_	_
+4	job	_	NN	_	_	1	nsubj	_	_
+
+1	has	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	soft	_	NN	_	_	4	amod	_	_
+4	spot	_	NN	_	_	1	dobj	_	_
+
+1	so	_	NN	_	_	2	advmod	_	_
+2	appalling	_	NN	_	_	0	root	_	_
+
+1	rally	_	NN	_	_	0	root	_	_
+
+1	chain	_	NN	_	_	2	nn	_	_
+2	reaction	_	NN	_	_	0	root	_	_
+
+1	ideological	_	NN	_	_	2	amod	_	_
+2	fight	_	NN	_	_	0	root	_	_
+3	against	_	NN	_	_	2	prep	_	_
+4	capitalism	_	NN	_	_	3	pobj	_	_
+
+1	may	_	NN	_	_	3	aux	_	_
+2	have	_	NN	_	_	3	aux	_	_
+3	changed	_	NN	_	_	0	root	_	_
+
+1	guarantee	_	NN	_	_	0	root	_	_
+
+1	was	_	NN	_	_	3	cop	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	crusader	_	NN	_	_	0	root	_	_
+
+1	resorting	_	NN	_	_	0	root	_	_
+2	exclusively	_	NN	_	_	1	advmod	_	_
+3	to	_	NN	_	_	1	prep	_	_
+
+1	threats	_	NN	_	_	0	root	_	_
+2	against	_	NN	_	_	1	prep	_	_
+3	freedom	_	NN	_	_	2	pobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	expression	_	NN	_	_	4	pobj	_	_
+6	,	_	NN	_	_	5	punct	_	_
+7	democracy	_	NN	_	_	5	conj	_	_
+8	,	_	NN	_	_	5	punct	_	_
+9	and	_	NN	_	_	5	cc	_	_
+10	legal	_	NN	_	_	11	amod	_	_
+11	security	_	NN	_	_	5	conj	_	_
+
+1	which	_	NN	_	_	2	nsubj	_	_
+2	stood	_	NN	_	_	0	root	_	_
+3	in	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	way	_	NN	_	_	3	pobj	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	honest	_	NN	_	_	8	amod	_	_
+8	negotiations	_	NN	_	_	6	pobj	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+
+1	indoctrination	_	NN	_	_	0	root	_	_
+
+1	good	_	NN	_	_	2	amod	_	_
+2	things	_	NN	_	_	0	root	_	_
+
+1	hopes	_	NN	_	_	0	root	_	_
+
+1	infuriating	_	NN	_	_	0	root	_	_
+
+1	clearly	_	NN	_	_	2	advmod	_	_
+2	welcomes	_	NN	_	_	0	root	_	_
+
+1	total	_	NN	_	_	2	amod	_	_
+2	benefit	_	NN	_	_	7	nsubjpass	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	that	_	NN	_	_	3	pobj	_	_
+5	has	_	NN	_	_	7	aux	_	_
+6	been	_	NN	_	_	7	auxpass	_	_
+7	earned	_	NN	_	_	0	root	_	_
+8	by	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	11	det	_	_
+10	united	_	NN	_	_	11	nn	_	_
+11	states	_	NN	_	_	8	pobj	_	_
+
+1	does	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	entitle	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	evil	_	NN	_	_	0	root	_	_
+3	that	_	NN	_	_	6	nsubjpass	_	_
+4	must	_	NN	_	_	6	aux	_	_
+5	be	_	NN	_	_	6	auxpass	_	_
+6	destroyed	_	NN	_	_	2	rcmod	_	_
+
+1	expressed	_	NN	_	_	2	amod	_	_
+2	concern	_	NN	_	_	0	root	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+
+1	economic	_	NN	_	_	2	amod	_	_
+2	contagion	_	NN	_	_	0	root	_	_
+
+1	just	_	NN	_	_	5	advmod	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	acceptable	_	NN	_	_	5	amod	_	_
+4	political	_	NN	_	_	5	amod	_	_
+5	framework	_	NN	_	_	0	root	_	_
+
+1	regards	_	NN	_	_	0	root	_	_
+
+1	against	_	NN	_	_	0	root	_	_
+2	terrorism	_	NN	_	_	1	pobj	_	_
+
+1	dangerous	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	hardest	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	hard	_	NN	_	_	6	amod	_	_
+6	core	_	NN	_	_	3	pobj	_	_
+
+1	banned	_	NN	_	_	0	root	_	_
+
+1	swiftly	_	NN	_	_	2	advmod	_	_
+2	countermanded	_	NN	_	_	0	root	_	_
+3	by	_	NN	_	_	2	prep	_	_
+
+1	expressed	_	NN	_	_	0	root	_	_
+2	his	_	NN	_	_	3	poss	_	_
+3	condolences	_	NN	_	_	1	dobj	_	_
+
+1	ala	_	NN	_	_	3	nn	_	_
+2	fidel	_	NN	_	_	3	nn	_	_
+3	castro	_	NN	_	_	4	nsubj	_	_
+4	left	_	NN	_	_	0	root	_	_
+5	leaning	_	NN	_	_	4	xcomp	_	_
+6	anti	_	NN	_	_	8	amod	_	_
+7	american	_	NN	_	_	8	amod	_	_
+8	philosophy	_	NN	_	_	5	dobj	_	_
+
+1	difficulties	_	NN	_	_	0	root	_	_
+
+1	argued	_	NN	_	_	0	root	_	_
+
+1	a	_	NN	_	_	4	det	_	_
+2	petty	_	NN	_	_	4	amod	_	_
+3	minded	_	NN	_	_	4	amod	_	_
+4	populist	_	NN	_	_	0	root	_	_
+5	who	_	NN	_	_	7	nsubj	_	_
+6	had	_	NN	_	_	7	aux	_	_
+7	done	_	NN	_	_	4	rcmod	_	_
+8	great	_	NN	_	_	9	amod	_	_
+9	damage	_	NN	_	_	7	dobj	_	_
+10	to	_	NN	_	_	7	prep	_	_
+11	his	_	NN	_	_	12	poss	_	_
+12	country	_	NN	_	_	14	poss	_	_
+13	's	_	NN	_	_	12	possessive	_	_
+14	economy	_	NN	_	_	10	pobj	_	_
+
+1	backed	_	NN	_	_	0	root	_	_
+
+1	was	_	NN	_	_	2	cop	_	_
+2	critical	_	NN	_	_	0	root	_	_
+
+1	calling	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+
+1	top	_	NN	_	_	2	amod	_	_
+2	priority	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+
+1	nor	_	NN	_	_	5	cc	_	_
+2	does	_	NN	_	_	5	aux	_	_
+3	it	_	NN	_	_	5	nsubj	_	_
+4	seem	_	NN	_	_	5	cop	_	_
+5	proper	_	NN	_	_	0	root	_	_
+
+1	thought	_	NN	_	_	0	root	_	_
+
+1	barbarians	_	NN	_	_	0	root	_	_
+
+1	has	_	NN	_	_	4	aux	_	_
+2	been	_	NN	_	_	4	auxpass	_	_
+3	roundly	_	NN	_	_	4	advmod	_	_
+4	condemned	_	NN	_	_	0	root	_	_
+
+1	judgment	_	NN	_	_	0	root	_	_
+
+1	unsure	_	NN	_	_	0	root	_	_
+
+1	high	_	NN	_	_	2	amod	_	_
+2	level	_	NN	_	_	0	root	_	_
+
+1	failure	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	substantiate	_	NN	_	_	1	infmod	_	_
+
+1	whatever	_	NN	_	_	0	root	_	_
+
+1	contradictory	_	NN	_	_	0	root	_	_
+
+1	you	_	NN	_	_	2	nsubj	_	_
+2	're	_	NN	_	_	0	root	_	_
+
+1	reckless	_	NN	_	_	0	root	_	_
+
+1	axis	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	evil	_	NN	_	_	2	pobj	_	_
+
+1	stands	_	NN	_	_	0	root	_	_
+2	on	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	side	_	NN	_	_	2	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	justice	_	NN	_	_	5	pobj	_	_
+
+1	big	_	NN	_	_	2	amod	_	_
+2	challenge	_	NN	_	_	0	root	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	denounce	_	NN	_	_	0	root	_	_
+
+1	taking	_	NN	_	_	0	root	_	_
+2	advantage	_	NN	_	_	1	dobj	_	_
+3	of	_	NN	_	_	1	prep	_	_
+4	this	_	NN	_	_	3	pobj	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	like	_	NN	_	_	0	root	_	_
+
+1	tried	_	NN	_	_	0	root	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+
+1	had	_	NN	_	_	2	aux	_	_
+2	improved	_	NN	_	_	0	root	_	_
+
+1	will	_	NN	_	_	2	aux	_	_
+2	have	_	NN	_	_	0	root	_	_
+3	all	_	NN	_	_	4	det	_	_
+4	sorts	_	NN	_	_	2	dobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	misgivings	_	NN	_	_	5	pobj	_	_
+
+1	in	_	NN	_	_	0	root	_	_
+2	protest	_	NN	_	_	1	pobj	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+
+1	went	_	NN	_	_	0	root	_	_
+2	against	_	NN	_	_	1	prep	_	_
+
+1	negated	_	NN	_	_	0	root	_	_
+
+1	want	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	help	_	NN	_	_	1	xcomp	_	_
+
+1	limits	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	tolerance	_	NN	_	_	2	pobj	_	_
+
+1	calm	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	just	_	NN	_	_	5	advmod	_	_
+5	peace	_	NN	_	_	1	conj	_	_
+
+1	want	_	NN	_	_	0	root	_	_
+
+1	far	_	NN	_	_	0	root	_	_
+2	from	_	NN	_	_	1	prep	_	_
+3	condemning	_	NN	_	_	2	pcomp	_	_
+
+1	any	_	NN	_	_	3	det	_	_
+2	reckless	_	NN	_	_	3	amod	_	_
+3	action	_	NN	_	_	0	root	_	_
+
+1	successful	_	NN	_	_	0	root	_	_
+2	so	_	NN	_	_	3	advmod	_	_
+3	far	_	NN	_	_	1	advmod	_	_
+
+1	is	_	NN	_	_	4	cop	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	true	_	NN	_	_	4	amod	_	_
+4	oligarch	_	NN	_	_	0	root	_	_
+
+1	branding	_	NN	_	_	0	root	_	_
+
+1	undemocratically	_	NN	_	_	0	root	_	_
+
+1	is	_	NN	_	_	0	root	_	_
+2	after	_	NN	_	_	1	prep	_	_
+3	imposing	_	NN	_	_	2	pcomp	_	_
+
+1	oligarchic	_	NN	_	_	2	amod	_	_
+2	elite	_	NN	_	_	0	root	_	_
+
+1	systematic	_	NN	_	_	2	amod	_	_
+2	campaign	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	violence	_	NN	_	_	3	pobj	_	_
+5	and	_	NN	_	_	4	cc	_	_
+6	intimidation	_	NN	_	_	4	conj	_	_
+
+1	seek	_	NN	_	_	0	root	_	_
+
+1	opposition	_	NN	_	_	0	root	_	_
+
+1	brutal	_	NN	_	_	0	root	_	_
+
+1	good	_	NN	_	_	2	amod	_	_
+2	treatment	_	NN	_	_	0	root	_	_
+
+1	subverts	_	NN	_	_	0	root	_	_
+
+1	unanimous	_	NN	_	_	2	amod	_	_
+2	desire	_	NN	_	_	0	root	_	_
+3	and	_	NN	_	_	2	cc	_	_
+4	will	_	NN	_	_	2	conj	_	_
+
+1	resolute	_	NN	_	_	2	amod	_	_
+2	commitment	_	NN	_	_	0	root	_	_
+
+1	wholesale	_	NN	_	_	2	amod	_	_
+2	rigging	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	vote	_	NN	_	_	3	pobj	_	_
+
+1	is	_	NN	_	_	3	cop	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	problem	_	NN	_	_	0	root	_	_
+
+1	had	_	NN	_	_	3	aux	_	_
+2	repeatedly	_	NN	_	_	3	advmod	_	_
+3	asked	_	NN	_	_	0	root	_	_
+
+1	looking	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+3	an	_	NN	_	_	4	det	_	_
+4	edge	_	NN	_	_	2	pobj	_	_
+
+1	although	_	NN	_	_	10	mark	_	_
+2	,	_	NN	_	_	10	punct	_	_
+3	of	_	NN	_	_	10	prep	_	_
+4	course	_	NN	_	_	3	pobj	_	_
+5	,	_	NN	_	_	10	punct	_	_
+6	these	_	NN	_	_	9	det	_	_
+7	super	_	NN	_	_	9	amod	_	_
+8	rigid	_	NN	_	_	9	amod	_	_
+9	activities	_	NN	_	_	10	nsubj	_	_
+10	are	_	NN	_	_	0	root	_	_
+11	to	_	NN	_	_	10	prep	_	_
+12	a	_	NN	_	_	14	det	_	_
+13	great	_	NN	_	_	14	amod	_	_
+14	extent	_	NN	_	_	11	pobj	_	_
+15	warranted	_	NN	_	_	10	advmod	_	_
+
+1	urges	_	NN	_	_	0	root	_	_
+
+1	kept	_	NN	_	_	0	root	_	_
+2	things	_	NN	_	_	3	nsubj	_	_
+3	vague	_	NN	_	_	1	xcomp	_	_
+
+1	are	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	targets	_	NN	_	_	1	nsubj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	suppression	_	NN	_	_	4	pobj	_	_
+
+1	was	_	NN	_	_	2	auxpass	_	_
+2	pleased	_	NN	_	_	0	root	_	_
+
+1	endorsed	_	NN	_	_	0	root	_	_
+
+1	evil	_	NN	_	_	2	nn	_	_
+2	empire	_	NN	_	_	0	root	_	_
+
+1	state	_	NN	_	_	2	nsubj	_	_
+2	sponsored	_	NN	_	_	0	root	_	_
+
+1	doubts	_	NN	_	_	0	root	_	_
+
+1	cheering	_	NN	_	_	0	root	_	_
+
+1	playing	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	part	_	NN	_	_	1	dobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	a	_	NN	_	_	6	det	_	_
+6	thug	_	NN	_	_	4	pobj	_	_
+7	who	_	NN	_	_	9	nsubjpass	_	_
+8	is	_	NN	_	_	9	auxpass	_	_
+9	feared	_	NN	_	_	6	rcmod	_	_
+10	by	_	NN	_	_	9	prep	_	_
+11	all	_	NN	_	_	10	pobj	_	_
+12	and	_	NN	_	_	9	cc	_	_
+13	who	_	NN	_	_	14	nsubj	_	_
+14	likes	_	NN	_	_	9	conj	_	_
+15	to	_	NN	_	_	16	aux	_	_
+16	punish	_	NN	_	_	14	xcomp	_	_
+17	anyone	_	NN	_	_	16	dobj	_	_
+18	that	_	NN	_	_	19	nsubj	_	_
+19	complains	_	NN	_	_	17	rcmod	_	_
+20	about	_	NN	_	_	19	prep	_	_
+21	his	_	NN	_	_	22	poss	_	_
+22	behavior	_	NN	_	_	20	pobj	_	_
+
+1	hardly	_	NN	_	_	2	advmod	_	_
+2	elastic	_	NN	_	_	0	root	_	_
+3	enough	_	NN	_	_	2	advmod	_	_
+
+1	beneficial	_	NN	_	_	0	root	_	_
+
+1	get	_	NN	_	_	0	root	_	_
+2	our	_	NN	_	_	4	poss	_	_
+3	american	_	NN	_	_	4	amod	_	_
+4	colleagues	_	NN	_	_	6	nsubj	_	_
+5	to	_	NN	_	_	6	aux	_	_
+6	live	_	NN	_	_	1	xcomp	_	_
+7	up	_	NN	_	_	6	prep	_	_
+8	to	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	10	det	_	_
+10	obligation	_	NN	_	_	8	pobj	_	_
+
+1	threatening	_	NN	_	_	0	root	_	_
+
+1	not	_	NN	_	_	4	neg	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	fair	_	NN	_	_	4	amod	_	_
+4	election	_	NN	_	_	0	root	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	help	_	NN	_	_	0	root	_	_
+
+1	wishes	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	state	_	NN	_	_	1	infmod	_	_
+
+1	would	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	interfere	_	NN	_	_	0	root	_	_
+
+1	will	_	NN	_	_	2	aux	_	_
+2	die	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	success	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	rio	_	NN	_	_	6	nn	_	_
+6	conference	_	NN	_	_	3	pobj	_	_
+
+1	failed	_	NN	_	_	0	root	_	_
+
+1	seething	_	NN	_	_	0	root	_	_
+2	with	_	NN	_	_	1	prep	_	_
+3	anger	_	NN	_	_	2	pobj	_	_
+
+1	systematic	_	NN	_	_	2	amod	_	_
+2	campaign	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	violence	_	NN	_	_	3	pobj	_	_
+
+1	adopted	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	6	det	_	_
+3	most	_	NN	_	_	4	advmod	_	_
+4	pro	_	NN	_	_	6	amod	_	_
+5	taiwan	_	NN	_	_	6	nn	_	_
+6	posture	_	NN	_	_	1	dobj	_	_
+
+1	no	_	NN	_	_	2	advmod	_	_
+2	more	_	NN	_	_	0	root	_	_
+3	than	_	NN	_	_	2	prep	_	_
+
+1	hands	_	NN	_	_	0	root	_	_
+2	behind	_	NN	_	_	1	prep	_	_
+3	chechen	_	NN	_	_	4	amod	_	_
+4	terrorism	_	NN	_	_	2	pobj	_	_
+5	,	_	NN	_	_	2	punct	_	_
+
+1	dethroning	_	NN	_	_	0	root	_	_
+
+1	are	_	NN	_	_	2	auxpass	_	_
+2	worried	_	NN	_	_	0	root	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+
+1	though	_	NN	_	_	6	mark	_	_
+2	mr	_	NN	_	_	3	nn	_	_
+3	tobin	_	NN	_	_	6	nsubj	_	_
+4	has	_	NN	_	_	6	aux	_	_
+5	finally	_	NN	_	_	6	advmod	_	_
+6	mastered	_	NN	_	_	20	advcl	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	diapering	_	NN	_	_	9	nn	_	_
+9	process	_	NN	_	_	6	dobj	_	_
+10	,	_	NN	_	_	20	punct	_	_
+11	his	_	NN	_	_	12	poss	_	_
+12	baby	_	NN	_	_	20	nsubjpass	_	_
+13	who	_	NN	_	_	17	nsubj	_	_
+14	is	_	NN	_	_	17	cop	_	_
+15	15	_	NN	_	_	16	num	_	_
+16	years	_	NN	_	_	17	npadvmod	_	_
+17	old	_	NN	_	_	12	rcmod	_	_
+18	is	_	NN	_	_	20	auxpass	_	_
+19	not	_	NN	_	_	20	neg	_	_
+20	amused	_	NN	_	_	0	root	_	_
+
+1	come	_	NN	_	_	0	root	_	_
+2	out	_	NN	_	_	1	prt	_	_
+3	opposing	_	NN	_	_	1	xcomp	_	_
+
+1	was	_	NN	_	_	3	auxpass	_	_
+2	too	_	NN	_	_	3	advmod	_	_
+3	tainted	_	NN	_	_	0	root	_	_
+4	for	_	NN	_	_	3	prep	_	_
+5	elections	_	NN	_	_	4	pobj	_	_
+6	to	_	NN	_	_	8	aux	_	_
+7	be	_	NN	_	_	8	cop	_	_
+8	free	_	NN	_	_	3	xcomp	_	_
+9	and	_	NN	_	_	8	cc	_	_
+10	fair	_	NN	_	_	8	conj	_	_
+
+1	despite	_	NN	_	_	0	root	_	_
+2	its	_	NN	_	_	4	poss	_	_
+3	many	_	NN	_	_	4	amod	_	_
+4	shortcomings	_	NN	_	_	1	pobj	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	cheaters	_	NN	_	_	5	nsubj	_	_
+3	were	_	NN	_	_	5	cop	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	imf	_	NN	_	_	0	root	_	_
+
+1	want	_	NN	_	_	0	root	_	_
+
+1	welcomed	_	NN	_	_	0	root	_	_
+
+1	clearly	_	NN	_	_	2	advmod	_	_
+2	not	_	NN	_	_	3	dep	_	_
+3	free	_	NN	_	_	0	root	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	fair	_	NN	_	_	3	conj	_	_
+
+1	it	_	NN	_	_	5	nsubj	_	_
+2	can	_	NN	_	_	5	aux	_	_
+3	not	_	NN	_	_	5	neg	_	_
+4	be	_	NN	_	_	5	cop	_	_
+5	anything	_	NN	_	_	0	root	_	_
+6	but	_	NN	_	_	5	cc	_	_
+7	gangster	_	NN	_	_	5	conj	_	_
+8	like	_	NN	_	_	5	prep	_	_
+9	logic	_	NN	_	_	8	pobj	_	_
+
+1	only	_	NN	_	_	0	root	_	_
+
+1	retaliating	_	NN	_	_	0	root	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	request	_	NN	_	_	0	root	_	_
+
+1	enormous	_	NN	_	_	2	amod	_	_
+2	concern	_	NN	_	_	0	root	_	_
+
+1	axis	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	evil	_	NN	_	_	4	amod	_	_
+4	theory	_	NN	_	_	2	pobj	_	_
+
+1	infamy	_	NN	_	_	0	root	_	_
+2	against	_	NN	_	_	1	prep	_	_
+3	civilization	_	NN	_	_	2	pobj	_	_
+
+1	would	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	support	_	NN	_	_	0	root	_	_
+
+1	victory	_	NN	_	_	0	root	_	_
+
+1	are	_	NN	_	_	2	aux	_	_
+2	bracing	_	NN	_	_	0	root	_	_
+
+1	wanted	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	avoid	_	NN	_	_	1	xcomp	_	_
+
+1	are	_	NN	_	_	3	cop	_	_
+2	so	_	NN	_	_	3	advmod	_	_
+3	hated	_	NN	_	_	0	root	_	_
+
+1	rejected	_	NN	_	_	0	root	_	_
+
+1	again	_	NN	_	_	2	advmod	_	_
+2	triggers	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	red	_	NN	_	_	5	amod	_	_
+5	light	_	NN	_	_	2	dobj	_	_
+
+1	incredibly	_	NN	_	_	2	advmod	_	_
+2	difficult	_	NN	_	_	0	root	_	_
+
+1	a	_	NN	_	_	2	det	_	_
+2	valentine	_	NN	_	_	5	poss	_	_
+3	's	_	NN	_	_	2	possessive	_	_
+4	day	_	NN	_	_	5	nn	_	_
+5	gift	_	NN	_	_	0	root	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	polluters	_	NN	_	_	6	pobj	_	_
+
+1	pretends	_	NN	_	_	0	root	_	_
+
+1	has	_	NN	_	_	4	aux	_	_
+2	all	_	NN	_	_	3	dep	_	_
+3	along	_	NN	_	_	4	advmod	_	_
+4	maintained	_	NN	_	_	0	root	_	_
+5	a	_	NN	_	_	7	det	_	_
+6	close	_	NN	_	_	7	amod	_	_
+7	relationship	_	NN	_	_	4	dobj	_	_
+
+1	hapless	_	NN	_	_	2	amod	_	_
+2	vanquished	_	NN	_	_	0	root	_	_
+
+1	seriously	_	NN	_	_	2	advmod	_	_
+2	flawed	_	NN	_	_	0	root	_	_
+
+1	bold	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	fair	_	NN	_	_	1	conj	_	_
+
+1	rock	_	NN	_	_	3	nn	_	_
+2	throwing	_	NN	_	_	3	nn	_	_
+3	youths	_	NN	_	_	4	nsubj	_	_
+4	responded	_	NN	_	_	0	root	_	_
+
+1	exalted	_	NN	_	_	0	root	_	_
+
+1	reject	_	NN	_	_	0	root	_	_
+
+1	labeling	_	NN	_	_	0	root	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	express	_	NN	_	_	0	root	_	_
+3	concern	_	NN	_	_	2	dobj	_	_
+
+1	declined	_	NN	_	_	0	root	_	_
+
+1	are	_	NN	_	_	3	auxpass	_	_
+2	frequently	_	NN	_	_	3	advmod	_	_
+3	embraced	_	NN	_	_	0	root	_	_
+
+1	accidental	_	NN	_	_	2	amod	_	_
+2	slight	_	NN	_	_	0	root	_	_
+
+1	will	_	NN	_	_	0	root	_	_
+
+1	robust	_	NN	_	_	0	root	_	_
+
+1	stressed	_	NN	_	_	0	root	_	_
+
+1	is	_	NN	_	_	3	auxpass	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	qualified	_	NN	_	_	0	root	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	protest	_	NN	_	_	0	root	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	deny	_	NN	_	_	0	root	_	_
+
+1	denounced	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	attacked	_	NN	_	_	1	conj	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	cause	_	NN	_	_	0	root	_	_
+3	japan	_	NN	_	_	12	nsubj	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	republic	_	NN	_	_	3	conj	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	korea	_	NN	_	_	7	pobj	_	_
+9	\(	_	NN	_	_	11	amod	_	_
+10	rok	_	NN	_	_	11	nn	_	_
+11	\)	_	NN	_	_	7	pobj	_	_
+12	feel	_	NN	_	_	2	ccomp	_	_
+13	disturbed	_	NN	_	_	12	acomp	_	_
+
+1	deviate	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	invitation	_	NN	_	_	0	root	_	_
+
+1	has	_	NN	_	_	2	aux	_	_
+2	concerned	_	NN	_	_	0	root	_	_
+
+1	brouhaha	_	NN	_	_	0	root	_	_
+
+1	alarming	_	NN	_	_	0	root	_	_
+
+1	more	_	NN	_	_	2	advmod	_	_
+2	often	_	NN	_	_	0	root	_	_
+3	than	_	NN	_	_	2	prep	_	_
+4	not	_	NN	_	_	2	dep	_	_
+
+1	storm	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+3	victory	_	NN	_	_	2	pobj	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+
+1	challenging	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	issuing	_	NN	_	_	1	conj	_	_
+4	objections	_	NN	_	_	1	dobj	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	status	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	golden	_	NN	_	_	5	amod	_	_
+5	boy	_	NN	_	_	3	pobj	_	_
+
+1	bias	_	NN	_	_	0	root	_	_
+2	against	_	NN	_	_	1	prep	_	_
+
+1	showed	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	lack	_	NN	_	_	1	dobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	sincerity	_	NN	_	_	4	pobj	_	_
+
+1	accepted	_	NN	_	_	0	root	_	_
+
+1	keep	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	distance	_	NN	_	_	1	dobj	_	_
+4	from	_	NN	_	_	1	prep	_	_
+5	america	_	NN	_	_	4	pobj	_	_
+
+1	sharply	_	NN	_	_	2	advmod	_	_
+2	criticized	_	NN	_	_	0	root	_	_
+
+1	wisdom	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	creativity	_	NN	_	_	1	conj	_	_
+
+1	am	_	NN	_	_	2	cop	_	_
+2	afraid	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	say	_	NN	_	_	2	xcomp	_	_
+
+1	neither	_	NN	_	_	2	preconj	_	_
+2	free	_	NN	_	_	0	root	_	_
+3	nor	_	NN	_	_	2	cc	_	_
+4	fair	_	NN	_	_	2	conj	_	_
+
+1	serve	_	NN	_	_	0	root	_	_
+2	its	_	NN	_	_	4	poss	_	_
+3	political	_	NN	_	_	4	amod	_	_
+4	purpose	_	NN	_	_	1	dobj	_	_
+
+1	dangerous	_	NN	_	_	0	root	_	_
+
+1	were	_	NN	_	_	2	auxpass	_	_
+2	considered	_	NN	_	_	0	root	_	_
+3	as	_	NN	_	_	2	prep	_	_
+4	nonexistent	_	NN	_	_	3	pobj	_	_
+5	by	_	NN	_	_	2	prep	_	_
+6	many	_	NN	_	_	7	amod	_	_
+7	countries	_	NN	_	_	5	pobj	_	_
+
+1	threats	_	NN	_	_	0	root	_	_
+
+1	earned	_	NN	_	_	0	root	_	_
+2	eternal	_	NN	_	_	3	amod	_	_
+3	notoriety	_	NN	_	_	1	dobj	_	_
+
+1	supporter	_	NN	_	_	0	root	_	_
+
+1	as	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	vehicle	_	NN	_	_	1	pobj	_	_
+4	for	_	NN	_	_	3	prep	_	_
+5	increasing	_	NN	_	_	7	amod	_	_
+6	personal	_	NN	_	_	7	amod	_	_
+7	popularity	_	NN	_	_	4	pobj	_	_
+
+1	perfectly	_	NN	_	_	2	advmod	_	_
+2	well	_	NN	_	_	0	root	_	_
+
+1	responsible	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+3	zimbabwe	_	NN	_	_	5	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	crisis	_	NN	_	_	2	pobj	_	_
+
+1	rejected	_	NN	_	_	0	root	_	_
+
+1	outcry	_	NN	_	_	0	root	_	_
+
+1	threatening	_	NN	_	_	0	root	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+
+1	stalemate	_	NN	_	_	0	root	_	_
+
+1	accused	_	NN	_	_	0	root	_	_
+
+1	discontent	_	NN	_	_	0	root	_	_
+
+1	agreed	_	NN	_	_	0	root	_	_
+
+1	do	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	want	_	NN	_	_	0	root	_	_
+
+1	linked	_	NN	_	_	0	root	_	_
+
+1	inefficient	_	NN	_	_	3	amod	_	_
+2	argentine	_	NN	_	_	3	amod	_	_
+3	automakers	_	NN	_	_	0	root	_	_
+
+1	in	_	NN	_	_	0	root	_	_
+2	doubt	_	NN	_	_	1	pobj	_	_
+
+1	have	_	NN	_	_	2	aux	_	_
+2	made	_	NN	_	_	0	root	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	great	_	NN	_	_	5	amod	_	_
+5	progress	_	NN	_	_	2	dobj	_	_
+
+1	west	_	NN	_	_	3	poss	_	_
+2	's	_	NN	_	_	1	possessive	_	_
+3	failure	_	NN	_	_	0	root	_	_
+
+1	scuzz	_	NN	_	_	0	root	_	_
+
+1	aggression	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	terrorism	_	NN	_	_	1	conj	_	_
+
+1	menace	_	NN	_	_	0	root	_	_
+
+1	condemned	_	NN	_	_	0	root	_	_
+
+1	breeding	_	NN	_	_	2	nn	_	_
+2	ground	_	NN	_	_	0	root	_	_
+
+1	unfounded	_	NN	_	_	2	amod	_	_
+2	charges	_	NN	_	_	0	root	_	_
+
+1	accuses	_	NN	_	_	0	root	_	_
+
+1	confidence	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	high	_	NN	_	_	4	amod	_	_
+4	esteem	_	NN	_	_	1	conj	_	_
+
+1	an	_	NN	_	_	2	det	_	_
+2	aberration	_	NN	_	_	0	root	_	_
+3	that	_	NN	_	_	4	nsubj	_	_
+4	goes	_	NN	_	_	2	rcmod	_	_
+5	against	_	NN	_	_	4	prep	_	_
+6	mankind	_	NN	_	_	5	pobj	_	_
+
+1	were	_	NN	_	_	2	auxpass	_	_
+2	worried	_	NN	_	_	0	root	_	_
+
+1	discontent	_	NN	_	_	0	root	_	_
+
+1	even	_	NN	_	_	2	advmod	_	_
+2	congratulated	_	NN	_	_	0	root	_	_
+
+1	never	_	NN	_	_	2	dep	_	_
+2	again	_	NN	_	_	3	advmod	_	_
+3	should	_	NN	_	_	0	root	_	_
+
+1	oppressive	_	NN	_	_	2	amod	_	_
+2	measures	_	NN	_	_	0	root	_	_
+3	and	_	NN	_	_	2	cc	_	_
+4	activities	_	NN	_	_	2	conj	_	_
+
+1	unsure	_	NN	_	_	0	root	_	_
+
+1	believe	_	NN	_	_	0	root	_	_
+
+1	condemned	_	NN	_	_	0	root	_	_
+
+1	boasts	_	NN	_	_	0	root	_	_
+
+1	strongly	_	NN	_	_	2	advmod	_	_
+2	criticized	_	NN	_	_	0	root	_	_
+
+1	no	_	NN	_	_	2	det	_	_
+2	qualifications	_	NN	_	_	0	root	_	_
+3	and	_	NN	_	_	2	cc	_	_
+4	face	_	NN	_	_	2	conj	_	_
+
+1	hurt	_	NN	_	_	0	root	_	_
+
+1	rankles	_	NN	_	_	0	root	_	_
+
+1	to	_	NN	_	_	3	aux	_	_
+2	be	_	NN	_	_	3	auxpass	_	_
+3	used	_	NN	_	_	0	root	_	_
+4	as	_	NN	_	_	3	prep	_	_
+5	a	_	NN	_	_	7	det	_	_
+6	bargaining	_	NN	_	_	7	nn	_	_
+7	chip	_	NN	_	_	4	pobj	_	_
+
+1	is	_	NN	_	_	3	cop	_	_
+2	obviously	_	NN	_	_	3	advmod	_	_
+3	afoot	_	NN	_	_	0	root	_	_
+
+1	at	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	expense	_	NN	_	_	1	pobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	world	_	NN	_	_	8	poss	_	_
+7	's	_	NN	_	_	6	possessive	_	_
+8	security	_	NN	_	_	4	pobj	_	_
+9	and	_	NN	_	_	8	cc	_	_
+10	stability	_	NN	_	_	8	conj	_	_
+
+1	immediate	_	NN	_	_	0	root	_	_
+
+1	as	_	NN	_	_	2	advmod	_	_
+2	bad	_	NN	_	_	0	root	_	_
+3	or	_	NN	_	_	2	cc	_	_
+4	worse	_	NN	_	_	2	conj	_	_
+
+1	claims	_	NN	_	_	0	root	_	_
+
+1	accused	_	NN	_	_	0	root	_	_
+
+1	defended	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	request	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+
+1	used	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	boast	_	NN	_	_	1	xcomp	_	_
+
+1	weakening	_	NN	_	_	0	root	_	_
+
+1	comforting	_	NN	_	_	2	amod	_	_
+2	sense	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	personal	_	NN	_	_	7	amod	_	_
+5	and	_	NN	_	_	4	cc	_	_
+6	national	_	NN	_	_	4	conj	_	_
+7	vindication	_	NN	_	_	3	pobj	_	_
+
+1	a	_	NN	_	_	2	det	_	_
+2	warning	_	NN	_	_	0	root	_	_
+
+1	a	_	NN	_	_	3	det	_	_
+2	warm	_	NN	_	_	3	amod	_	_
+3	welcome	_	NN	_	_	0	root	_	_
+
+1	wants	_	NN	_	_	0	root	_	_
+
+1	stands	_	NN	_	_	0	root	_	_
+2	alone	_	NN	_	_	1	advmod	_	_
+
+1	wish	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	influence	_	NN	_	_	1	xcomp	_	_
+
+1	avoid	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	need	_	NN	_	_	1	dobj	_	_
+4	for	_	NN	_	_	3	prep	_	_
+5	it	_	NN	_	_	4	pobj	_	_
+
+1	has	_	NN	_	_	2	aux	_	_
+2	accused	_	NN	_	_	0	root	_	_
+
+1	categorical	_	NN	_	_	3	amod	_	_
+2	moral	_	NN	_	_	3	amod	_	_
+3	condemnation	_	NN	_	_	0	root	_	_
+
+1	claims	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	defend	_	NN	_	_	1	infmod	_	_
+
+1	axis	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	evil	_	NN	_	_	4	amod	_	_
+4	remark	_	NN	_	_	2	pobj	_	_
+
+1	yet	_	NN	_	_	0	root	_	_
+
+1	understandable	_	NN	_	_	0	root	_	_
+
+1	refused	_	NN	_	_	0	root	_	_
+
+1	have	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	sense	_	NN	_	_	1	dobj	_	_
+4	that	_	NN	_	_	8	mark	_	_
+5	they	_	NN	_	_	8	nsubjpass	_	_
+6	have	_	NN	_	_	8	aux	_	_
+7	been	_	NN	_	_	8	auxpass	_	_
+8	cheated	_	NN	_	_	3	ccomp	_	_
+
+1	in	_	NN	_	_	4	prep	_	_
+2	case	_	NN	_	_	1	pobj	_	_
+3	they	_	NN	_	_	4	nsubj	_	_
+4	lost	_	NN	_	_	0	root	_	_
+5	their	_	NN	_	_	6	poss	_	_
+6	teeth	_	NN	_	_	4	dobj	_	_
+7	while	_	NN	_	_	11	mark	_	_
+8	,	_	NN	_	_	9	punct	_	_
+9	say	_	NN	_	_	4	discourse	_	_
+10	,	_	NN	_	_	9	punct	_	_
+11	biting	_	NN	_	_	4	partmod	_	_
+12	a	_	NN	_	_	13	det	_	_
+13	guard	_	NN	_	_	11	dobj	_	_
+
+1	axis	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	evil	_	NN	_	_	2	pobj	_	_
+
+1	the	_	NN	_	_	3	det	_	_
+2	radical	_	NN	_	_	3	amod	_	_
+3	wing	_	NN	_	_	0	root	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	anti	_	NN	_	_	7	nn	_	_
+6	castro	_	NN	_	_	7	nn	_	_
+7	exiles	_	NN	_	_	4	pobj	_	_
+
+1	fears	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	3	aux	_	_
+3	rising	_	NN	_	_	0	root	_	_
+
+1	fears	_	NN	_	_	0	root	_	_
+
+1	not	_	NN	_	_	2	neg	_	_
+2	only	_	NN	_	_	0	root	_	_
+
+1	chilly	_	NN	_	_	0	root	_	_
+
+1	incited	_	NN	_	_	0	root	_	_
+
+1	nothing	_	NN	_	_	0	root	_	_
+2	practical	_	NN	_	_	1	amod	_	_
+
+1	even	_	NN	_	_	2	advmod	_	_
+2	worse	_	NN	_	_	0	root	_	_
+
+1	inept	_	NN	_	_	6	amod	_	_
+2	,	_	NN	_	_	1	punct	_	_
+3	abusive	_	NN	_	_	1	conj	_	_
+4	and	_	NN	_	_	1	cc	_	_
+5	authoritarian	_	NN	_	_	1	conj	_	_
+6	government	_	NN	_	_	0	root	_	_
+
+1	deliberately	_	NN	_	_	2	advmod	_	_
+2	misinterpreted	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	4	aux	_	_
+4	suppress	_	NN	_	_	2	xcomp	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	opposition	_	NN	_	_	4	dobj	_	_
+
+1	would	_	NN	_	_	3	aux	_	_
+2	never	_	NN	_	_	3	neg	_	_
+3	forget	_	NN	_	_	0	root	_	_
+
+1	rejected	_	NN	_	_	0	root	_	_
+
+1	acknowledging	_	NN	_	_	0	root	_	_
+
+1	made	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	harsh	_	NN	_	_	4	amod	_	_
+4	appraisal	_	NN	_	_	1	dobj	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	assure	_	NN	_	_	0	root	_	_
+
+1	it	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	reassuring	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	believe	_	NN	_	_	3	xcomp	_	_
+
+1	was	_	NN	_	_	2	cop	_	_
+2	unwise	_	NN	_	_	0	root	_	_
+3	enough	_	NN	_	_	2	advmod	_	_
+
+1	for	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	good	_	NN	_	_	4	amod	_	_
+4	future	_	NN	_	_	1	pobj	_	_
+
+1	validate	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	sham	_	NN	_	_	1	dobj	_	_
+
+1	it	_	NN	_	_	5	nsubj	_	_
+2	could	_	NN	_	_	5	aux	_	_
+3	become	_	NN	_	_	5	cop	_	_
+4	a	_	NN	_	_	5	det	_	_
+5	reference	_	NN	_	_	0	root	_	_
+
+1	harm	_	NN	_	_	4	nsubjpass	_	_
+2	is	_	NN	_	_	4	auxpass	_	_
+3	not	_	NN	_	_	4	neg	_	_
+4	limited	_	NN	_	_	0	root	_	_
+5	to	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	incident	_	NN	_	_	5	pobj	_	_
+8	itself	_	NN	_	_	7	dep	_	_
+
+1	do	_	NN	_	_	3	aux	_	_
+2	n't	_	NN	_	_	3	neg	_	_
+3	want	_	NN	_	_	0	root	_	_
+
+1	does	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	qualify	_	NN	_	_	0	root	_	_
+4	for	_	NN	_	_	3	prep	_	_
+5	any	_	NN	_	_	4	pobj	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	laws	_	NN	_	_	6	pobj	_	_
+
+1	disguises	_	NN	_	_	0	root	_	_
+
+1	wanted	_	NN	_	_	0	root	_	_
+
+1	use	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	excuse	_	NN	_	_	1	dobj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+
+1	looked	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+
+1	other	_	NN	_	_	2	amod	_	_
+2	nations	_	NN	_	_	4	nsubj	_	_
+3	may	_	NN	_	_	4	aux	_	_
+4	try	_	NN	_	_	0	root	_	_
+5	to	_	NN	_	_	6	aux	_	_
+6	do	_	NN	_	_	4	xcomp	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	same	_	NN	_	_	6	dobj	_	_
+9	in	_	NN	_	_	6	prep	_	_
+10	less	_	NN	_	_	12	quantmod	_	_
+11	dire	_	NN	_	_	12	amod	_	_
+12	times	_	NN	_	_	9	pobj	_	_
+
+1	legal	_	NN	_	_	2	amod	_	_
+2	cover	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	3	det	_	_
+2	first	_	NN	_	_	3	amod	_	_
+3	chance	_	NN	_	_	0	root	_	_
+4	they	_	NN	_	_	5	nsubj	_	_
+5	get	_	NN	_	_	3	rcmod	_	_
+
+1	abided	_	NN	_	_	0	root	_	_
+2	by	_	NN	_	_	1	prep	_	_
+3	calm	_	NN	_	_	2	pobj	_	_
+4	and	_	NN	_	_	1	cc	_	_
+5	cease	_	NN	_	_	1	conj	_	_
+6	fire	_	NN	_	_	5	dobj	_	_
+
+1	opportunity	_	NN	_	_	0	root	_	_
+
+1	weirdness	_	NN	_	_	4	nsubj	_	_
+2	does	_	NN	_	_	4	aux	_	_
+3	n't	_	NN	_	_	4	neg	_	_
+4	end	_	NN	_	_	0	root	_	_
+5	there	_	NN	_	_	4	advmod	_	_
+
+1	should	_	NN	_	_	4	aux	_	_
+2	be	_	NN	_	_	4	auxpass	_	_
+3	harshly	_	NN	_	_	4	advmod	_	_
+4	condemned	_	NN	_	_	0	root	_	_
+
+1	warning	_	NN	_	_	0	root	_	_
+
+1	defiance	_	NN	_	_	0	root	_	_
+
+1	increase	_	NN	_	_	0	root	_	_
+2	in	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	people	_	NN	_	_	6	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	anger	_	NN	_	_	2	pobj	_	_
+
+1	so	_	NN	_	_	2	advmod	_	_
+2	called	_	NN	_	_	0	root	_	_
+
+1	satisfactory	_	NN	_	_	0	root	_	_
+
+1	desire	_	NN	_	_	0	root	_	_
+
+1	grateful	_	NN	_	_	0	root	_	_
+
+1	excessive	_	NN	_	_	0	root	_	_
+
+1	this	_	NN	_	_	2	det	_	_
+2	country	_	NN	_	_	6	nsubjpass	_	_
+3	can	_	NN	_	_	6	aux	_	_
+4	not	_	NN	_	_	6	neg	_	_
+5	be	_	NN	_	_	6	auxpass	_	_
+6	brought	_	NN	_	_	0	root	_	_
+7	to	_	NN	_	_	6	prep	_	_
+8	prosperity	_	NN	_	_	7	pobj	_	_
+
+1	brutally	_	NN	_	_	0	root	_	_
+
+1	support	_	NN	_	_	0	root	_	_
+
+1	conducting	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	calculated	_	NN	_	_	4	amod	_	_
+4	campaign	_	NN	_	_	1	dobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	intimidation	_	NN	_	_	5	pobj	_	_
+
+1	deliberately	_	NN	_	_	2	advmod	_	_
+2	withholding	_	NN	_	_	0	root	_	_
+3	food	_	NN	_	_	2	dobj	_	_
+
+1	hurdles	_	NN	_	_	0	root	_	_
+2	in	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	realization	_	NN	_	_	2	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	their	_	NN	_	_	8	poss	_	_
+7	vested	_	NN	_	_	8	amod	_	_
+8	interests	_	NN	_	_	5	pobj	_	_
+
+1	provoke	_	NN	_	_	0	root	_	_
+
+1	promoting	_	NN	_	_	0	root	_	_
+
+1	heckling	_	NN	_	_	0	root	_	_
+
+1	to	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	president	_	NN	_	_	5	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	misfortune	_	NN	_	_	1	pobj	_	_
+
+1	legitimate	_	NN	_	_	0	root	_	_
+
+1	israeli	_	NN	_	_	4	amod	_	_
+2	right	_	NN	_	_	4	amod	_	_
+3	wing	_	NN	_	_	4	nn	_	_
+4	policies	_	NN	_	_	0	root	_	_
+
+1	totally	_	NN	_	_	2	advmod	_	_
+2	reasonable	_	NN	_	_	0	root	_	_
+
+1	express	_	NN	_	_	0	root	_	_
+2	their	_	NN	_	_	3	poss	_	_
+3	concern	_	NN	_	_	1	dobj	_	_
+
+1	delighted	_	NN	_	_	0	root	_	_
+
+1	is	_	NN	_	_	2	cop	_	_
+2	obsolete	_	NN	_	_	0	root	_	_
+
+1	understand	_	NN	_	_	0	root	_	_
+
+1	accommodate	_	NN	_	_	0	root	_	_
+
+1	regards	_	NN	_	_	0	root	_	_
+
+1	a	_	NN	_	_	2	det	_	_
+2	lot	_	NN	_	_	3	npadvmod	_	_
+3	better	_	NN	_	_	0	root	_	_
+4	than	_	NN	_	_	6	mark	_	_
+5	they	_	NN	_	_	6	nsubj	_	_
+6	are	_	NN	_	_	3	ccomp	_	_
+
+1	would	_	NN	_	_	2	aux	_	_
+2	adhere	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	2	prep	_	_
+4	a	_	NN	_	_	6	det	_	_
+5	pluralistic	_	NN	_	_	6	amod	_	_
+6	vision	_	NN	_	_	3	pobj	_	_
+
+1	violent	_	NN	_	_	2	amod	_	_
+2	protests	_	NN	_	_	0	root	_	_
+
+1	very	_	NN	_	_	2	advmod	_	_
+2	painful	_	NN	_	_	3	amod	_	_
+3	way	_	NN	_	_	0	root	_	_
+
+1	have	_	NN	_	_	4	aux	_	_
+2	been	_	NN	_	_	4	cop	_	_
+3	heavily	_	NN	_	_	4	advmod	_	_
+4	critical	_	NN	_	_	0	root	_	_
+
+1	us	_	NN	_	_	4	dep	_	_
+2	imperialist	_	NN	_	_	4	nn	_	_
+3	war	_	NN	_	_	4	nn	_	_
+4	maniacs	_	NN	_	_	0	root	_	_
+
+1	certainly	_	NN	_	_	3	advmod	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	raised	_	NN	_	_	0	root	_	_
+4	us	_	NN	_	_	3	iobj	_	_
+5	image	_	NN	_	_	3	dobj	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	back	_	NN	_	_	0	root	_	_
+
+1	hoped	_	NN	_	_	0	root	_	_
+
+1	with	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	4	det	_	_
+3	large	_	NN	_	_	4	amod	_	_
+4	degree	_	NN	_	_	1	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	confidence	_	NN	_	_	5	pobj	_	_
+
+1	insulting	_	NN	_	_	0	root	_	_
+
+1	wary	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+
+1	a	_	NN	_	_	2	det	_	_
+2	relief	_	NN	_	_	0	root	_	_
+3	to	_	NN	_	_	2	prep	_	_
+
+1	intolerant	_	NN	_	_	0	root	_	_
+
+1	only	_	NN	_	_	2	quantmod	_	_
+2	one	_	NN	_	_	3	num	_	_
+3	single	_	NN	_	_	0	root	_	_
+
+1	badly	_	NN	_	_	2	advmod	_	_
+2	shaking	_	NN	_	_	0	root	_	_
+3	\(	_	NN	_	_	2	prt	_	_
+4	their	_	NN	_	_	6	poss	_	_
+5	\)	_	NN	_	_	6	amod	_	_
+6	faith	_	NN	_	_	2	dobj	_	_
+7	in	_	NN	_	_	2	prep	_	_
+
+1	sought	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	project	_	NN	_	_	1	xcomp	_	_
+4	itself	_	NN	_	_	3	dobj	_	_
+
+1	explicit	_	NN	_	_	2	amod	_	_
+2	statements	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	support	_	NN	_	_	3	pobj	_	_
+5	for	_	NN	_	_	4	prep	_	_
+
+1	settle	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	3	det	_	_
+3	accounts	_	NN	_	_	1	dobj	_	_
+
+1	may	_	NN	_	_	2	aux	_	_
+2	step	_	NN	_	_	0	root	_	_
+3	up	_	NN	_	_	2	prt	_	_
+4	sabotage	_	NN	_	_	2	dobj	_	_
+
+1	failed	_	NN	_	_	0	root	_	_
+
+1	retaliated	_	NN	_	_	0	root	_	_
+
+1	biased	_	NN	_	_	2	amod	_	_
+2	propaganda	_	NN	_	_	0	root	_	_
+
+1	strong	_	NN	_	_	2	amod	_	_
+2	support	_	NN	_	_	0	root	_	_
+3	for	_	NN	_	_	2	prep	_	_
+
+1	thinking	_	NN	_	_	0	root	_	_
+
+1	it	_	NN	_	_	4	nsubj	_	_
+2	did	_	NN	_	_	4	aux	_	_
+3	not	_	NN	_	_	4	neg	_	_
+4	apply	_	NN	_	_	0	root	_	_
+5	even	_	NN	_	_	6	advmod	_	_
+6	to	_	NN	_	_	4	prep	_	_
+7	black	_	NN	_	_	8	amod	_	_
+8	people	_	NN	_	_	6	pobj	_	_
+9	held	_	NN	_	_	8	partmod	_	_
+10	in	_	NN	_	_	9	prep	_	_
+11	jail	_	NN	_	_	10	pobj	_	_
+12	in	_	NN	_	_	9	prep	_	_
+13	the	_	NN	_	_	16	det	_	_
+14	southern	_	NN	_	_	16	amod	_	_
+15	united	_	NN	_	_	16	nn	_	_
+16	states	_	NN	_	_	12	pobj	_	_
+17	until	_	NN	_	_	4	prep	_	_
+18	a	_	NN	_	_	20	det	_	_
+19	few	_	NN	_	_	20	amod	_	_
+20	years	_	NN	_	_	21	npadvmod	_	_
+21	ago	_	NN	_	_	9	advmod	_	_
+
+1	that	_	NN	_	_	2	det	_	_
+2	axis	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	evil	_	NN	_	_	5	amod	_	_
+5	statement	_	NN	_	_	3	pobj	_	_
+
+1	radical	_	NN	_	_	0	root	_	_
+
+1	are	_	NN	_	_	2	auxpass	_	_
+2	disturbed	_	NN	_	_	0	root	_	_
+
+1	seeks	_	NN	_	_	0	root	_	_
+
+1	individual	_	NN	_	_	2	amod	_	_
+2	acts	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	insubordination	_	NN	_	_	3	pobj	_	_
+
+1	risked	_	NN	_	_	0	root	_	_
+2	the	_	NN	_	_	4	det	_	_
+3	full	_	NN	_	_	4	amod	_	_
+4	weight	_	NN	_	_	1	dobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	law	_	NN	_	_	5	pobj	_	_
+
+1	no	_	NN	_	_	2	det	_	_
+2	one	_	NN	_	_	4	nsubj	_	_
+3	is	_	NN	_	_	4	aux	_	_
+4	listening	_	NN	_	_	0	root	_	_
+
+1	friendly	_	NN	_	_	0	root	_	_
+
+1	forbids	_	NN	_	_	0	root	_	_
+
+1	have	_	NN	_	_	2	aux	_	_
+2	damaged	_	NN	_	_	0	root	_	_
+
+1	poses	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	danger	_	NN	_	_	1	dobj	_	_
+
+1	could	_	NN	_	_	2	aux	_	_
+2	think	_	NN	_	_	0	root	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	nothing	_	NN	_	_	3	pobj	_	_
+5	better	_	NN	_	_	4	amod	_	_
+
+1	have	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	conviction	_	NN	_	_	1	dobj	_	_
+
+1	goodwill	_	NN	_	_	0	root	_	_
+
+1	when	_	NN	_	_	3	advmod	_	_
+2	it	_	NN	_	_	3	nsubj	_	_
+3	suits	_	NN	_	_	0	root	_	_
+4	him	_	NN	_	_	3	dobj	_	_
+
+1	alternative'	_	NN	_	_	0	root	_	_
+
+1	unfair	_	NN	_	_	0	root	_	_
+
+1	bristle	_	NN	_	_	0	root	_	_
+2	at	_	NN	_	_	1	prep	_	_
+
+1	wanted	_	NN	_	_	0	root	_	_
+
+1	can	_	NN	_	_	2	aux	_	_
+2	serve	_	NN	_	_	0	root	_	_
+3	as	_	NN	_	_	2	prep	_	_
+4	a	_	NN	_	_	5	det	_	_
+5	model	_	NN	_	_	3	pobj	_	_
+
+1	endorses	_	NN	_	_	0	root	_	_
+
+1	wants	_	NN	_	_	0	root	_	_
+
+1	just	_	NN	_	_	2	advmod	_	_
+2	cages	_	NN	_	_	0	root	_	_
+
+1	high	_	NN	_	_	2	amod	_	_
+2	treason	_	NN	_	_	0	root	_	_
+
+1	desperation	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+
+1	queried	_	NN	_	_	0	root	_	_
+
+1	thousands	_	NN	_	_	5	nsubj	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	its	_	NN	_	_	4	poss	_	_
+4	supporters	_	NN	_	_	2	pobj	_	_
+5	denied	_	NN	_	_	0	root	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	vote	_	NN	_	_	5	dobj	_	_
+
+1	traumatized	_	NN	_	_	0	root	_	_
+
+1	enemy	_	NN	_	_	0	root	_	_
+
+1	gain	_	NN	_	_	0	root	_	_
+2	more	_	NN	_	_	3	amod	_	_
+3	knowledge	_	NN	_	_	1	dobj	_	_
+
+1	venezuela	_	NN	_	_	4	poss	_	_
+2	's	_	NN	_	_	1	possessive	_	_
+3	strong	_	NN	_	_	4	amod	_	_
+4	slap	_	NN	_	_	0	root	_	_
+5	on	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	face	_	NN	_	_	5	pobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	11	det	_	_
+10	united	_	NN	_	_	11	nn	_	_
+11	states	_	NN	_	_	8	pobj	_	_
+
+1	imposing	_	NN	_	_	0	root	_	_
+2	constraints	_	NN	_	_	1	dobj	_	_
+
+1	recognition	_	NN	_	_	0	root	_	_
+
+1	responsible	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+
+1	early	_	NN	_	_	0	root	_	_
+
+1	promises	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	3	cop	_	_
+3	cheap	_	NN	_	_	0	root	_	_
+
+1	a	_	NN	_	_	7	det	_	_
+2	naive	_	NN	_	_	7	amod	_	_
+3	,	_	NN	_	_	7	punct	_	_
+4	patently	_	NN	_	_	5	advmod	_	_
+5	stupid	_	NN	_	_	7	amod	_	_
+6	young	_	NN	_	_	7	amod	_	_
+7	man	_	NN	_	_	0	root	_	_
+8	who	_	NN	_	_	9	nsubj	_	_
+9	chose	_	NN	_	_	7	rcmod	_	_
+10	the	_	NN	_	_	12	det	_	_
+11	wrong	_	NN	_	_	12	amod	_	_
+12	heroes	_	NN	_	_	9	dobj	_	_
+
+1	are	_	NN	_	_	2	aux	_	_
+2	lining	_	NN	_	_	0	root	_	_
+3	up	_	NN	_	_	2	prt	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	condemn	_	NN	_	_	2	xcomp	_	_
+
+1	alienated	_	NN	_	_	0	root	_	_
+
+1	fearing	_	NN	_	_	0	root	_	_
+
+1	called	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+
+1	the	_	NN	_	_	4	det	_	_
+2	political	_	NN	_	_	4	amod	_	_
+3	strong	_	NN	_	_	4	amod	_	_
+4	man	_	NN	_	_	0	root	_	_
+
+1	just	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	legitimate	_	NN	_	_	1	conj	_	_
+
+1	called	_	NN	_	_	0	root	_	_
+2	on	_	NN	_	_	1	prep	_	_
+
+1	are	_	NN	_	_	2	cop	_	_
+2	afraid	_	NN	_	_	0	root	_	_
+
+1	certainly	_	NN	_	_	2	advmod	_	_
+2	called	_	NN	_	_	0	root	_	_
+3	for	_	NN	_	_	2	prep	_	_
+
+1	called	_	NN	_	_	0	root	_	_
+2	for	_	NN	_	_	1	prep	_	_
+
+1	higher	_	NN	_	_	0	root	_	_
+2	than	_	NN	_	_	1	prep	_	_
+3	any	_	NN	_	_	4	det	_	_
+4	time	_	NN	_	_	2	pobj	_	_
+5	in	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	11	det	_	_
+7	past	_	NN	_	_	11	amod	_	_
+8	several	_	NN	_	_	11	amod	_	_
+9	hundred	_	NN	_	_	11	num	_	_
+10	thousand	_	NN	_	_	11	num	_	_
+11	years	_	NN	_	_	5	pobj	_	_
+
+1	evenhanded	_	NN	_	_	0	root	_	_
+
+1	thanks	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	people	_	NN	_	_	2	pobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	zimbabwe	_	NN	_	_	5	pobj	_	_
+
+1	stretched	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	limit	_	NN	_	_	2	pobj	_	_
+
+1	serve	_	NN	_	_	0	root	_	_
+2	as	_	NN	_	_	1	prep	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	warning	_	NN	_	_	2	pobj	_	_
+
+1	may	_	NN	_	_	2	aux	_	_
+2	annoy	_	NN	_	_	0	root	_	_
+
+1	could	_	NN	_	_	2	aux	_	_
+2	alienate	_	NN	_	_	0	root	_	_
+
+1	without	_	NN	_	_	5	prep	_	_
+2	belt	_	NN	_	_	3	nn	_	_
+3	tightening	_	NN	_	_	1	pobj	_	_
+4	there	_	NN	_	_	5	expl	_	_
+5	is	_	NN	_	_	0	root	_	_
+6	no	_	NN	_	_	7	det	_	_
+7	money	_	NN	_	_	5	nsubj	_	_
+8	,	_	NN	_	_	5	punct	_	_
+9	and	_	NN	_	_	5	cc	_	_
+10	without	_	NN	_	_	13	prep	_	_
+11	money	_	NN	_	_	10	pobj	_	_
+12	there	_	NN	_	_	13	expl	_	_
+13	is	_	NN	_	_	5	conj	_	_
+14	no	_	NN	_	_	15	det	_	_
+15	belt	_	NN	_	_	13	nsubj	_	_
+16	tightening	_	NN	_	_	15	partmod	_	_
+
+1	only	_	NN	_	_	2	amod	_	_
+2	abuse	_	NN	_	_	0	root	_	_
+
+1	pretended	_	NN	_	_	0	root	_	_
+
+1	high	_	NN	_	_	2	amod	_	_
+2	time	_	NN	_	_	0	root	_	_
+
+1	risks	_	NN	_	_	0	root	_	_
+
+1	onslaught	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	international	_	NN	_	_	6	amod	_	_
+5	credit	_	NN	_	_	6	nn	_	_
+6	vultures	_	NN	_	_	2	pobj	_	_
+
+1	have	_	NN	_	_	3	aux	_	_
+2	been	_	NN	_	_	3	auxpass	_	_
+3	deprived	_	NN	_	_	0	root	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	all	_	NN	_	_	10	predet	_	_
+6	their	_	NN	_	_	10	poss	_	_
+7	national	_	NN	_	_	10	amod	_	_
+8	and	_	NN	_	_	7	cc	_	_
+9	human	_	NN	_	_	7	conj	_	_
+10	rights	_	NN	_	_	4	pobj	_	_
+
+1	do	_	NN	_	_	4	aux	_	_
+2	not	_	NN	_	_	4	neg	_	_
+3	sincerely	_	NN	_	_	4	advmod	_	_
+4	share	_	NN	_	_	0	root	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	values	_	NN	_	_	4	dobj	_	_
+
+1	recognize	_	NN	_	_	0	root	_	_
+
+1	eagerness	_	NN	_	_	0	root	_	_
+
+1	are	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	going	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	allow	_	NN	_	_	3	xcomp	_	_
+
+1	want	_	NN	_	_	0	root	_	_
+2	nothing	_	NN	_	_	1	dobj	_	_
+
+1	with	_	NN	_	_	0	root	_	_
+2	full	_	NN	_	_	3	amod	_	_
+3	respect	_	NN	_	_	1	pobj	_	_
+4	for	_	NN	_	_	3	prep	_	_
+
+1	sharply	_	NN	_	_	2	advmod	_	_
+2	criticised	_	NN	_	_	0	root	_	_
+
+1	it	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	due	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	3	prep	_	_
+5	this	_	NN	_	_	6	det	_	_
+6	hegemony	_	NN	_	_	4	pobj	_	_
+
+1	unilateralist	_	NN	_	_	2	amod	_	_
+2	overdrive	_	NN	_	_	0	root	_	_
+
+1	imposed	_	NN	_	_	0	root	_	_
+2	on	_	NN	_	_	1	prep	_	_
+3	him	_	NN	_	_	2	pobj	_	_
+
+1	strong	_	NN	_	_	2	amod	_	_
+2	denunciation	_	NN	_	_	0	root	_	_
+
+1	devastating	_	NN	_	_	0	root	_	_
+
+1	likely	_	NN	_	_	5	advmod	_	_
+2	just	_	NN	_	_	5	advmod	_	_
+3	an	_	NN	_	_	5	det	_	_
+4	aggravating	_	NN	_	_	5	amod	_	_
+5	factor	_	NN	_	_	0	root	_	_
+
+1	calling	_	NN	_	_	0	root	_	_
+
+1	imposed	_	NN	_	_	0	root	_	_
+2	on	_	NN	_	_	1	prep	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	palestinian	_	NN	_	_	5	amod	_	_
+5	people	_	NN	_	_	2	pobj	_	_
+6	by	_	NN	_	_	1	prep	_	_
+7	force	_	NN	_	_	6	pobj	_	_
+8	for	_	NN	_	_	1	prep	_	_
+9	more	_	NN	_	_	10	mwe	_	_
+10	than	_	NN	_	_	11	quantmod	_	_
+11	34	_	NN	_	_	12	num	_	_
+12	years	_	NN	_	_	8	pobj	_	_
+13	now	_	NN	_	_	1	advmod	_	_
+
+1	bungled	_	NN	_	_	0	root	_	_
+2	its	_	NN	_	_	3	poss	_	_
+3	dealings	_	NN	_	_	1	dobj	_	_
+
+1	openly	_	NN	_	_	2	advmod	_	_
+2	hostile	_	NN	_	_	3	amod	_	_
+3	position	_	NN	_	_	0	root	_	_
+
+1	nonsense	_	NN	_	_	0	root	_	_
+
+1	dramatic	_	NN	_	_	2	amod	_	_
+2	upsurge	_	NN	_	_	0	root	_	_
+
+1	legitimate	_	NN	_	_	0	root	_	_
+
+1	even	_	NN	_	_	2	advmod	_	_
+2	committed	_	NN	_	_	0	root	_	_
+3	such	_	NN	_	_	6	predet	_	_
+4	an	_	NN	_	_	6	det	_	_
+5	atrocious	_	NN	_	_	6	amod	_	_
+6	act	_	NN	_	_	2	dobj	_	_
+
+1	threatens	_	NN	_	_	0	root	_	_
+
+1	chorus	_	NN	_	_	0	root	_	_
+2	of	_	NN	_	_	1	prep	_	_
+3	protest	_	NN	_	_	2	pobj	_	_
+
+1	wanted	_	NN	_	_	0	root	_	_
+
+1	labeled	_	NN	_	_	0	root	_	_
+
+1	hope	_	NN	_	_	0	root	_	_
+
+1	has	_	NN	_	_	0	root	_	_
+2	no	_	NN	_	_	4	det	_	_
+3	moral	_	NN	_	_	4	amod	_	_
+4	excuse	_	NN	_	_	1	dobj	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	shooting	_	NN	_	_	5	pcomp	_	_
+7	people	_	NN	_	_	9	nsubj	_	_
+8	merely	_	NN	_	_	9	advmod	_	_
+9	demanding	_	NN	_	_	6	partmod	_	_
+10	a	_	NN	_	_	12	det	_	_
+11	new	_	NN	_	_	12	amod	_	_
+12	constitution	_	NN	_	_	9	dobj	_	_
+
+1	possibly	_	NN	_	_	3	advmod	_	_
+2	even	_	NN	_	_	3	advmod	_	_
+3	endanger	_	NN	_	_	0	root	_	_
+
+1	more	_	NN	_	_	2	advmod	_	_
+2	muted	_	NN	_	_	0	root	_	_
+3	and	_	NN	_	_	2	cc	_	_
+4	often	_	NN	_	_	5	advmod	_	_
+5	self	_	NN	_	_	2	conj	_	_
+6	satisfied	_	NN	_	_	2	conj	_	_
+
+1	turned	_	NN	_	_	0	root	_	_
+2	down	_	NN	_	_	1	prt	_	_
+
+1	frighten	_	NN	_	_	0	root	_	_
+
+1	kill	_	NN	_	_	0	root	_	_
+
+1	going	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	3	aux	_	_
+3	crush	_	NN	_	_	1	xcomp	_	_
+4	my	_	NN	_	_	5	poss	_	_
+5	nuts	_	NN	_	_	3	dobj	_	_
+
+1	categorically	_	NN	_	_	2	advmod	_	_
+2	rejecting	_	NN	_	_	0	root	_	_
+
+1	friendship	_	NN	_	_	0	root	_	_
+2	and	_	NN	_	_	1	cc	_	_
+3	cooperation	_	NN	_	_	1	conj	_	_
+
+1	are	_	NN	_	_	2	auxpass	_	_
+2	outraged	_	NN	_	_	0	root	_	_
+
+1	the	_	NN	_	_	2	det	_	_
+2	short	_	NN	_	_	3	nsubj	_	_
+3	lived	_	NN	_	_	0	root	_	_
+4	interim	_	NN	_	_	5	amod	_	_
+5	president	_	NN	_	_	3	dobj	_	_
+6	,	_	NN	_	_	5	punct	_	_
+7	boss	_	NN	_	_	5	conj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	bosses	_	NN	_	_	8	pobj	_	_
+
+1	pretended	_	NN	_	_	0	root	_	_
+2	to	_	NN	_	_	4	aux	_	_
+3	be	_	NN	_	_	4	auxpass	_	_
+4	abiding	_	NN	_	_	1	xcomp	_	_
+5	by	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	decision	_	NN	_	_	5	pobj	_	_
+
+1	will	_	NN	_	_	2	aux	_	_
+2	seek	_	NN	_	_	0	root	_	_
+
+1	objection	_	NN	_	_	0	root	_	_
+
+1	to	_	NN	_	_	2	aux	_	_
+2	achieve	_	NN	_	_	0	root	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	just	_	NN	_	_	5	amod	_	_
+5	solution	_	NN	_	_	2	dobj	_	_
+
+1	is	_	NN	_	_	2	aux	_	_
+2	succeeding	_	NN	_	_	0	root	_	_
+
+1	was	_	NN	_	_	3	cop	_	_
+2	very	_	NN	_	_	3	advmod	_	_
+3	strong	_	NN	_	_	0	root	_	_
+4	about	_	NN	_	_	3	prep	_	_
+5	this	_	NN	_	_	4	pobj	_	_
+
+1	confidence	_	NN	_	_	0	root	_	_
+
+1	unrealistic	_	NN	_	_	2	amod	_	_
+2	stand	_	NN	_	_	0	root	_	_
+
+1	nations	_	NN	_	_	3	nsubj	_	_
+2	will	_	NN	_	_	3	aux	_	_
+3	vanish	_	NN	_	_	0	root	_	_
+4	from	_	NN	_	_	3	prep	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	face	_	NN	_	_	4	pobj	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	earth	_	NN	_	_	7	pobj	_	_
+
+1	questioned	_	NN	_	_	0	root	_	_
+
+1	plan	_	NN	_	_	0	root	_	_
+
+1	find	_	NN	_	_	0	root	_	_
+2	nothing	_	NN	_	_	1	dobj	_	_
+3	positive	_	NN	_	_	2	amod	_	_
+
+1	will	_	NN	_	_	3	aux	_	_
+2	not	_	NN	_	_	3	neg	_	_
+3	give	_	NN	_	_	0	root	_	_
+4	up	_	NN	_	_	3	prt	_	_
+5	terror	_	NN	_	_	3	dobj	_	_
+
+1	did	_	NN	_	_	0	root	_	_
+2	his	_	NN	_	_	3	poss	_	_
+3	best	_	NN	_	_	1	nsubj	_	_
+4	to	_	NN	_	_	5	aux	_	_
+5	undermine	_	NN	_	_	3	infmod	_	_
+6	confidence	_	NN	_	_	5	dobj	_	_
+

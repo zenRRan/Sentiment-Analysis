@@ -355,7 +355,12 @@ class BatchChildSumTreeLSTM(nn.Module):
                 all_C[batch][i] = c[batch]
                 all_H[batch][i] = h[batch]
                 batch += 1
-        out = self.out(h)
+
+        out = torch.transpose(all_H, 1, 2)
+        out = torch.tanh(out)
+        out = F.max_pool1d(out, out.size(2))
+        out = out.squeeze(2)
+        out = self.out(out)
         return out
 
 

@@ -1,0 +1,4285 @@
+1	How	_	NN	_	_	2	advmod	_	_
+2	far	_	NN	_	_	3	advmod	_	_
+3	is	_	NN	_	_	0	root	_	_
+4	it	_	NN	_	_	3	nsubj	_	_
+5	from	_	NN	_	_	4	prep	_	_
+6	Denver	_	NN	_	_	5	pobj	_	_
+7	to	_	NN	_	_	3	prep	_	_
+8	Aspen	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	county	_	NN	_	_	4	nsubj	_	_
+3	is	_	NN	_	_	4	cop	_	_
+4	Modesto	_	NN	_	_	0	root	_	_
+5	,	_	NN	_	_	4	punct	_	_
+6	California	_	NN	_	_	4	appos	_	_
+7	in	_	NN	_	_	4	prep	_	_
+8	\?	_	NN	_	_	7	pobj	_	_
+
+1	Who	_	NN	_	_	4	nsubj	_	_
+2	was	_	NN	_	_	4	cop	_	_
+3	Galileo	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	an	_	NN	_	_	4	det	_	_
+4	atom	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	When	_	NN	_	_	7	advmod	_	_
+2	did	_	NN	_	_	7	aux	_	_
+3	Hawaii	_	NN	_	_	7	nsubj	_	_
+4	become	_	NN	_	_	7	cop	_	_
+5	a	_	NN	_	_	7	det	_	_
+6	state	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	tall	_	NN	_	_	3	dep	_	_
+3	is	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	Sears	_	NN	_	_	7	nn	_	_
+6	Building	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	3	nsubj	_	_
+
+1	George	_	NN	_	_	2	nn	_	_
+2	Bush	_	NN	_	_	3	nsubj	_	_
+3	purchased	_	NN	_	_	0	root	_	_
+4	a	_	NN	_	_	6	det	_	_
+5	small	_	NN	_	_	6	amod	_	_
+6	interest	_	NN	_	_	3	dobj	_	_
+7	in	_	NN	_	_	11	prep	_	_
+8	which	_	NN	_	_	7	pobj	_	_
+9	baseball	_	NN	_	_	10	nn	_	_
+10	team	_	NN	_	_	11	nsubj	_	_
+11	\?	_	NN	_	_	6	rcmod	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	Australia	_	NN	_	_	7	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	national	_	NN	_	_	7	amod	_	_
+6	flower	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	Why	_	NN	_	_	5	advmod	_	_
+2	does	_	NN	_	_	5	aux	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	moon	_	NN	_	_	5	nsubj	_	_
+5	turn	_	NN	_	_	0	root	_	_
+6	orange	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	autism	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	city	_	NN	_	_	3	nsubj	_	_
+3	had	_	NN	_	_	0	root	_	_
+4	a	_	NN	_	_	5	det	_	_
+5	world	_	NN	_	_	6	nn	_	_
+6	fair	_	NN	_	_	3	dobj	_	_
+7	in	_	NN	_	_	3	prep	_	_
+8	1900	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	3	advmod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	person	_	NN	_	_	4	poss	_	_
+3	's	_	NN	_	_	2	possessive	_	_
+4	head	_	NN	_	_	5	nsubj	_	_
+5	is	_	NN	_	_	0	root	_	_
+6	on	_	NN	_	_	5	prep	_	_
+7	a	_	NN	_	_	8	det	_	_
+8	dime	_	NN	_	_	6	pobj	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	average	_	NN	_	_	5	amod	_	_
+5	weight	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	a	_	NN	_	_	10	det	_	_
+8	Yellow	_	NN	_	_	10	amod	_	_
+9	Labrador	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	6	pobj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	first	_	NN	_	_	5	amod	_	_
+5	man	_	NN	_	_	0	root	_	_
+6	to	_	NN	_	_	7	aux	_	_
+7	fly	_	NN	_	_	5	infmod	_	_
+8	across	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	12	det	_	_
+10	Pacific	_	NN	_	_	12	nn	_	_
+11	Ocean	_	NN	_	_	8	pobj	_	_
+12	\?	_	NN	_	_	8	pobj	_	_
+
+1	When	_	NN	_	_	7	advmod	_	_
+2	did	_	NN	_	_	7	aux	_	_
+3	Idaho	_	NN	_	_	7	nsubj	_	_
+4	become	_	NN	_	_	7	cop	_	_
+5	a	_	NN	_	_	7	det	_	_
+6	state	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	life	_	NN	_	_	5	nn	_	_
+5	expectancy	_	NN	_	_	0	root	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	crickets	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	7	num	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	metal	_	NN	_	_	3	nsubj	_	_
+3	has	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	7	det	_	_
+5	highest	_	NN	_	_	7	amod	_	_
+6	melting	_	NN	_	_	7	nn	_	_
+7	point	_	NN	_	_	3	dobj	_	_
+8	\?	_	NN	_	_	3	advmod	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	developed	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	vaccination	_	NN	_	_	2	dobj	_	_
+5	against	_	NN	_	_	4	prep	_	_
+6	polio	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	epilepsy	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	6	tmod	_	_
+3	did	_	NN	_	_	6	aux	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	Titanic	_	NN	_	_	6	nsubj	_	_
+6	sink	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dobj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	first	_	NN	_	_	5	amod	_	_
+5	American	_	NN	_	_	0	root	_	_
+6	to	_	NN	_	_	7	aux	_	_
+7	walk	_	NN	_	_	5	infmod	_	_
+8	in	_	NN	_	_	7	prep	_	_
+9	space	_	NN	_	_	8	pobj	_	_
+10	\?	_	NN	_	_	7	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	biosphere	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	river	_	NN	_	_	7	csubjpass	_	_
+3	in	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	US	_	NN	_	_	3	pobj	_	_
+6	is	_	NN	_	_	7	auxpass	_	_
+7	known	_	NN	_	_	0	root	_	_
+8	as	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	12	det	_	_
+10	Big	_	NN	_	_	12	amod	_	_
+11	Muddy	_	NN	_	_	12	amod	_	_
+12	\?	_	NN	_	_	8	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	bipolar	_	NN	_	_	4	amod	_	_
+4	disorder	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	amod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	cholesterol	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	developed	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Macintosh	_	NN	_	_	6	nn	_	_
+5	computer	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	caffeine	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	det	_	_
+2	imaginary	_	NN	_	_	3	amod	_	_
+3	line	_	NN	_	_	5	nsubj	_	_
+4	is	_	NN	_	_	5	cop	_	_
+5	halfway	_	NN	_	_	0	root	_	_
+6	between	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	North	_	NN	_	_	6	pobj	_	_
+9	and	_	NN	_	_	8	cc	_	_
+10	South	_	NN	_	_	11	nn	_	_
+11	Poles	_	NN	_	_	8	conj	_	_
+12	\?	_	NN	_	_	5	conj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	John	_	NN	_	_	6	nn	_	_
+4	Wayne	_	NN	_	_	6	nn	_	_
+5	airport	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	nsubj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	hemisphere	_	NN	_	_	5	nsubj	_	_
+3	is	_	NN	_	_	5	cop	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	Philippines	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	average	_	NN	_	_	5	amod	_	_
+5	speed	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	horses	_	NN	_	_	6	pobj	_	_
+9	at	_	NN	_	_	5	prep	_	_
+10	the	_	NN	_	_	13	det	_	_
+11	Kentucky	_	NN	_	_	13	nn	_	_
+12	Derby	_	NN	_	_	13	nn	_	_
+13	\?	_	NN	_	_	9	pobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	are	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Rocky	_	NN	_	_	6	nn	_	_
+5	Mountains	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	nsubj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	3	cop	_	_
+3	invertebrates	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	amod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	temperature	_	NN	_	_	0	root	_	_
+5	at	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	center	_	NN	_	_	5	pobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	10	det	_	_
+10	earth	_	NN	_	_	8	pobj	_	_
+11	\?	_	NN	_	_	8	pobj	_	_
+
+1	When	_	NN	_	_	7	advmod	_	_
+2	did	_	NN	_	_	7	aux	_	_
+3	John	_	NN	_	_	5	nn	_	_
+4	F	_	NN	_	_	5	nn	_	_
+5	Kennedy	_	NN	_	_	7	nsubjpass	_	_
+6	get	_	NN	_	_	7	auxpass	_	_
+7	elected	_	NN	_	_	0	root	_	_
+8	as	_	NN	_	_	7	prep	_	_
+9	President	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	8	pobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	old	_	NN	_	_	5	dep	_	_
+3	was	_	NN	_	_	0	root	_	_
+4	Elvis	_	NN	_	_	5	nn	_	_
+5	Presley	_	NN	_	_	3	nsubj	_	_
+6	when	_	NN	_	_	8	advmod	_	_
+7	he	_	NN	_	_	8	nsubj	_	_
+8	died	_	NN	_	_	5	dep	_	_
+9	\?	_	NN	_	_	8	dobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Orinoco	_	NN	_	_	6	nn	_	_
+5	River	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	far	_	NN	_	_	3	advmod	_	_
+3	is	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	service	_	NN	_	_	6	nn	_	_
+6	line	_	NN	_	_	3	nsubj	_	_
+7	from	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	9	det	_	_
+9	net	_	NN	_	_	7	pobj	_	_
+10	in	_	NN	_	_	9	prep	_	_
+11	tennis	_	NN	_	_	12	nn	_	_
+12	\?	_	NN	_	_	10	pobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	much	_	NN	_	_	3	amod	_	_
+3	fiber	_	NN	_	_	6	dobj	_	_
+4	should	_	NN	_	_	6	aux	_	_
+5	you	_	NN	_	_	6	nsubj	_	_
+6	have	_	NN	_	_	0	root	_	_
+7	per	_	NN	_	_	6	prep	_	_
+8	day	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	6	advmod	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	many	_	NN	_	_	4	amod	_	_
+3	Great	_	NN	_	_	4	amod	_	_
+4	Lakes	_	NN	_	_	5	nsubj	_	_
+5	are	_	NN	_	_	0	root	_	_
+6	there	_	NN	_	_	5	advmod	_	_
+7	\?	_	NN	_	_	5	advmod	_	_
+
+1	Material	_	NN	_	_	5	nsubjpass	_	_
+2	called	_	NN	_	_	1	partmod	_	_
+3	linen	_	NN	_	_	2	dep	_	_
+4	is	_	NN	_	_	5	auxpass	_	_
+5	made	_	NN	_	_	0	root	_	_
+6	from	_	NN	_	_	5	prep	_	_
+7	what	_	NN	_	_	8	det	_	_
+8	plant	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	6	pcomp	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	Teflon	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	amitriptyline	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	shaman	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	proper	_	NN	_	_	5	amod	_	_
+5	name	_	NN	_	_	0	root	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	a	_	NN	_	_	9	det	_	_
+8	female	_	NN	_	_	9	amod	_	_
+9	walrus	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	group	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	turkeys	_	NN	_	_	5	pobj	_	_
+7	called	_	NN	_	_	4	partmod	_	_
+8	\?	_	NN	_	_	7	dep	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	long	_	NN	_	_	7	advmod	_	_
+3	did	_	NN	_	_	7	aux	_	_
+4	Rip	_	NN	_	_	7	nsubj	_	_
+5	Van	_	NN	_	_	6	nn	_	_
+6	Winkle	_	NN	_	_	7	nsubj	_	_
+7	sleep	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	advmod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	triglycerides	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	How	_	NN	_	_	3	advmod	_	_
+2	many	_	NN	_	_	3	amod	_	_
+3	liters	_	NN	_	_	0	root	_	_
+4	in	_	NN	_	_	3	prep	_	_
+5	a	_	NN	_	_	6	det	_	_
+6	gallon	_	NN	_	_	4	pobj	_	_
+7	\?	_	NN	_	_	6	dep	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	chocolate	_	NN	_	_	8	nn	_	_
+8	company	_	NN	_	_	5	pobj	_	_
+9	in	_	NN	_	_	8	prep	_	_
+10	San	_	NN	_	_	11	nn	_	_
+11	Francisco	_	NN	_	_	9	pobj	_	_
+12	\?	_	NN	_	_	4	dep	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	3	cop	_	_
+3	amphibians	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	amod	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	discovered	_	NN	_	_	0	root	_	_
+3	x	_	NN	_	_	4	num	_	_
+4	rays	_	NN	_	_	2	dobj	_	_
+5	\?	_	NN	_	_	2	dobj	_	_
+
+1	Which	_	NN	_	_	2	det	_	_
+2	comedian	_	NN	_	_	5	poss	_	_
+3	's	_	NN	_	_	2	possessive	_	_
+4	signature	_	NN	_	_	5	nn	_	_
+5	line	_	NN	_	_	6	nsubj	_	_
+6	is	_	NN	_	_	0	root	_	_
+7	``	_	NN	_	_	6	punct	_	_
+8	Can	_	NN	_	_	10	aux	_	_
+9	we	_	NN	_	_	10	nsubj	_	_
+10	talk	_	NN	_	_	6	ccomp	_	_
+11	''	_	NN	_	_	10	punct	_	_
+12	\?	_	NN	_	_	10	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	fibromyalgia	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	nsubjpass	_	_
+2	is	_	NN	_	_	3	auxpass	_	_
+3	done	_	NN	_	_	0	root	_	_
+4	with	_	NN	_	_	3	prep	_	_
+5	worn	_	NN	_	_	8	amod	_	_
+6	or	_	NN	_	_	5	cc	_	_
+7	outdated	_	NN	_	_	5	conj	_	_
+8	flags	_	NN	_	_	4	pobj	_	_
+9	\?	_	NN	_	_	3	punct	_	_
+
+1	What	_	NN	_	_	6	dobj	_	_
+2	does	_	NN	_	_	6	aux	_	_
+3	cc	_	NN	_	_	6	nsubj	_	_
+4	in	_	NN	_	_	3	prep	_	_
+5	engines	_	NN	_	_	4	pobj	_	_
+6	mean	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dobj	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	did	_	NN	_	_	5	aux	_	_
+3	Elvis	_	NN	_	_	4	nn	_	_
+4	Presley	_	NN	_	_	5	nsubj	_	_
+5	die	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	advmod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	capital	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Yugoslavia	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	Where	_	NN	_	_	4	advmod	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	Milan	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	speed	_	NN	_	_	5	nn	_	_
+5	hummingbirds	_	NN	_	_	6	nsubj	_	_
+6	fly	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	advmod	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	oldest	_	NN	_	_	5	amod	_	_
+5	city	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	United	_	NN	_	_	9	nn	_	_
+9	States	_	NN	_	_	6	pobj	_	_
+10	\?	_	NN	_	_	5	dep	_	_
+
+1	What	_	NN	_	_	8	nsubj	_	_
+2	was	_	NN	_	_	8	cop	_	_
+3	W	_	NN	_	_	5	nn	_	_
+4	C	_	NN	_	_	5	nn	_	_
+5	Fields	_	NN	_	_	8	poss	_	_
+6	'	_	NN	_	_	5	possessive	_	_
+7	real	_	NN	_	_	8	amod	_	_
+8	name	_	NN	_	_	0	root	_	_
+9	\?	_	NN	_	_	8	amod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	river	_	NN	_	_	3	nsubj	_	_
+3	flows	_	NN	_	_	0	root	_	_
+4	between	_	NN	_	_	3	prep	_	_
+5	Fargo	_	NN	_	_	4	pobj	_	_
+6	,	_	NN	_	_	5	punct	_	_
+7	North	_	NN	_	_	8	nn	_	_
+8	Dakota	_	NN	_	_	5	conj	_	_
+9	and	_	NN	_	_	5	cc	_	_
+10	Moorhead	_	NN	_	_	5	conj	_	_
+11	,	_	NN	_	_	10	punct	_	_
+12	Minnesota	_	NN	_	_	10	appos	_	_
+13	\?	_	NN	_	_	5	conj	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	do	_	NN	_	_	4	aux	_	_
+3	bats	_	NN	_	_	4	nsubj	_	_
+4	eat	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	state	_	NN	_	_	8	nsubj	_	_
+3	did	_	NN	_	_	8	aux	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	Battle	_	NN	_	_	8	nsubj	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	Bighorn	_	NN	_	_	6	pobj	_	_
+8	take	_	NN	_	_	0	root	_	_
+9	place	_	NN	_	_	8	dobj	_	_
+10	in	_	NN	_	_	8	prep	_	_
+11	\?	_	NN	_	_	10	pobj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	Abraham	_	NN	_	_	5	nn	_	_
+4	Lincoln	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	do	_	NN	_	_	4	aux	_	_
+3	you	_	NN	_	_	4	nsubj	_	_
+4	call	_	NN	_	_	0	root	_	_
+5	a	_	NN	_	_	7	det	_	_
+6	newborn	_	NN	_	_	7	amod	_	_
+7	kangaroo	_	NN	_	_	4	dobj	_	_
+8	\?	_	NN	_	_	4	xcomp	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	spider	_	NN	_	_	4	nn	_	_
+4	veins	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	amod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	day	_	NN	_	_	8	tmod	_	_
+3	and	_	NN	_	_	2	cc	_	_
+4	month	_	NN	_	_	2	conj	_	_
+5	did	_	NN	_	_	8	aux	_	_
+6	John	_	NN	_	_	7	nn	_	_
+7	Lennon	_	NN	_	_	8	nsubj	_	_
+8	die	_	NN	_	_	0	root	_	_
+9	\?	_	NN	_	_	8	advmod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	strait	_	NN	_	_	3	nsubj	_	_
+3	separates	_	NN	_	_	0	root	_	_
+4	North	_	NN	_	_	5	nn	_	_
+5	America	_	NN	_	_	3	dobj	_	_
+6	from	_	NN	_	_	3	prep	_	_
+7	Asia	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	3	advmod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	population	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Seattle	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	much	_	NN	_	_	3	dep	_	_
+3	was	_	NN	_	_	0	root	_	_
+4	a	_	NN	_	_	5	det	_	_
+5	ticket	_	NN	_	_	3	nsubj	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	Titanic	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	largest	_	NN	_	_	5	amod	_	_
+5	city	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	world	_	NN	_	_	6	pobj	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	American	_	NN	_	_	3	amod	_	_
+3	composer	_	NN	_	_	4	nsubj	_	_
+4	wrote	_	NN	_	_	0	root	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	music	_	NN	_	_	4	dobj	_	_
+7	for	_	NN	_	_	4	prep	_	_
+8	``	_	NN	_	_	7	punct	_	_
+9	West	_	NN	_	_	11	nn	_	_
+10	Side	_	NN	_	_	11	nn	_	_
+11	Story	_	NN	_	_	7	pobj	_	_
+12	''	_	NN	_	_	13	punct	_	_
+13	\?	_	NN	_	_	7	pobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	Mall	_	NN	_	_	2	nsubj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	America	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	pH	_	NN	_	_	5	nn	_	_
+5	scale	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	amod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	type	_	NN	_	_	6	nsubjpass	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	currency	_	NN	_	_	3	pobj	_	_
+5	is	_	NN	_	_	6	auxpass	_	_
+6	used	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	Australia	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	7	pobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	tall	_	NN	_	_	3	dep	_	_
+3	is	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	Gateway	_	NN	_	_	6	nn	_	_
+6	Arch	_	NN	_	_	3	nsubj	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	St	_	NN	_	_	9	nn	_	_
+9	Louis	_	NN	_	_	7	pobj	_	_
+10	,	_	NN	_	_	9	punct	_	_
+11	MO	_	NN	_	_	9	appos	_	_
+12	\?	_	NN	_	_	9	appos	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	much	_	NN	_	_	9	advmod	_	_
+3	does	_	NN	_	_	9	aux	_	_
+4	the	_	NN	_	_	8	det	_	_
+5	human	_	NN	_	_	8	amod	_	_
+6	adult	_	NN	_	_	8	nn	_	_
+7	female	_	NN	_	_	8	amod	_	_
+8	brain	_	NN	_	_	9	nsubj	_	_
+9	weigh	_	NN	_	_	0	root	_	_
+10	\?	_	NN	_	_	9	dobj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	first	_	NN	_	_	5	amod	_	_
+5	governor	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	Alaska	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	prism	_	NN	_	_	5	amod	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	When	_	NN	_	_	7	advmod	_	_
+2	was	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	liver	_	NN	_	_	6	nn	_	_
+6	transplant	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	3	nsubjpass	_	_
+2	was	_	NN	_	_	3	auxpass	_	_
+3	elected	_	NN	_	_	0	root	_	_
+4	president	_	NN	_	_	3	xcomp	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	South	_	NN	_	_	7	nn	_	_
+7	Africa	_	NN	_	_	5	pobj	_	_
+8	in	_	NN	_	_	3	prep	_	_
+9	1994	_	NN	_	_	8	pobj	_	_
+10	\?	_	NN	_	_	3	dep	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	population	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	China	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	4	amod	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	was	_	NN	_	_	5	auxpass	_	_
+3	Rosa	_	NN	_	_	4	nn	_	_
+4	Parks	_	NN	_	_	5	nsubj	_	_
+5	born	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dep	_	_
+
+1	Why	_	NN	_	_	6	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	a	_	NN	_	_	6	det	_	_
+4	ladybug	_	NN	_	_	5	nsubj	_	_
+5	helpful	_	NN	_	_	6	amod	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	amoxicillin	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	9	nsubj	_	_
+2	was	_	NN	_	_	9	cop	_	_
+3	the	_	NN	_	_	9	det	_	_
+4	first	_	NN	_	_	9	amod	_	_
+5	female	_	NN	_	_	9	amod	_	_
+6	United	_	NN	_	_	9	nn	_	_
+7	States	_	NN	_	_	9	nn	_	_
+8	Representative	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	xerophytes	_	NN	_	_	4	amod	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	country	_	NN	_	_	7	nsubj	_	_
+3	did	_	NN	_	_	7	aux	_	_
+4	Ponce	_	NN	_	_	6	nn	_	_
+5	de	_	NN	_	_	6	nn	_	_
+6	Leon	_	NN	_	_	7	nsubj	_	_
+7	come	_	NN	_	_	0	root	_	_
+8	from	_	NN	_	_	7	prep	_	_
+9	\?	_	NN	_	_	8	pobj	_	_
+
+1	The	_	NN	_	_	4	det	_	_
+2	U	_	NN	_	_	4	nn	_	_
+3	S	_	NN	_	_	4	nn	_	_
+4	Department	_	NN	_	_	8	nsubj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Treasury	_	NN	_	_	5	pobj	_	_
+7	first	_	NN	_	_	8	advmod	_	_
+8	issued	_	NN	_	_	0	root	_	_
+9	paper	_	NN	_	_	10	nn	_	_
+10	currency	_	NN	_	_	8	dobj	_	_
+11	for	_	NN	_	_	10	prep	_	_
+12	the	_	NN	_	_	14	det	_	_
+13	U	_	NN	_	_	14	nn	_	_
+14	S	_	NN	_	_	11	pobj	_	_
+15	during	_	NN	_	_	18	prep	_	_
+16	which	_	NN	_	_	15	pobj	_	_
+17	war	_	NN	_	_	18	nn	_	_
+18	\?	_	NN	_	_	14	rcmod	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	desktop	_	NN	_	_	5	nn	_	_
+4	publishing	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	temperature	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	sun	_	NN	_	_	9	poss	_	_
+8	's	_	NN	_	_	7	possessive	_	_
+9	surface	_	NN	_	_	5	pobj	_	_
+10	\?	_	NN	_	_	4	advmod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	5	tmod	_	_
+3	did	_	NN	_	_	5	aux	_	_
+4	Canada	_	NN	_	_	5	nsubj	_	_
+5	join	_	NN	_	_	0	root	_	_
+6	the	_	NN	_	_	9	det	_	_
+7	United	_	NN	_	_	9	nn	_	_
+8	Nations	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	oldest	_	NN	_	_	5	amod	_	_
+5	university	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	US	_	NN	_	_	6	pobj	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	Where	_	NN	_	_	6	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	Prince	_	NN	_	_	6	nn	_	_
+4	Edward	_	NN	_	_	6	nn	_	_
+5	Island	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	Mercury	_	NN	_	_	7	nsubjpass	_	_
+2	,	_	NN	_	_	7	punct	_	_
+3	what	_	NN	_	_	4	det	_	_
+4	year	_	NN	_	_	7	tmod	_	_
+5	was	_	NN	_	_	7	auxpass	_	_
+6	it	_	NN	_	_	7	nsubj	_	_
+7	discovered	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	cryogenics	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	coral	_	NN	_	_	4	nn	_	_
+4	reefs	_	NN	_	_	5	nsubj	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	9	nsubj	_	_
+2	is	_	NN	_	_	9	cop	_	_
+3	the	_	NN	_	_	9	det	_	_
+4	longest	_	NN	_	_	9	amod	_	_
+5	major	_	NN	_	_	9	amod	_	_
+6	league	_	NN	_	_	9	nn	_	_
+7	baseball	_	NN	_	_	9	nn	_	_
+8	winning	_	NN	_	_	9	nn	_	_
+9	streak	_	NN	_	_	0	root	_	_
+10	\?	_	NN	_	_	9	amod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	neurology	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	invented	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	calculator	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	2	dobj	_	_
+
+1	How	_	NN	_	_	4	advmod	_	_
+2	do	_	NN	_	_	4	aux	_	_
+3	you	_	NN	_	_	4	nsubj	_	_
+4	measure	_	NN	_	_	0	root	_	_
+5	earthquakes	_	NN	_	_	4	dobj	_	_
+6	\?	_	NN	_	_	4	dobj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	Duke	_	NN	_	_	5	nn	_	_
+4	Ellington	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	county	_	NN	_	_	4	nsubj	_	_
+3	is	_	NN	_	_	4	cop	_	_
+4	Phoenix	_	NN	_	_	0	root	_	_
+5	,	_	NN	_	_	4	punct	_	_
+6	AZ	_	NN	_	_	4	appos	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	micron	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	The	_	NN	_	_	2	det	_	_
+2	sun	_	NN	_	_	4	poss	_	_
+3	's	_	NN	_	_	2	possessive	_	_
+4	core	_	NN	_	_	10	nsubj	_	_
+5	,	_	NN	_	_	4	punct	_	_
+6	what	_	NN	_	_	10	nsubj	_	_
+7	is	_	NN	_	_	10	cop	_	_
+8	the	_	NN	_	_	9	det	_	_
+9	temperature	_	NN	_	_	4	dep	_	_
+10	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	Ohio	_	NN	_	_	7	nn	_	_
+5	state	_	NN	_	_	7	nn	_	_
+6	bird	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	When	_	NN	_	_	7	advmod	_	_
+2	were	_	NN	_	_	7	auxpass	_	_
+3	William	_	NN	_	_	4	nn	_	_
+4	Shakespeare	_	NN	_	_	6	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	twins	_	NN	_	_	7	nsubj	_	_
+7	born	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	dep	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	highest	_	NN	_	_	5	amod	_	_
+5	dam	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	10	det	_	_
+8	U	_	NN	_	_	10	nn	_	_
+9	S	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	color	_	NN	_	_	8	nsubj	_	_
+3	is	_	NN	_	_	8	cop	_	_
+4	a	_	NN	_	_	8	det	_	_
+5	poison	_	NN	_	_	8	nn	_	_
+6	arrow	_	NN	_	_	8	nn	_	_
+7	frog	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	acupuncture	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	length	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	coastline	_	NN	_	_	5	pobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	10	det	_	_
+10	state	_	NN	_	_	8	pobj	_	_
+11	of	_	NN	_	_	10	prep	_	_
+12	Alaska	_	NN	_	_	11	pobj	_	_
+13	\?	_	NN	_	_	11	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Neil	_	NN	_	_	7	nn	_	_
+7	Armstrong	_	NN	_	_	9	poss	_	_
+8	's	_	NN	_	_	7	possessive	_	_
+9	wife	_	NN	_	_	5	pobj	_	_
+10	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	Hawaii	_	NN	_	_	7	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	state	_	NN	_	_	7	nn	_	_
+6	flower	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	won	_	NN	_	_	0	root	_	_
+3	Ms	_	NN	_	_	4	nn	_	_
+4	American	_	NN	_	_	2	dobj	_	_
+5	in	_	NN	_	_	2	prep	_	_
+6	1989	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	2	dobj	_	_
+
+1	When	_	NN	_	_	6	advmod	_	_
+2	did	_	NN	_	_	6	aux	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	Hindenberg	_	NN	_	_	5	amod	_	_
+5	crash	_	NN	_	_	6	nsubj	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	dobj	_	_
+2	mineral	_	NN	_	_	3	nsubj	_	_
+3	helps	_	NN	_	_	0	root	_	_
+4	prevent	_	NN	_	_	3	ccomp	_	_
+5	osteoporosis	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	last	_	NN	_	_	5	amod	_	_
+5	year	_	NN	_	_	0	root	_	_
+6	that	_	NN	_	_	10	advmod	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	Chicago	_	NN	_	_	9	nn	_	_
+9	Cubs	_	NN	_	_	10	nsubj	_	_
+10	won	_	NN	_	_	5	rcmod	_	_
+11	the	_	NN	_	_	13	det	_	_
+12	World	_	NN	_	_	13	nn	_	_
+13	Series	_	NN	_	_	10	dobj	_	_
+14	\?	_	NN	_	_	13	num	_	_
+
+1	Where	_	NN	_	_	4	advmod	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	Perth	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	5	tmod	_	_
+3	did	_	NN	_	_	5	aux	_	_
+4	WWII	_	NN	_	_	5	nsubj	_	_
+5	begin	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	xcomp	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	diameter	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	a	_	NN	_	_	8	det	_	_
+7	golf	_	NN	_	_	8	nn	_	_
+8	ball	_	NN	_	_	5	pobj	_	_
+9	\?	_	NN	_	_	4	punct	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	an	_	NN	_	_	4	det	_	_
+4	eclipse	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	discovered	_	NN	_	_	0	root	_	_
+3	America	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	earth	_	NN	_	_	7	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	diameter	_	NN	_	_	7	amod	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	Which	_	NN	_	_	2	det	_	_
+2	president	_	NN	_	_	5	nsubj	_	_
+3	was	_	NN	_	_	5	cop	_	_
+4	unmarried	_	NN	_	_	5	amod	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	wide	_	NN	_	_	3	dep	_	_
+3	is	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	Milky	_	NN	_	_	6	amod	_	_
+6	Way	_	NN	_	_	3	nsubj	_	_
+7	galaxy	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	6	rcmod	_	_
+
+1	During	_	NN	_	_	7	prep	_	_
+2	which	_	NN	_	_	3	det	_	_
+3	season	_	NN	_	_	1	pobj	_	_
+4	do	_	NN	_	_	7	aux	_	_
+5	most	_	NN	_	_	6	amod	_	_
+6	thunderstorms	_	NN	_	_	7	nsubj	_	_
+7	occur	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	advmod	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	Wimbledon	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	gestation	_	NN	_	_	5	amod	_	_
+5	period	_	NN	_	_	0	root	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	a	_	NN	_	_	8	det	_	_
+8	cat	_	NN	_	_	6	pobj	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	far	_	NN	_	_	3	advmod	_	_
+3	is	_	NN	_	_	7	cop	_	_
+4	a	_	NN	_	_	6	det	_	_
+5	nautical	_	NN	_	_	6	amod	_	_
+6	mile	_	NN	_	_	7	npadvmod	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	4	nsubj	_	_
+2	was	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	abolitionist	_	NN	_	_	0	root	_	_
+5	who	_	NN	_	_	6	nsubj	_	_
+6	led	_	NN	_	_	4	rcmod	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	raid	_	NN	_	_	6	dobj	_	_
+9	on	_	NN	_	_	8	prep	_	_
+10	Harper	_	NN	_	_	12	poss	_	_
+11	's	_	NN	_	_	10	possessive	_	_
+12	Ferry	_	NN	_	_	9	pobj	_	_
+13	in	_	NN	_	_	6	prep	_	_
+14	1859	_	NN	_	_	13	pobj	_	_
+15	\?	_	NN	_	_	14	num	_	_
+
+1	What	_	NN	_	_	6	dobj	_	_
+2	does	_	NN	_	_	6	aux	_	_
+3	target	_	NN	_	_	5	nn	_	_
+4	heart	_	NN	_	_	5	nn	_	_
+5	rate	_	NN	_	_	6	nsubj	_	_
+6	mean	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	first	_	NN	_	_	5	amod	_	_
+5	satellite	_	NN	_	_	0	root	_	_
+6	to	_	NN	_	_	7	aux	_	_
+7	go	_	NN	_	_	5	infmod	_	_
+8	into	_	NN	_	_	7	prep	_	_
+9	space	_	NN	_	_	8	pobj	_	_
+10	\?	_	NN	_	_	8	pobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	aux	_	_
+3	foreclosure	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	dobj	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	major	_	NN	_	_	6	amod	_	_
+5	fault	_	NN	_	_	6	nn	_	_
+6	line	_	NN	_	_	0	root	_	_
+7	near	_	NN	_	_	6	prep	_	_
+8	Kentucky	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	7	pobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	Holland	_	NN	_	_	6	nn	_	_
+5	Tunnel	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	wrote	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	hymn	_	NN	_	_	2	dobj	_	_
+5	``	_	NN	_	_	4	punct	_	_
+6	Amazing	_	NN	_	_	9	nn	_	_
+7	Grace	_	NN	_	_	9	nn	_	_
+8	''	_	NN	_	_	9	punct	_	_
+9	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	position	_	NN	_	_	6	dobj	_	_
+3	did	_	NN	_	_	6	aux	_	_
+4	Willie	_	NN	_	_	5	nn	_	_
+5	Davis	_	NN	_	_	6	nsubj	_	_
+6	play	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	baseball	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	6	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	platelets	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	severance	_	NN	_	_	4	nn	_	_
+4	pay	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Roy	_	NN	_	_	7	nn	_	_
+7	Roger	_	NN	_	_	9	poss	_	_
+8	's	_	NN	_	_	7	possessive	_	_
+9	dog	_	NN	_	_	5	pobj	_	_
+10	\?	_	NN	_	_	5	pobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	are	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	National	_	NN	_	_	6	nn	_	_
+5	Archives	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	nsubj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	baby	_	NN	_	_	0	root	_	_
+5	turkey	_	NN	_	_	6	nsubj	_	_
+6	called	_	NN	_	_	4	rcmod	_	_
+7	\?	_	NN	_	_	6	dep	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	aux	_	_
+3	poliomyelitis	_	NN	_	_	4	amod	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	longest	_	NN	_	_	5	amod	_	_
+5	bone	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	human	_	NN	_	_	9	amod	_	_
+9	body	_	NN	_	_	6	pobj	_	_
+10	\?	_	NN	_	_	5	dep	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	German	_	NN	_	_	5	amod	_	_
+5	philosopher	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	were	_	NN	_	_	8	cop	_	_
+3	Christopher	_	NN	_	_	4	nn	_	_
+4	Columbus	_	NN	_	_	7	poss	_	_
+5	'	_	NN	_	_	4	possessive	_	_
+6	three	_	NN	_	_	7	num	_	_
+7	ships	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	6	dobj	_	_
+2	does	_	NN	_	_	6	aux	_	_
+3	Phi	_	NN	_	_	5	nn	_	_
+4	Beta	_	NN	_	_	5	nn	_	_
+5	Kappa	_	NN	_	_	6	nsubj	_	_
+6	mean	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	nicotine	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	another	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	vitamin	_	NN	_	_	8	nn	_	_
+7	B1	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	5	pobj	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	discovered	_	NN	_	_	0	root	_	_
+3	radium	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	3	cop	_	_
+3	sunspots	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	amod	_	_
+
+1	When	_	NN	_	_	4	advmod	_	_
+2	was	_	NN	_	_	4	aux	_	_
+3	Algeria	_	NN	_	_	4	nsubj	_	_
+4	colonized	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	3	det	_	_
+2	baseball	_	NN	_	_	3	nn	_	_
+3	team	_	NN	_	_	6	nsubj	_	_
+4	was	_	NN	_	_	6	cop	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	first	_	NN	_	_	0	root	_	_
+7	to	_	NN	_	_	8	aux	_	_
+8	make	_	NN	_	_	6	infmod	_	_
+9	numbers	_	NN	_	_	10	nsubj	_	_
+10	part	_	NN	_	_	8	xcomp	_	_
+11	of	_	NN	_	_	10	prep	_	_
+12	their	_	NN	_	_	13	poss	_	_
+13	uniform	_	NN	_	_	11	pobj	_	_
+14	\?	_	NN	_	_	11	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	continent	_	NN	_	_	4	nsubj	_	_
+3	is	_	NN	_	_	4	cop	_	_
+4	Egypt	_	NN	_	_	0	root	_	_
+5	on	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	capital	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Mongolia	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	nanotechnology	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	In	_	NN	_	_	9	prep	_	_
+2	the	_	NN	_	_	4	det	_	_
+3	late	_	NN	_	_	4	amod	_	_
+4	1700	_	NN	_	_	7	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	British	_	NN	_	_	7	amod	_	_
+7	convicts	_	NN	_	_	9	nsubjpass	_	_
+8	were	_	NN	_	_	9	auxpass	_	_
+9	used	_	NN	_	_	0	root	_	_
+10	to	_	NN	_	_	11	aux	_	_
+11	populate	_	NN	_	_	9	xcomp	_	_
+12	which	_	NN	_	_	13	det	_	_
+13	colony	_	NN	_	_	14	nn	_	_
+14	\?	_	NN	_	_	11	ccomp	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	state	_	NN	_	_	6	nsubj	_	_
+3	is	_	NN	_	_	6	cop	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	geographic	_	NN	_	_	6	amod	_	_
+6	center	_	NN	_	_	0	root	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	lower	_	NN	_	_	11	amod	_	_
+10	48	_	NN	_	_	11	num	_	_
+11	states	_	NN	_	_	7	pobj	_	_
+12	\?	_	NN	_	_	11	amod	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	an	_	NN	_	_	5	det	_	_
+4	obtuse	_	NN	_	_	5	amod	_	_
+5	angle	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	amod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	polymers	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	When	_	NN	_	_	4	advmod	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	hurricane	_	NN	_	_	4	nn	_	_
+4	season	_	NN	_	_	0	root	_	_
+5	in	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	Caribbean	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	5	pobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	volcano	_	NN	_	_	7	nn	_	_
+5	Mauna	_	NN	_	_	7	nn	_	_
+6	Loa	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	2	nsubj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	another	_	NN	_	_	5	det	_	_
+4	astronomic	_	NN	_	_	5	amod	_	_
+5	term	_	NN	_	_	0	root	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	Northern	_	NN	_	_	9	amod	_	_
+9	Lights	_	NN	_	_	6	pobj	_	_
+10	\?	_	NN	_	_	5	punct	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	peninsula	_	NN	_	_	5	nsubj	_	_
+3	is	_	NN	_	_	5	cop	_	_
+4	Spain	_	NN	_	_	5	nsubj	_	_
+5	part	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	\?	_	NN	_	_	6	pobj	_	_
+
+1	When	_	NN	_	_	6	advmod	_	_
+2	was	_	NN	_	_	6	auxpass	_	_
+3	Lyndon	_	NN	_	_	5	nn	_	_
+4	B	_	NN	_	_	5	nn	_	_
+5	Johnson	_	NN	_	_	6	nsubj	_	_
+6	born	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dep	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	acetaminophen	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	state	_	NN	_	_	3	nsubj	_	_
+3	has	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	least	_	NN	_	_	6	amod	_	_
+6	amount	_	NN	_	_	3	dobj	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	rain	_	NN	_	_	7	pobj	_	_
+9	per	_	NN	_	_	6	prep	_	_
+10	year	_	NN	_	_	9	pobj	_	_
+11	\?	_	NN	_	_	3	advmod	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	founded	_	NN	_	_	0	root	_	_
+3	American	_	NN	_	_	6	nn	_	_
+4	Red	_	NN	_	_	6	nn	_	_
+5	Cross	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	11	tmod	_	_
+3	did	_	NN	_	_	11	aux	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	Milwaukee	_	NN	_	_	6	nn	_	_
+6	Braves	_	NN	_	_	11	nsubj	_	_
+7	become	_	NN	_	_	11	cop	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	Atlanta	_	NN	_	_	11	nn	_	_
+10	Braves	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	0	root	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	fast	_	NN	_	_	5	advmod	_	_
+3	is	_	NN	_	_	5	aux	_	_
+4	alcohol	_	NN	_	_	5	nsubj	_	_
+5	absorbed	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	summer	_	NN	_	_	5	nn	_	_
+5	solstice	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	supernova	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	Shawnee	_	NN	_	_	7	nn	_	_
+5	National	_	NN	_	_	7	nn	_	_
+6	Forest	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	2	nsubj	_	_
+
+1	What	_	NN	_	_	7	dobj	_	_
+2	U	_	NN	_	_	4	nn	_	_
+3	S	_	NN	_	_	4	nn	_	_
+4	state	_	NN	_	_	6	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	motto	_	NN	_	_	7	nsubj	_	_
+7	is	_	NN	_	_	14	cop	_	_
+8	``	_	NN	_	_	9	punct	_	_
+9	Live	_	NN	_	_	7	dep	_	_
+10	free	_	NN	_	_	9	advmod	_	_
+11	or	_	NN	_	_	9	cc	_	_
+12	Die	_	NN	_	_	9	conj	_	_
+13	''	_	NN	_	_	9	punct	_	_
+14	\?	_	NN	_	_	0	root	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	Lourve	_	NN	_	_	5	amod	_	_
+5	\?	_	NN	_	_	2	nsubj	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	first	_	NN	_	_	5	amod	_	_
+5	stamp	_	NN	_	_	0	root	_	_
+6	issued	_	NN	_	_	5	partmod	_	_
+7	\?	_	NN	_	_	6	dobj	_	_
+
+1	What	_	NN	_	_	3	det	_	_
+2	primary	_	NN	_	_	3	amod	_	_
+3	colors	_	NN	_	_	6	nsubj	_	_
+4	do	_	NN	_	_	6	aux	_	_
+5	you	_	NN	_	_	6	nsubj	_	_
+6	mix	_	NN	_	_	0	root	_	_
+7	to	_	NN	_	_	8	aux	_	_
+8	make	_	NN	_	_	6	xcomp	_	_
+9	orange	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	8	dobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	far	_	NN	_	_	3	advmod	_	_
+3	is	_	NN	_	_	0	root	_	_
+4	Pluto	_	NN	_	_	3	nsubj	_	_
+5	from	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	sun	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	body	_	NN	_	_	8	nsubj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	water	_	NN	_	_	3	pobj	_	_
+5	are	_	NN	_	_	8	cop	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	Canary	_	NN	_	_	8	nn	_	_
+8	Islands	_	NN	_	_	0	root	_	_
+9	in	_	NN	_	_	8	prep	_	_
+10	\?	_	NN	_	_	9	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	neuropathy	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Euphrates	_	NN	_	_	6	nn	_	_
+5	River	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	cryptography	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	natural	_	NN	_	_	4	amod	_	_
+4	gas	_	NN	_	_	0	root	_	_
+5	composed	_	NN	_	_	4	partmod	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	\?	_	NN	_	_	6	pobj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	Prime	_	NN	_	_	5	amod	_	_
+5	Minister	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	Canada	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	3	det	_	_
+2	French	_	NN	_	_	3	amod	_	_
+3	ruler	_	NN	_	_	5	nsubjpass	_	_
+4	was	_	NN	_	_	5	auxpass	_	_
+5	defeated	_	NN	_	_	0	root	_	_
+6	at	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	battle	_	NN	_	_	6	pobj	_	_
+9	of	_	NN	_	_	8	prep	_	_
+10	Waterloo	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	9	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	leukemia	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Where	_	NN	_	_	5	advmod	_	_
+2	did	_	NN	_	_	5	aux	_	_
+3	Howard	_	NN	_	_	4	nn	_	_
+4	Hughes	_	NN	_	_	5	nsubj	_	_
+5	die	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	advmod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	birthstone	_	NN	_	_	0	root	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	June	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	6	num	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	sales	_	NN	_	_	5	nn	_	_
+5	tax	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	Minnesota	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	distance	_	NN	_	_	0	root	_	_
+5	in	_	NN	_	_	4	prep	_	_
+6	miles	_	NN	_	_	5	pobj	_	_
+7	from	_	NN	_	_	4	prep	_	_
+8	the	_	NN	_	_	9	det	_	_
+9	earth	_	NN	_	_	7	pobj	_	_
+10	to	_	NN	_	_	4	prep	_	_
+11	the	_	NN	_	_	13	det	_	_
+12	sun	_	NN	_	_	13	nn	_	_
+13	\?	_	NN	_	_	10	pobj	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	average	_	NN	_	_	6	amod	_	_
+5	life	_	NN	_	_	6	nn	_	_
+6	span	_	NN	_	_	0	root	_	_
+7	for	_	NN	_	_	6	prep	_	_
+8	a	_	NN	_	_	9	det	_	_
+9	chicken	_	NN	_	_	7	pobj	_	_
+10	\?	_	NN	_	_	7	pobj	_	_
+
+1	When	_	NN	_	_	8	advmod	_	_
+2	was	_	NN	_	_	8	aux	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	first	_	NN	_	_	7	amod	_	_
+5	Wal	_	NN	_	_	7	nn	_	_
+6	Mart	_	NN	_	_	7	nn	_	_
+7	store	_	NN	_	_	8	nsubj	_	_
+8	opened	_	NN	_	_	0	root	_	_
+9	\?	_	NN	_	_	8	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	relative	_	NN	_	_	4	amod	_	_
+4	humidity	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	city	_	NN	_	_	3	nsubj	_	_
+3	has	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	zip	_	NN	_	_	6	nn	_	_
+6	code	_	NN	_	_	3	dobj	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	35824	_	NN	_	_	9	amod	_	_
+9	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	currency	_	NN	_	_	4	nsubjpass	_	_
+3	is	_	NN	_	_	4	auxpass	_	_
+4	used	_	NN	_	_	7	csubj	_	_
+5	in	_	NN	_	_	4	prep	_	_
+6	Algeria	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	invented	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	hula	_	NN	_	_	6	nn	_	_
+5	hoop	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	was	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	most	_	NN	_	_	5	advmod	_	_
+5	popular	_	NN	_	_	6	amod	_	_
+6	toy	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	1957	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	6	punct	_	_
+
+1	What	_	NN	_	_	4	nsubjpass	_	_
+2	is	_	NN	_	_	4	auxpass	_	_
+3	pastrami	_	NN	_	_	4	nsubj	_	_
+4	made	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	satellite	_	NN	_	_	5	pobj	_	_
+8	that	_	NN	_	_	12	dobj	_	_
+9	the	_	NN	_	_	11	det	_	_
+10	Soviet	_	NN	_	_	11	nn	_	_
+11	Union	_	NN	_	_	12	nsubj	_	_
+12	sent	_	NN	_	_	4	rcmod	_	_
+13	into	_	NN	_	_	12	prep	_	_
+14	space	_	NN	_	_	13	pobj	_	_
+15	in	_	NN	_	_	12	prep	_	_
+16	1957	_	NN	_	_	15	pobj	_	_
+17	\?	_	NN	_	_	4	punct	_	_
+
+1	What	_	NN	_	_	6	dobj	_	_
+2	city	_	NN	_	_	4	poss	_	_
+3	's	_	NN	_	_	2	possessive	_	_
+4	newspaper	_	NN	_	_	6	nsubjpass	_	_
+5	is	_	NN	_	_	6	auxpass	_	_
+6	called	_	NN	_	_	0	root	_	_
+7	``	_	NN	_	_	11	punct	_	_
+8	The	_	NN	_	_	11	nn	_	_
+9	Enquirer	_	NN	_	_	11	nn	_	_
+10	''	_	NN	_	_	11	punct	_	_
+11	\?	_	NN	_	_	6	dep	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	invented	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	slinky	_	NN	_	_	5	amod	_	_
+5	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	animals	_	NN	_	_	0	root	_	_
+5	that	_	NN	_	_	8	dobj	_	_
+6	don	_	NN	_	_	7	nn	_	_
+7	't	_	NN	_	_	8	nsubj	_	_
+8	have	_	NN	_	_	4	rcmod	_	_
+9	backbones	_	NN	_	_	8	dobj	_	_
+10	called	_	NN	_	_	9	partmod	_	_
+11	\?	_	NN	_	_	10	dep	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	melting	_	NN	_	_	5	amod	_	_
+5	point	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	copper	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	5	punct	_	_
+
+1	Where	_	NN	_	_	7	advmod	_	_
+2	is	_	NN	_	_	7	aux	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	volcano	_	NN	_	_	6	nn	_	_
+5	Olympus	_	NN	_	_	6	nn	_	_
+6	Mons	_	NN	_	_	7	nsubj	_	_
+7	located	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	dobj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	23rd	_	NN	_	_	5	amod	_	_
+5	president	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	10	det	_	_
+8	United	_	NN	_	_	10	nn	_	_
+9	States	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	6	dep	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	average	_	NN	_	_	6	amod	_	_
+5	body	_	NN	_	_	6	nn	_	_
+6	temperature	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	amod	_	_
+
+1	What	_	NN	_	_	5	dobj	_	_
+2	does	_	NN	_	_	5	aux	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	defibrillator	_	NN	_	_	5	nsubj	_	_
+5	do	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	effect	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	acid	_	NN	_	_	7	nn	_	_
+7	rain	_	NN	_	_	5	pobj	_	_
+8	\?	_	NN	_	_	4	partmod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	7	tmod	_	_
+3	did	_	NN	_	_	7	aux	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	United	_	NN	_	_	6	nn	_	_
+6	States	_	NN	_	_	7	nsubj	_	_
+7	abolish	_	NN	_	_	0	root	_	_
+8	the	_	NN	_	_	9	det	_	_
+9	draft	_	NN	_	_	7	dobj	_	_
+10	\?	_	NN	_	_	7	dobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	fast	_	NN	_	_	3	advmod	_	_
+3	is	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	speed	_	NN	_	_	3	nsubj	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	light	_	NN	_	_	8	amod	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	province	_	NN	_	_	4	nsubj	_	_
+3	is	_	NN	_	_	4	cop	_	_
+4	Montreal	_	NN	_	_	0	root	_	_
+5	in	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	5	det	_	_
+2	New	_	NN	_	_	5	nn	_	_
+3	York	_	NN	_	_	5	nn	_	_
+4	City	_	NN	_	_	5	nn	_	_
+5	structure	_	NN	_	_	8	nsubjpass	_	_
+6	is	_	NN	_	_	8	auxpass	_	_
+7	also	_	NN	_	_	8	advmod	_	_
+8	known	_	NN	_	_	0	root	_	_
+9	as	_	NN	_	_	8	prep	_	_
+10	the	_	NN	_	_	13	det	_	_
+11	Twin	_	NN	_	_	13	nn	_	_
+12	Towers	_	NN	_	_	13	nn	_	_
+13	\?	_	NN	_	_	9	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	fungus	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	most	_	NN	_	_	5	advmod	_	_
+5	frequently	_	NN	_	_	6	advmod	_	_
+6	spoken	_	NN	_	_	7	amod	_	_
+7	language	_	NN	_	_	0	root	_	_
+8	in	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	10	det	_	_
+10	Netherlands	_	NN	_	_	8	pobj	_	_
+11	\?	_	NN	_	_	7	punct	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	sodium	_	NN	_	_	5	nn	_	_
+4	chloride	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	spots	_	NN	_	_	0	root	_	_
+5	on	_	NN	_	_	4	prep	_	_
+6	dominoes	_	NN	_	_	5	pobj	_	_
+7	called	_	NN	_	_	6	partmod	_	_
+8	\?	_	NN	_	_	7	dep	_	_
+
+1	How	_	NN	_	_	3	advmod	_	_
+2	many	_	NN	_	_	3	amod	_	_
+3	pounds	_	NN	_	_	7	dep	_	_
+4	in	_	NN	_	_	3	prep	_	_
+5	a	_	NN	_	_	6	det	_	_
+6	ton	_	NN	_	_	4	pobj	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	influenza	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	dobj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	ozone	_	NN	_	_	4	nn	_	_
+4	depletion	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	7	tmod	_	_
+3	was	_	NN	_	_	8	cop	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	Mona	_	NN	_	_	6	nn	_	_
+6	Lisa	_	NN	_	_	7	nsubj	_	_
+7	painted	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	dobj	_	_
+
+1	What	_	NN	_	_	7	dobj	_	_
+2	does	_	NN	_	_	7	aux	_	_
+3	``	_	NN	_	_	5	punct	_	_
+4	Sitting	_	NN	_	_	5	amod	_	_
+5	Shiva	_	NN	_	_	7	nsubj	_	_
+6	''	_	NN	_	_	5	punct	_	_
+7	mean	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	electrical	_	NN	_	_	5	amod	_	_
+5	output	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	Madrid	_	NN	_	_	6	pobj	_	_
+8	,	_	NN	_	_	7	punct	_	_
+9	Spain	_	NN	_	_	7	appos	_	_
+10	\?	_	NN	_	_	7	conj	_	_
+
+1	Which	_	NN	_	_	3	det	_	_
+2	mountain	_	NN	_	_	3	nn	_	_
+3	range	_	NN	_	_	7	nsubj	_	_
+4	in	_	NN	_	_	3	prep	_	_
+5	North	_	NN	_	_	6	nn	_	_
+6	America	_	NN	_	_	4	pobj	_	_
+7	stretches	_	NN	_	_	0	root	_	_
+8	from	_	NN	_	_	7	prep	_	_
+9	Maine	_	NN	_	_	8	pobj	_	_
+10	to	_	NN	_	_	7	prep	_	_
+11	Georgia	_	NN	_	_	12	nn	_	_
+12	\?	_	NN	_	_	10	pobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	plastic	_	NN	_	_	0	root	_	_
+4	made	_	NN	_	_	3	partmod	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	population	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Nigeria	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	5	dobj	_	_
+2	does	_	NN	_	_	5	aux	_	_
+3	your	_	NN	_	_	4	poss	_	_
+4	spleen	_	NN	_	_	5	nsubj	_	_
+5	do	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Grand	_	NN	_	_	6	nn	_	_
+5	Canyon	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	nsubj	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	invented	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	telephone	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	7	tmod	_	_
+3	did	_	NN	_	_	7	aux	_	_
+4	the	_	NN	_	_	9	det	_	_
+5	U	_	NN	_	_	9	nn	_	_
+6	S	_	NN	_	_	9	nn	_	_
+7	buy	_	NN	_	_	0	root	_	_
+8	Alaska	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	7	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	leader	_	NN	_	_	5	pobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	Ireland	_	NN	_	_	8	pobj	_	_
+10	\?	_	NN	_	_	8	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	phenylalanine	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	many	_	NN	_	_	3	amod	_	_
+3	gallons	_	NN	_	_	6	nsubj	_	_
+4	of	_	NN	_	_	3	prep	_	_
+5	water	_	NN	_	_	4	pobj	_	_
+6	are	_	NN	_	_	0	root	_	_
+7	there	_	NN	_	_	6	advmod	_	_
+8	in	_	NN	_	_	6	prep	_	_
+9	a	_	NN	_	_	11	det	_	_
+10	cubic	_	NN	_	_	11	amod	_	_
+11	foot	_	NN	_	_	8	pobj	_	_
+12	\?	_	NN	_	_	6	advmod	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	are	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	two	_	NN	_	_	5	num	_	_
+5	houses	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	Legislative	_	NN	_	_	9	amod	_	_
+9	branch	_	NN	_	_	6	pobj	_	_
+10	\?	_	NN	_	_	5	dep	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	sonar	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	In	_	NN	_	_	8	prep	_	_
+2	Poland	_	NN	_	_	1	pobj	_	_
+3	,	_	NN	_	_	2	punct	_	_
+4	where	_	NN	_	_	8	advmod	_	_
+5	do	_	NN	_	_	8	aux	_	_
+6	most	_	NN	_	_	7	amod	_	_
+7	people	_	NN	_	_	8	nsubj	_	_
+8	live	_	NN	_	_	0	root	_	_
+9	\?	_	NN	_	_	8	advmod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	phosphorus	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	location	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	Sea	_	NN	_	_	5	pobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	Tranquility	_	NN	_	_	8	pobj	_	_
+10	\?	_	NN	_	_	4	punct	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	fast	_	NN	_	_	4	advmod	_	_
+3	is	_	NN	_	_	5	cop	_	_
+4	sound	_	NN	_	_	5	amod	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	dobj	_	_
+2	French	_	NN	_	_	3	amod	_	_
+3	province	_	NN	_	_	5	nsubj	_	_
+4	is	_	NN	_	_	5	cop	_	_
+5	cognac	_	NN	_	_	6	dep	_	_
+6	produced	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	Valentine	_	NN	_	_	5	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	Day	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	amod	_	_
+
+1	What	_	NN	_	_	2	nsubj	_	_
+2	causes	_	NN	_	_	0	root	_	_
+3	gray	_	NN	_	_	4	amod	_	_
+4	hair	_	NN	_	_	5	nsubj	_	_
+5	\?	_	NN	_	_	2	xcomp	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	hypertension	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	bandwidth	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	dobj	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	longest	_	NN	_	_	6	amod	_	_
+5	suspension	_	NN	_	_	6	nn	_	_
+6	bridge	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	U	_	NN	_	_	11	nn	_	_
+10	S	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	parasite	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	home	_	NN	_	_	5	nn	_	_
+4	equity	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	do	_	NN	_	_	4	aux	_	_
+3	meteorologists	_	NN	_	_	4	nsubj	_	_
+4	do	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	criterion	_	NN	_	_	0	root	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	being	_	NN	_	_	8	cop	_	_
+7	legally	_	NN	_	_	8	advmod	_	_
+8	blind	_	NN	_	_	5	pcomp	_	_
+9	\?	_	NN	_	_	5	pcomp	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	tallest	_	NN	_	_	5	amod	_	_
+5	man	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	world	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	are	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	twin	_	NN	_	_	5	amod	_	_
+5	cities	_	NN	_	_	6	nsubj	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	8	dobj	_	_
+2	did	_	NN	_	_	8	aux	_	_
+3	Edward	_	NN	_	_	4	nn	_	_
+4	Binney	_	NN	_	_	8	nsubj	_	_
+5	and	_	NN	_	_	4	cc	_	_
+6	Howard	_	NN	_	_	7	nn	_	_
+7	Smith	_	NN	_	_	4	conj	_	_
+8	invent	_	NN	_	_	0	root	_	_
+9	in	_	NN	_	_	8	prep	_	_
+10	1903	_	NN	_	_	9	pobj	_	_
+11	\?	_	NN	_	_	8	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	statue	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	liberty	_	NN	_	_	5	pobj	_	_
+7	made	_	NN	_	_	4	partmod	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	\?	_	NN	_	_	8	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	pilates	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	planet	_	NN	_	_	4	nsubjpass	_	_
+3	is	_	NN	_	_	4	auxpass	_	_
+4	known	_	NN	_	_	0	root	_	_
+5	as	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	10	det	_	_
+7	``	_	NN	_	_	10	punct	_	_
+8	red	_	NN	_	_	10	amod	_	_
+9	''	_	NN	_	_	10	punct	_	_
+10	planet	_	NN	_	_	5	pobj	_	_
+11	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	depth	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	Nile	_	NN	_	_	9	nn	_	_
+8	river	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	colorful	_	NN	_	_	7	amod	_	_
+5	Korean	_	NN	_	_	7	amod	_	_
+6	traditional	_	NN	_	_	7	amod	_	_
+7	dress	_	NN	_	_	0	root	_	_
+8	called	_	NN	_	_	7	partmod	_	_
+9	\?	_	NN	_	_	8	dep	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	Mardi	_	NN	_	_	5	nn	_	_
+4	Gras	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Mexican	_	NN	_	_	2	amod	_	_
+2	pesos	_	NN	_	_	4	nsubj	_	_
+3	are	_	NN	_	_	4	cop	_	_
+4	worth	_	NN	_	_	0	root	_	_
+5	what	_	NN	_	_	6	dep	_	_
+6	in	_	NN	_	_	4	prep	_	_
+7	U	_	NN	_	_	9	nn	_	_
+8	S	_	NN	_	_	9	nn	_	_
+9	dollars	_	NN	_	_	6	pobj	_	_
+10	\?	_	NN	_	_	4	dep	_	_
+
+1	Who	_	NN	_	_	6	nsubj	_	_
+2	was	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	African	_	NN	_	_	6	amod	_	_
+6	American	_	NN	_	_	0	root	_	_
+7	to	_	NN	_	_	8	aux	_	_
+8	play	_	NN	_	_	6	infmod	_	_
+9	for	_	NN	_	_	8	prep	_	_
+10	the	_	NN	_	_	13	det	_	_
+11	Brooklyn	_	NN	_	_	13	nn	_	_
+12	Dodgers	_	NN	_	_	9	pobj	_	_
+13	\?	_	NN	_	_	9	pobj	_	_
+
+1	Who	_	NN	_	_	6	nsubj	_	_
+2	was	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	Prime	_	NN	_	_	6	amod	_	_
+6	Minister	_	NN	_	_	0	root	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	Canada	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	7	pobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	many	_	NN	_	_	3	amod	_	_
+3	Admirals	_	NN	_	_	4	nsubj	_	_
+4	are	_	NN	_	_	0	root	_	_
+5	there	_	NN	_	_	4	advmod	_	_
+6	in	_	NN	_	_	4	prep	_	_
+7	the	_	NN	_	_	11	det	_	_
+8	U	_	NN	_	_	11	nn	_	_
+9	S	_	NN	_	_	11	nn	_	_
+10	Navy	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	instrument	_	NN	_	_	6	dobj	_	_
+3	did	_	NN	_	_	6	aux	_	_
+4	Glenn	_	NN	_	_	5	nn	_	_
+5	Miller	_	NN	_	_	6	nsubj	_	_
+6	play	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	old	_	NN	_	_	3	dep	_	_
+3	was	_	NN	_	_	0	root	_	_
+4	Joan	_	NN	_	_	3	nsubj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Arc	_	NN	_	_	5	pobj	_	_
+7	when	_	NN	_	_	9	advmod	_	_
+8	she	_	NN	_	_	9	nsubj	_	_
+9	died	_	NN	_	_	3	advcl	_	_
+10	\?	_	NN	_	_	9	dobj	_	_
+
+1	What	_	NN	_	_	6	dobj	_	_
+2	does	_	NN	_	_	6	aux	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	word	_	NN	_	_	5	nn	_	_
+5	fortnight	_	NN	_	_	6	nsubj	_	_
+6	mean	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	dianetics	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	capital	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Ethiopia	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	4	amod	_	_
+
+1	For	_	NN	_	_	4	prep	_	_
+2	how	_	NN	_	_	3	advmod	_	_
+3	long	_	NN	_	_	4	advmod	_	_
+4	is	_	NN	_	_	0	root	_	_
+5	an	_	NN	_	_	6	det	_	_
+6	elephant	_	NN	_	_	7	nsubj	_	_
+7	pregnant	_	NN	_	_	1	pcomp	_	_
+8	\?	_	NN	_	_	4	nsubj	_	_
+
+1	How	_	NN	_	_	5	advmod	_	_
+2	did	_	NN	_	_	5	aux	_	_
+3	Janice	_	NN	_	_	4	nn	_	_
+4	Joplin	_	NN	_	_	5	nsubj	_	_
+5	die	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	advmod	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	primary	_	NN	_	_	5	amod	_	_
+5	language	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	Iceland	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	5	amod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	difference	_	NN	_	_	0	root	_	_
+5	between	_	NN	_	_	4	prep	_	_
+6	AM	_	NN	_	_	8	nn	_	_
+7	radio	_	NN	_	_	8	nn	_	_
+8	stations	_	NN	_	_	5	pobj	_	_
+9	and	_	NN	_	_	8	cc	_	_
+10	FM	_	NN	_	_	12	nn	_	_
+11	radio	_	NN	_	_	12	nn	_	_
+12	stations	_	NN	_	_	8	conj	_	_
+13	\?	_	NN	_	_	8	conj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	osteoporosis	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	6	nsubj	_	_
+2	was	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	woman	_	NN	_	_	6	nn	_	_
+6	governor	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	U	_	NN	_	_	11	nn	_	_
+10	S	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	peyote	_	NN	_	_	4	amod	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	esophagus	_	NN	_	_	0	root	_	_
+5	used	_	NN	_	_	4	partmod	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	viscosity	_	NN	_	_	4	amod	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	8	tmod	_	_
+3	did	_	NN	_	_	8	aux	_	_
+4	Oklahoma	_	NN	_	_	8	nsubj	_	_
+5	become	_	NN	_	_	8	cop	_	_
+6	a	_	NN	_	_	8	det	_	_
+7	state	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	abbreviation	_	NN	_	_	0	root	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	Texas	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	mirror	_	NN	_	_	0	root	_	_
+5	made	_	NN	_	_	4	partmod	_	_
+6	out	_	NN	_	_	5	prep	_	_
+7	of	_	NN	_	_	6	pcomp	_	_
+8	\?	_	NN	_	_	7	pobj	_	_
+
+1	Where	_	NN	_	_	5	advmod	_	_
+2	on	_	NN	_	_	5	prep	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	body	_	NN	_	_	2	pobj	_	_
+5	is	_	NN	_	_	0	root	_	_
+6	a	_	NN	_	_	9	det	_	_
+7	mortarboard	_	NN	_	_	9	amod	_	_
+8	worn	_	NN	_	_	9	amod	_	_
+9	\?	_	NN	_	_	5	nsubj	_	_
+
+1	What	_	NN	_	_	9	nsubj	_	_
+2	was	_	NN	_	_	9	cop	_	_
+3	J	_	NN	_	_	7	nn	_	_
+4	F	_	NN	_	_	7	nn	_	_
+5	K	_	NN	_	_	9	poss	_	_
+6	's	_	NN	_	_	5	possessive	_	_
+7	wife	_	NN	_	_	9	poss	_	_
+8	's	_	NN	_	_	7	possessive	_	_
+9	name	_	NN	_	_	0	root	_	_
+10	\?	_	NN	_	_	9	punct	_	_
+
+1	What	_	NN	_	_	5	dobj	_	_
+2	does	_	NN	_	_	5	aux	_	_
+3	I	_	NN	_	_	5	nsubj	_	_
+4	V	_	NN	_	_	5	advmod	_	_
+5	stand	_	NN	_	_	0	root	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	chunnel	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Where	_	NN	_	_	4	advmod	_	_
+2	is	_	NN	_	_	4	auxpass	_	_
+3	Hitler	_	NN	_	_	4	nsubj	_	_
+4	buried	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	antacids	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	pulmonary	_	NN	_	_	5	nn	_	_
+4	fibrosis	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	Quaaludes	_	NN	_	_	4	amod	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	naproxen	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	strep	_	NN	_	_	5	amod	_	_
+4	throat	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	largest	_	NN	_	_	5	amod	_	_
+5	city	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	10	det	_	_
+8	U	_	NN	_	_	10	nn	_	_
+9	S	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	foot	_	NN	_	_	7	nn	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	mouth	_	NN	_	_	3	conj	_	_
+6	disease	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	life	_	NN	_	_	5	nn	_	_
+5	expectancy	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	a	_	NN	_	_	9	det	_	_
+8	dollar	_	NN	_	_	9	nn	_	_
+9	bill	_	NN	_	_	6	pobj	_	_
+10	\?	_	NN	_	_	5	punct	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	do	_	NN	_	_	4	aux	_	_
+3	you	_	NN	_	_	4	nsubj	_	_
+4	call	_	NN	_	_	0	root	_	_
+5	a	_	NN	_	_	8	det	_	_
+6	professional	_	NN	_	_	8	amod	_	_
+7	map	_	NN	_	_	8	nn	_	_
+8	drawer	_	NN	_	_	4	dobj	_	_
+9	\?	_	NN	_	_	4	xcomp	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	Aborigines	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	hybridization	_	NN	_	_	4	amod	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	color	_	NN	_	_	5	nsubj	_	_
+3	is	_	NN	_	_	5	cop	_	_
+4	indigo	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	old	_	NN	_	_	5	dep	_	_
+3	do	_	NN	_	_	5	aux	_	_
+4	you	_	NN	_	_	5	nsubj	_	_
+5	have	_	NN	_	_	0	root	_	_
+6	to	_	NN	_	_	7	aux	_	_
+7	be	_	NN	_	_	5	xcomp	_	_
+8	in	_	NN	_	_	11	mark	_	_
+9	order	_	NN	_	_	11	dep	_	_
+10	to	_	NN	_	_	11	aux	_	_
+11	rent	_	NN	_	_	7	advcl	_	_
+12	a	_	NN	_	_	13	det	_	_
+13	car	_	NN	_	_	11	dobj	_	_
+14	in	_	NN	_	_	11	prep	_	_
+15	Italy	_	NN	_	_	14	pobj	_	_
+16	\?	_	NN	_	_	5	punct	_	_
+
+1	What	_	NN	_	_	5	dep	_	_
+2	does	_	NN	_	_	6	aux	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	barometer	_	NN	_	_	5	nn	_	_
+5	measure	_	NN	_	_	6	nsubj	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	color	_	NN	_	_	8	nsubj	_	_
+3	is	_	NN	_	_	8	cop	_	_
+4	a	_	NN	_	_	5	det	_	_
+5	giraffe	_	NN	_	_	7	poss	_	_
+6	's	_	NN	_	_	5	possessive	_	_
+7	tongue	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	does	_	NN	_	_	4	aux	_	_
+3	USPS	_	NN	_	_	4	nsubj	_	_
+4	stand	_	NN	_	_	0	root	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	6	tmod	_	_
+3	did	_	NN	_	_	6	aux	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	NFL	_	NN	_	_	6	nsubj	_	_
+6	go	_	NN	_	_	0	root	_	_
+7	on	_	NN	_	_	6	prep	_	_
+8	strike	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	solar	_	NN	_	_	4	amod	_	_
+4	wind	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	amod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	date	_	NN	_	_	6	dobj	_	_
+3	did	_	NN	_	_	6	aux	_	_
+4	Neil	_	NN	_	_	5	nn	_	_
+5	Armstrong	_	NN	_	_	6	nsubj	_	_
+6	land	_	NN	_	_	0	root	_	_
+7	on	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	10	det	_	_
+9	moon	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	7	pobj	_	_
+
+1	When	_	NN	_	_	4	advmod	_	_
+2	was	_	NN	_	_	4	auxpass	_	_
+3	Hiroshima	_	NN	_	_	4	nsubj	_	_
+4	bombed	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	dobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Savannah	_	NN	_	_	6	nn	_	_
+5	River	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	nsubj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	first	_	NN	_	_	5	amod	_	_
+5	woman	_	NN	_	_	0	root	_	_
+6	killed	_	NN	_	_	5	partmod	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	Vietnam	_	NN	_	_	11	nn	_	_
+10	War	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	planet	_	NN	_	_	3	nsubj	_	_
+3	has	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	7	det	_	_
+5	strongest	_	NN	_	_	7	amod	_	_
+6	magnetic	_	NN	_	_	7	amod	_	_
+7	field	_	NN	_	_	3	dobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	all	_	NN	_	_	11	predet	_	_
+10	the	_	NN	_	_	11	det	_	_
+11	planets	_	NN	_	_	8	pobj	_	_
+12	\?	_	NN	_	_	11	amod	_	_
+
+1	Who	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	governor	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Alaska	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	5	tmod	_	_
+3	did	_	NN	_	_	5	aux	_	_
+4	Mussolini	_	NN	_	_	5	nsubj	_	_
+5	seize	_	NN	_	_	0	root	_	_
+6	power	_	NN	_	_	5	dobj	_	_
+7	in	_	NN	_	_	5	prep	_	_
+8	Italy	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	5	advmod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	capital	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Persia	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	4	amod	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	Eiffel	_	NN	_	_	5	nn	_	_
+5	Tower	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	many	_	NN	_	_	3	amod	_	_
+3	hearts	_	NN	_	_	7	nsubj	_	_
+4	does	_	NN	_	_	8	aux	_	_
+5	an	_	NN	_	_	6	det	_	_
+6	octopus	_	NN	_	_	7	nsubj	_	_
+7	have	_	NN	_	_	8	aux	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	pneumonia	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	deepest	_	NN	_	_	5	amod	_	_
+5	lake	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	US	_	NN	_	_	6	pobj	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	fuel	_	NN	_	_	5	nn	_	_
+5	cell	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	7	nsubj	_	_
+2	was	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	first	_	NN	_	_	7	amod	_	_
+5	U	_	NN	_	_	7	nn	_	_
+6	S	_	NN	_	_	7	nn	_	_
+7	president	_	NN	_	_	0	root	_	_
+8	to	_	NN	_	_	9	aux	_	_
+9	appear	_	NN	_	_	7	infmod	_	_
+10	on	_	NN	_	_	9	prep	_	_
+11	TV	_	NN	_	_	12	nn	_	_
+12	\?	_	NN	_	_	10	pobj	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Little	_	NN	_	_	7	nn	_	_
+5	League	_	NN	_	_	7	nn	_	_
+6	Museum	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	are	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	two	_	NN	_	_	5	num	_	_
+5	types	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	twins	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	brightest	_	NN	_	_	6	amod	_	_
+5	star	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	diabetes	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	was	_	NN	_	_	5	aux	_	_
+3	President	_	NN	_	_	4	nn	_	_
+4	Kennedy	_	NN	_	_	5	nsubj	_	_
+5	shot	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	TMJ	_	NN	_	_	4	amod	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	color	_	NN	_	_	6	nsubj	_	_
+3	is	_	NN	_	_	6	cop	_	_
+4	yak	_	NN	_	_	5	nn	_	_
+5	milk	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	date	_	NN	_	_	6	nsubj	_	_
+3	was	_	NN	_	_	6	cop	_	_
+4	Dwight	_	NN	_	_	6	nn	_	_
+5	D	_	NN	_	_	6	nn	_	_
+6	Eisenhower	_	NN	_	_	0	root	_	_
+7	born	_	NN	_	_	6	partmod	_	_
+8	\?	_	NN	_	_	7	dep	_	_
+
+1	What	_	NN	_	_	7	dobj	_	_
+2	does	_	NN	_	_	7	aux	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	technical	_	NN	_	_	5	amod	_	_
+5	term	_	NN	_	_	7	nsubj	_	_
+6	ISDN	_	NN	_	_	7	nsubj	_	_
+7	mean	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	dobj	_	_
+
+1	Why	_	NN	_	_	6	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	sun	_	NN	_	_	6	nn	_	_
+5	yellow	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	conversion	_	NN	_	_	5	nn	_	_
+5	rate	_	NN	_	_	0	root	_	_
+6	between	_	NN	_	_	5	prep	_	_
+7	dollars	_	NN	_	_	6	pobj	_	_
+8	and	_	NN	_	_	7	cc	_	_
+9	pounds	_	NN	_	_	7	conj	_	_
+10	\?	_	NN	_	_	9	num	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	was	_	NN	_	_	5	auxpass	_	_
+3	Abraham	_	NN	_	_	4	nn	_	_
+4	Lincoln	_	NN	_	_	5	nsubj	_	_
+5	born	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	acomp	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	Milky	_	NN	_	_	5	amod	_	_
+5	Way	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	amod	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	aux	_	_
+3	mold	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	dobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	4	nsubj	_	_
+3	was	_	NN	_	_	4	cop	_	_
+4	Mozart	_	NN	_	_	0	root	_	_
+5	born	_	NN	_	_	4	partmod	_	_
+6	\?	_	NN	_	_	5	dep	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	group	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	frogs	_	NN	_	_	5	pobj	_	_
+7	called	_	NN	_	_	4	partmod	_	_
+8	\?	_	NN	_	_	7	dep	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	William	_	NN	_	_	7	nn	_	_
+7	Penn	_	NN	_	_	10	poss	_	_
+8	's	_	NN	_	_	7	possessive	_	_
+9	ship	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	melting	_	NN	_	_	5	amod	_	_
+5	point	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	gold	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	street	_	NN	_	_	5	nn	_	_
+5	address	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	White	_	NN	_	_	9	nn	_	_
+9	House	_	NN	_	_	6	pobj	_	_
+10	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	semolina	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	fruit	_	NN	_	_	5	nsubj	_	_
+3	is	_	NN	_	_	5	cop	_	_
+4	Melba	_	NN	_	_	5	nn	_	_
+5	sauce	_	NN	_	_	0	root	_	_
+6	made	_	NN	_	_	5	partmod	_	_
+7	from	_	NN	_	_	6	prep	_	_
+8	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	Ursa	_	NN	_	_	5	amod	_	_
+4	Major	_	NN	_	_	5	amod	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	percentage	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	water	_	NN	_	_	7	nn	_	_
+7	content	_	NN	_	_	5	pobj	_	_
+8	in	_	NN	_	_	7	prep	_	_
+9	the	_	NN	_	_	11	det	_	_
+10	human	_	NN	_	_	11	amod	_	_
+11	body	_	NN	_	_	8	pobj	_	_
+12	\?	_	NN	_	_	4	dep	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	much	_	NN	_	_	5	advmod	_	_
+3	does	_	NN	_	_	5	aux	_	_
+4	water	_	NN	_	_	5	nsubj	_	_
+5	weigh	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	8	nsubj	_	_
+2	was	_	NN	_	_	8	cop	_	_
+3	President	_	NN	_	_	5	nn	_	_
+4	Lyndon	_	NN	_	_	5	nn	_	_
+5	Johnson	_	NN	_	_	8	poss	_	_
+6	's	_	NN	_	_	5	possessive	_	_
+7	reform	_	NN	_	_	8	nn	_	_
+8	program	_	NN	_	_	0	root	_	_
+9	called	_	NN	_	_	8	partmod	_	_
+10	\?	_	NN	_	_	9	dep	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	murder	_	NN	_	_	5	nn	_	_
+5	rate	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	Windsor	_	NN	_	_	6	pobj	_	_
+8	,	_	NN	_	_	7	punct	_	_
+9	Ontario	_	NN	_	_	7	appos	_	_
+10	\?	_	NN	_	_	7	appos	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	only	_	NN	_	_	5	amod	_	_
+5	president	_	NN	_	_	0	root	_	_
+6	to	_	NN	_	_	7	aux	_	_
+7	serve	_	NN	_	_	5	infmod	_	_
+8	2	_	NN	_	_	11	num	_	_
+9	non	_	NN	_	_	11	amod	_	_
+10	consecutive	_	NN	_	_	11	amod	_	_
+11	terms	_	NN	_	_	7	dobj	_	_
+12	\?	_	NN	_	_	11	amod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	population	_	NN	_	_	7	nsubj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Australia	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	painted	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	ceiling	_	NN	_	_	2	dobj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	9	det	_	_
+7	Sistine	_	NN	_	_	9	nn	_	_
+8	Chapel	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	5	pobj	_	_
+
+1	Name	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	stimulant	_	NN	_	_	1	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	effect	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	volcanoes	_	NN	_	_	5	pobj	_	_
+7	on	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	9	det	_	_
+9	climate	_	NN	_	_	7	pobj	_	_
+10	\?	_	NN	_	_	4	punct	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	8	tmod	_	_
+3	did	_	NN	_	_	8	aux	_	_
+4	the	_	NN	_	_	7	det	_	_
+5	Andy	_	NN	_	_	7	nn	_	_
+6	Griffith	_	NN	_	_	7	nn	_	_
+7	show	_	NN	_	_	8	nsubj	_	_
+8	begin	_	NN	_	_	0	root	_	_
+9	\?	_	NN	_	_	8	xcomp	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	acid	_	NN	_	_	4	nn	_	_
+4	rain	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	date	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Mexico	_	NN	_	_	8	poss	_	_
+7	's	_	NN	_	_	6	possessive	_	_
+8	independence	_	NN	_	_	5	pobj	_	_
+9	\?	_	NN	_	_	4	punct	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	location	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Lake	_	NN	_	_	8	nn	_	_
+7	Champlain	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	Illinois	_	NN	_	_	7	nn	_	_
+5	state	_	NN	_	_	7	nn	_	_
+6	flower	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	Maryland	_	NN	_	_	7	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	state	_	NN	_	_	7	nn	_	_
+6	bird	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	quicksilver	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	wrote	_	NN	_	_	0	root	_	_
+3	``	_	NN	_	_	2	punct	_	_
+4	The	_	NN	_	_	6	det	_	_
+5	Divine	_	NN	_	_	6	amod	_	_
+6	Comedy	_	NN	_	_	2	dobj	_	_
+7	''	_	NN	_	_	6	punct	_	_
+8	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	speed	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	light	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	width	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	a	_	NN	_	_	8	det	_	_
+7	football	_	NN	_	_	8	nn	_	_
+8	field	_	NN	_	_	5	pobj	_	_
+9	\?	_	NN	_	_	4	punct	_	_
+
+1	Why	_	NN	_	_	4	advmod	_	_
+2	in	_	NN	_	_	4	prep	_	_
+3	tennis	_	NN	_	_	2	pobj	_	_
+4	are	_	NN	_	_	0	root	_	_
+5	zero	_	NN	_	_	6	num	_	_
+6	points	_	NN	_	_	4	nsubj	_	_
+7	called	_	NN	_	_	6	partmod	_	_
+8	love	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	7	dep	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	kind	_	NN	_	_	6	nsubj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	dog	_	NN	_	_	3	pobj	_	_
+5	was	_	NN	_	_	6	cop	_	_
+6	Toto	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	9	det	_	_
+9	Wizard	_	NN	_	_	7	pobj	_	_
+10	of	_	NN	_	_	9	prep	_	_
+11	Oz	_	NN	_	_	12	nn	_	_
+12	\?	_	NN	_	_	10	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	thyroid	_	NN	_	_	5	amod	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	does	_	NN	_	_	4	aux	_	_
+3	ciao	_	NN	_	_	4	nsubj	_	_
+4	mean	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	only	_	NN	_	_	5	amod	_	_
+5	artery	_	NN	_	_	0	root	_	_
+6	that	_	NN	_	_	7	nsubj	_	_
+7	carries	_	NN	_	_	5	rcmod	_	_
+8	blue	_	NN	_	_	9	amod	_	_
+9	blood	_	NN	_	_	7	dobj	_	_
+10	from	_	NN	_	_	7	prep	_	_
+11	the	_	NN	_	_	12	det	_	_
+12	heart	_	NN	_	_	10	pobj	_	_
+13	to	_	NN	_	_	12	prep	_	_
+14	the	_	NN	_	_	15	det	_	_
+15	lungs	_	NN	_	_	13	pobj	_	_
+16	\?	_	NN	_	_	5	punct	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	often	_	NN	_	_	6	advmod	_	_
+3	does	_	NN	_	_	6	aux	_	_
+4	Old	_	NN	_	_	5	amod	_	_
+5	Faithful	_	NN	_	_	6	nsubj	_	_
+6	erupt	_	NN	_	_	0	root	_	_
+7	at	_	NN	_	_	6	prep	_	_
+8	Yellowstone	_	NN	_	_	11	nn	_	_
+9	National	_	NN	_	_	11	nn	_	_
+10	Park	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	acetic	_	NN	_	_	5	nn	_	_
+4	acid	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	elevation	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	St	_	NN	_	_	7	nn	_	_
+7	Louis	_	NN	_	_	5	pobj	_	_
+8	,	_	NN	_	_	7	punct	_	_
+9	MO	_	NN	_	_	7	appos	_	_
+10	\?	_	NN	_	_	7	appos	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	color	_	NN	_	_	4	nsubj	_	_
+3	does	_	NN	_	_	6	aux	_	_
+4	litmus	_	NN	_	_	5	amod	_	_
+5	paper	_	NN	_	_	6	nsubj	_	_
+6	turn	_	NN	_	_	0	root	_	_
+7	when	_	NN	_	_	9	advmod	_	_
+8	it	_	NN	_	_	9	nsubj	_	_
+9	comes	_	NN	_	_	6	advcl	_	_
+10	into	_	NN	_	_	9	prep	_	_
+11	contact	_	NN	_	_	10	pobj	_	_
+12	with	_	NN	_	_	11	prep	_	_
+13	a	_	NN	_	_	16	det	_	_
+14	strong	_	NN	_	_	16	amod	_	_
+15	acid	_	NN	_	_	16	nn	_	_
+16	\?	_	NN	_	_	12	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	colors	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	German	_	NN	_	_	8	amod	_	_
+8	flag	_	NN	_	_	5	pobj	_	_
+9	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Moulin	_	NN	_	_	6	nn	_	_
+5	Rouge	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	soviet	_	NN	_	_	3	amod	_	_
+3	seaport	_	NN	_	_	4	nsubj	_	_
+4	is	_	NN	_	_	0	root	_	_
+5	on	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	9	det	_	_
+7	Black	_	NN	_	_	9	nn	_	_
+8	Sea	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	atomic	_	NN	_	_	5	amod	_	_
+5	weight	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	silver	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	currency	_	NN	_	_	5	dobj	_	_
+3	do	_	NN	_	_	5	aux	_	_
+4	they	_	NN	_	_	5	nsubj	_	_
+5	use	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	Brazil	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	pathogens	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	mad	_	NN	_	_	5	amod	_	_
+4	cow	_	NN	_	_	5	nn	_	_
+5	disease	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	Name	_	NN	_	_	0	root	_	_
+2	a	_	NN	_	_	3	det	_	_
+3	food	_	NN	_	_	1	dobj	_	_
+4	high	_	NN	_	_	1	dobj	_	_
+5	in	_	NN	_	_	4	prep	_	_
+6	zinc	_	NN	_	_	5	pobj	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	did	_	NN	_	_	5	aux	_	_
+3	North	_	NN	_	_	4	nn	_	_
+4	Carolina	_	NN	_	_	5	nsubj	_	_
+5	enter	_	NN	_	_	0	root	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	union	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	5	dobj	_	_
+
+1	Where	_	NN	_	_	5	advmod	_	_
+2	do	_	NN	_	_	5	aux	_	_
+3	apple	_	NN	_	_	4	nn	_	_
+4	snails	_	NN	_	_	5	nsubj	_	_
+5	live	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	advmod	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	ethics	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	does	_	NN	_	_	4	aux	_	_
+3	CPR	_	NN	_	_	4	nsubj	_	_
+4	stand	_	NN	_	_	0	root	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	an	_	NN	_	_	5	det	_	_
+4	annuity	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	killed	_	NN	_	_	0	root	_	_
+3	John	_	NN	_	_	6	nn	_	_
+4	F	_	NN	_	_	6	nn	_	_
+5	Kennedy	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	2	dobj	_	_
+
+1	Who	_	NN	_	_	6	nsubj	_	_
+2	was	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	vice	_	NN	_	_	6	nn	_	_
+6	president	_	NN	_	_	0	root	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	U	_	NN	_	_	11	nn	_	_
+10	S	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	2	nsubj	_	_
+2	birthstone	_	NN	_	_	5	csubj	_	_
+3	is	_	NN	_	_	5	cop	_	_
+4	turquoise	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	6	nsubj	_	_
+2	was	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	US	_	NN	_	_	6	nsubj	_	_
+6	President	_	NN	_	_	0	root	_	_
+7	to	_	NN	_	_	8	aux	_	_
+8	ride	_	NN	_	_	6	infmod	_	_
+9	in	_	NN	_	_	8	prep	_	_
+10	an	_	NN	_	_	11	det	_	_
+11	automobile	_	NN	_	_	9	pobj	_	_
+12	to	_	NN	_	_	8	prep	_	_
+13	his	_	NN	_	_	15	poss	_	_
+14	inauguration	_	NN	_	_	15	nn	_	_
+15	\?	_	NN	_	_	12	pobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	old	_	NN	_	_	6	dep	_	_
+3	was	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	youngest	_	NN	_	_	6	amod	_	_
+6	president	_	NN	_	_	3	nsubj	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	United	_	NN	_	_	11	nn	_	_
+10	States	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	7	pobj	_	_
+
+1	When	_	NN	_	_	6	advmod	_	_
+2	was	_	NN	_	_	6	auxpass	_	_
+3	Ulysses	_	NN	_	_	5	nn	_	_
+4	S	_	NN	_	_	5	nn	_	_
+5	Grant	_	NN	_	_	6	nsubj	_	_
+6	born	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dep	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	Muscular	_	NN	_	_	5	amod	_	_
+4	Dystrophy	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	lived	_	NN	_	_	0	root	_	_
+3	in	_	NN	_	_	2	prep	_	_
+4	the	_	NN	_	_	7	det	_	_
+5	Neuschwanstein	_	NN	_	_	7	nn	_	_
+6	castle	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	3	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	propylene	_	NN	_	_	5	nn	_	_
+4	glycol	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	panic	_	NN	_	_	5	nn	_	_
+5	disorder	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	amod	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	invented	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	instant	_	NN	_	_	6	amod	_	_
+5	Polaroid	_	NN	_	_	6	nn	_	_
+6	camera	_	NN	_	_	2	dobj	_	_
+7	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	carcinogen	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	5	det	_	_
+4	baby	_	NN	_	_	5	nn	_	_
+5	lion	_	NN	_	_	0	root	_	_
+6	called	_	NN	_	_	5	partmod	_	_
+7	\?	_	NN	_	_	6	dep	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	world	_	NN	_	_	6	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	population	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	nepotism	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	dobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	aux	_	_
+3	die	_	NN	_	_	0	root	_	_
+4	casting	_	NN	_	_	3	xcomp	_	_
+5	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	myopia	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	sales	_	NN	_	_	6	nn	_	_
+5	tax	_	NN	_	_	6	nn	_	_
+6	rate	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	New	_	NN	_	_	10	nn	_	_
+9	York	_	NN	_	_	7	pobj	_	_
+10	\?	_	NN	_	_	7	pobj	_	_
+
+1	Developing	_	NN	_	_	2	amod	_	_
+2	nations	_	NN	_	_	3	nsubj	_	_
+3	comprise	_	NN	_	_	0	root	_	_
+4	what	_	NN	_	_	5	det	_	_
+5	percentage	_	NN	_	_	11	nsubj	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	world	_	NN	_	_	10	poss	_	_
+9	's	_	NN	_	_	8	possessive	_	_
+10	population	_	NN	_	_	6	pobj	_	_
+11	\?	_	NN	_	_	3	ccomp	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	fourth	_	NN	_	_	6	amod	_	_
+5	highest	_	NN	_	_	6	amod	_	_
+6	mountain	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	9	det	_	_
+9	world	_	NN	_	_	7	pobj	_	_
+10	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	Shakespeare	_	NN	_	_	5	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	nickname	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	amod	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	heaviest	_	NN	_	_	7	amod	_	_
+5	naturally	_	NN	_	_	6	advmod	_	_
+6	occurring	_	NN	_	_	7	amod	_	_
+7	element	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	amod	_	_
+
+1	When	_	NN	_	_	6	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	Father	_	NN	_	_	5	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	Day	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	amod	_	_
+
+1	What	_	NN	_	_	6	dobj	_	_
+2	does	_	NN	_	_	6	aux	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	acronym	_	NN	_	_	5	amod	_	_
+5	NASA	_	NN	_	_	6	nsubj	_	_
+6	stand	_	NN	_	_	0	root	_	_
+7	for	_	NN	_	_	6	prep	_	_
+8	\?	_	NN	_	_	7	pobj	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	long	_	NN	_	_	3	advmod	_	_
+3	is	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	6	det	_	_
+5	Columbia	_	NN	_	_	6	nn	_	_
+6	River	_	NN	_	_	9	nsubj	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	miles	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	3	dep	_	_
+
+1	What	_	NN	_	_	6	dobj	_	_
+2	city	_	NN	_	_	4	poss	_	_
+3	's	_	NN	_	_	2	possessive	_	_
+4	newspaper	_	NN	_	_	6	nsubjpass	_	_
+5	is	_	NN	_	_	6	auxpass	_	_
+6	called	_	NN	_	_	0	root	_	_
+7	``	_	NN	_	_	11	punct	_	_
+8	The	_	NN	_	_	11	nn	_	_
+9	Star	_	NN	_	_	11	nn	_	_
+10	''	_	NN	_	_	11	punct	_	_
+11	\?	_	NN	_	_	6	dep	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	carbon	_	NN	_	_	5	nn	_	_
+4	dioxide	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Where	_	NN	_	_	2	advmod	_	_
+2	is	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	Mason	_	NN	_	_	7	nn	_	_
+5	Dixon	_	NN	_	_	7	nn	_	_
+6	line	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	2	nsubj	_	_
+
+1	When	_	NN	_	_	7	advmod	_	_
+2	was	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	Boston	_	NN	_	_	6	nn	_	_
+5	tea	_	NN	_	_	6	nn	_	_
+6	party	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	metabolism	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	Which	_	NN	_	_	6	dobj	_	_
+2	U	_	NN	_	_	5	nn	_	_
+3	S	_	NN	_	_	5	nn	_	_
+4	A	_	NN	_	_	5	det	_	_
+5	president	_	NN	_	_	6	nsubj	_	_
+6	appeared	_	NN	_	_	0	root	_	_
+7	on	_	NN	_	_	6	prep	_	_
+8	``	_	NN	_	_	7	punct	_	_
+9	Laugh	_	NN	_	_	7	pobj	_	_
+10	In	_	NN	_	_	6	prep	_	_
+11	''	_	NN	_	_	7	punct	_	_
+12	\?	_	NN	_	_	10	pobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	3	cop	_	_
+3	cigarettes	_	NN	_	_	0	root	_	_
+4	made	_	NN	_	_	3	partmod	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	capital	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Zimbabwe	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	does	_	NN	_	_	4	aux	_	_
+3	NASA	_	NN	_	_	4	nsubj	_	_
+4	stand	_	NN	_	_	0	root	_	_
+5	for	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	state	_	NN	_	_	5	nn	_	_
+5	flower	_	NN	_	_	8	dep	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	Michigan	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	semiconductors	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	nuclear	_	NN	_	_	4	amod	_	_
+4	power	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	tsunami	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	congressman	_	NN	_	_	0	root	_	_
+5	from	_	NN	_	_	4	prep	_	_
+6	state	_	NN	_	_	5	pobj	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	Texas	_	NN	_	_	7	pobj	_	_
+9	on	_	NN	_	_	4	prep	_	_
+10	the	_	NN	_	_	13	det	_	_
+11	armed	_	NN	_	_	13	nn	_	_
+12	forces	_	NN	_	_	13	nn	_	_
+13	committee	_	NN	_	_	9	pobj	_	_
+14	\?	_	NN	_	_	9	pobj	_	_
+
+1	Who	_	NN	_	_	3	nsubj	_	_
+2	was	_	NN	_	_	3	cop	_	_
+3	president	_	NN	_	_	0	root	_	_
+4	in	_	NN	_	_	3	prep	_	_
+5	1913	_	NN	_	_	4	pobj	_	_
+6	\?	_	NN	_	_	3	dep	_	_
+
+1	When	_	NN	_	_	7	advmod	_	_
+2	was	_	NN	_	_	7	cop	_	_
+3	the	_	NN	_	_	7	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	kidney	_	NN	_	_	6	nn	_	_
+6	transplant	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	are	_	NN	_	_	7	cop	_	_
+3	Canada	_	NN	_	_	7	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	two	_	NN	_	_	7	num	_	_
+6	territories	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	was	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	9	nsubj	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	8	det	_	_
+7	plane	_	NN	_	_	8	nn	_	_
+8	Lindbergh	_	NN	_	_	5	pobj	_	_
+9	flew	_	NN	_	_	0	root	_	_
+10	solo	_	NN	_	_	9	advmod	_	_
+11	across	_	NN	_	_	9	prep	_	_
+12	the	_	NN	_	_	14	det	_	_
+13	Atlantic	_	NN	_	_	14	nn	_	_
+14	\?	_	NN	_	_	11	pobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	genocide	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	dep	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	continent	_	NN	_	_	4	nsubj	_	_
+3	is	_	NN	_	_	4	cop	_	_
+4	Argentina	_	NN	_	_	0	root	_	_
+5	on	_	NN	_	_	4	prep	_	_
+6	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	monastery	_	NN	_	_	4	nsubjpass	_	_
+3	was	_	NN	_	_	4	auxpass	_	_
+4	raided	_	NN	_	_	0	root	_	_
+5	by	_	NN	_	_	4	prep	_	_
+6	Vikings	_	NN	_	_	5	pobj	_	_
+7	in	_	NN	_	_	4	prep	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	late	_	NN	_	_	11	amod	_	_
+10	eighth	_	NN	_	_	11	amod	_	_
+11	century	_	NN	_	_	7	pobj	_	_
+12	\?	_	NN	_	_	4	dep	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	an	_	NN	_	_	4	det	_	_
+4	earthquake	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	Where	_	NN	_	_	6	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	tallest	_	NN	_	_	6	amod	_	_
+5	roller	_	NN	_	_	6	nn	_	_
+6	coaster	_	NN	_	_	0	root	_	_
+7	located	_	NN	_	_	6	partmod	_	_
+8	\?	_	NN	_	_	7	dep	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	are	_	NN	_	_	3	cop	_	_
+3	enzymes	_	NN	_	_	0	root	_	_
+4	\?	_	NN	_	_	3	amod	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	discovered	_	NN	_	_	0	root	_	_
+3	oxygen	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	3	nsubj	_	_
+2	is	_	NN	_	_	3	cop	_	_
+3	bangers	_	NN	_	_	0	root	_	_
+4	and	_	NN	_	_	3	cc	_	_
+5	mash	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	3	conj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	given	_	NN	_	_	4	partmod	_	_
+6	to	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	8	det	_	_
+8	Tiger	_	NN	_	_	6	pobj	_	_
+9	at	_	NN	_	_	5	prep	_	_
+10	Louisiana	_	NN	_	_	12	nn	_	_
+11	State	_	NN	_	_	12	nn	_	_
+12	University	_	NN	_	_	9	pobj	_	_
+13	\?	_	NN	_	_	9	pobj	_	_
+
+1	Where	_	NN	_	_	7	advmod	_	_
+2	are	_	NN	_	_	7	aux	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	British	_	NN	_	_	6	amod	_	_
+5	crown	_	NN	_	_	6	nn	_	_
+6	jewels	_	NN	_	_	7	nsubj	_	_
+7	kept	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	dobj	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	first	_	NN	_	_	5	amod	_	_
+5	person	_	NN	_	_	0	root	_	_
+6	to	_	NN	_	_	7	aux	_	_
+7	reach	_	NN	_	_	5	infmod	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	North	_	NN	_	_	11	nn	_	_
+10	Pole	_	NN	_	_	11	nn	_	_
+11	\?	_	NN	_	_	7	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	an	_	NN	_	_	5	det	_	_
+4	ulcer	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	vertigo	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	spirometer	_	NN	_	_	5	amod	_	_
+5	test	_	NN	_	_	6	nn	_	_
+6	\?	_	NN	_	_	0	root	_	_
+
+1	When	_	NN	_	_	6	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	official	_	NN	_	_	6	amod	_	_
+5	first	_	NN	_	_	6	amod	_	_
+6	day	_	NN	_	_	0	root	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	summer	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	6	dobj	_	_
+2	does	_	NN	_	_	6	aux	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	abbreviation	_	NN	_	_	5	amod	_	_
+5	SOS	_	NN	_	_	6	nsubj	_	_
+6	mean	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	smallest	_	NN	_	_	5	amod	_	_
+5	bird	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	Britain	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	5	amod	_	_
+
+1	Who	_	NN	_	_	2	nsubj	_	_
+2	invented	_	NN	_	_	0	root	_	_
+3	Trivial	_	NN	_	_	4	amod	_	_
+4	Pursuit	_	NN	_	_	2	dobj	_	_
+5	\?	_	NN	_	_	2	dobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	gasses	_	NN	_	_	3	nsubj	_	_
+3	are	_	NN	_	_	0	root	_	_
+4	in	_	NN	_	_	3	prep	_	_
+5	the	_	NN	_	_	6	det	_	_
+6	troposphere	_	NN	_	_	4	pobj	_	_
+7	\?	_	NN	_	_	3	advmod	_	_
+
+1	Which	_	NN	_	_	2	det	_	_
+2	country	_	NN	_	_	3	nsubj	_	_
+3	has	_	NN	_	_	0	root	_	_
+4	the	_	NN	_	_	7	det	_	_
+5	most	_	NN	_	_	7	amod	_	_
+6	water	_	NN	_	_	7	nn	_	_
+7	pollution	_	NN	_	_	3	dobj	_	_
+8	\?	_	NN	_	_	3	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	scientific	_	NN	_	_	5	amod	_	_
+5	name	_	NN	_	_	0	root	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	elephant	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	Who	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	actress	_	NN	_	_	0	root	_	_
+5	known	_	NN	_	_	4	partmod	_	_
+6	for	_	NN	_	_	5	prep	_	_
+7	her	_	NN	_	_	8	poss	_	_
+8	role	_	NN	_	_	6	pobj	_	_
+9	in	_	NN	_	_	8	prep	_	_
+10	the	_	NN	_	_	15	det	_	_
+11	movie	_	NN	_	_	15	nn	_	_
+12	``	_	NN	_	_	15	punct	_	_
+13	Gypsy	_	NN	_	_	15	nn	_	_
+14	''	_	NN	_	_	15	punct	_	_
+15	\?	_	NN	_	_	9	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	breed	_	NN	_	_	10	nsubj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	hunting	_	NN	_	_	5	nn	_	_
+5	dog	_	NN	_	_	3	pobj	_	_
+6	did	_	NN	_	_	10	aux	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	Beverly	_	NN	_	_	9	nn	_	_
+9	Hillbillies	_	NN	_	_	10	nsubj	_	_
+10	own	_	NN	_	_	0	root	_	_
+11	\?	_	NN	_	_	10	dobj	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	rainiest	_	NN	_	_	5	amod	_	_
+5	place	_	NN	_	_	0	root	_	_
+6	on	_	NN	_	_	5	prep	_	_
+7	Earth	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	6	pobj	_	_
+
+1	Who	_	NN	_	_	6	nsubj	_	_
+2	was	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	African	_	NN	_	_	6	amod	_	_
+6	American	_	NN	_	_	0	root	_	_
+7	to	_	NN	_	_	8	aux	_	_
+8	win	_	NN	_	_	6	infmod	_	_
+9	the	_	NN	_	_	11	det	_	_
+10	Nobel	_	NN	_	_	11	nn	_	_
+11	Prize	_	NN	_	_	8	dobj	_	_
+12	in	_	NN	_	_	8	prep	_	_
+13	literature	_	NN	_	_	12	pobj	_	_
+14	\?	_	NN	_	_	13	num	_	_
+
+1	When	_	NN	_	_	6	advmod	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	St	_	NN	_	_	4	nn	_	_
+4	Patrick	_	NN	_	_	6	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	Day	_	NN	_	_	0	root	_	_
+7	\?	_	NN	_	_	6	num	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	was	_	NN	_	_	7	cop	_	_
+3	FDR	_	NN	_	_	7	poss	_	_
+4	's	_	NN	_	_	3	possessive	_	_
+5	dog	_	NN	_	_	7	poss	_	_
+6	's	_	NN	_	_	3	possessive	_	_
+7	name	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	amod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	colors	_	NN	_	_	3	nsubj	_	_
+3	need	_	NN	_	_	0	root	_	_
+4	to	_	NN	_	_	6	aux	_	_
+5	be	_	NN	_	_	6	cop	_	_
+6	mixed	_	NN	_	_	3	xcomp	_	_
+7	to	_	NN	_	_	8	aux	_	_
+8	get	_	NN	_	_	6	xcomp	_	_
+9	the	_	NN	_	_	11	det	_	_
+10	color	_	NN	_	_	11	amod	_	_
+11	pink	_	NN	_	_	12	amod	_	_
+12	\?	_	NN	_	_	8	dobj	_	_
+
+1	What	_	NN	_	_	6	nsubj	_	_
+2	is	_	NN	_	_	6	cop	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	most	_	NN	_	_	5	advmod	_	_
+5	popular	_	NN	_	_	6	amod	_	_
+6	sport	_	NN	_	_	0	root	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	Japan	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	6	punct	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	active	_	NN	_	_	5	amod	_	_
+5	ingredient	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	baking	_	NN	_	_	8	nn	_	_
+8	soda	_	NN	_	_	6	pobj	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	was	_	NN	_	_	5	auxpass	_	_
+3	Thomas	_	NN	_	_	4	nn	_	_
+4	Jefferson	_	NN	_	_	5	nsubj	_	_
+5	born	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dep	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	cold	_	NN	_	_	7	dep	_	_
+3	should	_	NN	_	_	7	aux	_	_
+4	a	_	NN	_	_	5	det	_	_
+5	refrigerator	_	NN	_	_	7	nsubj	_	_
+6	be	_	NN	_	_	7	cop	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	When	_	NN	_	_	5	advmod	_	_
+2	was	_	NN	_	_	5	auxpass	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	telephone	_	NN	_	_	5	nsubj	_	_
+5	invented	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	8	nsubj	_	_
+2	is	_	NN	_	_	8	cop	_	_
+3	the	_	NN	_	_	8	det	_	_
+4	most	_	NN	_	_	5	advmod	_	_
+5	common	_	NN	_	_	8	amod	_	_
+6	eye	_	NN	_	_	8	nn	_	_
+7	color	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	Where	_	NN	_	_	6	advmod	_	_
+2	was	_	NN	_	_	0	root	_	_
+3	the	_	NN	_	_	6	det	_	_
+4	first	_	NN	_	_	6	amod	_	_
+5	golf	_	NN	_	_	6	nn	_	_
+6	course	_	NN	_	_	2	nsubj	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	the	_	NN	_	_	11	det	_	_
+9	United	_	NN	_	_	11	nn	_	_
+10	States	_	NN	_	_	7	pobj	_	_
+11	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	schizophrenia	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	angiotensin	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	dobj	_	_
+2	did	_	NN	_	_	5	aux	_	_
+3	Jesse	_	NN	_	_	4	nn	_	_
+4	Jackson	_	NN	_	_	5	nsubj	_	_
+5	organize	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	8	nsubj	_	_
+2	is	_	NN	_	_	8	cop	_	_
+3	New	_	NN	_	_	4	nn	_	_
+4	York	_	NN	_	_	8	poss	_	_
+5	's	_	NN	_	_	4	possessive	_	_
+6	state	_	NN	_	_	8	nn	_	_
+7	bird	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	National	_	NN	_	_	5	nn	_	_
+5	Park	_	NN	_	_	8	nsubj	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	Utah	_	NN	_	_	6	pobj	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	7	nsubj	_	_
+2	is	_	NN	_	_	7	cop	_	_
+3	Susan	_	NN	_	_	5	nn	_	_
+4	B	_	NN	_	_	5	nn	_	_
+5	Anthony	_	NN	_	_	7	poss	_	_
+6	's	_	NN	_	_	5	possessive	_	_
+7	birthday	_	NN	_	_	0	root	_	_
+8	\?	_	NN	_	_	7	num	_	_
+
+1	In	_	NN	_	_	6	prep	_	_
+2	which	_	NN	_	_	3	det	_	_
+3	state	_	NN	_	_	1	pobj	_	_
+4	would	_	NN	_	_	6	aux	_	_
+5	you	_	NN	_	_	6	nsubj	_	_
+6	find	_	NN	_	_	0	root	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	Catskill	_	NN	_	_	9	nn	_	_
+9	Mountains	_	NN	_	_	10	nsubj	_	_
+10	\?	_	NN	_	_	6	xcomp	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	do	_	NN	_	_	4	aux	_	_
+3	you	_	NN	_	_	4	nsubj	_	_
+4	call	_	NN	_	_	0	root	_	_
+5	a	_	NN	_	_	6	det	_	_
+6	word	_	NN	_	_	4	dobj	_	_
+7	that	_	NN	_	_	9	nsubjpass	_	_
+8	is	_	NN	_	_	9	auxpass	_	_
+9	spelled	_	NN	_	_	6	rcmod	_	_
+10	the	_	NN	_	_	11	det	_	_
+11	same	_	NN	_	_	9	dobj	_	_
+12	backwards	_	NN	_	_	9	advmod	_	_
+13	and	_	NN	_	_	9	cc	_	_
+14	forwards	_	NN	_	_	9	conj	_	_
+15	\?	_	NN	_	_	9	conj	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	pediatricians	_	NN	_	_	4	nsubj	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	det	_	_
+2	chain	_	NN	_	_	3	nn	_	_
+3	store	_	NN	_	_	5	nsubjpass	_	_
+4	is	_	NN	_	_	5	auxpass	_	_
+5	headquartered	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	Bentonville	_	NN	_	_	6	pobj	_	_
+8	,	_	NN	_	_	7	punct	_	_
+9	Arkansas	_	NN	_	_	7	appos	_	_
+10	\?	_	NN	_	_	7	appos	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	solar	_	NN	_	_	4	amod	_	_
+4	cells	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	amod	_	_
+
+1	What	_	NN	_	_	3	nsubjpass	_	_
+2	is	_	NN	_	_	3	auxpass	_	_
+3	compounded	_	NN	_	_	5	csubj	_	_
+4	interest	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	are	_	NN	_	_	4	cop	_	_
+3	capers	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	an	_	NN	_	_	4	det	_	_
+4	antigen	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	amod	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	currency	_	NN	_	_	5	nsubj	_	_
+3	does	_	NN	_	_	5	aux	_	_
+4	Luxembourg	_	NN	_	_	5	nsubj	_	_
+5	use	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	population	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	Venezuela	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	5	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	type	_	NN	_	_	6	nsubjpass	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	polymer	_	NN	_	_	3	pobj	_	_
+5	is	_	NN	_	_	6	auxpass	_	_
+6	used	_	NN	_	_	0	root	_	_
+7	for	_	NN	_	_	6	prep	_	_
+8	bulletproof	_	NN	_	_	9	amod	_	_
+9	vests	_	NN	_	_	7	pobj	_	_
+10	\?	_	NN	_	_	6	punct	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	currency	_	NN	_	_	5	nsubj	_	_
+3	does	_	NN	_	_	5	aux	_	_
+4	Argentina	_	NN	_	_	5	nsubj	_	_
+5	use	_	NN	_	_	0	root	_	_
+6	\?	_	NN	_	_	5	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	a	_	NN	_	_	4	det	_	_
+4	thermometer	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	dobj	_	_
+2	Canadian	_	NN	_	_	3	nn	_	_
+3	city	_	NN	_	_	4	nsubj	_	_
+4	has	_	NN	_	_	0	root	_	_
+5	the	_	NN	_	_	7	det	_	_
+6	largest	_	NN	_	_	7	amod	_	_
+7	population	_	NN	_	_	4	dobj	_	_
+8	\?	_	NN	_	_	4	dobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	color	_	NN	_	_	4	nsubj	_	_
+3	are	_	NN	_	_	4	cop	_	_
+4	crickets	_	NN	_	_	0	root	_	_
+5	\?	_	NN	_	_	4	amod	_	_
+
+1	Which	_	NN	_	_	2	det	_	_
+2	country	_	NN	_	_	3	nsubj	_	_
+3	gave	_	NN	_	_	0	root	_	_
+4	New	_	NN	_	_	5	nn	_	_
+5	York	_	NN	_	_	3	iobj	_	_
+6	the	_	NN	_	_	7	det	_	_
+7	Statue	_	NN	_	_	3	dobj	_	_
+8	of	_	NN	_	_	7	prep	_	_
+9	Liberty	_	NN	_	_	8	pobj	_	_
+10	\?	_	NN	_	_	8	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	was	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	name	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	the	_	NN	_	_	10	det	_	_
+7	first	_	NN	_	_	10	amod	_	_
+8	U	_	NN	_	_	10	nn	_	_
+9	S	_	NN	_	_	10	nn	_	_
+10	satellite	_	NN	_	_	5	pobj	_	_
+11	sent	_	NN	_	_	10	partmod	_	_
+12	into	_	NN	_	_	11	prep	_	_
+13	space	_	NN	_	_	12	pobj	_	_
+14	\?	_	NN	_	_	12	pobj	_	_
+
+1	What	_	NN	_	_	3	det	_	_
+2	precious	_	NN	_	_	3	amod	_	_
+3	stone	_	NN	_	_	6	nsubj	_	_
+4	is	_	NN	_	_	6	cop	_	_
+5	a	_	NN	_	_	6	det	_	_
+6	form	_	NN	_	_	0	root	_	_
+7	of	_	NN	_	_	6	prep	_	_
+8	pure	_	NN	_	_	10	amod	_	_
+9	carbon	_	NN	_	_	10	nn	_	_
+10	\?	_	NN	_	_	7	pobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	kind	_	NN	_	_	5	nsubj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	gas	_	NN	_	_	3	pobj	_	_
+5	is	_	NN	_	_	0	root	_	_
+6	in	_	NN	_	_	5	prep	_	_
+7	a	_	NN	_	_	9	det	_	_
+8	fluorescent	_	NN	_	_	9	amod	_	_
+9	bulb	_	NN	_	_	6	pobj	_	_
+10	\?	_	NN	_	_	5	punct	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	rheumatoid	_	NN	_	_	5	nn	_	_
+4	arthritis	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	3	dobj	_	_
+2	river	_	NN	_	_	3	nsubj	_	_
+3	runs	_	NN	_	_	0	root	_	_
+4	through	_	NN	_	_	3	prep	_	_
+5	Rowe	_	NN	_	_	4	pobj	_	_
+6	,	_	NN	_	_	5	punct	_	_
+7	Italy	_	NN	_	_	5	appos	_	_
+8	\?	_	NN	_	_	5	punct	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	cerebral	_	NN	_	_	5	amod	_	_
+4	palsy	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	city	_	NN	_	_	5	nsubjpass	_	_
+3	is	_	NN	_	_	5	auxpass	_	_
+4	also	_	NN	_	_	5	advmod	_	_
+5	known	_	NN	_	_	0	root	_	_
+6	as	_	NN	_	_	5	prep	_	_
+7	``	_	NN	_	_	6	punct	_	_
+8	The	_	NN	_	_	9	det	_	_
+9	Gateway	_	NN	_	_	6	pobj	_	_
+10	to	_	NN	_	_	9	prep	_	_
+11	the	_	NN	_	_	12	det	_	_
+12	West	_	NN	_	_	10	pobj	_	_
+13	''	_	NN	_	_	14	punct	_	_
+14	\?	_	NN	_	_	9	dep	_	_
+
+1	How	_	NN	_	_	3	advmod	_	_
+2	far	_	NN	_	_	3	advmod	_	_
+3	away	_	NN	_	_	4	advmod	_	_
+4	is	_	NN	_	_	0	root	_	_
+5	the	_	NN	_	_	7	det	_	_
+6	moon	_	NN	_	_	7	nn	_	_
+7	\?	_	NN	_	_	4	nsubj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	source	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	natural	_	NN	_	_	7	amod	_	_
+7	gas	_	NN	_	_	5	pobj	_	_
+8	\?	_	NN	_	_	5	pobj	_	_
+
+1	In	_	NN	_	_	10	prep	_	_
+2	what	_	NN	_	_	3	det	_	_
+3	spacecraft	_	NN	_	_	4	nsubj	_	_
+4	did	_	NN	_	_	10	aux	_	_
+5	U	_	NN	_	_	9	nn	_	_
+6	S	_	NN	_	_	9	nn	_	_
+7	astronaut	_	NN	_	_	9	nn	_	_
+8	Alan	_	NN	_	_	9	nn	_	_
+9	Shepard	_	NN	_	_	10	nsubj	_	_
+10	make	_	NN	_	_	0	root	_	_
+11	his	_	NN	_	_	14	poss	_	_
+12	historic	_	NN	_	_	15	amod	_	_
+13	1961	_	NN	_	_	14	num	_	_
+14	flight	_	NN	_	_	15	nn	_	_
+15	\?	_	NN	_	_	10	dobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	pectin	_	NN	_	_	4	nn	_	_
+4	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	bio	_	NN	_	_	4	nn	_	_
+4	diversity	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	's	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	easiest	_	NN	_	_	5	amod	_	_
+5	way	_	NN	_	_	0	root	_	_
+6	to	_	NN	_	_	7	aux	_	_
+7	remove	_	NN	_	_	5	infmod	_	_
+8	wallpaper	_	NN	_	_	7	dobj	_	_
+9	\?	_	NN	_	_	7	dobj	_	_
+
+1	What	_	NN	_	_	2	det	_	_
+2	year	_	NN	_	_	6	tmod	_	_
+3	did	_	NN	_	_	6	aux	_	_
+4	the	_	NN	_	_	5	det	_	_
+5	Titanic	_	NN	_	_	6	nsubj	_	_
+6	start	_	NN	_	_	0	root	_	_
+7	on	_	NN	_	_	6	prep	_	_
+8	its	_	NN	_	_	9	poss	_	_
+9	journey	_	NN	_	_	7	pobj	_	_
+10	\?	_	NN	_	_	6	advmod	_	_
+
+1	How	_	NN	_	_	2	advmod	_	_
+2	much	_	NN	_	_	8	nsubj	_	_
+3	of	_	NN	_	_	2	prep	_	_
+4	an	_	NN	_	_	5	det	_	_
+5	apple	_	NN	_	_	3	pobj	_	_
+6	is	_	NN	_	_	8	cop	_	_
+7	water	_	NN	_	_	8	nn	_	_
+8	\?	_	NN	_	_	0	root	_	_
+
+1	Who	_	NN	_	_	5	nsubj	_	_
+2	was	_	NN	_	_	5	cop	_	_
+3	the	_	NN	_	_	5	det	_	_
+4	22nd	_	NN	_	_	5	amod	_	_
+5	President	_	NN	_	_	0	root	_	_
+6	of	_	NN	_	_	5	prep	_	_
+7	the	_	NN	_	_	9	det	_	_
+8	US	_	NN	_	_	9	nn	_	_
+9	\?	_	NN	_	_	6	pobj	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	money	_	NN	_	_	0	root	_	_
+5	they	_	NN	_	_	6	nsubj	_	_
+6	use	_	NN	_	_	4	rcmod	_	_
+7	in	_	NN	_	_	6	prep	_	_
+8	Zambia	_	NN	_	_	7	pobj	_	_
+9	\?	_	NN	_	_	4	punct	_	_
+
+1	How	_	NN	_	_	3	advmod	_	_
+2	many	_	NN	_	_	3	amod	_	_
+3	feet	_	NN	_	_	7	npadvmod	_	_
+4	in	_	NN	_	_	3	prep	_	_
+5	a	_	NN	_	_	6	det	_	_
+6	mile	_	NN	_	_	4	pobj	_	_
+7	\?	_	NN	_	_	0	root	_	_
+
+1	What	_	NN	_	_	4	nsubj	_	_
+2	is	_	NN	_	_	4	cop	_	_
+3	the	_	NN	_	_	4	det	_	_
+4	birthstone	_	NN	_	_	0	root	_	_
+5	of	_	NN	_	_	4	prep	_	_
+6	October	_	NN	_	_	5	pobj	_	_
+7	\?	_	NN	_	_	6	num	_	_
+
+1	What	_	NN	_	_	5	nsubj	_	_
+2	is	_	NN	_	_	5	cop	_	_
+3	e	_	NN	_	_	5	nn	_	_
+4	coli	_	NN	_	_	5	nn	_	_
+5	\?	_	NN	_	_	0	root	_	_
+

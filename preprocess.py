@@ -178,14 +178,17 @@ def read_conll(conll_path):
     heads_root_forest_list = []
     with open(conll_path, 'r', encoding='utf8') as f:
         sent = []
+        idx = 0
         for line in f.readlines():
             line = line.strip().split()
             if len(line) == 0:
                 heads, root, forest = conll2word_heads_root_forest(sent)
                 heads_root_forest_list.append((heads, root, forest))
                 sent = []
+                idx += 1
             else:
                 sent.append(line)
+        print(idx)
     return heads_root_forest_list
 
 def conll2word_heads_root_forest(conll_sent):
