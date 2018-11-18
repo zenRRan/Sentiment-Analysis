@@ -1,9 +1,9 @@
 # Version python3.6
 # -*- coding: utf-8 -*-
-# @Time    : 2018/11/5 1:54 PM
+# @Time    : 2018/11/17 8:58 PM
 # @Author  : zenRRan
 # @Email   : zenrran@qq.com
-# @File    : Tree_LSTM.py
+# @File    : CNN_TreeLSTM.py
 # @Software: PyCharm Community Edition
 
 
@@ -15,160 +15,46 @@ from torch.autograd import Variable
 
 import random
 
-class ChildSumTreeLSTM(nn.Module):
+
+class CNN_TreeLSTM(nn.Module):
+
     def __init__(self, opts, vocab, label_vocab):
-        super(ChildSumTreeLSTM, self).__init__()
+        super(CNN_TreeLSTM, self).__init__()
 
         random.seed(opts.seed)
-        torch.manual_seed(opts.seed)
-        torch.cuda.manual_seed(opts.seed)
+        torch.cuda.manual_seed(opts.gpu_seed)
 
         self.embed_dim = opts.embed_size
         self.word_num = vocab.m_size
         self.pre_embed_path = opts.pre_embed_path
         self.string2id = vocab.string2id
         self.embed_uniform_init = opts.embed_uniform_init
-        self.label_num = label_vocab.m_size
-        self.embed_dropout = opts.embed_dropout
-        self.fc_dropout = opts.fc_dropout
+        self.stride = opts.stride
+        self.kernel_size = opts.kernel_size
+        self.kernel_num = opts.kernel_num
         self.hidden_size = opts.hidden_size
         self.use_cuda = opts.use_cuda
-
-
-        self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
-        if opts.pre_embed_path != '':
-            embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
-            self.embeddings.weight.data.copy_(embedding)
-
-        # build lstm
-        self.ix = nn.Linear(self.embed_dim, self.hidden_size)
-        self.ih = nn.Linear(self.hidden_size, self.hidden_size)
-
-        self.fx = nn.Linear(self.embed_dim, self.hidden_size)
-        self.fh = nn.Linear(self.hidden_size, self.hidden_size)
-
-        self.ox = nn.Linear(self.embed_dim, self.hidden_size)
-        self.oh = nn.Linear(self.hidden_size, self.hidden_size)
-
-        self.ux = nn.Linear(self.embed_dim, self.hidden_size)
-        self.uh = nn.Linear(self.hidden_size, self.hidden_size)
-
-        self.out = nn.Linear(self.hidden_size, self.label_num)
-
-        self.embed_dropout = nn.Dropout(self.embed_dropout)
-        self.fc_dropout = nn.Dropout(self.fc_dropout)
-
-        if self.use_cuda:
-            self.loss = self.loss.cuda()
-
-    def node_forward(self, x, child_c, child_h):
-        # print('x.size():', x.size())
-        child_h_sum = torch.sum(torch.squeeze(child_h, 1), 0)
-        # print('child_h_sum.size():',child_h_sum.size())
-        i = torch.sigmoid(self.ix(x) + self.ih(child_h_sum))
-        o = torch.sigmoid(self.fx(x) + self.fh(child_h_sum))
-        u = torch.tanh(self.ux(x) + self.uh(child_h_sum))
-        # print('i.size():', i.size())
-
-        fx = torch.unsqueeze(self.fx(x), 1)
-        # print('fx.size():', fx.size())
-        f = torch.cat([self.fh(child_i) + fx for child_i in child_h])
-        f = torch.sigmoid(f)
-        # print('f.size():', f.size())
-        fc = torch.squeeze(F.torch.mul(f, child_c), 1)
-        # print('fc.size():', fc.size())
-        c = torch.mul(i, u) + torch.sum(fc, 0)
-        h = torch.mul(o, torch.tanh(c))
-
-        # print('c.size():', c.size())
-        # print('h.size():', h.size())
-
-        return c, h
-
-    def forward(self, x, tree):
-        # print()
-        # print(x.size())
-        if tree.label is not None:
-            x = self.embeddings(x)
-            # print(x.size())
-        # loss = Variable(torch.Tensor([0]))
-        # if self.use_cuda:
-        #     loss = loss.cuda()
-        for child in tree.children_list:
-            # print(child.label)
-            _, _ = self.forward(x, child)
-        child_c, child_h = self.get_child_states(tree)
-        # print('child_c.size():', child_c.size())
-        # print('child_h.size():', child_h.size())
-        # print('x[tree.index].size():', torch.unsqueeze(x[0][tree.index], 0).size())
-        # print('tree.index:', tree.index)
-        tree.c, tree.h = self.node_forward(torch.unsqueeze(x[0][tree.index], 0), child_c, child_h)
-
-        output1 = tree.c
-        output2 = tree.h
-
-        if tree.label is not None:
-            h = self.fc_dropout(tree.h)
-            output2 = self.out(h)
-        # if tree.label is not None:
-        #     label = Variable(torch.LongTensor([tree.label]))
-        #     if self.use_cuda:
-        #         label = label.cuda()
-            # loss += self.loss(output, label)
-
-        return output1, output2
-
-    def get_child_states(self, tree):
-        '''
-        get c and h of all children
-        :param tree:
-        :return:
-        '''
-
-        children_num = len(tree.children_list)
-
-        if children_num == 0:
-            c = Variable(torch.zeros((1, 1, self.hidden_size)))
-            h = Variable(torch.zeros((1, 1, self.hidden_size)))
-
-        else:
-            c = Variable(torch.zeros(children_num, 1, self.hidden_size))
-            h = Variable(torch.zeros(children_num, 1, self.hidden_size))
-            for idx, child in enumerate(tree.children_list):
-                c[idx] = child.c
-                h[idx] = child.h
-
-        if self.use_cuda:
-            c = c.cuda()
-            h = h.cuda()
-        return c, h
-
-
-class BatchChildSumTreeLSTM(nn.Module):
-    def __init__(self, opts, vocab, label_vocab):
-        super(BatchChildSumTreeLSTM, self).__init__()
-
-        random.seed(opts.seed)
-        torch.manual_seed(opts.seed)
-        torch.cuda.manual_seed(opts.seed)
-
-        self.embed_dim = opts.embed_size
-        self.word_num = vocab.m_size
-        self.pre_embed_path = opts.pre_embed_path
-        self.string2id = vocab.string2id
-        self.embed_uniform_init = opts.embed_uniform_init
         self.label_num = label_vocab.m_size
         self.embed_dropout = opts.embed_dropout
         self.fc_dropout = opts.fc_dropout
-        self.hidden_size = opts.hidden_size
         self.hidden_dropout = opts.hidden_dropout
-        self.use_cuda = opts.use_cuda
-        self.debug = False
+        self.debug = True
 
         self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
         if opts.pre_embed_path != '':
             embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
+        else:
+            nn.init.uniform_(self.embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
+
+        self.convs = nn.ModuleList(
+            [nn.Conv2d(1, self.kernel_num, (K, self.embed_dim), stride=self.stride, padding=(K // 2, 0)) for K in
+             self.kernel_size])
+
+        in_fea = len(self.kernel_size) * self.kernel_num + self.hidden_size
+
+        self.linear1 = nn.Linear(in_fea, in_fea // 4)
+        self.linear2 = nn.Linear(in_fea // 4, self.label_num)
 
         # build lstm
         self.ix = nn.Linear(self.embed_dim, self.hidden_size)
@@ -183,8 +69,9 @@ class BatchChildSumTreeLSTM(nn.Module):
         self.ux = nn.Linear(self.embed_dim, self.hidden_size)
         self.uh = nn.Linear(self.hidden_size, self.hidden_size)
 
-        self.out = nn.Linear(self.hidden_size, self.label_num)
+        # self.out = nn.Linear(self.hidden_size, self.label_num)
 
+        #dropout
         self.hidden_dropout = nn.Dropout(self.hidden_dropout)
         self.embed_dropout = nn.Dropout(self.embed_dropout)
         self.fc_dropout = nn.Dropout(self.fc_dropout)
@@ -247,6 +134,22 @@ class BatchChildSumTreeLSTM(nn.Module):
         '''
         x = self.embeddings(x)
         x = self.embed_dropout(x)
+
+        # CNN
+        cnn_out = torch.tanh(x)
+        l = []
+        cnn_out = cnn_out.unsqueeze(1)
+        for conv in self.convs:
+            l.append(torch.tanh(conv(cnn_out)).squeeze(3))
+        cnn_out = l
+        l = []
+        for i in cnn_out:
+            l.append(F.max_pool1d(i, kernel_size=i.size(2)).squeeze(2))
+        cnn_out = torch.cat(l, 1)
+        if self.debug:
+            print('cnn_out.size():', cnn_out.size())
+
+        # TreeLSTM
         if self.debug:
             print()
             print('x.size():', x.size())  # torch.Size([4, 19, 100])
@@ -357,12 +260,11 @@ class BatchChildSumTreeLSTM(nn.Module):
                 all_H[batch][i] = h[batch]
                 batch += 1
 
-        out = torch.transpose(all_H, 1, 2)
-        out = torch.tanh(out)
-        out = F.max_pool1d(out, out.size(2))
-        out = out.squeeze(2)
-        out = self.out(out)
+        treelstm_out = torch.transpose(all_H, 1, 2)
+        treelstm_out = torch.tanh(treelstm_out)
+        treelstm_out = F.max_pool1d(treelstm_out, treelstm_out.size(2))
+        treelstm_out = treelstm_out.squeeze(2)
+        out = torch.cat((cnn_out, treelstm_out), 1)
+        out = self.linear1(F.relu(out))
+        out = self.linear2(F.relu(out))
         return out
-
-
-

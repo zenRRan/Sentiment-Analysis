@@ -15,7 +15,9 @@ from models.multi_channel_CNN import Multi_Channel_CNN
 from models.Char_CNN import Char_CNN
 from models.LSTM_CNN import LSTM_CNN
 from models.Pooling import Pooling
-from models.Tree_LSTM import ChildSumTreeLSTM, BatchChildSumTreeLSTM
+from models.Tree_LSTM import BatchChildSumTreeLSTM
+from models.CNN_TreeLSTM import CNN_TreeLSTM
+from models.LSTM_TreeLSTM import LSTM_TreeLSTM
 from utils.Common import padding_key
 
 import torch
@@ -133,6 +135,12 @@ class Trainer:
         elif self.opts.model == 'treelstm':
             self.tree = True
             self.model = BatchChildSumTreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'cnn_treelstm':
+            self.tree = True
+            self.model = CNN_TreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'lstm_treelstm':
+            self.tree = True
+            self.model = LSTM_TreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         else:
             raise RuntimeError('please choose your model first!')
 

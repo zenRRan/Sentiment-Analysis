@@ -1,7 +1,7 @@
 data_dir=processed_data
 
 ----batch----
-train_batch_size=32
+train_batch_size=4
 train_batch_type=same
 dev_batch_size=64
 dev_batch_type=same
@@ -18,7 +18,7 @@ embed_dropout=0.0
 pre_embed_path=
 
 ----model----
-model=treelstm
+model=lstm_treelstm
 save_model_dir=save_models
 save_model_every=1
 save_model_start_from=0
@@ -52,9 +52,3 @@ log_dir=log
 log_fname=log2
 
 data has shuffled!
-[2018-11-17 08:55:20] Epoch 0 step [10|295] lr=0.00100000 acc: 41.57% loss: 0.048214
-[2018-11-17 08:55:25] Epoch 0 step [20|295] lr=0.00100000 acc: 48.98% loss: 0.036746
-[2018-11-17 08:55:30] Epoch 0 step [30|295] lr=0.00100000 acc: 46.89% loss: 0.033828
-[2018-11-17 08:55:35] Epoch 0 step [40|295] lr=0.00100000 acc: 60.07% loss: 0.030853
-[2018-11-17 08:55:41] Epoch 0 step [50|295] lr=0.00100000 acc: 51.71% loss: 0.026897
-[2018-11-17 08:55:48] Epoch 0 step [60|295] lr=0.00100000 acc: 52.90% loss: 0.028163
