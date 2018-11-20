@@ -41,10 +41,11 @@
 
 ## Usage
 - first step
--
+
         sh preprocess.sh
 - second step
--       sh run.sh
+
+       sh run.sh
 
 ## Result
 
