@@ -1,4 +1,4 @@
-## Introducion
+## Introduction
 - A classification of Sentiment Analysis which is implemented by pytorch.
 * There are many data in [data](https://github.com/zenRRan/Sentiment-Analysis/tree/master/data), *.txt of that are came from [sent-conv-torch](https://github.com/harvardnlp/sent-conv-torch), *.conll.out of that are generated from our lab's parser.
     * CR
@@ -21,7 +21,7 @@
     * LSTM_TreeLSTM
     * Transformer(TODO)
 - My log will be saved in [log](https://github.com/zenRRan/Sentiment-Analysis/tree/master/log).
-* Trere are many scripts in [utils](https://github.com/zenRRan/Sentiment-Analysis/tree/master/utils)
+* Trere are many scripts in [utils](https://github.com/zenRRan/Sentiment-Analysis/tree/master/utils).
     * Alphabet.py which is used to build dictionary.
     * Common.py which is saved unk-key and pad-key.
     * Embedding.py which is used to load pre_train embedding by Yang Song.
@@ -45,7 +45,7 @@
         sh preprocess.sh
 - second step
 
-       sh run.sh
+        sh run.sh
 
 ## Result
 
