@@ -21,7 +21,10 @@ class Tree(object):
         self.children_index_list = list()
         self.left_children = list()
         self.right_children = list()
-
+        self.left_num = 0
+        self.right_num = 0
+        self.order = []
+        self.is_left = False
     # def add_child(self, child):
     #     child.parent = self
     #     self.child_num += 1
@@ -29,14 +32,18 @@ class Tree(object):
 
     def add_left_child(self, child):
         child.parent = self
+        child.is_left = True
         self.child_num += 1
+        self.left_num += 1
         self.left_children.append(child)
         self.children_list.append(child)
         self.children_index_list.append(child.index)
 
     def add_right_child(self, child):
         child.parent = self
+        child.is_left = False
         self.child_num += 1
+        self.right_num += 1
         self.right_children.append(child)
         self.children_list.append(child)
         self.children_index_list.append(child.index)
@@ -72,6 +79,19 @@ class Tree(object):
             depth += 1
         self._depth = depth
         return self._depth
+
+    def traverse(self):
+        if len(self.order) > 0:
+            return self.order
+
+        for i in range(self.left_num):
+            left_order = self.left_children[i].traverse()
+            self.order.extend(left_order)
+        for i in range(self.right_num):
+            right_order = self.right_children[i].traverse()
+            self.order.extend(right_order)
+        self.order.append(self.index)
+        return self.order
 
 def createTree(heads):
     '''

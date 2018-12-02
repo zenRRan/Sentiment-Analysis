@@ -13,14 +13,13 @@ import torch.nn.functional as F
 from torch.autograd import Variable as Var
 import utils.Embedding as Embedding
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
-from torch.nn import Parameter
 from utils.tree import *
 import numpy as np
 
 import random
 
 class ChildSumTreeLSTM(nn.Module):
-    def __init__(self, opts, vocab, label_vocab):
+    def __init__(self, opts, vocab, label_vocab, rel_vocab):
         super(ChildSumTreeLSTM, self).__init__()
 
         random.seed(opts.seed)
@@ -33,38 +32,43 @@ class ChildSumTreeLSTM(nn.Module):
         self.string2id = vocab.string2id
         self.embed_uniform_init = opts.embed_uniform_init
         self.label_num = label_vocab.m_size
+        self.rel_num = rel_vocab.m_size
         self.embed_dropout = opts.embed_dropout
         self.fc_dropout = opts.fc_dropout
         self.hidden_size = opts.hidden_size
+        self.hidden_num = opts.hidden_num
         self.hidden_dropout = opts.hidden_dropout
+        self.bidirectional = opts.bidirectional
         self.use_cuda = opts.use_cuda
         self.debug = False
 
         self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
+        self.rel_embeddings = nn.Embedding(self.rel_num, self.embed_dim)
         self.rnn = nn.LSTM(
             self.embed_dim,
             self.hidden_size,
             dropout=self.hidden_dropout,
             num_layers=self.hidden_num,
-            batch_first=True,
-            bidirectional=self.bidirectional)
+            batch_first=True)
         if opts.pre_embed_path != '':
             embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
 
-        self.dt_tree = DTTreeLSTM(self.embed_dim, self.hidden_size)
-        self.td_tree = TDTreeLSTM(self.embed_dim, self.hidden_size)
+        self.dt_tree = DTTreeLSTM(self.embed_dim * 2, self.hidden_size)
+        self.td_tree = TDTreeLSTM(self.embed_dim * 2, self.hidden_size)
+
+        self.linear1 = nn.Linear(self.hidden_size * 2, self.hidden_size // 2)
+        self.linear2 = nn.Linear(self.hidden_size // 2, self.label_num)
 
     def forward(self, xs, rels, heads, xlengths):
 
         emb = self.embeddings(xs)
-
-        input_packed = pack_padded_sequence(input=emb, lengths=xlengths, batch_first=self.batch_first)
+        input_packed = pack_padded_sequence(emb, lengths=np.array(xlengths), batch_first=True)
         out_packed, h_n = self.rnn(input_packed)
-        out = pad_packed_sequence(out_packed, batch_first=self.batch_first)[0]
+        out = pad_packed_sequence(out_packed, batch_first=True)[0]
         out = out.contiguous()
 
-        rel_emb = self.rel_embedding(rels)
+        rel_emb = self.rel_embeddings(rels)
         outputs = torch.cat([out, rel_emb], 2)
         outputs = outputs.transpose(0, 1)
 
@@ -79,12 +83,17 @@ class ChildSumTreeLSTM(nn.Module):
                 indexes[step, b] = index
             trees.append(tree)
 
-        dt_outputs, dt_hidden_ts = self.dt_tree(outputs, indexes, trees, xlengths)
-        td_outputs, td_hidden_ts = self.td_tree(outputs, indexes, trees, xlengths)
+        dt_outputs = self.dt_tree(outputs, indexes, trees, xlengths)
+        td_outputs = self.td_tree(outputs, indexes, trees, xlengths)
 
-        ctx = torch.cat([dt_outputs, td_outputs], dim=2)
-
-        return ctx
+        out = torch.cat([dt_outputs, td_outputs], dim=2)
+        out = torch.transpose(out, 1, 2)
+        out = torch.tanh(out)
+        out = F.max_pool1d(out, out.size(2))
+        out = out.squeeze(2)
+        out = self.linear1(F.relu(out))
+        out = self.linear2(F.relu(out))
+        return out
 
 
 
@@ -225,45 +234,45 @@ class DTTreeLSTM(nn.Module):
         h_sum = torch.sum(child_hs, 1)
 
         i = self.i_x(input) + self.i_h(h_sum)
-        i = F.sigmoid(i)
+        i = torch.sigmoid(i)
 
         fx = self.f_x(input)
         fx = fx.unsqueeze(1)
         fx = fx.view(fx.size(0), 1, fx.size(2)).expand(fx.size(0), child_hs.size(1), fx.size(2))
         f = self.f_h(child_hs) + fx
-        f = F.sigmoid(f)
+        f = torch.sigmoid(f)
 
         fc = f * child_cs
 
         o = self.o_x(input) + self.o_h(h_sum)
-        o = F.sigmoid(o)
+        o = torch.sigmoid(o)
 
         u = self.u_x(input) + self.u_h(h_sum)
-        u = F.tanh(u)
+        u = torch.tanh(u)
 
         c = i * u + torch.sum(fc, 1)
-        h = o * F.tanh(c)
+        h = o * torch.tanh(c)
 
         return h, c
 
     def node_forward_1(self, input, left_child_h, right_child_h, left_child_c, right_child_c):
         hidden = left_child_h + right_child_h
         i = self.i_x(input) + self.i_h(hidden)
-        i = F.sigmoid(i)
+        i = torch.sigmoid(i)
 
         fl = self.f_xl(input) + self.f_hl(left_child_h)
-        fl = F.sigmoid(fl)
+        fl = torch.sigmoid(fl)
 
         fr = self.f_xr(input) + self.f_hr(right_child_h)
-        fr = F.sigmoid(fr)
+        fr = torch.sigmoid(fr)
 
         o = self.o_x(input) + self.o_h(hidden)
-        o = F.sigmoid(o)
+        o = torch.sigmoid(o)
 
         u = self.u_x(input) + self.u_h(hidden)
-        u = F.tanh(u)
+        u = torch.tanh(u)
         c = i * u + fl * left_child_c + fr * right_child_c
-        h = o * F.tanh(c)
+        h = o * torch.tanh(c)
 
         return h, c
 
@@ -376,19 +385,19 @@ class TDTreeLSTM(nn.Module):
     def node_forward(self, input, parent_hs, parent_cs):
 
         i = self.i_x(input) + self.i_h(parent_hs)
-        i = F.sigmoid(i)
+        i = torch.sigmoid(i)
 
         f = self.f_x(input) + self.f_h(parent_hs)
-        f = F.sigmoid(f)
+        f = torch.sigmoid(f)
 
         o = self.o_x(input) + self.o_h(parent_hs)
-        o = F.sigmoid(o)
+        o = torch.sigmoid(o)
 
         u = self.u_x(input) + self.u_h(parent_hs)
-        u = F.tanh(u)
+        u = torch.tanh(u)
 
         c = i * u + f * parent_cs
-        h = o * F.tanh(c)
+        h = o * torch.tanh(c)
 
         return h, c
 

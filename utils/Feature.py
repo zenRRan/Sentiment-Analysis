@@ -30,6 +30,8 @@ class Feature:
         self.root = None
         self.forest = None
         self.bfs_list = []
+        self.rels = None
+        self.rels_ids = None
 
 
 

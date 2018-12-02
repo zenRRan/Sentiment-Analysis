@@ -73,7 +73,6 @@ class Char_CNN(nn.Module):
             sent = sent.cuda()
         sent = self.word_embeddings(sent)
         sent = self.embed_dropout(sent)
-
         # for words in sent:
         #     print(words.size())
 

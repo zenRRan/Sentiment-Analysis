@@ -40,6 +40,9 @@ def preprocesser_opts(parser):
     return parser
 
 def trainer_opts(parser):
+    #thread
+    parser.add_argument('-thread', type=int, default=1, help='thread num')
+
     #seed
     parser.add_argument('-seed', type=int, default=23,
                         help='cpu seed! default 23. If you want set GPU seed, please use -gpu_seed!')

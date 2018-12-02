@@ -16,6 +16,7 @@ from models.Char_CNN import Char_CNN
 from models.LSTM_CNN import LSTM_CNN
 from models.Pooling import Pooling
 from models.Tree_LSTM import BatchChildSumTreeLSTM
+from models.TreeLSTM import ChildSumTreeLSTM
 from models.CNN_TreeLSTM import CNN_TreeLSTM
 from models.LSTM_TreeLSTM import LSTM_TreeLSTM
 from utils.Common import padding_key
@@ -34,7 +35,7 @@ import random
 
 
 class Trainer:
-    def __init__(self, train_dev_test, opts, vocab, label_vocab):
+    def __init__(self, train_dev_test, opts, vocab, label_vocab, rel_vocab):
         self.train_features_list = train_dev_test[0]
         self.dev_features_list = train_dev_test[1]
         self.test_features_list = train_dev_test[2]
@@ -42,6 +43,7 @@ class Trainer:
         self.vocab = vocab[0]
         self.char_vocab = vocab[1]
         self.label_vocab = label_vocab
+        self.rels_vocab = rel_vocab
         self.epoch = opts.epoch
         self.shuffle = opts.shuffle
         self.model = None
@@ -134,7 +136,8 @@ class Trainer:
             self.model = LSTM_CNN(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         elif self.opts.model == 'treelstm':
             self.tree = True
-            self.model = BatchChildSumTreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+            self.model = ChildSumTreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
+                                          rel_vocab=self.rels_vocab)
         elif self.opts.model == 'cnn_treelstm':
             self.tree = True
             self.model = CNN_TreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
@@ -172,36 +175,35 @@ class Trainer:
                 self.print_log.print_log(log)
             for batch in self.train_data_batchs:
 
+
                 self.model.train()
                 self.optimizer.zero_grad()
 
                 inst_num += len(batch[1])
 
                 if self.tree:
-                    sents = Variable(torch.LongTensor(batch[0]))
+                    sents = Variable(torch.LongTensor(batch[0]), requires_grad=False)
                     # tree = batch[3][0]
-                    label = Variable(torch.LongTensor(batch[1]))
-                    bfs_tensor = Variable(torch.LongTensor(batch[4]))
-                    children_batch_list = Variable(torch.LongTensor(batch[5]))
+                    label = Variable(torch.LongTensor(batch[1]), requires_grad=False)
+                    heads = Variable(torch.LongTensor(batch[4]), requires_grad=False)
+                    # bfs_tensor = Variable(torch.LongTensor(batch[4]), requires_grad=False)
+                    # children_batch_list = Variable(torch.LongTensor(batch[5]), requires_grad=False)
+                    xlength = batch[6]
+                    tag_rels = Variable(torch.LongTensor(batch[7]), requires_grad=False)
                     if self.opts.use_cuda:
                         sents = sents.cuda()
                         label = label.cuda()
-                        bfs_tensor = bfs_tensor.cuda()
-                        children_batch_list = children_batch_list.cuda()
-                    # print(sents.data)
-                    pred = self.model(sents, bfs_tensor, children_batch_list)
+                        heads = heads.cuda()
+                        tag_rels = tag_rels.cuda()
+                    pred = self.model(sents, tag_rels, heads, xlength)
                 else:
                     sents = Variable(torch.LongTensor(batch[0]))
                     label = Variable(torch.LongTensor(batch[1]))
-
-                    # print(data)
 
                     char_data = []
                     if self.char:
                         for char_list in batch[2]:
                             char_data.append(Variable(torch.LongTensor(char_list)))
-                            # print(type(char_data[0]), char_data[0].size())
-                    # print(char_data)
                     if self.opts.use_cuda:
                         sents = sents.cuda()
                         label = label.cuda()
@@ -209,7 +211,6 @@ class Trainer:
                         for data in char_data:
                             new_char_data.append(data.cuda())
                         char_data = new_char_data
-                        # print(type(char_data[0]))
                     if self.char:
                         pred = self.model(sents, char_data)
                     else:
@@ -314,18 +315,17 @@ class Trainer:
             inst_num += len(batch[1])
 
             if self.tree:
-                sents = Variable(torch.LongTensor(batch[0]))
-                # tree = batch[3][0]
-                label = Variable(torch.LongTensor(batch[1]))
-                bfs_tensor = Variable(torch.LongTensor(batch[4]))
-                children_batch_list = Variable(torch.LongTensor(batch[5]))
+                sents = Variable(torch.LongTensor(batch[0]), requires_grad=False)
+                label = Variable(torch.LongTensor(batch[1]), requires_grad=False)
+                heads = Variable(torch.LongTensor(batch[4]), requires_grad=False)
+                xlength = batch[6]
+                tag_rels = Variable(torch.LongTensor(batch[7]), requires_grad=False)
                 if self.opts.use_cuda:
                     sents = sents.cuda()
                     label = label.cuda()
-                    bfs_tensor = bfs_tensor.cuda()
-                    children_batch_list = children_batch_list.cuda()
-                # print(sents.data)
-                pred = self.model(sents, bfs_tensor, children_batch_list)
+                    heads = heads.cuda()
+                    tag_rels = tag_rels.cuda()
+                pred = self.model(sents, tag_rels, heads, xlength)
             else:
                 sents = Variable(torch.LongTensor(batch[0]))
                 label = Variable(torch.LongTensor(batch[1]))

@@ -140,6 +140,7 @@ def build_features(sents_list, alphabet, char_alphabet, label_alphabet, conll_li
 
     features = []
 
+    (conll_list, rel_alpha) = conll_list
     if conll_list is not None:
         assert len(conll_list) == len(sents_list)
 
@@ -168,6 +169,8 @@ def build_features(sents_list, alphabet, char_alphabet, label_alphabet, conll_li
             feature.heads = conll_list[idx][0]
             feature.root = conll_list[idx][1]
             feature.forest = conll_list[idx][2]
+            feature.rels = conll_list[idx][3]
+            feature.rels_ids = get_idx(feature.rels, rel_alpha)
 
         features.append(feature)
 
@@ -175,21 +178,28 @@ def build_features(sents_list, alphabet, char_alphabet, label_alphabet, conll_li
 
 def read_conll(conll_path):
 
-    heads_root_forest_list = []
+    heads_root_forest_rels_list = []
+    dict = collections.OrderedDict()
     with open(conll_path, 'r', encoding='utf8') as f:
         sent = []
         idx = 0
         for line in f.readlines():
             line = line.strip().split()
             if len(line) == 0:
-                heads, root, forest = conll2word_heads_root_forest(sent)
-                heads_root_forest_list.append((heads, root, forest))
+                heads, root, forest, rels = conll2word_heads_root_forest(sent)
+                heads_root_forest_rels_list.append((heads, root, forest, rels))
                 sent = []
                 idx += 1
+                for rel in rels:
+                    if rel not in dict:
+                        dict[rel] = 1
+                    else:
+                        dict[rel] += 1
             else:
                 sent.append(line)
-        print(idx)
-    return heads_root_forest_list
+        rel_alpha, _ = build_vab(dict=dict)
+
+    return heads_root_forest_rels_list, rel_alpha
 
 def conll2word_heads_root_forest(conll_sent):
     '''
@@ -205,16 +215,17 @@ def conll2word_heads_root_forest(conll_sent):
     :return:
     '''
 
-    heads, root, forest = [], None, []
+    heads, root, forest, rels = [], None, [], []
 
     for elem in conll_sent:
         assert type(elem) is list
         assert len(elem) == 10
         heads.append(int(elem[6]) - 1)
+        rels.append(elem[7])
 
     root, forest = createTree(heads)
 
-    return heads, root, forest
+    return heads, root, forest, rels
 
 def tree_add_label(feature_list):
     for feature in feature_list:
@@ -262,6 +273,9 @@ if __name__ == '__main__':
                                         cutoff=parser.freq_vocab,
                                         vcb_size=parser.vcb_size)
     label_alphabet, _ = build_vab(dict=label_dict)
+    rel_alphabet = None
+    if use_tree:
+        rel_alphabet = train_conll_list[1]
 
     train_features = build_features(train_sents_list,
                                     alphabet,
@@ -299,3 +313,4 @@ if __name__ == '__main__':
     torch.save(alphabet, parser.save_dir + '/vocab.sst')
     torch.save(char_alphabet, parser.save_dir + '/char_vocab.sst')
     torch.save(label_alphabet, parser.save_dir + '/label_vocab.sst')
+    torch.save(rel_alphabet, parser.save_dir + '/rel_vocab.sst')
