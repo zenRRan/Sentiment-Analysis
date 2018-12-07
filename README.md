@@ -60,8 +60,12 @@
 | LSTM              | 89.73 | 92.5  | 80.57 | 83.75 | 89.65 |
 | LSTM_CNN          | 92.63 | 92.19 | 81.05 | 83.12 | 89.16 |
 | GRU               | 89.06 | 92.6  | 79.1  | 83.44 | 89.75 |
-| TreeLSTM          | 89.18 | 91.09 | 78.54 | 81.4  | 89.28 |
-| CNN_TreeLSTM      | - | - | 79.11 | - | - |
+| TreeLSTM          | 92.41 | 92.08 | 78.91 | 81.88 | 89.26 |
+| TreeLSTM_rel      | - | - | - | - | - |
+| CNN_TreeLSTM      | - | - | - | - | - |
+| LSTM_TreeLSTM     | - | - | - | - | - |
+
+ps: `pre_trained_embed` which is using `glove.6B.100d.txt`.
 
 ## Question
 If you have any questions about this code, please report to me immediately by `zenrran@qq.com`!

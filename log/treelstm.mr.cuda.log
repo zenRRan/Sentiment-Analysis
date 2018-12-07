@@ -1,0 +1,76 @@
+data_dir=processed_data
+
+----batch----
+train_batch_size=64
+train_batch_type=same
+dev_batch_size=64
+dev_batch_type=normal
+test_batch_size=64
+test_batch_type=normal
+shuffer=True
+sort=True
+
+----embedding----
+embed_size=100
+char_embed_size=50
+embed_uniform_init=0.0
+pre_embed_path=
+
+----model----
+model=treelstm
+save_model_dir=save_models
+save_model_every=1
+save_model_start_from=0
+hidden_num=1
+hidden_size=100
+bidirectional=True
+dropout=0.4
+
+----optimizer----
+lr=0.001
+optim=adam
+weight_decay=1e-08
+momentum=0.9
+early_stop=9999999
+
+----train----
+epoch=100
+print_every=10
+
+----GPU----
+gpu_device=0
+use_cuda=True
+
+----seed----
+gpu_seed=23
+seed=23
+
+----log----
+log_dir=log
+log_fname=treelstm.mr.cuda.log
+
+use CUDA!
+[2018-12-05 18:48:13] Epoch 0 step [10|164] lr=0.00100000 acc: 43.99% loss: 0.027550
+[2018-12-05 18:48:15] Epoch 0 step [20|164] lr=0.00100000 acc: 46.43% loss: 0.018359
+[2018-12-05 18:48:17] Epoch 0 step [30|164] lr=0.00100000 acc: 50.43% loss: 0.013048
+[2018-12-05 18:48:20] Epoch 0 step [40|164] lr=0.00100000 acc: 56.24% loss: 0.012282
+[2018-12-05 18:48:24] Epoch 0 step [50|164] lr=0.00100000 acc: 54.05% loss: 0.011414
+[2018-12-05 18:48:28] Epoch 0 step [60|164] lr=0.00100000 acc: 56.60% loss: 0.010761
+[2018-12-05 18:48:32] Epoch 0 step [70|164] lr=0.00100000 acc: 57.43% loss: 0.012512
+[2018-12-05 18:48:37] Epoch 0 step [80|164] lr=0.00100000 acc: 54.81% loss: 0.011825
+[2018-12-05 18:48:42] Epoch 0 step [90|164] lr=0.00100000 acc: 51.29% loss: 0.011130
+[2018-12-05 18:48:48] Epoch 0 step [100|164] lr=0.00100000 acc: 55.07% loss: 0.011437
+[2018-12-05 18:48:54] Epoch 0 step [110|164] lr=0.00100000 acc: 54.70% loss: 0.011693
+[2018-12-05 18:49:00] Epoch 0 step [120|164] lr=0.00100000 acc: 57.19% loss: 0.012346
+[2018-12-05 18:49:08] Epoch 0 step [130|164] lr=0.00100000 acc: 56.82% loss: 0.012758
+[2018-12-05 18:49:14] Epoch 0 step [140|164] lr=0.00100000 acc: 57.47% loss: 0.014097
+[2018-12-05 18:49:21] Epoch 0 step [150|164] lr=0.00100000 acc: 55.85% loss: 0.014953
+[2018-12-05 18:49:24] Epoch 0 step [160|164] lr=0.00100000 acc: 59.47% loss: 0.035695
+dev acc: 56.25% loss: 0.010720
+test acc: 58.69% loss: 0.010628
+model saved succeed in save_models/2018-12-05-18-49-32-treelstm-model_epoch_0.pt
+Update! best test acc: 58.69%
+[2018-12-05 18:49:34] Epoch 1 step [10|164] lr=0.00100000 acc: 60.09% loss: 0.015552
+[2018-12-05 18:49:36] Epoch 1 step [20|164] lr=0.00100000 acc: 61.84% loss: 0.012289
+[2018-12-05 18:49:38] Epoch 1 step [30|164] lr=0.00100000 acc: 59.10% loss: 0.011458
+[2018-12-05 18:49:42] Epoch 1 step [40|164] lr=0.00100000 acc: 63.27% loss: 0.011097

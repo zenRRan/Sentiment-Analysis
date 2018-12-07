@@ -1,0 +1,143 @@
+data_dir=processed_data
+
+----batch----
+train_batch_size=64
+train_batch_type=same
+dev_batch_size=64
+dev_batch_type=normal
+test_batch_size=64
+test_batch_type=normal
+shuffer=True
+sort=True
+
+----embedding----
+embed_size=100
+char_embed_size=50
+embed_uniform_init=0.0
+pre_embed_path=
+
+----model----
+model=treelstm
+save_model_dir=save_models
+save_model_every=1
+save_model_start_from=0
+hidden_num=1
+hidden_size=100
+bidirectional=True
+dropout=0.1
+
+----optimizer----
+lr=0.001
+optim=adam
+weight_decay=1e-08
+momentum=0.9
+early_stop=9999999
+
+----train----
+epoch=100
+print_every=10
+
+----GPU----
+gpu_device=0
+use_cuda=False
+
+----seed----
+gpu_seed=23
+seed=23
+
+----log----
+log_dir=log
+log_fname=treelstm.subj-d1.log
+
+[2018-12-06 18:08:28] Epoch 0 step [10|179] lr=0.00100000 acc: 51.58% loss: 0.033517
+[2018-12-06 18:08:35] Epoch 0 step [20|179] lr=0.00100000 acc: 51.81% loss: 0.017671
+[2018-12-06 18:08:43] Epoch 0 step [30|179] lr=0.00100000 acc: 52.14% loss: 0.014410
+[2018-12-06 18:08:53] Epoch 0 step [40|179] lr=0.00100000 acc: 49.24% loss: 0.013696
+[2018-12-06 18:09:04] Epoch 0 step [50|179] lr=0.00100000 acc: 52.17% loss: 0.014677
+[2018-12-06 18:09:15] Epoch 0 step [60|179] lr=0.00100000 acc: 50.36% loss: 0.014393
+[2018-12-06 18:09:29] Epoch 0 step [70|179] lr=0.00100000 acc: 49.10% loss: 0.013897
+[2018-12-06 18:09:44] Epoch 0 step [80|179] lr=0.00100000 acc: 52.80% loss: 0.014417
+[2018-12-06 18:10:00] Epoch 0 step [90|179] lr=0.00100000 acc: 52.49% loss: 0.015449
+[2018-12-06 18:10:17] Epoch 0 step [100|179] lr=0.00100000 acc: 49.13% loss: 0.015675
+[2018-12-06 18:10:37] Epoch 0 step [110|179] lr=0.00100000 acc: 54.87% loss: 0.016584
+[2018-12-06 18:10:58] Epoch 0 step [120|179] lr=0.00100000 acc: 51.43% loss: 0.019978
+[2018-12-06 18:11:23] Epoch 0 step [130|179] lr=0.00100000 acc: 48.01% loss: 0.016969
+[2018-12-06 18:11:44] Epoch 0 step [140|179] lr=0.00100000 acc: 45.06% loss: 0.023204
+[2018-12-06 18:11:58] Epoch 0 step [150|179] lr=0.00100000 acc: 61.09% loss: 0.036290
+[2018-12-06 18:12:01] Epoch 0 step [160|179] lr=0.00100000 acc: 79.63% loss: 0.168732
+[2018-12-06 18:12:03] Epoch 0 step [170|179] lr=0.00100000 acc: 100.00% loss: 0.454211
+dev acc: 46.56% loss: 0.012290
+test acc: 48.33% loss: 0.012170
+model saved succeed in save_models/2018-12-06-18-12-13-treelstm-model_epoch_0.pt
+Update! best test acc: 48.33%
+[2018-12-06 18:12:16] Epoch 1 step [10|179] lr=0.00100000 acc: 48.16% loss: 0.024094
+[2018-12-06 18:12:22] Epoch 1 step [20|179] lr=0.00100000 acc: 53.43% loss: 0.014363
+[2018-12-06 18:12:29] Epoch 1 step [30|179] lr=0.00100000 acc: 51.32% loss: 0.013303
+[2018-12-06 18:12:37] Epoch 1 step [40|179] lr=0.00100000 acc: 49.41% loss: 0.013839
+[2018-12-06 18:12:46] Epoch 1 step [50|179] lr=0.00100000 acc: 51.61% loss: 0.015637
+[2018-12-06 18:12:56] Epoch 1 step [60|179] lr=0.00100000 acc: 52.14% loss: 0.014539
+[2018-12-06 18:13:09] Epoch 1 step [70|179] lr=0.00100000 acc: 47.46% loss: 0.013640
+[2018-12-06 18:13:22] Epoch 1 step [80|179] lr=0.00100000 acc: 50.76% loss: 0.014088
+[2018-12-06 18:13:36] Epoch 1 step [90|179] lr=0.00100000 acc: 50.18% loss: 0.014732
+[2018-12-06 18:13:52] Epoch 1 step [100|179] lr=0.00100000 acc: 50.70% loss: 0.014702
+[2018-12-06 18:14:09] Epoch 1 step [110|179] lr=0.00100000 acc: 52.92% loss: 0.015112
+[2018-12-06 18:14:27] Epoch 1 step [120|179] lr=0.00100000 acc: 52.39% loss: 0.016812
+[2018-12-06 18:14:52] Epoch 1 step [130|179] lr=0.00100000 acc: 54.25% loss: 0.015430
+[2018-12-06 18:15:11] Epoch 1 step [140|179] lr=0.00100000 acc: 55.90% loss: 0.023342
+[2018-12-06 18:15:24] Epoch 1 step [150|179] lr=0.00100000 acc: 68.73% loss: 0.035830
+[2018-12-06 18:15:27] Epoch 1 step [160|179] lr=0.00100000 acc: 94.44% loss: 0.170729
+[2018-12-06 18:15:28] Epoch 1 step [170|179] lr=0.00100000 acc: 100.00% loss: 0.388781
+dev acc: 53.44% loss: 0.017368
+test acc: 51.67% loss: 0.017952
+model saved succeed in save_models/2018-12-06-18-15-39-treelstm-model_epoch_1.pt
+Update! best test acc: 51.67%
+[2018-12-06 18:15:42] Epoch 2 step [10|179] lr=0.00100000 acc: 51.58% loss: 0.017859
+[2018-12-06 18:15:47] Epoch 2 step [20|179] lr=0.00100000 acc: 48.01% loss: 0.012763
+[2018-12-06 18:15:55] Epoch 2 step [30|179] lr=0.00100000 acc: 50.49% loss: 0.011939
+[2018-12-06 18:16:03] Epoch 2 step [40|179] lr=0.00100000 acc: 51.61% loss: 0.012407
+[2018-12-06 18:16:11] Epoch 2 step [50|179] lr=0.00100000 acc: 47.45% loss: 0.013957
+[2018-12-06 18:16:21] Epoch 2 step [60|179] lr=0.00100000 acc: 49.47% loss: 0.013324
+[2018-12-06 18:16:33] Epoch 2 step [70|179] lr=0.00100000 acc: 52.86% loss: 0.012280
+[2018-12-06 18:16:46] Epoch 2 step [80|179] lr=0.00100000 acc: 46.69% loss: 0.013259
+[2018-12-06 18:17:01] Epoch 2 step [90|179] lr=0.00100000 acc: 49.47% loss: 0.013895
+[2018-12-06 18:17:17] Epoch 2 step [100|179] lr=0.00100000 acc: 51.05% loss: 0.013842
+[2018-12-06 18:17:34] Epoch 2 step [110|179] lr=0.00100000 acc: 47.96% loss: 0.014482
+[2018-12-06 18:17:52] Epoch 2 step [120|179] lr=0.00100000 acc: 45.51% loss: 0.016015
+[2018-12-06 18:18:15] Epoch 2 step [130|179] lr=0.00100000 acc: 53.73% loss: 0.014475
+[2018-12-06 18:18:36] Epoch 2 step [140|179] lr=0.00100000 acc: 59.04% loss: 0.019344
+[2018-12-06 18:18:48] Epoch 2 step [150|179] lr=0.00100000 acc: 72.00% loss: 0.027072
+[2018-12-06 18:18:51] Epoch 2 step [160|179] lr=0.00100000 acc: 96.30% loss: 0.128282
+[2018-12-06 18:18:52] Epoch 2 step [170|179] lr=0.00100000 acc: 100.00% loss: 0.296868
+dev acc: 53.44% loss: 0.032548
+test acc: 51.67% loss: 0.033752
+not improved, best test acc: 51.67%, in epoch 1
+[2018-12-06 18:19:05] Epoch 3 step [10|179] lr=0.00100000 acc: 51.84% loss: 0.019202
+[2018-12-06 18:19:10] Epoch 3 step [20|179] lr=0.00100000 acc: 54.51% loss: 0.012550
+[2018-12-06 18:19:18] Epoch 3 step [30|179] lr=0.00100000 acc: 49.51% loss: 0.011855
+[2018-12-06 18:19:26] Epoch 3 step [40|179] lr=0.00100000 acc: 47.88% loss: 0.012303
+[2018-12-06 18:19:34] Epoch 3 step [50|179] lr=0.00100000 acc: 52.36% loss: 0.013888
+[2018-12-06 18:19:44] Epoch 3 step [60|179] lr=0.00100000 acc: 50.18% loss: 0.012754
+[2018-12-06 18:19:56] Epoch 3 step [70|179] lr=0.00100000 acc: 50.90% loss: 0.012022
+[2018-12-06 18:20:09] Epoch 3 step [80|179] lr=0.00100000 acc: 48.90% loss: 0.012683
+[2018-12-06 18:20:23] Epoch 3 step [90|179] lr=0.00100000 acc: 50.89% loss: 0.013160
+[2018-12-06 18:20:40] Epoch 3 step [100|179] lr=0.00100000 acc: 50.35% loss: 0.013299
+[2018-12-06 18:20:57] Epoch 3 step [110|179] lr=0.00100000 acc: 46.19% loss: 0.013877
+[2018-12-06 18:21:15] Epoch 3 step [120|179] lr=0.00100000 acc: 48.37% loss: 0.014992
+[2018-12-06 18:21:38] Epoch 3 step [130|179] lr=0.00100000 acc: 53.03% loss: 0.013683
+[2018-12-06 18:21:58] Epoch 3 step [140|179] lr=0.00100000 acc: 58.55% loss: 0.018066
+[2018-12-06 18:22:10] Epoch 3 step [150|179] lr=0.00100000 acc: 72.00% loss: 0.024795
+[2018-12-06 18:22:14] Epoch 3 step [160|179] lr=0.00100000 acc: 96.30% loss: 0.099173
+[2018-12-06 18:22:15] Epoch 3 step [170|179] lr=0.00100000 acc: 100.00% loss: 0.255136
+dev acc: 53.44% loss: 0.040226
+test acc: 51.67% loss: 0.041698
+not improved, best test acc: 51.67%, in epoch 1
+[2018-12-06 18:22:28] Epoch 4 step [10|179] lr=0.00100000 acc: 51.58% loss: 0.021419
+[2018-12-06 18:22:34] Epoch 4 step [20|179] lr=0.00100000 acc: 51.44% loss: 0.013198
+[2018-12-06 18:22:40] Epoch 4 step [30|179] lr=0.00100000 acc: 53.95% loss: 0.011564
+[2018-12-06 18:22:48] Epoch 4 step [40|179] lr=0.00100000 acc: 51.78% loss: 0.012056
+[2018-12-06 18:22:57] Epoch 4 step [50|179] lr=0.00100000 acc: 50.28% loss: 0.013910
+[2018-12-06 18:23:07] Epoch 4 step [60|179] lr=0.00100000 acc: 51.60% loss: 0.012773
+[2018-12-06 18:23:20] Epoch 4 step [70|179] lr=0.00100000 acc: 53.19% loss: 0.011831
+[2018-12-06 18:23:33] Epoch 4 step [80|179] lr=0.00100000 acc: 51.27% loss: 0.012562
+[2018-12-06 18:23:46] Epoch 4 step [90|179] lr=0.00100000 acc: 49.64% loss: 0.013488
+[2018-12-06 18:24:02] Epoch 4 step [100|179] lr=0.00100000 acc: 49.48% loss: 0.013486

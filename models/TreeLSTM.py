@@ -12,7 +12,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable as Var
 import utils.Embedding as Embedding
-from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from utils.tree import *
 import numpy as np
 
@@ -33,44 +32,30 @@ class ChildSumTreeLSTM(nn.Module):
         self.embed_uniform_init = opts.embed_uniform_init
         self.label_num = label_vocab.m_size
         self.rel_num = rel_vocab.m_size
-        self.embed_dropout = opts.embed_dropout
-        self.fc_dropout = opts.fc_dropout
+        self.dropout = opts.dropout
         self.hidden_size = opts.hidden_size
         self.hidden_num = opts.hidden_num
-        self.hidden_dropout = opts.hidden_dropout
         self.bidirectional = opts.bidirectional
         self.use_cuda = opts.use_cuda
         self.debug = False
 
         self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
-        self.rel_embeddings = nn.Embedding(self.rel_num, self.embed_dim)
-        self.rnn = nn.LSTM(
-            self.embed_dim,
-            self.hidden_size,
-            dropout=self.hidden_dropout,
-            num_layers=self.hidden_num,
-            batch_first=True)
+        self.dropout = nn.Dropout(self.dropout)
         if opts.pre_embed_path != '':
             embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
 
-        self.dt_tree = DTTreeLSTM(self.embed_dim * 2, self.hidden_size)
-        self.td_tree = TDTreeLSTM(self.embed_dim * 2, self.hidden_size)
+        self.dt_tree = DTTreeLSTM(self.embed_dim, self.hidden_size, opts.dropout)
+        self.td_tree = TDTreeLSTM(self.embed_dim, self.hidden_size, opts.dropout)
 
-        self.linear1 = nn.Linear(self.hidden_size * 2, self.hidden_size // 2)
-        self.linear2 = nn.Linear(self.hidden_size // 2, self.label_num)
+        self.linear = nn.Linear(self.hidden_size * 2, self.label_num)
 
-    def forward(self, xs, rels, heads, xlengths):
+    def forward(self, xs, heads, xlengths):
 
         emb = self.embeddings(xs)
-        input_packed = pack_padded_sequence(emb, lengths=np.array(xlengths), batch_first=True)
-        out_packed, h_n = self.rnn(input_packed)
-        out = pad_packed_sequence(out_packed, batch_first=True)[0]
-        out = out.contiguous()
+        emb = self.dropout(emb)
 
-        rel_emb = self.rel_embeddings(rels)
-        outputs = torch.cat([out, rel_emb], 2)
-        outputs = outputs.transpose(0, 1)
+        outputs = emb.transpose(0, 1)
 
         max_length, batch_size, input_dim = outputs.size()
 
@@ -88,23 +73,20 @@ class ChildSumTreeLSTM(nn.Module):
 
         out = torch.cat([dt_outputs, td_outputs], dim=2)
         out = torch.transpose(out, 1, 2)
-        out = torch.tanh(out)
         out = F.max_pool1d(out, out.size(2))
         out = out.squeeze(2)
-        out = self.linear1(F.relu(out))
-        out = self.linear2(F.relu(out))
+        out = self.linear(out)
         return out
 
 
-
 class DTTreeLSTM(nn.Module):
-    def __init__(self, input_size, hidden_size):
+    def __init__(self, input_size, hidden_size, dropout):
         """
         """
         super(DTTreeLSTM, self).__init__()
         self._input_size = input_size
         self._hidden_size = hidden_size
-
+        self.dropout = nn.Dropout(dropout)
         # linear parameters for transformation from input to hidden state
         # LSTM
         self.i_x = nn.Linear(in_features=input_size, out_features=hidden_size, bias=True)
@@ -156,8 +138,6 @@ class DTTreeLSTM(nn.Module):
                         left_child_h = [dt_state_h[b][child.index] for child in tree[cur_index].left_children]
                         left_child_c = [dt_state_c[b][child.index] for child in tree[cur_index].left_children]
 
-
-
                     if tree[cur_index].right_num == 0:
                         right_child_h = [zeros]
                         right_child_c = [zeros]
@@ -177,8 +157,6 @@ class DTTreeLSTM(nn.Module):
                     if last_index != lengths[b]:
                         print('bug exists: some nodes are not completed')
                 break
-
-            # add by zenRRan
 
             assert len(left_child_hs) == len(right_child_hs)
             assert len(left_child_cs) == len(right_child_cs)
@@ -202,7 +180,6 @@ class DTTreeLSTM(nn.Module):
                 child_hs[i] = torch.stack(child_hs[i], 0)
                 child_cs[i] = torch.stack(child_cs[i], 0)
 
-            #######
 
             step_inputs = torch.stack(step_inputs, 0)
             child_hs = torch.stack(child_hs, 0)
@@ -221,13 +198,13 @@ class DTTreeLSTM(nn.Module):
 
         outputs, output_t = [], []
 
+        pads = Var(inputs.data.new(self._hidden_size).fill_(-999999))
         for b in range(batch_size):
             output = [dt_state_h[b][idx] for idx in range(0, lengths[b])] \
-                     + [zeros for idx in range(lengths[b], max_length)]
+                     + [pads for idx in range(lengths[b], max_length)]
             outputs.append(torch.stack(output, 0))
 
         return torch.stack(outputs, 0)
-
 
     def node_forward(self, input, child_hs, child_cs):
 
@@ -253,7 +230,7 @@ class DTTreeLSTM(nn.Module):
         c = i * u + torch.sum(fc, 1)
         h = o * torch.tanh(c)
 
-        return h, c
+        return self.dropout(h), c
 
     def node_forward_1(self, input, left_child_h, right_child_h, left_child_c, right_child_c):
         hidden = left_child_h + right_child_h
@@ -277,14 +254,14 @@ class DTTreeLSTM(nn.Module):
         return h, c
 
 
-
 class TDTreeLSTM(nn.Module):
-    def __init__(self, input_size, hidden_size):
+    def __init__(self, input_size, hidden_size, dropout):
         """
         """
         super(TDTreeLSTM, self).__init__()
         self._input_size = input_size
         self._hidden_size = hidden_size
+        self.dropout = nn.Dropout(dropout)
 
         self.i_x = nn.Linear(in_features=input_size, out_features=hidden_size, bias=True)
         self.i_h = nn.Linear(in_features=hidden_size, out_features=hidden_size, bias=True)
@@ -315,8 +292,7 @@ class TDTreeLSTM(nn.Module):
 
         zeros = Var(inputs.data.new(self._hidden_size).fill_(0.))
         for step in range(max_length):
-            step_inputs, left_parent_hs, right_parent_hs, compute_indexes = [], [], [], []
-            left_parent_cs, right_parent_cs = [], []
+            step_inputs, parent_hs, parent_cs, compute_indexes = [], [], [], []
             for b, tree in enumerate(trees):
                 last_index = last_indexes[b]
                 for idx in reversed(range(last_index)):
@@ -329,23 +305,13 @@ class TDTreeLSTM(nn.Module):
                     parent_h = zeros
                     parent_c = zeros
                     if tree[cur_index].parent is None:
-                        left_parent_hs.append(parent_h)
-                        right_parent_hs.append(parent_h)
-                        left_parent_cs.append(parent_c)
-                        right_parent_cs.append(parent_c)
+                        parent_hs.append(parent_h)
+                        parent_cs.append(parent_c)
                     else:
                         valid_parent_h = td_state_h[b][tree[cur_index].parent.index]
                         valid_parent_c = td_state_c[b][tree[cur_index].parent.index]
-                        if tree[cur_index].is_left:
-                            left_parent_hs.append(valid_parent_h)
-                            right_parent_hs.append(parent_h)
-                            left_parent_cs.append(valid_parent_c)
-                            right_parent_cs.append(parent_c)
-                        else:
-                            left_parent_hs.append(parent_h)
-                            right_parent_hs.append(valid_parent_h)
-                            left_parent_cs.append(parent_c)
-                            right_parent_cs.append(valid_parent_c)
+                        parent_hs.append(valid_parent_h)
+                        parent_cs.append(valid_parent_c)
 
             if len(compute_indexes) == 0:
                 for last_index in last_indexes:
@@ -354,12 +320,8 @@ class TDTreeLSTM(nn.Module):
                 break
 
             step_inputs = torch.stack(step_inputs, 0)
-            left_parent_hs = torch.stack(left_parent_hs, 0)
-            right_parent_hs = torch.stack(right_parent_hs, 0)
-            parent_hs = left_parent_hs + right_parent_hs
-            left_parent_cs = torch.stack(left_parent_cs, 0)
-            right_parent_cs = torch.stack(right_parent_cs, 0)
-            parent_cs = left_parent_cs + right_parent_cs
+            parent_hs = torch.stack(parent_hs, 0)
+            parent_cs = torch.stack(parent_cs, 0)
 
             h, c = self.node_forward(step_inputs, parent_hs, parent_cs)
             for idx, (b, cur_index) in enumerate(compute_indexes):
@@ -375,9 +337,10 @@ class TDTreeLSTM(nn.Module):
                         print('strange bug')
 
         outputs, output_t = [], []
+        pads = Var(inputs.data.new(self._hidden_size).fill_(-999999))
         for b in range(batch_size):
             output = [td_state_h[b][idx] for idx in range(0, lengths[b])] \
-                     + [zeros for idx in range(lengths[b], max_length)]
+                     + [pads for idx in range(lengths[b], max_length)]
             outputs.append(torch.stack(output, 0))
 
         return torch.stack(outputs, 0)
@@ -399,7 +362,7 @@ class TDTreeLSTM(nn.Module):
         c = i * u + f * parent_cs
         h = o * torch.tanh(c)
 
-        return h, c
+        return self.dropout(h), c
 
     def node_forward_1(self, input, left_parent_hs, right_parents_hs, left_parent_cs, right_parent_cs):
         hidden = left_parent_hs + right_parents_hs

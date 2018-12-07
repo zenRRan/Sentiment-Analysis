@@ -16,7 +16,7 @@ import random
 
 class Build_Batch:
 
-    def __init__(self, features, opts, batch_size, pad_idx, char_padding_id):
+    def __init__(self, features, opts, batch_size, pad_idx, char_padding_id,rel_padding_id=None):
 
         self.batch_size = batch_size
         self.features = features
@@ -29,6 +29,7 @@ class Build_Batch:
 
         self.PAD = pad_idx
         self.CPAD = char_padding_id
+        self.RPAD = rel_padding_id
 
         random.seed(opts.seed)
 
@@ -57,7 +58,7 @@ class Build_Batch:
                 ids, char_ids, labels, forest, heads, children_batch_list, tag_rels = self.choose_data_from_features(new_list)
                 ids_lengths = [len(id) for id in ids]
                 ids = self.add_pad(ids, self.PAD)
-                tag_rels = self.add_pad(tag_rels, self.PAD)
+                tag_rels = self.add_pad(tag_rels, self.RPAD)
                 char_ids = self.add_char_pad(char_ids, ids, self.CPAD)
                 self.data_batchs.append((ids, labels, char_ids, forest, heads, children_batch_list, ids_lengths, tag_rels))
                 new_list = []
@@ -92,7 +93,7 @@ class Build_Batch:
                 ids, char_ids, labels, forest, heads, children_batch_list, tag_rels = self.choose_data_from_features(new_list)
                 ids_lengths = [len(id) for id in ids]
                 ids = self.add_pad(ids, self.PAD)
-                tag_rels = self.add_pad(tag_rels, self.PAD)
+                tag_rels = self.add_pad(tag_rels, self.RPAD)
                 char_ids = self.add_char_pad(char_ids, ids, self.CPAD)
                 self.data_batchs.append((ids, labels, char_ids, forest, heads, children_batch_list, ids_lengths, tag_rels))
                 new_list = []

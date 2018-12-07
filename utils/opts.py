@@ -56,6 +56,7 @@ def trainer_opts(parser):
     #embedding
     parser.add_argument('-embed_size', type=int, default=100, help='embedding size, default 100, \
                         recommand 100, 200, 300')
+    parser.add_argument('-rel_embed_size', type=int, default=50, help="rels' embedding size")
     parser.add_argument('-char_embed_size', type=int, default=50, help='char embedding size, default 50')
     parser.add_argument('-pre_embed_path', type=str, default='', help='pretrained embedding path')
     parser.add_argument('-embed_uniform_init', type=float, default=0,
@@ -115,8 +116,8 @@ def trainer_opts(parser):
     parser.add_argument('-save_model_start_from', type=int, default=0, help='save model start from this epoch')
 
     #dropout
-    parser.add_argument('-embed_dropout', type=float, default=0, help='embedding dropout')
-    parser.add_argument('-fc_dropout', type=float, default=0, help='full connection dropout')
+    parser.add_argument('-dropout', type=float, default=0)
+    # parser.add_argument('-fc_dropout', type=float, default=0, help='full connection dropout')
 
     #cnn
     parser.add_argument('-kernel_size', type=list, default=[1, 2, 3, 4], help="cnn's kernel size, default [3,5,7]")
@@ -126,7 +127,7 @@ def trainer_opts(parser):
     #rnn
     parser.add_argument('-hidden_size', type=int, default=128, help="rnn's hidden size, default 128")
     parser.add_argument('-hidden_num', type=int, default=1, help="rnn's hidden num, default 1")
-    parser.add_argument('-hidden_dropout', type=float, default=0, help='rnn hidden dropout')
+    # parser.add_argument('-hidden_dropout', type=float, default=0, help='rnn hidden dropout')
     parser.add_argument('-bidirectional', action='store_true', help='selected you will train birnn')
 
     # parser.add_argument('-', type=int, default=1, help='')

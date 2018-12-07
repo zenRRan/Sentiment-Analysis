@@ -1,0 +1,60 @@
+data_dir=mpqa_processed_data
+
+----batch----
+train_batch_size=64
+train_batch_type=normal
+dev_batch_size=64
+dev_batch_type=normal
+test_batch_size=64
+test_batch_type=normal
+shuffer=True
+sort=True
+
+----embedding----
+embed_size=100
+char_embed_size=50
+embed_uniform_init=0.0
+pre_embed_path=/home/zrr/projects/Data/glove.6B/glove.6B.100d.txt
+
+----model----
+model=treelstm_rel
+save_model_dir=save_models
+save_model_every=1
+save_model_start_from=0
+hidden_num=1
+hidden_size=100
+bidirectional=True
+dropout=0.1
+
+----optimizer----
+lr=0.001
+optim=adam
+weight_decay=1e-08
+momentum=0.9
+early_stop=9999999
+
+----train----
+epoch=100
+print_every=10
+
+----GPU----
+gpu_device=0
+use_cuda=False
+
+----seed----
+gpu_seed=23
+seed=23
+
+----log----
+log_dir=log
+log_fname=treelstm_rel.mpqa.log
+
+[2018-12-07 16:23:50] Epoch 0 step [10|132] lr=0.00100000 acc: 55.00% loss: 0.018125
+[2018-12-07 16:23:50] Epoch 0 step [20|132] lr=0.00100000 acc: 64.06% loss: 0.011214
+[2018-12-07 16:23:50] Epoch 0 step [30|132] lr=0.00100000 acc: 75.62% loss: 0.008266
+[2018-12-07 16:23:51] Epoch 0 step [40|132] lr=0.00100000 acc: 86.09% loss: 0.006651
+[2018-12-07 16:23:51] Epoch 0 step [50|132] lr=0.00100000 acc: 80.62% loss: 0.007184
+[2018-12-07 16:23:52] Epoch 0 step [60|132] lr=0.00100000 acc: 82.50% loss: 0.006474
+[2018-12-07 16:23:53] Epoch 0 step [70|132] lr=0.00100000 acc: 83.91% loss: 0.005944
+[2018-12-07 16:23:55] Epoch 0 step [80|132] lr=0.00100000 acc: 85.31% loss: 0.005986
+[2018-12-07 16:23:56] Epoch 0 step [90|132] lr=0.00100000 acc: 83.59% loss: 0.006188

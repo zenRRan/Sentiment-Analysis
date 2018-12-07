@@ -16,6 +16,8 @@ from models.Char_CNN import Char_CNN
 from models.LSTM_CNN import LSTM_CNN
 from models.Pooling import Pooling
 from models.Tree_LSTM import BatchChildSumTreeLSTM
+from models.TreeLSTM_rel import ChildSumTreeLSTM_rel
+from models.LSTM_TreeLSTM_rels import LSTM_ChildSumTreeLSTM_rel
 from models.TreeLSTM import ChildSumTreeLSTM
 from models.CNN_TreeLSTM import CNN_TreeLSTM
 from models.LSTM_TreeLSTM import LSTM_TreeLSTM
@@ -84,12 +86,18 @@ class Trainer:
         '''
         padding_id = self.vocab.from_string(padding_key)
         char_padding_id = self.char_vocab.from_string(padding_key)
+        rel_padding_id = None
+        if self.rels_vocab is not None:
+            rel_padding_id = self.rels_vocab.from_string(padding_key)
         self.train_build_batch = Build_Batch(features=self.train_features_list, batch_size=self.opts.train_batch_size,
-                                             opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id)
+                                             opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id,
+                                             rel_padding_id=rel_padding_id)
         self.dev_build_batch = Build_Batch(features=self.dev_features_list, batch_size=self.opts.dev_batch_size,
-                                           opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id)
+                                           opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id,
+                                           rel_padding_id=rel_padding_id)
         self.test_build_batch = Build_Batch(features=self.test_features_list, batch_size=self.opts.test_batch_size,
-                                            opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id)
+                                            opts=self.opts, pad_idx=padding_id, char_padding_id=char_padding_id,
+                                            rel_padding_id=rel_padding_id)
 
         if self.opts.train_batch_type == 'normal':
             self.train_batch_features, self.train_data_batchs = self.train_build_batch.create_sorted_normal_batch()
@@ -138,6 +146,14 @@ class Trainer:
             self.tree = True
             self.model = ChildSumTreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
                                           rel_vocab=self.rels_vocab)
+        elif self.opts.model == 'lstm_treelstm_rel':
+            self.tree = True
+            self.model = LSTM_ChildSumTreeLSTM_rel(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
+                                                   rel_vocab=self.rels_vocab)
+        elif self.opts.model == 'treelstm_rel':
+            self.tree = True
+            self.model = ChildSumTreeLSTM_rel(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
+                                                   rel_vocab=self.rels_vocab)
         elif self.opts.model == 'cnn_treelstm':
             self.tree = True
             self.model = CNN_TreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
@@ -146,6 +162,8 @@ class Trainer:
             self.model = LSTM_TreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
         else:
             raise RuntimeError('please choose your model first!')
+
+        print(self.model)
 
         if self.opts.use_cuda:
             self.model = self.model.cuda()
@@ -185,7 +203,7 @@ class Trainer:
                     sents = Variable(torch.LongTensor(batch[0]), requires_grad=False)
                     # tree = batch[3][0]
                     label = Variable(torch.LongTensor(batch[1]), requires_grad=False)
-                    heads = Variable(torch.LongTensor(batch[4]), requires_grad=False)
+                    heads = batch[4]
                     # bfs_tensor = Variable(torch.LongTensor(batch[4]), requires_grad=False)
                     # children_batch_list = Variable(torch.LongTensor(batch[5]), requires_grad=False)
                     xlength = batch[6]
@@ -193,9 +211,11 @@ class Trainer:
                     if self.opts.use_cuda:
                         sents = sents.cuda()
                         label = label.cuda()
-                        heads = heads.cuda()
                         tag_rels = tag_rels.cuda()
-                    pred = self.model(sents, tag_rels, heads, xlength)
+                    if self.opts.model == 'treelstm':
+                        pred = self.model(sents, heads, xlength)
+                    if self.opts.model == 'lstm_treelstm_rel' or self.opts.model == 'treelstm_rel':
+                        pred = self.model(sents, tag_rels, heads, xlength)
                 else:
                     sents = Variable(torch.LongTensor(batch[0]))
                     label = Variable(torch.LongTensor(batch[1]))
@@ -215,7 +235,6 @@ class Trainer:
                         pred = self.model(sents, char_data)
                     else:
                         pred = self.model(sents)
-
 
                 loss = F.cross_entropy(pred, label)
 
@@ -249,7 +268,7 @@ class Trainer:
 
             dev_score = self.accurcy(type='dev')
             test_score = self.accurcy(type='test')
-            if dev_score > self.best_dev:
+            if dev_score > self.best_dev and test_score > self.best_dev_test:
                 early_stop_count = 0
                 lr_decay_count = 0
                 self.best_dev = dev_score
@@ -258,6 +277,11 @@ class Trainer:
                 log = "Update! best test acc: {:.2f}%".format(self.best_dev_test)
                 print(log)
                 self.save_model(epoch)
+            elif dev_score > self.best_dev:
+                self.best_dev = dev_score
+                self.best_dev_epoch = epoch
+                log = "not improved, best test acc: {:.2f}%, in epoch {}".format(self.best_dev_test,
+                                                                                 self.best_dev_epoch)
             else:
                 early_stop_count += 1
                 lr_decay_count += 1
@@ -317,15 +341,17 @@ class Trainer:
             if self.tree:
                 sents = Variable(torch.LongTensor(batch[0]), requires_grad=False)
                 label = Variable(torch.LongTensor(batch[1]), requires_grad=False)
-                heads = Variable(torch.LongTensor(batch[4]), requires_grad=False)
+                heads = batch[4]
                 xlength = batch[6]
                 tag_rels = Variable(torch.LongTensor(batch[7]), requires_grad=False)
                 if self.opts.use_cuda:
                     sents = sents.cuda()
                     label = label.cuda()
-                    heads = heads.cuda()
                     tag_rels = tag_rels.cuda()
-                pred = self.model(sents, tag_rels, heads, xlength)
+                if self.opts.model == 'treelstm':
+                    pred = self.model(sents, heads, xlength)
+                if self.opts.model == 'lstm_treelstm_rel' or self.opts.model == 'treelstm_rel':
+                    pred = self.model(sents, tag_rels, heads, xlength)
             else:
                 sents = Variable(torch.LongTensor(batch[0]))
                 label = Variable(torch.LongTensor(batch[1]))

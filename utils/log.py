@@ -41,7 +41,7 @@ class Log:
             f.write('embed_size=' + str(self.opts.embed_size) + '\n')
             f.write('char_embed_size=' + str(self.opts.char_embed_size) + '\n')
             f.write('embed_uniform_init=' + str(self.opts.embed_uniform_init) + '\n')
-            f.write('embed_dropout=' + str(self.opts.embed_dropout) + '\n')
+            # f.write('embed_dropout=' + str(self.opts.embed_dropout) + '\n')
             f.write('pre_embed_path=' + str(self.opts.pre_embed_path) + '\n')
             f.write('\n')
 
@@ -56,13 +56,11 @@ class Log:
                 f.write('kernel_size=' + str(self.opts.kernel_size) + '\n')
                 f.write('stride=' + str(self.opts.stride) + '\n')
 
-
             elif 'lstm' in self.opts.model or 'gru' in self.opts.model:
                 f.write('hidden_num=' + str(self.opts.hidden_num) + '\n')
                 f.write('hidden_size=' + str(self.opts.hidden_size) + '\n')
-                f.write('hidden_dropout=' + str(self.opts.hidden_dropout) + '\n')
                 f.write('bidirectional=' + str(self.opts.bidirectional) + '\n')
-            f.write('fc_dropout=' + str(self.opts.fc_dropout) + '\n')
+            f.write('dropout=' + str(self.opts.dropout) + '\n')
             f.write('\n')
 
             f.write('----optimizer----\n')

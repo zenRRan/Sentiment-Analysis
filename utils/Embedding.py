@@ -110,11 +110,12 @@ def load_predtrained_emb_zero(path, words_dic, padding=False):
                 break
     word_size = len(words_dic)
     print("The word size is ", word_size)
-    print("The dim of predtrained embedding is ", embeding_dim, "\n")
+    print("The dim of predtrained embedding is ", embeding_dim)
 
     embedding = np.zeros((word_size, embeding_dim))
     in_word_list = []
-    OOV = 0
+    in_words = 0
+    # OOV = 0
     with open(path, encoding='utf-8') as f:
         for line in f.readlines():
             line = line.strip().split(' ')
@@ -123,10 +124,11 @@ def load_predtrained_emb_zero(path, words_dic, padding=False):
                 vector = np.array(line[1:], dtype='float32')
                 embedding[index] = vector
                 in_word_list.append(index)
-            else:
-                OOV += 1
+                in_words += 1
+            # else:
+            #     OOV += 1
     print("done")
-    print("{} words, {} in_words    {} OOV!".format(len(words_dic), len(words_dic)-OOV, OOV))
+    print("{} words, {} in_words    {} OOV!".format(len(words_dic), in_words, len(words_dic) - in_words))
     # print(embedding)
     return torch.from_numpy(embedding).float()
 
