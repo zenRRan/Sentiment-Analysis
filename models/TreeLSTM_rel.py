@@ -16,6 +16,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable as Var
 import utils.Embedding as Embedding
+import torch.nn.init as init
 from utils.tree import *
 import numpy as np
 
@@ -50,6 +51,7 @@ class ChildSumTreeLSTM_rel(nn.Module):
         if opts.pre_embed_path != '':
             embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
+        init.uniform_(self.rel_embeddings.weight.data, -self.embed_uniform_init, self.embed_uniform_init)
 
         self.dt_tree = DTTreeLSTM(self.embed_dim + self.rel_embed_dim, self.hidden_size, opts.dropout)
         self.td_tree = TDTreeLSTM(self.embed_dim + self.rel_embed_dim, self.hidden_size, opts.dropout)
@@ -63,7 +65,7 @@ class ChildSumTreeLSTM_rel(nn.Module):
         emb = self.embeddings(xs)
         rel_emb = self.rel_embeddings(rels)
         outputs = torch.cat([emb, rel_emb], 2)
-        outputs = self.dropout(outputs)
+        # outputs = self.dropout(outputs)
         outputs = outputs.transpose(0, 1)
 
         max_length, batch_size, input_dim = outputs.size()
@@ -85,6 +87,8 @@ class ChildSumTreeLSTM_rel(nn.Module):
         out = F.max_pool1d(out, out.size(2))
         out = out.squeeze(2)
         out = self.linear(out)
+        out = F.tanh(out)
+        out = self.dropout(out)
         return out
 
 
@@ -150,8 +154,6 @@ class DTTreeLSTM(nn.Module):
                         left_child_h = [dt_state_h[b][child.index] for child in tree[cur_index].left_children]
                         left_child_c = [dt_state_c[b][child.index] for child in tree[cur_index].left_children]
 
-
-
                     if tree[cur_index].right_num == 0:
                         right_child_h = [zeros]
                         right_child_c = [zeros]
@@ -213,10 +215,10 @@ class DTTreeLSTM(nn.Module):
                         print('strange bug')
 
         outputs, output_t = [], []
-        pads = Var(inputs.data.new(self._hidden_size).fill_(-9999999))
+        # pads = Var(inputs.data.new(self._hidden_size).fill_(-9999999))
         for b in range(batch_size):
             output = [dt_state_h[b][idx] for idx in range(0, lengths[b])] \
-                     + [pads for idx in range(lengths[b], max_length)]
+                     + [zeros for idx in range(lengths[b], max_length)]
             outputs.append(torch.stack(output, 0))
 
         return torch.stack(outputs, 0)
@@ -245,7 +247,7 @@ class DTTreeLSTM(nn.Module):
         c = i * u + torch.sum(fc, 1)
         h = o * torch.tanh(c)
 
-        return self.dropout(h), c
+        return self.h, c
 
     def node_forward_1(self, input, left_child_h, right_child_h, left_child_c, right_child_c):
         hidden = left_child_h + right_child_h
@@ -368,10 +370,10 @@ class TDTreeLSTM(nn.Module):
                         print('strange bug')
 
         outputs, output_t = [], []
-        pads = Var(inputs.data.new(self._hidden_size).fill_(-9999999))
+        # pads = Var(inputs.data.new(self._hidden_size).fill_(-9999999))
         for b in range(batch_size):
             output = [td_state_h[b][idx] for idx in range(0, lengths[b])] \
-                     + [pads for idx in range(lengths[b], max_length)]
+                     + [zeros for idx in range(lengths[b], max_length)]
             outputs.append(torch.stack(output, 0))
 
         return torch.stack(outputs, 0)

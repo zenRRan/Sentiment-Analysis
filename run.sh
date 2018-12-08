@@ -1,6 +1,6 @@
 #! /bin/sh
 
-model='treelstm'
+model='treelstm_rel'
 data='cr'
 nohup python3.5 -u main.py -model $model -data_dir ${data}_processed_data \
        -train_batch_size 64 -train_batch_type same \

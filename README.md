@@ -29,8 +29,7 @@
     * Feature.py which is implemented a sentence's features, including word, word_id, label, root and so on.
     * build-batch.py which is used to build the data's mini batch.
     * log.py which is used to save the log.
-    * opts.py
-    *  which is implemented the argparses.
+    * opts.py which is implemented the argparses.
     * trainer.py which is used to train the data.
     * tree.py which is implemented the tree's methods.
 
@@ -60,8 +59,8 @@
 | LSTM              | 89.73 | 92.5  | 80.57 | 83.75 | 89.65 |
 | LSTM_CNN          | 92.63 | 92.19 | 81.05 | 83.12 | 89.16 |
 | GRU               | 89.06 | 92.6  | 79.1  | 83.44 | 89.75 |
-| TreeLSTM          | 92.41 | 92.08 | 78.91 | 81.88 | 89.26 |
-| TreeLSTM_rel      | - | - | - | - | - |
+| TreeLSTM          | 92.41 | 92.08 | 78.91 | 82.19 | 89.26 |
+| TreeLSTM_rel      | 91.07 | 91.46 | 78.81 | 82.81 | 89.45 |
 | CNN_TreeLSTM      | - | - | - | - | - |
 | LSTM_TreeLSTM     | - | - | - | - | - |
 

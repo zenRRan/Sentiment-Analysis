@@ -268,7 +268,7 @@ class Trainer:
 
             dev_score = self.accurcy(type='dev')
             test_score = self.accurcy(type='test')
-            if dev_score > self.best_dev and test_score > self.best_dev_test:
+            if dev_score >= self.best_dev and test_score > self.best_dev_test:
                 early_stop_count = 0
                 lr_decay_count = 0
                 self.best_dev = dev_score

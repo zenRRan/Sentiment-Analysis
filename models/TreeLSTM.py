@@ -198,10 +198,10 @@ class DTTreeLSTM(nn.Module):
 
         outputs, output_t = [], []
 
-        pads = Var(inputs.data.new(self._hidden_size).fill_(-999999))
+        # pads = Var(inputs.data.new(self._hidden_size).fill_(-999999))
         for b in range(batch_size):
             output = [dt_state_h[b][idx] for idx in range(0, lengths[b])] \
-                     + [pads for idx in range(lengths[b], max_length)]
+                     + [zeros for idx in range(lengths[b], max_length)]
             outputs.append(torch.stack(output, 0))
 
         return torch.stack(outputs, 0)
@@ -337,10 +337,10 @@ class TDTreeLSTM(nn.Module):
                         print('strange bug')
 
         outputs, output_t = [], []
-        pads = Var(inputs.data.new(self._hidden_size).fill_(-999999))
+        # pads = Var(inputs.data.new(self._hidden_size).fill_(-999999))
         for b in range(batch_size):
             output = [td_state_h[b][idx] for idx in range(0, lengths[b])] \
-                     + [pads for idx in range(lengths[b], max_length)]
+                     + [zeros for idx in range(lengths[b], max_length)]
             outputs.append(torch.stack(output, 0))
 
         return torch.stack(outputs, 0)
