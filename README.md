@@ -49,7 +49,7 @@
 ## Result
 
 
-| Data/Model        | TREC  | SUBJ  | MR    | CR    | MPQA  |
+| Data/Model(acc)   | TREC  | SUBJ  | MR    | CR    | MPQA  |
 | ------            | ------ | ------ | ------ | ------ | ------ |
 | Pooling           | 76.12 | 89.58 | 74.51 | 80 | 86.43 |
 | CNN               | 90.4  | 91.98 | 77.73 | 84.38 | 88.96 |
@@ -66,9 +66,20 @@
 | CNN_TreeLSTM      | - | - | - | - | - |
 | LSTM_TreeLSTM     | - | - | - | - | - |
 
-#### in addition:
+### In addition:
+
+#### Data
+ - TREC: `TREC question dataset` - task involves classifying a question into 6 question types (whether the question is about person, location, numeric information, etc.) (Li and Roth, 2002).
+ - SUBJ: `Subjectivity dataset` where the task is to classify a sentence as being subjective or objective (Pang and Lee, 2004).
+ - MR: `Movie reviews` with one sentence per review. Classification involves detecting positive/negative reviews (Pang and Lee, 2005).
+ - CR: `Customer reviews` of various products (cameras, MP3s etc.). Task is to predict positive/negative reviews (Hu and Liu, 2004).
+ - MPQA: `The MPQA Opinion Corpus` contains news articles from a wide variety of news sources manually annotated for opinions and other private states (i.e., beliefs, emotions, sentiments, speculations, etc.).
+
+#### Emphasize
  - `pre_trained_embed` which is using `glove.6B.100d.txt`.
- - `TreeLSTM` which is using `ChildSum` method(other methods about `TreeLSTM` will be update in the near future).
+ - `TreeLSTM` which is using `ChildSum` method.
+#### Future Work
+ Other methods about `TreeLSTM` will be updated in the near future.
 
 ## Question
 Glad to receive your report by `zenrran@qq.com`, If you have any questions about this code !
