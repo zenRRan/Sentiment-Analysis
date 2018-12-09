@@ -8,7 +8,7 @@
     * MPQA
 
 - My processed data by preprocessed.sh will be saved in [processed_data](https://github.com/zenRRan/Sentiment-Analysis/tree/master/processed_data).
-* Trere are many models in [models](https://github.com/zenRRan/Sentiment-Analysis/tree/master/models).
+* There are many models in [models](https://github.com/zenRRan/Sentiment-Analysis/tree/master/models).
     * Pooling
     * CNN
     * Multi_Channel_CNN
@@ -25,7 +25,7 @@
     * LSTM_TreeLSTM(ready to refresh)
     * Transformer(TODO)
 - My log will be saved in [log](https://github.com/zenRRan/Sentiment-Analysis/tree/master/log).
-* Trere are many scripts in [utils](https://github.com/zenRRan/Sentiment-Analysis/tree/master/utils).
+* There are many scripts in [utils](https://github.com/zenRRan/Sentiment-Analysis/tree/master/utils).
     * Alphabet.py which is used to build dictionary.
     * Common.py which is saved unk-key and pad-key.
     * Embedding.py which is used to load pre_train embedding by Yang Song.
