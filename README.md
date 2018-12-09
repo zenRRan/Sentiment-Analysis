@@ -68,7 +68,7 @@
 
 #### in addition:
  - `pre_trained_embed` which is using `glove.6B.100d.txt`.
- - `TreeLSTM` which is using `ChildSum` method(other method about `TreeLSTM` will be update in the near future).
+ - `TreeLSTM` which is using `ChildSum` method(other methods about `TreeLSTM` will be update in the near future).
 
 ## Question
 Glad to receive your report by `zenrran@qq.com`, If you have any questions about this code !
