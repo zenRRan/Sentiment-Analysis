@@ -16,9 +16,11 @@ from models.Char_CNN import Char_CNN
 from models.LSTM_CNN import LSTM_CNN
 from models.Pooling import Pooling
 from models.Tree_LSTM import BatchChildSumTreeLSTM
-from models.TreeLSTM_rel import ChildSumTreeLSTM_rel
-from models.LSTM_TreeLSTM_rels import LSTM_ChildSumTreeLSTM_rel
 from models.TreeLSTM import ChildSumTreeLSTM
+from models.biTreeLSTM import biChildSumTreeLSTM
+from models.TreeLSTM_rel import ChildSumTreeLSTM_rel
+from models.biTreeLSTM_rel import biChildSumTreeLSTM_rel
+from models.LSTM_TreeLSTM_rels import LSTM_ChildSumTreeLSTM_rel
 from models.CNN_TreeLSTM import CNN_TreeLSTM
 from models.LSTM_TreeLSTM import LSTM_TreeLSTM
 from utils.Common import padding_key
@@ -146,13 +148,17 @@ class Trainer:
             self.tree = True
             self.model = ChildSumTreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
                                           rel_vocab=self.rels_vocab)
-        elif self.opts.model == 'lstm_treelstm_rel':
+        elif self.opts.model == 'bitreelstm':
             self.tree = True
-            self.model = LSTM_ChildSumTreeLSTM_rel(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
-                                                   rel_vocab=self.rels_vocab)
+            self.model = biChildSumTreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
+                                          rel_vocab=self.rels_vocab)
         elif self.opts.model == 'treelstm_rel':
             self.tree = True
             self.model = ChildSumTreeLSTM_rel(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
+                                                   rel_vocab=self.rels_vocab)
+        elif self.opts.model == 'bitreelstm_rel':
+            self.tree = True
+            self.model = biChildSumTreeLSTM_rel(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
                                                    rel_vocab=self.rels_vocab)
         elif self.opts.model == 'cnn_treelstm':
             self.tree = True
@@ -160,6 +166,10 @@ class Trainer:
         elif self.opts.model == 'lstm_treelstm':
             self.tree = True
             self.model = LSTM_TreeLSTM(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab)
+        elif self.opts.model == 'lstm_treelstm_rel':
+            self.tree = True
+            self.model = LSTM_ChildSumTreeLSTM_rel(opts=self.opts, vocab=self.vocab, label_vocab=self.label_vocab,
+                                                   rel_vocab=self.rels_vocab)
         else:
             raise RuntimeError('please choose your model first!')
 
@@ -212,9 +222,9 @@ class Trainer:
                         sents = sents.cuda()
                         label = label.cuda()
                         tag_rels = tag_rels.cuda()
-                    if self.opts.model == 'treelstm':
+                    if self.opts.model in ['treelstm', 'bitreelstm']:
                         pred = self.model(sents, heads, xlength)
-                    if self.opts.model == 'lstm_treelstm_rel' or self.opts.model == 'treelstm_rel':
+                    if self.opts.model in ['lstm_treelstm_rel', 'treelstm_rel', 'bitreelstm_rel']:
                         pred = self.model(sents, tag_rels, heads, xlength)
                 else:
                     sents = Variable(torch.LongTensor(batch[0]))
@@ -268,7 +278,7 @@ class Trainer:
 
             dev_score = self.accurcy(type='dev')
             test_score = self.accurcy(type='test')
-            if dev_score >= self.best_dev and test_score > self.best_dev_test:
+            if dev_score > self.best_dev and test_score > self.best_dev_test:
                 early_stop_count = 0
                 lr_decay_count = 0
                 self.best_dev = dev_score
@@ -348,9 +358,9 @@ class Trainer:
                     sents = sents.cuda()
                     label = label.cuda()
                     tag_rels = tag_rels.cuda()
-                if self.opts.model == 'treelstm':
+                if self.opts.model in ['treelstm', 'bitreelstm']:
                     pred = self.model(sents, heads, xlength)
-                if self.opts.model == 'lstm_treelstm_rel' or self.opts.model == 'treelstm_rel':
+                if self.opts.model in ['lstm_treelstm_rel', 'treelstm_rel', 'bitreelstm_rel']:
                     pred = self.model(sents, tag_rels, heads, xlength)
             else:
                 sents = Variable(torch.LongTensor(batch[0]))

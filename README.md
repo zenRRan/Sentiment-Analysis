@@ -59,12 +59,16 @@
 | LSTM              | 89.73 | 92.5  | 80.57 | 83.75 | 89.65 |
 | LSTM_CNN          | 92.63 | 92.19 | 81.05 | 83.12 | 89.16 |
 | GRU               | 89.06 | 92.6  | 79.1  | 83.44 | 89.75 |
-| TreeLSTM          | 92.41 | 92.08 | 78.91 | 82.19 | 89.26 |
-| TreeLSTM_rel      | 91.07 | 91.46 | 78.81 | 82.81 | 89.45 |
+| TreeLSTM          | 89.96 | 92.71 | 78.61 | 84.38 | 88.67 |
+| biTreeLSTM        | 92.41 | 92.08 | 78.91 | 82.19 | 89.26 |
+| TreeLSTM_rel      | 91.29 | 92.19 | 79.69 | 84.06 | 89.06 |
+| biTreeLSTM_rel    | 91.07 | 91.46 | 78.81 | 82.81 | 89.45 |
 | CNN_TreeLSTM      | - | - | - | - | - |
 | LSTM_TreeLSTM     | - | - | - | - | - |
 
-ps: `pre_trained_embed` which is using `glove.6B.100d.txt`.
+#### in addition:
+ - `pre_trained_embed` which is using `glove.6B.100d.txt`.
+ - `TreeLSTM` which is using `ChildSum` method(other method about `TreeLSTM` will be update in the near future).
 
 ## Question
-If you have any questions about this code, please report to me immediately by `zenrran@qq.com`!
+Glad to receive your report by `zenrran@qq.com`, If you have any questions about this code !

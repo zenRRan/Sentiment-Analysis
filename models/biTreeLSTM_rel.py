@@ -1,9 +1,9 @@
 # Version python3.6
 # -*- coding: utf-8 -*-
-# @Time    : 2018/11/24 3:14 PM
+# @Time    : 2018/12/8 11:05 PM
 # @Author  : zenRRan
 # @Email   : zenrran@qq.com
-# @File    : TreeLSTM.py
+# @File    : biTreeLSTM_rel.py
 # @Software: PyCharm Community Edition
 
 
@@ -17,15 +17,16 @@ import numpy as np
 
 import random
 
-class ChildSumTreeLSTM(nn.Module):
+class biChildSumTreeLSTM_rel(nn.Module):
     def __init__(self, opts, vocab, label_vocab, rel_vocab):
-        super(ChildSumTreeLSTM, self).__init__()
+        super(biChildSumTreeLSTM_rel, self).__init__()
 
         random.seed(opts.seed)
         torch.manual_seed(opts.seed)
         torch.cuda.manual_seed(opts.seed)
 
         self.embed_dim = opts.embed_size
+        self.rel_embed_dim = opts.rel_embed_size
         self.word_num = vocab.m_size
         self.pre_embed_path = opts.pre_embed_path
         self.string2id = vocab.string2id
@@ -40,21 +41,26 @@ class ChildSumTreeLSTM(nn.Module):
         self.debug = False
 
         self.embeddings = nn.Embedding(self.word_num, self.embed_dim)
+        self.rel_embeddings = nn.Embedding(self.rel_num, self.rel_embed_dim)
         self.dropout = nn.Dropout(self.dropout)
         if opts.pre_embed_path != '':
             embedding = Embedding.load_predtrained_emb_zero(self.pre_embed_path, self.string2id)
             self.embeddings.weight.data.copy_(embedding)
 
-        self.dt_tree = DTTreeLSTM(self.embed_dim, self.hidden_size, opts.dropout)
+        self.dt_tree = DTTreeLSTM(self.embed_dim + self.rel_embed_dim, self.hidden_size, opts.dropout)
+        self.td_tree = TDTreeLSTM(self.embed_dim + self.rel_embed_dim, self.hidden_size, opts.dropout)
 
-        self.linear = nn.Linear(self.hidden_size, self.label_num)
+        self.linear1 = nn.Linear(self.hidden_size * 2, self.hidden_size // 2)
+        self.linear2 = nn.Linear(self.hidden_size // 2, self.label_num)
+        self.linear = nn.Linear(self.hidden_size * 2, self.label_num)
 
-    def forward(self, xs, heads, xlengths):
+    def forward(self, xs, rels, heads, xlengths):
 
         emb = self.embeddings(xs)
-        emb = self.dropout(emb)
-
-        outputs = emb.transpose(0, 1)
+        rel_emb = self.rel_embeddings(rels)
+        outputs = torch.cat([emb, rel_emb], 2)
+        outputs = self.dropout(outputs)
+        outputs = outputs.transpose(0, 1)
 
         max_length, batch_size, input_dim = outputs.size()
 
@@ -68,12 +74,15 @@ class ChildSumTreeLSTM(nn.Module):
             trees.append(tree)
 
         dt_outputs = self.dt_tree(outputs, indexes, trees, xlengths)
+        td_outputs = self.td_tree(outputs, indexes, trees, xlengths)
 
-        out = torch.transpose(dt_outputs, 1, 2)
+        out = torch.cat([dt_outputs, td_outputs], dim=2)
+        out = torch.transpose(out, 1, 2)
         out = F.max_pool1d(out, out.size(2))
         out = out.squeeze(2)
         out = self.linear(out)
         return out
+
 
 
 class DTTreeLSTM(nn.Module):
@@ -195,6 +204,7 @@ class DTTreeLSTM(nn.Module):
 
         outputs, output_t = [], []
 
+        # pads = Var(inputs.data.new(self._hidden_size).fill_(-999999))
         for b in range(batch_size):
             output = [dt_state_h[b][idx] for idx in range(0, lengths[b])] \
                      + [zeros for idx in range(lengths[b], max_length)]
@@ -227,3 +237,154 @@ class DTTreeLSTM(nn.Module):
         h = o * torch.tanh(c)
 
         return self.dropout(h), c
+
+    def node_forward_1(self, input, left_child_h, right_child_h, left_child_c, right_child_c):
+        hidden = left_child_h + right_child_h
+        i = self.i_x(input) + self.i_h(hidden)
+        i = torch.sigmoid(i)
+
+        fl = self.f_xl(input) + self.f_hl(left_child_h)
+        fl = torch.sigmoid(fl)
+
+        fr = self.f_xr(input) + self.f_hr(right_child_h)
+        fr = torch.sigmoid(fr)
+
+        o = self.o_x(input) + self.o_h(hidden)
+        o = torch.sigmoid(o)
+
+        u = self.u_x(input) + self.u_h(hidden)
+        u = torch.tanh(u)
+        c = i * u + fl * left_child_c + fr * right_child_c
+        h = o * torch.tanh(c)
+
+        return h, c
+
+
+class TDTreeLSTM(nn.Module):
+    def __init__(self, input_size, hidden_size, dropout):
+        """
+        """
+        super(TDTreeLSTM, self).__init__()
+        self._input_size = input_size
+        self._hidden_size = hidden_size
+        self.dropout = nn.Dropout(dropout)
+
+        self.i_x = nn.Linear(in_features=input_size, out_features=hidden_size, bias=True)
+        self.i_h = nn.Linear(in_features=hidden_size, out_features=hidden_size, bias=True)
+        self.f_x = nn.Linear(in_features=input_size, out_features=hidden_size, bias=True)
+        self.f_h = nn.Linear(in_features=hidden_size, out_features=hidden_size, bias=True)
+        self.o_x = nn.Linear(in_features=input_size, out_features=hidden_size, bias=False)
+        self.o_h = nn.Linear(in_features=hidden_size, out_features=hidden_size, bias=False)
+        self.u_x = nn.Linear(in_features=input_size, out_features=hidden_size, bias=False)
+        self.u_h = nn.Linear(in_features=hidden_size, out_features=hidden_size, bias=False)
+
+    def forward(self, inputs, indexes, trees, lengths):
+        """
+        :param inputs:
+        :param tree:
+        :return: output, h_n
+        """
+        max_length, batch_size, input_dim = inputs.size()
+        degree = np.ones((batch_size, max_length), dtype=np.int32)
+        last_indexes = max_length * np.ones((batch_size), dtype=np.int32)
+        td_state_h = []
+        td_state_c = []
+        for b in range(batch_size):
+            td_state_h.append({})
+            td_state_c.append({})
+            root_index = indexes[lengths[b] - 1, b]
+            degree[b, root_index] = 0
+            last_indexes[b] = lengths[b]
+
+        zeros = Var(inputs.data.new(self._hidden_size).fill_(0.))
+        for step in range(max_length):
+            step_inputs, parent_hs, parent_cs, compute_indexes = [], [], [], []
+            for b, tree in enumerate(trees):
+                last_index = last_indexes[b]
+                for idx in reversed(range(last_index)):
+                    cur_index = indexes[idx, b]
+                    if degree[b, cur_index] > 0:
+                        break
+                    last_indexes[b] -= 1
+                    compute_indexes.append((b, cur_index))
+                    step_inputs.append(inputs[cur_index, b])
+                    parent_h = zeros
+                    parent_c = zeros
+                    if tree[cur_index].parent is None:
+                        parent_hs.append(parent_h)
+                        parent_cs.append(parent_c)
+                    else:
+                        valid_parent_h = td_state_h[b][tree[cur_index].parent.index]
+                        valid_parent_c = td_state_c[b][tree[cur_index].parent.index]
+                        parent_hs.append(valid_parent_h)
+                        parent_cs.append(valid_parent_c)
+
+            if len(compute_indexes) == 0:
+                for last_index in last_indexes:
+                    if last_index != 0:
+                        print('bug exists: some nodes are not completed')
+                break
+
+            step_inputs = torch.stack(step_inputs, 0)
+            parent_hs = torch.stack(parent_hs, 0)
+            parent_cs = torch.stack(parent_cs, 0)
+
+            h, c = self.node_forward(step_inputs, parent_hs, parent_cs)
+            for idx, (b, cur_index) in enumerate(compute_indexes):
+                td_state_h[b][cur_index] = h[idx]
+                td_state_c[b][cur_index] = c[idx]
+                for child in trees[b][cur_index].left_children:
+                    degree[b, child.index] -= 1
+                    if degree[b, child.index] < 0:
+                        print('strange bug')
+                for child in trees[b][cur_index].right_children:
+                    degree[b, child.index] -= 1
+                    if degree[b, child.index] < 0:
+                        print('strange bug')
+
+        outputs, output_t = [], []
+        # pads = Var(inputs.data.new(self._hidden_size).fill_(-999999))
+        for b in range(batch_size):
+            output = [td_state_h[b][idx] for idx in range(0, lengths[b])] \
+                     + [zeros for idx in range(lengths[b], max_length)]
+            outputs.append(torch.stack(output, 0))
+
+        return torch.stack(outputs, 0)
+
+    def node_forward(self, input, parent_hs, parent_cs):
+
+        i = self.i_x(input) + self.i_h(parent_hs)
+        i = torch.sigmoid(i)
+
+        f = self.f_x(input) + self.f_h(parent_hs)
+        f = torch.sigmoid(f)
+
+        o = self.o_x(input) + self.o_h(parent_hs)
+        o = torch.sigmoid(o)
+
+        u = self.u_x(input) + self.u_h(parent_hs)
+        u = torch.tanh(u)
+
+        c = i * u + f * parent_cs
+        h = o * torch.tanh(c)
+
+        return self.dropout(h), c
+
+    def node_forward_1(self, input, left_parent_hs, right_parents_hs, left_parent_cs, right_parent_cs):
+        hidden = left_parent_hs + right_parents_hs
+        i = self.i_x(input) + self.i_h(hidden)
+        i = F.sigmoid(i)
+
+        f = self.f_x(input) + self.f_hl(left_parent_hs) + self.f_hr(right_parents_hs)
+        f = F.sigmoid(f)
+
+        o = self.o_x(input) + self.o_h(hidden)
+        o = F.sigmoid(o)
+
+        u = self.u_x(input) + self.u_h(hidden)
+        u = F.tanh(u)
+
+        c = i * u + f * (left_parent_cs + right_parent_cs)
+        h = o * F.tanh(c)
+
+        return h, c
