@@ -1,11 +1,12 @@
 ## Introduction
 - A classification of Sentiment Analysis which is implemented by pytorch.
 * There are many data in [data](https://github.com/zenRRan/Sentiment-Analysis/tree/master/data), *.txt of that are came from [sent-conv-torch](https://github.com/harvardnlp/sent-conv-torch), *.conll.out of that are generated from our lab's parser.
+    * TREC
+    * SUBJ
+    * MR
     * CR
     * MPQA
-    * TREC
-    * MR
-    * SUBJ
+
 - My processed data by preprocessed.sh will be saved in [processed_data](https://github.com/zenRRan/Sentiment-Analysis/tree/master/processed_data).
 * Trere are many models in [models](https://github.com/zenRRan/Sentiment-Analysis/tree/master/models).
     * Pooling
@@ -17,8 +18,11 @@
     * LSTM
     * LSTM_CNN
     * TreeLSTM
-    * CNN_TreeLSTM
-    * LSTM_TreeLSTM
+    * biTreeLSTM
+    * TreeLSTM_rel
+    * biTreeLSTM_rel
+    * CNN_TreeLSTM(ready to refresh)
+    * LSTM_TreeLSTM(ready to refresh)
     * Transformer(TODO)
 - My log will be saved in [log](https://github.com/zenRRan/Sentiment-Analysis/tree/master/log).
 * Trere are many scripts in [utils](https://github.com/zenRRan/Sentiment-Analysis/tree/master/utils).
