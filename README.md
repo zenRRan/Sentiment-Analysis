@@ -39,7 +39,7 @@
 
 ## Requirement
         python : 3.5+
-        pytorch : 0.4.0
+        pytorch : 0.4.1
         cuda : 8.0 (support GPU, you can choose)
 
 ## Usage
@@ -52,28 +52,27 @@
 
 ## Result
 
-
 | Data/Model(acc)   | TREC  | SUBJ  | MR    | CR    | MPQA  |
-| ------            | ------ | ------ | ------ | ------ | ------ |
-| Pooling           | 76.12 | 89.58 | 74.51 | 80 | 86.43 |
-| CNN               | 90.4  | 91.98 | 77.73 | 84.38 | 88.96 |
-| Char_CNN          | 91.52 | 93.33 | 78.91 | 84.38 | 86.33 |
-| Multi_Channel_CNN | 89.06 | 94.06 | 79.59 | 83.12 | 88.48 |
-| Multi_Layer_CNN   | 91.74 | 93.65 | 79    | 84.06 | 89.36 |
-| LSTM              | 89.73 | 92.5  | 80.57 | 83.75 | 89.65 |
-| LSTM_CNN          | 92.63 | 92.19 | 81.05 | 83.12 | 89.16 |
-| GRU               | 89.06 | 92.6  | 79.1  | 83.44 | 89.75 |
-| TreeLSTM          | 89.96 | 92.71 | 78.61 | 84.38 | 88.67 |
-| biTreeLSTM        | 92.41 | 92.08 | 78.91 | 82.81 | 89.26 |
-| TreeLSTM_rel      | 91.29 | 92.19 | 79.69 | 84.06 | 89.06 |
-| biTreeLSTM_rel    | 91.07 | 91.46 | 78.81 | 82.81 | 89.45 |
+| ------            | ----- | ----- | ----- | ----- | ----- |
+| Pooling           | 76.12 | 92.10 | 75.92 | 79.03 | 85.97 |
+| CNN               | 91.40 | 93.20 | 77.05 | 83.60 | 88.34 |
+| Char_CNN          | 92.20 | 93.30 | 78.66 | 83.60 | 88.25 |
+| Multi_Channel_CNN | 89.20 | 93.40 | 78.56 | 81.45 | 88.06 |
+| Multi_Layer_CNN   | 91.00 | 93.70 | 78.28 | 83.06 | 88.44 |
+| LSTM              | 89.20 | 92.50 | 78.94 | 81.99 | 89.57 |
+| LSTM_CNN          | 90.08 | 93.40 | 79.51 | 82.80 | 88.82 |
+| GRU               | 89.40 | 92.80 | 78.28 | 82.26 | 89.48 |
+| TreeLSTM          | 89.60 | 92.60 | 79.79 | 84.41 | 88.91 |
+| biTreeLSTM        | 90.40 | 92.70 | 79.13 | 83.87 | 88.91 |
+| TreeLSTM_rel      | 91.29 | 92.20 | 80.36 | 82.26 | 89.06 |
+| biTreeLSTM_rel    | 91.20 | 92.80 | 80.26 | 83.60 | 89.10 |
 | CNN_TreeLSTM      | - | - | - | - | - |
 | LSTM_TreeLSTM     | - | - | - | - | - |
 
 ### In addition:
 
 #### Data
- - TREC: `TREC question dataset` - task involves classifying a question into 6 question types (whether the question is about person, location, numeric information, etc.) (Li and Roth, 2002).
+ - TREC: `TREC question dataset` - task involves classifying a question into 6 question types (whether the question is about abbreviation, entity, description, human, location and numeric value) (Li and Roth, 2002).
  - SUBJ: `Subjectivity dataset` where the task is to classify a sentence as being subjective or objective (Pang and Lee, 2004).
  - MR: `Movie reviews` with one sentence per review. Classification involves detecting positive/negative reviews (Pang and Lee, 2005).
  - CR: `Customer reviews` of various products (cameras, MP3s etc.). Task is to predict positive/negative reviews (Hu and Liu, 2004).
@@ -82,6 +81,7 @@
 #### Emphasize
  - `pre_trained_embed` which is using `glove.6B.100d.txt`.
  - `TreeLSTM` which is using `ChildSum` method.
+
 #### Future Work
  Other methods about `TreeLSTM` will be updated in the near future.
 

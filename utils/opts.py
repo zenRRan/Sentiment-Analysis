@@ -61,7 +61,7 @@ def trainer_opts(parser):
     parser.add_argument('-pre_embed_path', type=str, default='', help='pretrained embedding path')
     parser.add_argument('-embed_uniform_init', type=float, default=0,
                         help='nn.init.uniform(-embed_uniform_init, embed_uniform_init), default=0')
-
+    parser.add_argument('-embed_dropout', type=float, default=0.3)
     # -pre_embed_path
 
     #data
@@ -82,6 +82,7 @@ def trainer_opts(parser):
                         the code will be stoped')
     parser.add_argument('-init_clip_max_norm', type=int, default=10, help='if the sum of the grad if high than this, \
                         would be cut')
+    parser.add_argument('-fc_dropout', type=float, default=0.3)
 
     '''
     parameters
@@ -144,20 +145,26 @@ def decoder_opts(parser):
                         help='cpu seed! default 23. If you want set GPU seed, please use -gpu_seed!')
 
     #gpu
-    parser.add_argument('-gpu_seed', type=int, default=23, help='GPU seed! default 23.')
     parser.add_argument('-gpu_device', type=int, default=0,
                         help='decide which gpu device will be selected, default device 0')
     parser.add_argument('-use_cuda', type=bool, default=False, help='if use cuda, default False')
 
     #decoder file
-    parser.add_argument('-file', type=str, default='', help='decoder this file')
+    parser.add_argument('-dir', type=str, default='', help='decoder this file')
 
     #model
+    parser.add_argument('-model', type=str, default='')
     parser.add_argument('-model_path', type=str, default='', help='select your want to use model path')
-    # parser.add_argument('-', type=int, default=1, help='')
-    # parser.add_argument('-', type=int, default=1, help='')
-    # parser.add_argument('-', type=int, default=1, help='')
-    # parser.add_argument('-', type=int, default=1, help='')
+
+    # build batch
+    parser.add_argument('-shuffle', action='store_true')
+    parser.add_argument('-sort', action='store_true')
+    parser.add_argument('-type', type=str, default='test')
+    parser.add_argument('-batch_size', type=int, default=64)
+
+    #save
+    parser.add_argument('-save_path', type=str, default='save_path.txt')
+
     # parser.add_argument('-', type=int, default=1, help='')
     # parser.add_argument('-', type=int, default=1, help='')
     # parser.add_argument('-', type=int, default=1, help='')

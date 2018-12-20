@@ -81,9 +81,9 @@ class Build_Batch:
         new_list = []
         self.batch_features = []
         self.data_batchs = []
-
-        for feature in self.features:
-            if len(new_list) < self.batch_size:
+        self.features.append([])
+        for idx, feature in enumerate(self.features):
+            if len(new_list) < self.batch_size and idx+1 != len(self.features):
                 new_list.append(feature)
             else:
                 self.batch_num += 1

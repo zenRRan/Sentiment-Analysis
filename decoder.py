@@ -97,24 +97,27 @@ class Decoder:
             label = batch[1]
             for index, (t, p) in enumerate(zip(label, pred_index)):
                 if t != p:
-                    wrong_sent = self.get_sent(sents[index])
+                    wrong_sent, length = self.get_sent(sents[index])
+                    right_label = self.get_label(t)
                     wrong_label = self.get_label(p)
-                    wrongs.append((wrong_sent, wrong_label, t))
+                    wrongs.append((wrong_sent, length, wrong_label, right_label))
         self.write(wrongs)
 
 
     def write(self, wrongs):
         with open(self.save_path, 'w', encoding='utf8') as f:
             for wrong in wrongs:
-                f.write('pred: ' + str(wrong[1]) + ' right: ' + str(wrong[2]) +' sent: ' + wrong[0] + '\n')
+                f.write('pred: ' + str(wrong[2]) + ' right: ' + str(wrong[3]) + ' length: ' + str(wrong[1]) + ' sent: ' + wrong[0] + '\n')
 
     def get_sent(self, idx):
         sent = []
+        length = 0
         for id in idx:
             word = self.vocab.id2string[id]
             if word != padding_key:
                 sent.append(word)
-        return ' '.join(sent)
+                length += 1
+        return ' '.join(sent), length
 
     def get_label(self, id):
         return self.label_vocab.id2string[id]
@@ -124,5 +127,5 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser('Train opts')
     parser = decoder_opts(parser)
     opts = parser.parse_args()
-    print(opts)
+    # print(opts)
     Decoder(opts)

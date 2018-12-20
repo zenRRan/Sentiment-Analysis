@@ -292,6 +292,7 @@ class Trainer:
                 self.best_dev_epoch = epoch
                 log = "not improved, best test acc: {:.2f}%, in epoch {}".format(self.best_dev_test,
                                                                                  self.best_dev_epoch)
+                print(log)
             else:
                 early_stop_count += 1
                 lr_decay_count += 1
@@ -394,6 +395,7 @@ class Trainer:
 
             correct_num += (torch.max(pred, 1)[1].view(label.size()).data == label.data).sum()
 
+        # print(float(correct_num), inst_num)
         avg_loss = totle_loss / inst_num
         acc = float(correct_num) / inst_num * 100
 
