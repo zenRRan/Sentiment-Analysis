@@ -49,6 +49,9 @@
 - second step
 
         sh run.sh
+- third step (also called decoder step which will output a file whose predictions were wrong. If necessary)
+
+        sh decoder.sh
 
 ## Result
 
